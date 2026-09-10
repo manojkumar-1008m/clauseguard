@@ -1,0 +1,201 @@
+test_id,domain,text,expected_label,notes
+CFT-001,ecommerce,Orders over $50 qualify for complimentary ground shipping with tracking.,0,Clean benign example in ecommerce
+CFT-002,ecommerce,Estimated delivery date is October 15-18 via FedEx ground.,0,Clean benign example in ecommerce
+CFT-003,ecommerce,You can modify or cancel your pending order before it enters fulfillment.,0,Clean benign example in ecommerce
+CFT-004,ecommerce,A full itemized receipt has been sent to your registered email address.,0,Clean benign example in ecommerce
+CFT-005,ecommerce,Standard returns are accepted within 30 days of delivery with tags attached.,0,Clean benign example in ecommerce
+CFT-006,ecommerce,Select your preferred delivery speed at checkout: Economy or Next-Day Air.,0,Clean benign example in ecommerce
+CFT-007,ecommerce,Gift wrapping is optional and can be added for an additional $4.00.,0,Clean benign example in ecommerce
+CFT-008,ecommerce,"We accept credit cards, debit cards, PayPal, and Apple Pay.",0,Clean benign example in ecommerce
+CFT-009,ecommerce,Sales tax is calculated based on the shipping address destination.,0,Clean benign example in ecommerce
+CFT-010,ecommerce,Product warranty information is included inside the manufacturer packaging.,0,Clean benign example in ecommerce
+CFT-011,ecommerce,A non-refundable handling fee of $6.50 was added to your order on the payment screen.,1,Clean dark pattern example in ecommerce
+CFT-012,ecommerce,Limited stock! 12 customers currently have this exact shirt in their cart!,1,Clean dark pattern example in ecommerce
+CFT-013,ecommerce,Order within 02:45 to secure your items before they are released to another buyer!,1,Clean dark pattern example in ecommerce
+CFT-014,ecommerce,Shipping protection $2.49 has been pre-selected for you. Uncheck to decline.,1,Clean dark pattern example in ecommerce
+CFT-015,ecommerce,"No thanks, I don't care about saving money and prefer overpaying on my orders.",1,Clean dark pattern example in ecommerce
+CFT-016,ecommerce,An express fulfillment surcharge has been applied automatically to your cart.,1,Clean dark pattern example in ecommerce
+CFT-017,ecommerce,Low inventory alert: 98% of this item's stock has sold out in the last hour!,1,Clean dark pattern example in ecommerce
+CFT-018,ecommerce,To return an item you must pay a mandatory $15 administrative restocking fee.,1,Clean dark pattern example in ecommerce
+CFT-019,ecommerce,Your cart will expire in 60 seconds — complete your order now before price increases!,1,Clean dark pattern example in ecommerce
+CFT-020,ecommerce,"Add warranty for $19.99? Decline offer: 'No, I want my product to break easily.'",1,Clean dark pattern example in ecommerce
+CFT-021,subscriptions,Monthly subscription charges of $12.99 will occur on the 1st of every month.,0,Clean benign example in subscriptions
+CFT-022,subscriptions,You can turn off automatic renewal anytime directly from your billing dashboard.,0,Clean benign example in subscriptions
+CFT-023,subscriptions,We send an email reminder 5 days before your recurring payment is processed.,0,Clean benign example in subscriptions
+CFT-024,subscriptions,Subscriptions may be paused for up to 3 months without losing saved preferences.,0,Clean benign example in subscriptions
+CFT-025,subscriptions,Cancel online in your account settings with two clicks. No cancellation fees.,0,Clean benign example in subscriptions
+CFT-026,subscriptions,Your subscription plan includes unlimited access across all your personal devices.,0,Clean benign example in subscriptions
+CFT-027,subscriptions,Switch between annual and monthly payment cycles whenever you choose.,0,Clean benign example in subscriptions
+CFT-028,subscriptions,Downgrading your subscription tier will take effect at the end of the current cycle.,0,Clean benign example in subscriptions
+CFT-029,subscriptions,Billing statements and payment history are available for download as PDF.,0,Clean benign example in subscriptions
+CFT-030,subscriptions,A prorated refund will be issued if you cancel within 48 hours of renewal.,0,Clean benign example in subscriptions
+CFT-031,subscriptions,To cancel your subscription you must call customer support during weekday hours.,1,Clean dark pattern example in subscriptions
+CFT-032,subscriptions,Cancellation requires writing a formal cancellation letter to our corporate address.,1,Clean dark pattern example in subscriptions
+CFT-033,subscriptions,Subscription renews automatically at triple the promotional rate with no prior notice.,1,Clean dark pattern example in subscriptions
+CFT-034,subscriptions,Canceling online is disabled. You must speak with a cancellation retention specialist.,1,Clean dark pattern example in subscriptions
+CFT-035,subscriptions,Early cancellation fee of $150 applies if terminated before 12 consecutive months.,1,Clean dark pattern example in subscriptions
+CFT-036,subscriptions,The cancel button is concealed beneath multiple nested help center FAQs.,1,Clean dark pattern example in subscriptions
+CFT-037,subscriptions,Auto-renewal cannot be disabled online once your credit card has been charged.,1,Clean dark pattern example in subscriptions
+CFT-038,subscriptions,You must complete a mandatory 15-minute phone survey to process cancellation.,1,Clean dark pattern example in subscriptions
+CFT-039,subscriptions,Your subscription was renewed 14 days before your billing date without authorization.,1,Clean dark pattern example in subscriptions
+CFT-040,subscriptions,Canceling your plan requires a $35 account deactivation processing penalty.,1,Clean dark pattern example in subscriptions
+CFT-041,saas,Try our Team tier free for 14 days. No credit card is needed to register.,0,Clean benign example in saas
+CFT-042,saas,API usage is billed strictly by actual requests consumed at $0.002 per call.,0,Clean benign example in saas
+CFT-043,saas,You can export all your project data in standard CSV or JSON format anytime.,0,Clean benign example in saas
+CFT-044,saas,Seat licenses can be reassigned freely between team members in the admin console.,0,Clean benign example in saas
+CFT-045,saas,Our free tier includes up to 3 projects and 5GB of encrypted cloud storage.,0,Clean benign example in saas
+CFT-046,saas,"Pricing is $20 per user/month, with transparent billing calculated monthly.",0,Clean benign example in saas
+CFT-047,saas,We provide a 99.9% uptime service level agreement for all Enterprise accounts.,0,Clean benign example in saas
+CFT-048,saas,Cancel your workspace anytime from organization settings; data retained for 30 days.,0,Clean benign example in saas
+CFT-049,saas,Overages are capped and will prompt for confirmation before incurring extra charges.,0,Clean benign example in saas
+CFT-050,saas,Security audit logs and compliance reports are accessible from the security tab.,0,Clean benign example in saas
+CFT-051,saas,Free trial converts into an irrevocable $600 annual contract on day 15.,1,Clean dark pattern example in saas
+CFT-052,saas,"To downgrade to the Free plan, you must request permission from your account rep.",1,Clean dark pattern example in saas
+CFT-053,saas,An unannounced per-seat administrative fee is added on the final checkout review.,1,Clean dark pattern example in saas
+CFT-054,saas,Data export is restricted and requires upgrading to our top-tier Enterprise plan.,1,Clean dark pattern example in saas
+CFT-055,saas,Your account has been locked into a 3-year term with automatic renewal clauses.,1,Clean dark pattern example in saas
+CFT-056,saas,Hidden charges for data bandwidth appear only after payment credentials are entered.,1,Clean dark pattern example in saas
+CFT-057,saas,"Decline trial: 'No thanks, I don't want my team to be productive or successful.'",1,Clean dark pattern example in saas
+CFT-058,saas,Removing a seat license incurs an unexpected $45 contract modification penalty.,1,Clean dark pattern example in saas
+CFT-059,saas,Canceling your workspace requires contacting support via live chat during PST hours.,1,Clean dark pattern example in saas
+CFT-060,saas,Annual upfront payment is selected by default without indicating monthly alternative.,1,Clean dark pattern example in saas
+CFT-061,travel,"Total hotel stay price of $480 includes all room charges, taxes, and service fees.",0,Clean benign example in travel
+CFT-062,travel,Free cancellation is available up to 48 hours before the scheduled check-in time.,0,Clean benign example in travel
+CFT-063,travel,Flight ticket includes one carry-on bag and one personal item at no extra cost.,0,Clean benign example in travel
+CFT-064,travel,Seat selection is optional; free random seat assignment is provided at check-in.,0,Clean benign example in travel
+CFT-065,travel,Complimentary breakfast and Wi-Fi are provided with all standard room bookings.,0,Clean benign example in travel
+CFT-066,travel,Shuttle service to the airport operates every 30 minutes free of charge.,0,Clean benign example in travel
+CFT-067,travel,"Clear breakdown: Room rate $120/night, City occupancy tax $14/night, Total $134/night.",0,Clean benign example in travel
+CFT-068,travel,"You can change your travel dates online with no change fee, fare difference may apply.",0,Clean benign example in travel
+CFT-069,travel,Car rental includes unlimited mileage and 24/7 emergency roadside assistance.,0,Clean benign example in travel
+CFT-070,travel,Check-in begins at 3:00 PM and check-out is at 11:00 AM local property time.,0,Clean benign example in travel
+CFT-071,travel,Mandatory resort fees of $55/night are not included and must be paid upon arrival.,1,Clean dark pattern example in travel
+CFT-072,travel,Only 1 room remaining at this special rate! 19 travelers are viewing this right now!,1,Clean dark pattern example in travel
+CFT-073,travel,A surprise baggage handling surcharge of $35 was added during payment verification.,1,Clean dark pattern example in travel
+CFT-074,travel,Hurry! Flight fares for this route are predicted to rise by 40% in 10 minutes!,1,Clean dark pattern example in travel
+CFT-075,travel,Pre-selected travel insurance for $28.50 has been added to your reservation.,1,Clean dark pattern example in travel
+CFT-076,travel,Convenience fee of $18.00 will be added on the final booking confirmation step.,1,Clean dark pattern example in travel
+CFT-077,travel,Act fast! Someone in London just reserved a room at this exact hotel!,1,Clean dark pattern example in travel
+CFT-078,travel,Decline trip insurance: 'I acknowledge that I am risking financial disaster.',1,Clean dark pattern example in travel
+CFT-079,travel,"Taxes, airport facility fees, and carrier surcharges will be revealed after booking.",1,Clean dark pattern example in travel
+CFT-080,travel,The cheaper non-refundable rate is disguised to look identical to the flexible fare.,1,Clean dark pattern example in travel
+CFT-081,ticketing,Concert ticket face value is $65.00 with all fees clearly disclosed prior to payment.,0,Clean benign example in ticketing
+CFT-082,ticketing,Digital tickets will be delivered to your mobile wallet within 15 minutes of purchase.,0,Clean benign example in ticketing
+CFT-083,ticketing,Accessible seating options are available across all orchestra and balcony sections.,0,Clean benign example in ticketing
+CFT-084,ticketing,Doors open at 6:30 PM; performance commences promptly at 7:30 PM.,0,Clean benign example in ticketing
+CFT-085,ticketing,Refunds are automatically issued to original payment methods if an event is canceled.,0,Clean benign example in ticketing
+CFT-086,ticketing,Full pricing schedule and venue seating charts are viewable on this page.,0,Clean benign example in ticketing
+CFT-087,ticketing,Ticket exchange for alternate dates is permitted up to 72 hours prior to showtime.,0,Clean benign example in ticketing
+CFT-088,ticketing,Children under 3 years old are admitted free when sitting on a parent's lap.,0,Clean benign example in ticketing
+CFT-089,ticketing,General admission entry does not require assigned seating or reservation fees.,0,Clean benign example in ticketing
+CFT-090,ticketing,Merchandise vouchers can be optionally purchased during the checkout process.,0,Clean benign example in ticketing
+CFT-091,ticketing,Processing fees and venue surcharges of $24 per ticket are disclosed only at payment.,1,Clean dark pattern example in ticketing
+CFT-092,ticketing,Countdown timer: 03:00 remaining to complete purchase or your seats will be forfeited!,1,Clean dark pattern example in ticketing
+CFT-093,ticketing,Mandatory facility maintenance fee of $12.50 per ticket will be added at checkout.,1,Clean dark pattern example in ticketing
+CFT-094,ticketing,A non-optional order processing surcharge will appear on your credit card receipt.,1,Clean dark pattern example in ticketing
+CFT-095,ticketing,"Skip event protection? 'No thanks, I don't care if I lose all my money on this ticket.'",1,Clean dark pattern example in ticketing
+CFT-096,ticketing,We pre-selected 2 souvenir concert programs for $25 in your checkout cart.,1,Clean dark pattern example in ticketing
+CFT-097,ticketing,Ticket demand is high! 340 people are currently attempting to purchase these seats!,1,Clean dark pattern example in ticketing
+CFT-098,ticketing,An unadvertised service charge of 28% has been applied to your ticket order total.,1,Clean dark pattern example in ticketing
+CFT-099,ticketing,Refund requests are subject to an arbitrary 50% ticketing cancellation deduction.,1,Clean dark pattern example in ticketing
+CFT-100,ticketing,Tickets are non-transferable and cannot be re-sold except through our paid portal.,1,Clean dark pattern example in ticketing
+CFT-101,marketplaces,"Seller has maintained a 99.4% positive feedback rating over 1,500 reviews.",0,Clean benign example in marketplaces
+CFT-102,marketplaces,Buyer protection guarantee covers items not received or not as described.,0,Clean benign example in marketplaces
+CFT-103,marketplaces,Return postage is prepaid by the seller if an item arrives damaged.,0,Clean benign example in marketplaces
+CFT-104,marketplaces,Bidding increments are fixed at $2.50 per bid according to auction rules.,0,Clean benign example in marketplaces
+CFT-105,marketplaces,Payment is held in escrow until the buyer confirms safe delivery of goods.,0,Clean benign example in marketplaces
+CFT-106,marketplaces,Detailed photos of product serial numbers and condition flaws are shown above.,0,Clean benign example in marketplaces
+CFT-107,marketplaces,Shipping costs are calculated transparently using official postal service rates.,0,Clean benign example in marketplaces
+CFT-108,marketplaces,You can message the seller directly through our secure platform before purchasing.,0,Clean benign example in marketplaces
+CFT-109,marketplaces,Authenticity verification is conducted by independent certified appraisers.,0,Clean benign example in marketplaces
+CFT-110,marketplaces,"All seller terms, return policies, and dispatch timelines are visible on this listing.",0,Clean benign example in marketplaces
+CFT-111,marketplaces,Buyer protection fee of $4.99 has been automatically added to your bid.,1,Clean dark pattern example in marketplaces
+CFT-112,marketplaces,HURRY! 45 users are bidding against you right now! Place your bid immediately!,1,Clean dark pattern example in marketplaces
+CFT-113,marketplaces,"Decline warranty: 'No, I don't care if this electronic device breaks tomorrow.'",1,Clean dark pattern example in marketplaces
+CFT-114,marketplaces,A mandatory marketplace facilitation surcharge will be added upon winning the auction.,1,Clean dark pattern example in marketplaces
+CFT-115,marketplaces,Dispute resolution is barred unless buyer pays an upfront $30 mediation deposit.,1,Clean dark pattern example in marketplaces
+CFT-116,marketplaces,Pre-checked donation to marketplace community fund of $2.00 added to checkout.,1,Clean dark pattern example in marketplaces
+CFT-117,marketplaces,Only 1 item available! 8 customers have this exact product in their checkout line!,1,Clean dark pattern example in marketplaces
+CFT-118,marketplaces,Seller disclaims all statutory consumer rights and prohibits refund requests.,1,Clean dark pattern example in marketplaces
+CFT-119,marketplaces,Bids placed cannot be retracted even if placing bid resulted from accidental touch.,1,Clean dark pattern example in marketplaces
+CFT-120,marketplaces,Hidden payment processing surcharges are revealed only after the auction concludes.,1,Clean dark pattern example in marketplaces
+CFT-121,news,Read 5 free articles per month before choosing a digital subscription.,0,Clean benign example in news
+CFT-122,news,Digital membership is $4 per month with cancellation available in account settings.,0,Clean benign example in news
+CFT-123,news,Student discount of 50% is available with verification of university email.,0,Clean benign example in news
+CFT-124,news,"Access our archives, daily crosswords, and podcasts with your basic membership.",0,Clean benign example in news
+CFT-125,news,Billing date and renewal amounts are clearly displayed on your account profile.,0,Clean benign example in news
+CFT-126,news,You can unsubscribe from email newsletters anytime using the footer link.,0,Clean benign example in news
+CFT-127,news,Print subscribers receive complimentary digital access on all mobile apps.,0,Clean benign example in news
+CFT-128,news,We notify you 30 days before any changes to our subscription subscription rates.,0,Clean benign example in news
+CFT-129,news,Standard subscription can be canceled online with immediate effect.,0,Clean benign example in news
+CFT-130,news,Privacy policy explains how we protect subscriber data and reader privacy.,0,Clean benign example in news
+CFT-131,news,Introductory rate $1/month; automatically jumps to $45/month with no cancellation button.,1,Clean dark pattern example in news
+CFT-132,news,To stop recurring payments you must dial customer retention during limited hours.,1,Clean dark pattern example in news
+CFT-133,news,Canceling online is prohibited; subscribers must mail a notarized cancellation letter.,1,Clean dark pattern example in news
+CFT-134,news,Pre-checked checkbox enrolls reader into 15 third-party affiliate marketing lists.,1,Clean dark pattern example in news
+CFT-135,news,"Decline subscription: 'No thanks, I prefer remaining uninformed and uneducated.'",1,Clean dark pattern example in news
+CFT-136,news,Hidden early termination penalty of $60 applies if subscription ends before one year.,1,Clean dark pattern example in news
+CFT-137,news,Unsubscribe link is intentionally rendered in invisible light-grey text on white.,1,Clean dark pattern example in news
+CFT-138,news,Account deletion is impossible without calling customer service in another country.,1,Clean dark pattern example in news
+CFT-139,news,Annual renewal fee will be deducted 21 days prior to contract expiration without alert.,1,Clean dark pattern example in news
+CFT-140,news,Promotional trial requires entering credit card and mandates 6-month retention minimum.,1,Clean dark pattern example in news
+CFT-141,education,Audit course materials and video lectures for free without paying tuition.,0,Clean benign example in education
+CFT-142,education,"Verified certificate fee is $49, displayed clearly before enrollment completion.",0,Clean benign example in education
+CFT-143,education,Financial aid is available for eligible students who submit an application.,0,Clean benign example in education
+CFT-144,education,You have 14 days from enrollment date to request a full tuition refund.,0,Clean benign example in education
+CFT-145,education,"Course syllabus, grading criteria, and instructor credentials are shown below.",0,Clean benign example in education
+CFT-146,education,Subscription renews monthly at $39 until course completion or manual cancellation.,0,Clean benign example in education
+CFT-147,education,Cancel course specialization anytime from learning dashboard with one click.,0,Clean benign example in education
+CFT-148,education,"All assignments, peer reviews, and discussion forums are included in tuition.",0,Clean benign example in education
+CFT-149,education,Institutional accreditation status is publicly documented on our university page.,0,Clean benign example in education
+CFT-150,education,Student records and transcripts can be exported securely via academic portal.,0,Clean benign example in education
+CFT-151,education,Free course preview requires entering credit card and auto-bills $399 upon completion.,1,Clean dark pattern example in education
+CFT-152,education,Canceling specialization requires completing a 45-minute mandatory exit survey.,1,Clean dark pattern example in education
+CFT-153,education,To drop the course and stop billing you must obtain written permission from support.,1,Clean dark pattern example in education
+CFT-154,education,Unannounced diploma graduation processing fees of $85 are revealed at final exam.,1,Clean dark pattern example in education
+CFT-155,education,Enrollment countdown: 'Only 2 seats remaining in this cohort! Enroll immediately!',1,Clean dark pattern example in education
+CFT-156,education,"Decline tutoring: 'No, I prefer failing this exam and falling behind in my career.'",1,Clean dark pattern example in education
+CFT-157,education,Pre-checked add-on of $29 for study guide has been added to your enrollment bill.,1,Clean dark pattern example in education
+CFT-158,education,Tuition installment plans charge undisclosed 25% administrative financing fees.,1,Clean dark pattern example in education
+CFT-159,education,Course certificate withheld unless student pays additional certification unlock fee.,1,Clean dark pattern example in education
+CFT-160,education,Subscription auto-renews even after all course modules have been completed.,1,Clean dark pattern example in education
+CFT-161,finance,Checking accounts have no monthly maintenance fee when minimum balance is met.,0,Clean benign example in finance
+CFT-162,finance,Annual percentage yield (APY) is 4.50% and interest compounds monthly.,0,Clean benign example in finance
+CFT-163,finance,"ATM withdrawals are free at over 55,000 participating Allpoint network locations.",0,Clean benign example in finance
+CFT-164,finance,Overdraft protection transfers funds automatically from your linked savings account.,0,Clean benign example in finance
+CFT-165,finance,All loan origination fees and APR terms are disclosed on the initial loan estimate.,0,Clean benign example in finance
+CFT-166,finance,You can freeze or unfreeze your debit card instantly via the mobile banking app.,0,Clean benign example in finance
+CFT-167,finance,Wire transfer fee of $25 is clearly itemized on the transfer confirmation screen.,0,Clean benign example in finance
+CFT-168,finance,Account statements are issued on the last calendar day of every month.,0,Clean benign example in finance
+CFT-169,finance,"FDIC insurance protects your deposits up to the standard limit of $250,000.",0,Clean benign example in finance
+CFT-170,finance,Closing your account is free of charge and can be initiated online or by phone.,0,Clean benign example in finance
+CFT-171,finance,Undisclosed monthly paper statement fee of $7.50 is deducted from your balance.,1,Clean dark pattern example in finance
+CFT-172,finance,To close your account you must appear in person at a branch located out of state.,1,Clean dark pattern example in finance
+CFT-173,finance,Loan approval requires buying pre-selected credit life insurance for $35/month.,1,Clean dark pattern example in finance
+CFT-174,finance,"Decline overdraft service: 'No, I want my transactions declined when buying food.'",1,Clean dark pattern example in finance
+CFT-175,finance,Hidden inactivity penalty of $20/month is charged without sending an alert notice.,1,Clean dark pattern example in finance
+CFT-176,finance,Interest rate triples after 30 days unless customer cancels in writing by mail.,1,Clean dark pattern example in finance
+CFT-177,finance,Pre-checked box opts customer into expensive high-fee overdraft programs.,1,Clean dark pattern example in finance
+CFT-178,finance,Account transfer fee of $45 is hidden inside the terms and conditions hyperlink.,1,Clean dark pattern example in finance
+CFT-179,finance,To cancel credit monitoring you must call during limited 2-hour morning window.,1,Clean dark pattern example in finance
+CFT-180,finance,Promotional 0% APR quietly incurs retroactive 29% interest on entire original sum.,1,Clean dark pattern example in finance
+CFT-181,healthcare,Prescription copay of $15 is calculated based on your insurance formulary tier.,0,Clean benign example in healthcare
+CFT-182,healthcare,"Telehealth consultation fee is $49, payable at the time of your appointment.",0,Clean benign example in healthcare
+CFT-183,healthcare,You can review your medical records and lab test results securely in the patient portal.,0,Clean benign example in healthcare
+CFT-184,healthcare,Doctor appointments can be rescheduled or canceled online up to 24 hours prior.,0,Clean benign example in healthcare
+CFT-185,healthcare,Generic medication alternatives are presented with transparent pricing comparisons.,0,Clean benign example in healthcare
+CFT-186,healthcare,Dental cleaning and routine preventive checkups are covered 100% by in-network plans.,0,Clean benign example in healthcare
+CFT-187,healthcare,Notice of privacy practices explains how protected health information is handled.,0,Clean benign example in healthcare
+CFT-188,healthcare,Medical supply orders over $35 qualify for standard home delivery.,0,Clean benign example in healthcare
+CFT-189,healthcare,Itemized hospital bills can be requested at no charge from the billing office.,0,Clean benign example in healthcare
+CFT-190,healthcare,You may revoke consent for non-essential medical research sharing at any time.,0,Clean benign example in healthcare
+CFT-191,healthcare,To cancel monthly vitamin delivery you must submit an in-person doctor's letter.,1,Clean dark pattern example in healthcare
+CFT-192,healthcare,Free wellness trial automatically enrols patient into a $99/month supplement plan.,1,Clean dark pattern example in healthcare
+CFT-193,healthcare,"Decline prescription protection: 'No, I am willing to risk going without medication.'",1,Clean dark pattern example in healthcare
+CFT-194,healthcare,Mandatory facility surcharge of $85 is billed after the telehealth session ends.,1,Clean dark pattern example in healthcare
+CFT-195,healthcare,Unannounced auto-shipment renewal occurs 15 days before the monthly prescription ends.,1,Clean dark pattern example in healthcare
+CFT-196,healthcare,Cancellation of gym membership requires paying an extortionate $250 exit fee.,1,Clean dark pattern example in healthcare
+CFT-197,healthcare,Pre-checked opt-in shares private patient symptom logs with third-party advertisers.,1,Clean dark pattern example in healthcare
+CFT-198,healthcare,Free health assessment requires attending a high-pressure sales presentation.,1,Clean dark pattern example in healthcare
+CFT-199,healthcare,Recurring prescription deliveries cannot be cancelled once first shipment departs.,1,Clean dark pattern example in healthcare
+CFT-200,healthcare,Sneak-in-basket: $12 expedited prescription handling added without patient consent.,1,Clean dark pattern example in healthcare

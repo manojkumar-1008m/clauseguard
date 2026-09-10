@@ -1,0 +1,20 @@
+{
+  "model_version": "clauseguard-text-v2",
+  "artifact": "clauseguard_model_v2.joblib",
+  "task": "binary_dark_pattern_classification",
+  "algorithm": "TF-IDF(ngram=(1, 1), sublinear_tf=True) + CalibratedClassifierCV(LinearSVC(C=1.0))",
+  "input": "text",
+  "labels": {
+    "0": "not_dark_pattern",
+    "1": "potential_dark_pattern"
+  },
+  "metrics": {
+    "validation_accuracy": 0.75,
+    "validation_f1": 0.7368421052631579,
+    "hard_gen_accuracy": 0.6,
+    "hard_gen_f1": 0.6363636363636364,
+    "final_test_accuracy": 0.8,
+    "final_test_f1": 0.8181818181818182
+  },
+  "verified": true
+}

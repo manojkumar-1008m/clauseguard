@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Behavior Analyzer</title>
+	<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+	<main class="popup-shell">
+		<header class="popup-header">
+			<div>
+				<p class="eyebrow">INTERACTION MONITOR</p>
+				<h1>Behavior Analyzer</h1>
+			</div>
+			<span class="status-dot" aria-label="Collector active"></span>
+		</header>
+
+		<section class="summary" aria-label="Event summary">
+			<span class="summary-label">Recorded events</span>
+			<strong id="event-count">0</strong>
+		</section>
+
+		<section class="analysis-section" aria-labelledby="analysis-heading">
+			<div class="section-heading">
+				<h2 id="analysis-heading">Behavior Analysis</h2>
+				<span id="analysis-severity" class="severity-badge low">LOW</span>
+			</div>
+			<div class="risk-summary">
+				<span>Risk score</span>
+				<strong><span id="risk-score">0</span> / 100</strong>
+			</div>
+			<div class="analysis-copy">
+				<h3 id="summary-title">Low Risk</h3>
+				<p id="summary-message">No significant behavioral manipulation signals were detected.</p>
+			</div>
+			<div class="explanation-block">
+				<h3>What happened?</h3>
+				<p id="what-happened">No interaction data is available yet.</p>
+			</div>
+			<p id="no-risks" class="empty-state">No behavioral risks detected.</p>
+			<ul id="behavior-list" class="behavior-list" aria-live="polite"></ul>
+			<div class="explanation-block why-block">
+				<h3>Why this matters</h3>
+				<p id="why-this-matters">Normal navigation was detected without significant behavioral friction.</p>
+			</div>
+		</section>
+
+		<section class="dataset-section" aria-labelledby="dataset-heading">
+			<h2 id="dataset-heading">Dataset Evidence</h2>
+			<ul id="dataset-match-list" class="dataset-match-list" aria-live="polite"></ul>
+			<p id="dataset-empty" class="empty-state">No dataset patterns matched.</p>
+			<p class="dataset-source">Source: dark-pattern taxonomy + controlled behavior-session dataset</p>
+		</section>
+
+		<section class="events-section" aria-labelledby="recent-events-heading">
+			<div class="section-heading">
+				<h2 id="recent-events-heading">Recent activity</h2>
+				<button id="clear-events" class="clear-button" type="button">Clear Events</button>
+			</div>
+			<p id="empty-state" class="empty-state">No interactions recorded yet.</p>
+			<ol id="event-list" class="event-list" aria-live="polite"></ol>
+		</section>
+	</main>
+	<script src="popup.js"></script>
+</body>
+</html>

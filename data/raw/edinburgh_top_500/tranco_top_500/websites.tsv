@@ -1,0 +1,504 @@
+domain	status	timestamp	time	category
+facebook.com	completed	2022-01-22 15:41:43	57.3666736	Social Networking
+youtube.com	completed	2022-01-22 15:42:40	172.3737864	Streaming Media and Download
+microsoft.com	completed	2022-01-22 15:45:32	457.9151453	Information Technology
+twitter.com	completed	2022-01-22 15:58:25	99.804604	Social Networking
+instagram.com	completed	2022-01-22 16:15:34	81.172724	Social Networking
+tmall.com	no dialog found	2022-01-22 16:16:55	26.7294312	Shopping
+linkedin.com	no dialog found	2022-01-22 16:17:22	47.4919704	Business
+qq.com	no dialog found	2022-01-22 16:18:10	20.990457	Search Engines and Portals
+apple.com	no dialog found	2022-01-22 16:18:30	13.424757	Information Technology
+baidu.com	no dialog found	2022-01-22 16:18:44	27.5527188	Search Engines and Portals
+wikipedia.org	no dialog found	2022-01-22 16:19:12	9.483315	Reference
+windowsupdate.com	no dialog found	2022-01-22 16:19:21	28.9836751	Information Technology
+live.com	no dialog found	2022-01-22 16:19:50	11.2013128	Search Engines and Portals
+sohu.com	no dialog found	2022-01-22 16:20:01	48.6787196	Search Engines and Portals
+googletagmanager.com	no dialog found	2022-01-22 16:20:50	10.2235368	Information Technology
+yahoo.com	completed	2022-01-22 16:21:00	144.4035882	Search Engines and Portals
+amazon.com	no dialog found	2022-01-22 16:23:24	19.7349524	Shopping
+youtu.be	completed	2022-01-22 16:23:44	189.1485311	Streaming Media and Download
+taobao.com	no dialog found	2022-01-22 16:26:53	20.4981393	Shopping
+pinterest.com	no dialog found	2022-01-22 16:27:14	16.9557213000001	Social Networking
+360.cn	no dialog found	2022-01-22 16:30:36	15.6335942	Information Technology
+vimeo.com	no dialog found	2022-01-22 16:30:51	49.9224801	Streaming Media and Download
+doubleclick.net	completed	2022-01-22 16:31:41	101.2033458	Advertising
+office.com	completed	2022-01-22 16:33:22	59.5287128	Information Technology
+netflix.net	no dialog found	2022-01-22 16:34:22	35.6038898	Streaming Media and Download
+jd.com	no dialog found	2022-01-22 16:34:58	23.2689248	Shopping
+wordpress.org	no dialog found	2022-01-22 16:35:21	8.94100119999996	Information Technology
+bing.com	completed	2022-01-22 16:35:30	117.482336	Search Engines and Portals
+wordpress.com	completed	2022-01-22 16:37:27	111.6177717	Personal Websites and Blogs
+reddit.com	completed	2022-01-22 16:39:19	75.1152014999999	Newsgroups and Message Boards
+zoom.us	completed	2022-01-22 16:40:34	146.469701	Online Meeting
+microsoftonline.com	failed to connect	2022-01-22 16:43:00	0.0	Information Technology
+goo.gl	no dialog found	2022-01-22 16:43:05	37.3715099999999	URL Shortening
+weibo.com	no dialog found	2022-01-22 16:43:42	22.3062071999999	Social Networking
+github.com	no dialog found	2022-01-22 16:44:04	13.9010298000001	Information Technology
+amazonaws.com	completed	2022-01-22 16:44:18	138.4666623	Information Technology
+bit.ly	completed	2022-01-22 16:46:37	97.0716197000001	URL Shortening
+googleusercontent.com	no dialog found	2022-01-22 16:48:14	7.8128591000002	Content Servers
+sina.com.cn	no dialog found	2022-01-22 16:48:22	39.2439691	Search Engines and Portals
+blogspot.com	no dialog found	2022-01-22 16:49:01	10.1455292000001	Personal Websites and Blogs
+xinhuanet.com	no dialog found	2022-01-22 16:49:11	26.1391724	News and Media
+mozilla.org	no dialog found	2022-01-22 16:49:37	14.0330769999998	Information Technology
+tumblr.com	no dialog found	2022-01-22 16:49:51	11.6772254	Personal Websites and Blogs
+whatsapp.com	completed	2022-01-22 16:50:03	101.06435	Instant Messaging
+msn.com	completed	2022-01-22 16:51:44	136.3803636	Search Engines and Portals
+google-analytics.com	completed	2022-01-22 16:54:00	82.8422544	Information Technology
+flickr.com	completed	2022-01-22 17:01:06	104.0428697	File Sharing and Storage
+europa.eu	completed	2022-01-22 17:02:50	109.3590163	Government and Legal Organizations
+skype.com	completed	2022-01-22 17:04:39	107.3376442	Internet Telephony
+gravatar.com	completed	2022-01-22 17:06:27	98.6056178999997	Information Technology
+nih.gov	no dialog found	2022-01-22 17:08:05	21.8192355000001	Government and Legal Organizations
+office365.com	completed	2022-01-22 17:08:27	91.9924744	Information Technology
+dropbox.com	completed	2022-01-22 17:09:59	60.2693629999999	File Sharing and Storage
+soundcloud.com	completed	2022-01-22 17:11:00	152.5543456	Streaming Media and Download
+panda.tv	no dialog found	2022-01-22 17:13:32	23.3256837999998	Streaming Media and Download
+zhanqi.tv	no dialog found	2022-01-22 17:13:56	31.9260548000002	Games
+alipay.com	no dialog found	2022-01-22 17:16:53	26.8860703	Finance and Banking
+t.co	no dialog found	2022-01-22 17:17:20	11.8290536	Information Technology
+myshopify.com	no dialog found	2022-01-22 17:17:32	10.0986542000001	Shopping
+google.com.hk	completed	2022-01-22 17:17:42	71.1736645999999	Search Engines and Portals
+spotify.com	completed	2022-01-22 17:18:53	151.2099349	Internet Radio and TV
+apache.org	no dialog found	2022-01-22 17:21:24	13.1520212	Information Technology
+macromedia.com	completed	2022-01-22 17:21:37	323.4997077	Information Technology
+cnn.com	completed	2022-01-22 17:27:01	352.5387125	News and Media
+csdn.net	no dialog found	2022-01-22 17:32:54	27.5785348000004	Information Technology
+ebay.com	completed	2022-01-22 17:33:21	105.168638	Auction
+forbes.com	completed	2022-01-22 17:35:06	140.226574	News and Media
+fbcdn.net	completed	2022-01-22 17:37:26	54.8309930999999	Social Networking
+w3.org	no dialog found	2022-01-22 17:38:21	16.1169657999999	Information Technology
+twitch.tv	completed	2022-01-22 17:38:37	117.7311673	Games
+paypal.com	completed	2022-01-22 17:40:35	103.961898400001	Finance and Banking
+yahoo.co.jp	no dialog found	2022-01-22 17:44:20	22.8141347000001	Search Engines and Portals
+sourceforge.net	no dialog found	2022-01-22 17:47:50	14.3065950999999	Information Technology
+archive.org	no dialog found	2022-01-22 17:48:05	17.6925726999998	Reference
+imdb.com	no dialog found	2022-01-22 17:48:22	18.7250709	Entertainment
+akamaiedge.net	failed to connect	2022-01-22 17:50:05	0.0	Content Servers
+github.io	no dialog found	2022-01-22 17:50:20	9.31451000000016	Information Technology
+ytimg.com	failed to connect	2022-01-22 17:50:29	0.0	Content Servers
+akadns.net	failed to connect	2022-01-22 17:51:43	0.0	Content Servers
+okezone.com	no dialog found	2022-01-22 17:52:15	28.5450916999998	News and Media
+icloud.com	no dialog found	2022-01-22 17:52:43	17.5921958999998	File Sharing and Storage
+bongacams.com	completed	2022-01-22 17:53:00	29.1415059000001	Pornography
+googleadservices.com	no dialog found	2022-01-22 17:53:29	11.2346287	Advertising
+aliexpress.com	no dialog found	2022-01-22 17:53:41	22.2455146000002	Shopping
+googlesyndication.com	completed	2022-01-22 17:54:03	64.1164835999998	Advertising
+windows.net	no dialog found	2022-01-22 17:56:58	9.77583690000029	Information Technology
+creativecommons.org	no dialog found	2022-01-22 17:57:08	13.9780596000001	General Organizations
+who.int	no dialog found	2022-01-23 14:19:39	32.6795789	Health and Wellness
+weebly.com	no dialog found	2022-01-23 14:20:12	30.5097436	Web Hosting
+wixsite.com	no dialog found	2022-01-23 14:29:51	237.2043725	Web Hosting
+amazon.in	no dialog found	2022-01-23 14:33:48	40.2823228	Shopping
+etsy.com	completed	2022-01-23 14:34:29	90.8746291	Shopping
+amazon.co.jp	no dialog found	2022-01-23 14:36:00	15.9201446000001	Shopping
+washingtonpost.com	completed	2022-01-23 14:37:27	271.4480667	News and Media
+forms.gle	no dialog found	2022-01-23 14:41:57	23.4237742	Web
+huanqiu.com	no dialog found	2022-01-23 14:42:20	29.1205336	News and Media
+office.net	failed to connect	2022-01-23 14:42:49	0.0	Information Technology
+tianya.cn	no dialog found	2022-01-23 14:42:53	28.1025379	Newsgroups and Message Boards
+yy.com	no dialog found	2022-01-23 14:43:21	216.2318069	Streaming Media and Download
+canva.com	completed	2022-01-23 14:46:58	87.0406830000001	Web
+cdc.gov	no dialog found	2022-01-23 14:48:25	16.5097360999999	Government and Legal Organizations
+outlook.com	no dialog found	2022-01-23 14:48:41	17.7568752	Web
+googlevideo.com	no dialog found	2022-01-23 14:48:58	9.18287399999997	Streaming Media and Download
+chaturbate.com	no dialog found	2022-01-23 14:52:01	42.4265925000001	Pornography
+digicert.com	completed	2022-01-23 14:52:43	268.7117016	Information Technology
+tinyurl.com	completed	2022-01-23 14:59:04	189.729645	URL Shortening
+tiktok.com	completed	2022-01-23 15:02:14	183.9655627	Streaming Media and Download
+mail.ru	completed	2022-01-23 15:05:18	166.5491693	Search Engines and Portals
+imgur.com	completed	2022-01-23 15:11:08	98.4020657	File Sharing and Storage
+wsj.com	completed	2022-01-23 15:12:46	114.2033854	News and Media
+sciencedirect.com	completed	2022-01-23 15:14:40	37.2552557	Education
+google.de	completed	2022-01-23 15:15:17	48.2133062	Search Engines and Portals
+wikimedia.org	no dialog found	2022-01-23 15:16:06	15.2031008	Reference
+oracle.com	completed	2022-01-23 15:16:21	104.8182336	Information Technology
+bloomberg.com	completed	2022-01-23 15:18:06	98.7253361999999	Finance and Banking
+aparat.com	no dialog found	2022-01-23 15:19:44	18.8948132999999	Streaming Media and Download
+slideshare.net	completed	2022-01-23 15:20:03	86.3890489999999	File Sharing and Storage
+force.com	completed	2022-01-23 15:21:30	471.9211257	Information Technology
+youtube-nocookie.com	no dialog found	2022-01-23 15:29:23	12.4458608999998	Streaming Media and Download
+lencr.org	no dialog found	2022-01-23 15:29:34	8.55792870000005	Information and Computer Security
+17ok.com	no dialog found	2022-01-23 15:29:43	17.6613743	Finance and Banking
+t.me	no dialog found	2022-01-23 15:30:00	8.39605159999996	Instant Messaging
+businessinsider.com	completed	2022-01-23 15:30:09	62.9583082000002	News and Media
+php.net	no dialog found	2022-01-23 15:32:19	14.5890843999998	Information Technology
+so.com	no dialog found	2022-01-23 15:32:34	19.0752823	Search Engines and Portals
+google.co.in	completed	2022-01-23 15:32:52	46.3002518000001	Search Engines and Portals
+amazon.co.uk	completed	2022-01-23 15:33:39	89.0837933999996	Shopping
+indeed.com	completed	2022-01-23 15:35:08	81.3692101000001	Job Search
+aaplimg.com	no dialog found	2022-01-23 15:36:29	38.6076988	Information Technology
+windows.com	completed	2022-01-23 15:37:08	101.7613717	Information Technology
+gvt2.com	failed to connect	2022-01-23 15:39:35	0.0	Search Engines and Portals
+wp.com	completed	2022-01-23 15:39:49	104.3303239	Personal Websites and Blogs
+harvard.edu	no dialog found	2022-01-23 15:41:34	15.6029076000004	Education
+163.com	no dialog found	2022-01-23 15:41:49	78.5595390000003	Search Engines and Portals
+mit.edu	no dialog found	2022-01-23 15:43:08	12.2994528000004	Education
+researchgate.net	completed	2022-01-23 15:43:20	110.6916536	Education
+cnet.com	no dialog found	2022-01-23 15:45:11	13.4468339	Information Technology
+ok.ru	completed	2022-01-23 15:45:24	121.986078	Social Networking
+app-measurement.com	no dialog found	2022-01-23 15:47:26	19.5655026999998	Information Technology
+list-manage.com	no dialog found	2022-01-23 15:47:46	9.07807820000016	Business
+google.com.br	completed	2022-01-23 15:47:55	43.4117526	Search Engines and Portals
+1688.com	no dialog found	2022-01-23 15:48:39	32.6943971999999	Business
+blogger.com	no dialog found	2022-01-23 15:49:11	14.2149346000001	Personal Websites and Blogs
+gnu.org	no dialog found	2022-01-23 15:49:25	11.0250949000001	Information Technology
+ibm.com	completed	2022-01-23 15:52:08	71.3105316000001	Information Technology
+sharepoint.com	no dialog found	2022-01-23 15:59:20	10.4841732	Information Technology
+alibaba.com	no dialog found	2022-01-23 15:59:31	23.9959942	Business
+booking.com	error	2022-01-23 15:59:55	0.0	Travel
+identrust.com	completed	2022-01-23 16:00:31	114.0605212	Business
+cnbc.com	no dialog found	2022-01-23 16:02:25	20.9963315	News and Media
+go.com	no dialog found	2022-01-23 16:02:46	73.9469285	Entertainment
+google.co.jp	completed	2022-01-23 16:04:00	50.8718171000001	Search Engines and Portals
+stanford.edu	no dialog found	2022-01-23 16:04:51	22.1477850000001	Education
+ggpht.com	failed to connect	2022-01-23 16:05:13	0.0	Content Servers
+haosou.com	no dialog found	2022-01-23 16:05:28	18.059741	Search Engines and Portals
+usatoday.com	error	2022-01-23 16:07:14	0.0	News and Media
+apple-dns.net	failed to connect	2022-01-23 16:07:43	0.0	Information Technology
+tradingview.com	no dialog found	2022-01-23 16:07:57	16.793979	Brokerage and Trading
+tribunnews.com	no dialog found	2022-01-23 16:08:14	39.6307033999992	News and Media
+nature.com	completed	2022-01-23 16:08:54	86.6698377000003	Education
+walmart.com	no dialog found	2022-01-23 16:10:21	21.7975606999998	Shopping
+salesforce.com	error	2022-01-23 16:10:42	0.0	Information Technology
+hp.com	error	2022-01-23 16:10:59	0.0	Information Technology
+un.org	no dialog found	2022-01-23 16:11:22	12.5652752999995	General Organizations
+surveymonkey.com	error	2022-01-23 16:11:35	0.0	Information Technology
+virginmedia.com	error	2022-01-23 16:12:01	0.0	Information Technology
+opendns.com	completed	2022-01-23 16:13:58	54.2756305	Information Technology
+eventbrite.com	completed	2022-01-23 16:14:52	114.9780959	Business
+telegraph.co.uk	completed	2022-01-23 16:18:32	72.1341782	News and Media
+chase.com	no dialog found	2022-01-23 16:19:44	13.1423663	Finance and Banking
+cloudfront.net	failed to connect	2022-01-23 16:19:57	0.0	Content Servers
+nginx.org	no dialog found	2022-01-23 16:20:01	9.9543211	Information Technology
+nasa.gov	no dialog found	2022-01-23 16:20:11	14.7453512	Government and Legal Organizations
+wa.me	no dialog found	2022-01-23 16:20:25	27.5369524	Instant Messaging
+google.co.uk	completed	2022-01-23 16:20:53	37.9058104	Search Engines and Portals
+rakuten.co.jp	no dialog found	2022-01-23 16:21:31	38.7545645	Shopping
+pornhub.com	no dialog found	2022-01-23 16:22:10	31.2475778	Pornography
+espn.com	error	2022-01-23 16:22:41	0.0	Sports
+time.com	completed	2022-01-23 16:23:01	336.6531902	News and Media
+adobe.com	completed	2022-01-24 11:43:45	91.8105649	Information Technology
+google.com	completed	2022-01-24 12:20:00	67.6377804	Search Engines and Portals
+vk.com	completed	2022-01-24 12:21:23	117.471329	Social Networking
+stackoverflow.com	completed	2022-01-24 12:24:02	79.2030899	Information Technology
+netflix.com	completed	2022-01-24 12:41:51	187.7159662	Streaming Media and Download
+doi.org	no dialog found	2022-01-24 13:34:26	28.8257082	Information Technology
+samsung.com	completed	2022-01-24 13:38:58	94.2097719	Business
+bitly.com	completed	2022-01-24 13:40:33	148.4381284	URL Shortening
+springer.com	completed	2022-01-24 13:43:01	111.3142233	Education
+yelp.com	completed	2022-01-24 13:44:52	112.757441	Reference
+www.gov.uk	completed	2022-01-24 13:46:45	104.6084503	Government and Legal Organizations
+npr.org	completed	2022-01-24 13:48:30	161.8256685	News and Media
+facebook.net	failed to connect	2022-01-24 13:51:11	0.0	Social Networking
+aol.com	completed	2022-01-24 13:51:26	118.3666538	Search Engines and Portals
+behance.net	completed	2022-01-24 13:53:25	85.1526711	Business
+amazon.de	completed	2022-01-24 13:54:50	110.0668532	Shopping
+msedge.net	no dialog found	2022-01-24 13:56:40	95.0134480000002	Information Technology
+ted.com	no dialog found	2022-01-24 13:58:15	22.9430665999998	Education
+nflximg.com	no dialog found	2022-01-24 13:58:38	11.0357681	Business
+dailymotion.com	completed	2022-01-24 14:01:16	244.7236425	Streaming Media and Download
+instructure.com	completed	2022-01-24 14:05:21	138.8733013	Education
+myspace.com	no dialog found	2022-01-24 14:07:40	56.7722734	Social Networking
+slack.com	completed	2022-01-24 14:08:37	79.3513345000001	Web
+nginx.com	completed	2022-01-24 14:11:47	117.1446327	Information Technology
+ca.gov	no dialog found	2022-01-24 14:13:44	34.2556824	Government and Legal Organizations
+google.cn	no dialog found	2022-01-24 14:14:18	12.3459899	Search Engines and Portals
+nflxso.net	no dialog found	2022-01-24 14:14:30	8.62104859999999	Streaming Media and Download
+scorecardresearch.com	no dialog found	2022-01-24 14:14:39	11.861981	Information Technology
+huffingtonpost.com	no dialog found	2022-01-24 14:14:51	71.8671788	News and Media
+babytree.com	no dialog found	2022-01-24 14:16:03	35.8021176999999	Society and Lifestyles
+cpanel.com	completed	2022-01-24 14:16:39	219.1618398	Web Hosting
+fb.com	completed	2022-01-24 14:20:18	99.1513962000001	Social Networking
+unsplash.com	no dialog found	2022-01-24 14:21:57	14.5628071000001	File Sharing and Storage
+mailchimp.com	completed	2022-01-24 14:22:11	82.7270943000001	Information Technology
+cnblogs.com	no dialog found	2022-01-24 14:23:35	21.2800892	Information Technology
+google.fr	completed	2022-01-24 14:23:56	74.0148587000001	Search Engines and Portals
+themeforest.net	completed	2022-01-24 14:25:10	264.8056646	Information Technology
+freepik.com	completed	2022-01-24 14:31:34	109.4376388	Business
+addthis.com	completed	2022-01-24 14:33:23	91.8623690000002	Information Technology
+gome.com.cn	no dialog found	2022-01-24 14:38:16	17.4913766	Shopping
+xvideos.com	completed	2022-01-24 14:38:33	38.5216471	Pornography
+techcrunch.com	completed	2022-01-24 14:39:12	103.1148859	Information Technology
+zillow.com	no dialog found	2022-01-24 14:40:55	19.6755676	Real Estate
+grammarly.com	completed	2022-01-24 14:41:15	158.420196	Education
+google.es	completed	2022-01-24 14:43:53	72.8636256	Search Engines and Portals
+mysql.com	completed	2022-01-24 14:45:06	62.3600886	Information Technology
+amazon-adsystem.com	failed to connect	2022-01-24 14:46:08	0.0	Web Analytics
+goodreads.com	no dialog found	2022-01-24 14:46:23	15.5543316	Arts and Culture
+livejasmin.com	completed	2022-01-24 14:46:39	126.9561898	Pornography
+googletagservices.com	no dialog found	2022-01-24 14:49:33	8.0134597	Information Technology
+foxnews.com	no dialog found	2022-01-24 14:49:41	752.0955012	News and Media
+intuit.com	no dialog found	2022-01-24 15:02:13	17.1684764000001	Information Technology
+zendesk.com	completed	2022-01-24 15:04:48	93.8432993	Information Technology
+google.ru	completed	2022-01-24 15:06:21	70.6898762	Search Engines and Portals
+ntp.org	no dialog found	2022-01-24 15:07:33	12.0703249	Information Technology
+kompas.com	no dialog found	2022-01-24 15:07:44	24.4674891	News and Media
+independent.co.uk	completed	2022-01-24 15:08:09	79.1222038	News and Media
+akamai.net	failed to connect	2022-01-24 15:09:28	0.0	Content Servers
+squarespace.com	completed	2022-01-24 15:09:42	93.0906542	Information Technology
+udemy.com	completed	2022-01-24 15:11:15	100.4338035	Education
+google.it	completed	2022-01-24 15:12:56	65.2706798	Search Engines and Portals
+telegram.org	no dialog found	2022-01-24 15:14:01	9.21835490000001	Instant Messaging
+6.cn	no dialog found	2022-01-24 15:14:10	19.0334772	Web Chat
+healthline.com	no dialog found	2022-01-24 15:14:29	42.6255513	Health and Wellness
+hao123.com	no dialog found	2022-01-24 15:15:12	48.6717777	Search Engines and Portals
+tripadvisor.com	completed	2022-01-24 15:16:01	90.3222317	Travel
+akamaized.net	failed to connect	2022-01-24 15:17:31	0.0	Content Servers
+stackexchange.com	no dialog found	2022-01-24 15:17:46	18.3593347999999	Information Technology
+roblox.com	completed	2022-01-24 15:18:04	95.0567823	Games
+bilibili.com	no dialog found	2022-01-24 15:19:39	29.5168798	Streaming Media and Download
+flipkart.com	no dialog found	2022-01-24 15:20:09	15.512571	Shopping
+berkeley.edu	no dialog found	2022-01-24 15:20:25	25.2450683999999	Education
+line.me	no dialog found	2022-01-24 15:20:50	26.7961122	Instant Messaging
+wetransfer.com	completed	2022-01-24 15:21:16	106.1858559	File Sharing and Storage
+addtoany.com	no dialog found	2022-01-24 15:23:03	12.5533077	Information Technology
+hugedomains.com	no dialog found	2022-01-24 15:23:15	9.63964890000011	Web Hosting
+latimes.com	completed	2022-01-24 15:23:26	81.4687010999999	News and Media
+youku.com	no dialog found	2022-01-24 15:24:46	23.2667919	Streaming Media and Download
+shopify.com	no dialog found	2022-01-24 15:25:09	18.6997062	Information Technology
+amzn.to	no dialog found	2022-01-24 15:25:28	19.5492577	Shopping
+sitemaps.org	no dialog found	2022-01-24 15:25:48	16.8253861000001	Information Technology
+debian.org	no dialog found	2022-01-24 15:26:05	16.2965650000001	Information Technology
+aliyun.com	completed	2022-01-24 15:26:21	106.0063733	Information Technology
+free.fr	completed	2022-01-24 15:28:07	110.7093158	Information Technology
+shutterstock.com	no dialog found	2022-01-24 15:29:58	16.1461296999998	Business
+livejournal.com	no dialog found	2022-01-24 15:30:15	28.5467874999999	Personal Websites and Blogs
+gvt1.com	failed to connect	2022-01-24 15:30:42	0.0	Information Technology
+pixabay.com	completed	2022-01-24 15:30:57	114.6870067	File Sharing and Storage
+adnxs.com	no dialog found	2022-01-24 15:32:51	14.2045113000001	Advertising
+xhamster.com	completed	2022-01-24 15:33:06	74.0221634999998	Pornography
+taboola.com	no dialog found	2022-01-24 15:36:20	29.6264134999999	Business
+arnebrachhold.de	no dialog found	2022-01-24 15:38:22	19.7955549999999	Information Technology
+statcounter.com	no dialog found	2022-01-24 15:38:42	14.4275414000001	Web Analytics
+theverge.com	completed	2022-01-24 15:38:56	78.9840563000003	Information Technology
+ft.com	completed	2022-01-24 15:46:07	97.204188	News and Media
+kickstarter.com	no dialog found	2022-01-24 15:47:44	23.865997	Business
+savefrom.net	no dialog found	2022-01-24 17:12:41	20.6267588	Streaming Media and Download
+quora.com	no dialog found	2022-01-24 17:13:02	19.9593692	Reference
+fiverr.com	completed	2022-01-24 17:14:33	101.9483607	Business
+miit.gov.cn	no dialog found	2022-01-24 17:16:15	35.4489301	Government and Legal Organizations
+loc.gov	no dialog found	2022-01-24 17:16:51	14.0994491	Government and Legal Organizations
+daum.net	no dialog found	2022-01-24 17:18:45	48.4439591	Search Engines and Portals
+rednet.cn	error	2022-01-24 17:19:34	0.0	Search Engines and Portals
+cornell.edu	no dialog found	2022-01-24 17:21:14	24.3471022	Education
+trello.com	completed	2022-01-24 17:21:39	142.7850911	Web
+giphy.com	completed	2022-01-24 17:24:01	134.9588594	Entertainment
+ettoday.net	no dialog found	2022-01-24 17:26:17	32.7489235	News and Media
+mediafire.com	no dialog found	2022-01-24 17:29:35	133.3322192	File Sharing and Storage
+theatlantic.com	completed	2022-01-24 17:31:48	99.1808276	News and Media
+beian.gov.cn	no dialog found	2022-01-24 17:33:27	14.0161188	Government and Legal Organizations
+pki.goog	completed	2022-01-24 17:33:41	90.2898435	Information and Computer Security
+detik.com	no dialog found	2022-01-24 17:35:12	52.3554633	News and Media
+google.ca	completed	2022-01-24 17:36:04	80.5422413	Search Engines and Portals
+investopedia.com	completed	2022-01-24 17:39:03	177.1384956	Finance and Banking
+nationalgeographic.com	completed	2022-01-24 17:43:34	203.8621448	Education
+pikiran-rakyat.com	no dialog found	2022-01-24 17:46:57	25.8401571	News and Media
+ietf.org	no dialog found	2022-01-24 17:49:30	104.810104	Information Technology
+akamaihd.net	failed to connect	2022-01-24 17:51:13	0.0	Content Servers
+cbsnews.com	completed	2022-01-24 17:51:28	85.4275863	News and Media
+gmail.com	no dialog found	2022-01-24 17:52:54	29.4770125	Web
+cisco.com	completed	2022-01-24 17:53:23	155.5139464	Information Technology
+android.com	completed	2022-01-24 17:55:59	70.8683403	Information Technology
+demdex.net	completed	2022-01-24 17:57:09	107.6320679	Information Technology
+washington.edu	no dialog found	2022-01-24 17:58:57	28.5352361	Education
+zhihu.com	no dialog found	2022-01-24 17:59:26	15.6775756999999	Business
+deviantart.com	no dialog found	2022-01-24 17:59:41	18.9947015	Arts and Culture
+speedtest.net	completed	2022-01-24 18:00:00	93.9166178	Information Technology
+statista.com	completed	2022-01-24 18:01:34	149.904431	Business
+binance.com	no dialog found	2022-01-24 18:04:04	14.5678349999998	Brokerage and Trading
+marketwatch.com	completed	2022-01-24 18:04:19	96.4434363	Finance and Banking
+msftncsi.com	no dialog found	2022-01-24 18:05:55	10.0378486	Information Technology
+webex.com	completed	2022-01-24 18:06:05	118.0831107	Online Meeting
+twimg.com	failed to connect	2022-01-24 18:08:03	0.0	Social Networking
+nbcnews.com	completed	2022-01-24 18:08:19	0.0	News and Media
+tandfonline.com	completed	2022-01-24 18:09:53	83.3872431	Education
+amazon.ca	no dialog found	2022-01-24 18:11:13	22.0072494	Shopping
+ilovepdf.com	no dialog found	2022-01-24 18:11:36	16.0781112	Web
+duckduckgo.com	no dialog found	2022-01-24 18:11:52	24.3574675	Search Engines and Portals
+prnewswire.com	completed	2022-01-24 18:12:51	48.0638328	Business
+weather.com	completed	2022-01-24 18:13:39	149.1388033	News and Media
+fda.gov	no dialog found	2022-01-24 18:16:08	12.2383447	Government and Legal Organizations
+adsrvr.org	no dialog found	2022-01-24 18:16:20	32.026941	Advertising
+digg.com	no dialog found	2022-01-24 18:16:52	25.2145935	News and Media
+marriott.com	completed	2022-01-24 18:17:18	254.2833191	Travel
+hubspot.com	completed	2022-01-24 18:21:32	81.7000372	Information Technology
+jimdo.com	completed	2022-01-24 18:22:53	96.0187860000001	Information Technology
+dell.com	completed	2022-01-24 18:24:29	72.0596048	Information Technology
+rubiconproject.com	no dialog found	2022-01-24 18:25:41	12.0028751	Business
+usnews.com	completed	2022-01-24 18:28:38	106.3846229	News and Media
+cnzz.com	no dialog found	2022-01-24 18:30:24	30.1098892	Web Analytics
+mailchi.mp	no dialog found	2022-01-24 18:30:54	9.27342539999995	Information Technology
+craigslist.org	no dialog found	2022-01-24 18:31:03	23.2587744999998	Shopping
+pixnet.net	no dialog found	2022-01-24 18:31:27	43.3264818	Personal Websites and Blogs
+box.com	completed	2022-01-24 18:32:10	123.7663435	File Sharing and Storage
+akismet.com	completed	2022-01-24 18:34:14	114.9784913	Information Technology
+buzzfeed.com	completed	2022-01-24 18:36:09	114.2991556	Entertainment
+google.com.sg	completed	2022-01-24 18:38:03	76.9443609999999	Search Engines and Portals
+criteo.com	completed	2022-01-24 18:39:20	109.8244174	Business
+pubmatic.com	completed	2022-01-24 18:41:10	146.946092	Advertising
+bestbuy.com	no dialog found	2022-01-24 18:43:37	11.7685472999999	Shopping
+hicloud.com	completed	2022-01-24 18:43:49	133.7507561	Information Technology
+about.com	no dialog found	2022-01-24 18:46:02	21.6203465000001	Reference
+irs.gov	no dialog found	2022-01-24 18:46:25	24.2897839	Government and Legal Organizations
+cambridge.org	completed	2022-01-24 18:46:48	191.4951151	Education
+aboutads.info	no dialog found	2022-01-24 18:50:00	14.7974933	Business
+wellsfargo.com	no dialog found	2022-01-24 18:50:15	17.7713178999998	Finance and Banking
+google.com.tw	completed	2022-01-24 18:50:32	71.9159642	Search Engines and Portals
+msftconnecttest.com	no dialog found	2022-01-24 18:51:44	9.13648670000021	Information Technology
+primevideo.com	completed	2022-01-24 18:51:53	90.5704228	Streaming Media and Download
+ups.com	no dialog found	2022-01-24 18:53:24	24.3631262999997	Business
+oup.com	completed	2022-01-24 18:53:48	93.9562850999996	Education
+digikala.com	no dialog found	2022-01-24 18:55:22	50.0251897999997	Information Technology
+padlet.com	no dialog found	2022-01-24 18:56:12	12.9469245	Information Technology
+academia.edu	completed	2022-01-24 18:56:25	62.1745948000003	Education
+uol.com.br	completed	2022-01-24 19:00:01	172.4863424	Search Engines and Portals
+princeton.edu	no dialog found	2022-01-24 19:02:54	29.9774884	Education
+launchpad.net	no dialog found	2022-01-24 19:03:23	17.9437082	Information Technology
+coursera.org	completed	2022-01-24 19:03:41	128.2252197	Education
+state.gov	no dialog found	2022-01-24 19:05:50	68.386119	Government and Legal Organizations
+typepad.com	no dialog found	2022-01-24 19:06:58	52.7172116	Personal Websites and Blogs
+whatsapp.net	completed	2022-01-24 19:08:09	112.7082464	Instant Messaging
+g.page	completed	2022-01-24 19:12:58	181.0851915	Information Technology
+bandcamp.com	no dialog found	2022-01-24 19:15:59	19.4059689	Streaming Media and Download
+discord.com	completed	2022-01-24 19:16:18	98.4966533	Instant Messaging
+sciencemag.org	completed	2022-01-24 19:17:57	122.0788911	Education
+disqus.com	no dialog found	2022-01-24 19:19:59	11.4652129	Information Technology
+tistory.com	no dialog found	2022-01-24 19:20:10	29.6688642	Information Technology
+usps.com	no dialog found	2022-01-24 19:20:40	10.8844003999999	Business
+2mdn.net	failed to connect	2022-01-24 19:20:51	0.0	Advertising
+change.org	completed	2022-01-24 19:22:01	87.4271836	Advocacy Organizations
+fedex.com	no dialog found	2022-01-24 19:23:28	17.5855825	Business
+linktr.ee	completed	2022-01-24 19:23:46	92.3373182	Information Technology
+airbnb.com	no dialog found	2022-01-24 19:25:18	79.7183672	Travel
+sogou.com	no dialog found	2022-01-29 12:20:41	17.5508385	Search Engines and Portals
+pinimg.com	no dialog found	2022-01-29 12:20:58	29.7492641	Social Networking
+economist.com	completed	2022-01-29 12:22:19	147.7397392	News and Media
+business.site	completed	2022-01-29 12:33:58	105.8102355	Information Technology
+sagepub.com	completed	2022-01-29 12:35:44	106.6861775	Education
+constantcontact.com	completed	2022-01-29 12:37:31	90.4020534	Information Technology
+ampproject.org	no dialog found	2022-01-29 12:39:01	13.917655	Information Technology
+globo.com	completed	2022-01-29 12:39:15	129.2061758	News and Media
+51.la	no dialog found	2022-01-29 12:41:25	60.4788299	Information Technology
+evernote.com	completed	2022-01-29 12:42:25	81.8985714	Web
+hbr.org	no dialog found	2022-01-29 12:43:47	258.1369852	Business
+rlcdn.com	no dialog found	2022-01-29 12:50:15	10.3993524	Information Technology
+stumbleupon.com	no dialog found	2022-01-29 12:50:25	98.5970608	Information Technology
+unesco.org	no dialog found	2022-01-29 12:52:04	19.0423361000001	General Organizations
+mashable.com	completed	2022-01-29 12:53:25	75.5488619	News and Media
+pbs.org	no dialog found	2022-01-29 12:54:41	22.491567	News and Media
+nypost.com	no dialog found	2022-01-29 12:55:04	30.2167804999999	News and Media
+casalemedia.com	no dialog found	2022-01-29 12:55:34	33.9351409000001	Advertising
+allaboutcookies.org	no dialog found	2022-01-29 12:56:08	27.6100162999999	Information Technology
+snapchat.com	completed	2022-01-29 12:56:35	113.8019828	Instant Messaging
+whitehouse.gov	no dialog found	2022-01-29 12:58:30	23.1736489999998	Government and Legal Organizations
+azureedge.net	no dialog found	2022-01-29 13:02:53	8.37566180000002	Information Technology
+homedepot.com	no dialog found	2022-01-29 13:03:02	8.42648270000001	Shopping
+networkadvertising.org	no dialog found	2022-01-29 13:03:10	16.3949859	Business
+edgekey.net	no dialog found	2022-01-29 13:03:26	9.69222919999999	Content Servers
+usda.gov	no dialog found	2022-01-29 13:03:37	14.6453206	Government and Legal Organizations
+target.com	no dialog found	2022-01-29 13:03:51	21.1305387	Shopping
+britannica.com	completed	2022-01-29 13:04:12	93.730365	Reference
+trustpilot.com	completed	2022-01-29 13:06:16	96.3947071	Business
+hulu.com	no dialog found	2022-01-29 13:07:53	54.3890258	Streaming Media and Download
+openx.net	failed to connect	2022-01-29 13:08:47	0.0	Advertising
+okta.com	completed	2022-01-29 13:09:02	159.307453	Information Technology
+mayoclinic.org	completed	2022-01-29 13:11:41	110.1147711	Health and Wellness
+investing.com	completed	2022-01-29 13:13:31	114.8375005	Finance and Banking
+outbrain.com	completed	2022-01-29 13:15:26	123.8653225	Business
+vice.com	completed	2022-01-29 13:17:30	87.5370879	News and Media
+crashlytics.com	no dialog found	2022-01-29 13:18:57	47.4527444	Information Technology
+columbia.edu	completed	2022-01-29 13:19:45	137.1578259	Education
+feedburner.com	no dialog found	2022-01-29 13:22:02	25.3279124000001	Information Technology
+google.com.mx	completed	2022-01-29 13:22:27	81.6698762999999	Search Engines and Portals
+onlinesbi.com	no dialog found	2022-01-29 13:23:49	18.2391484999998	Finance and Banking
+eepurl.com	no dialog found	2022-01-29 13:24:07	12.4733735999998	Information Technology
+e2ro.com	failed to connect	2022-01-29 13:24:20	0.0	Meaningless Content
+rt.com	completed	2022-01-29 13:24:34	90.6713425	News and Media
+fc2.com	completed	2022-01-29 13:26:05	79.4135397	Personal Websites and Blogs
+umich.edu	completed	2022-01-29 13:27:25	82.2068206000001	Education
+pexels.com	no dialog found	2022-01-29 13:28:47	16.9684787000001	Business
+arcgis.com	no dialog found	2022-01-29 13:29:04	12.812281	Information Technology
+moatads.com	completed	2022-01-29 13:29:17	74.9284332000002	Advertising
+smallpdf.com	completed	2022-01-29 13:30:32	74.2366265999999	Web
+noaa.gov	no dialog found	2022-01-29 13:31:46	15.0608603999999	Government and Legal Organizations
+webs.com	no dialog found	2022-01-29 13:32:01	16.1176174000002	Information Technology
+jquery.com	no dialog found	2022-01-29 13:32:17	13.5199519	Information Technology
+varzesh3.com	no dialog found	2022-01-29 13:32:32	25.4405488	Sports
+epa.gov	no dialog found	2022-01-29 13:34:16	28.1219247	Government and Legal Organizations
+businesswire.com	completed	2022-01-29 13:34:44	119.95352	Business
+google.com.tr	completed	2022-01-29 13:36:44	67.6763125	Search Engines and Portals
+mozilla.com	no dialog found	2022-01-29 13:37:51	19.1603237	Information Technology
+cbc.ca	completed	2022-01-29 13:38:10	107.5220014	News and Media
+vox.com	completed	2022-01-29 13:39:58	90.3362784	News and Media
+azure.com	completed	2022-01-29 13:41:29	115.9902204	Information Technology
+getpocket.com	completed	2022-01-29 13:43:25	93.3204956	Information Technology
+nr-data.net	failed to connect	2022-01-29 13:44:58	0.0	Web Analytics
+redhat.com	completed	2022-01-29 13:45:01	73.4349611	Information Technology
+appsflyer.com	completed	2022-01-29 13:46:15	82.0987113	Information Technology
+ebay.de	completed	2022-01-29 13:47:37	159.6383659	Auction
+bidswitch.net	no dialog found	2022-01-29 13:50:17	9.75331339999991	Web Analytics
+psu.edu	no dialog found	2022-01-29 13:50:27	24.6721897	Education
+engadget.com	completed	2022-01-29 13:50:52	100.2061839	Information Technology
+gofundme.com	completed	2022-01-29 13:52:31	102.6444064	Charitable Organizations
+abc.net.au	no dialog found	2022-01-29 13:54:14	17.4388392999999	News and Media
+teamviewer.com	completed	2022-01-29 13:54:31	81.6949704000001	Remote Access
+example.com	no dialog found	2022-01-29 13:55:54	11.5123437	Information Technology
+yale.edu	no dialog found	2022-01-29 13:56:05	16.3070370999999	Education
+advertising.com	no dialog found	2022-01-29 13:56:21	9.70871369999986	Advertising
+dribbble.com	no dialog found	2022-01-29 13:56:31	14.4145125999999	Business
+typeform.com	no dialog found	2022-01-29 13:57:21	17.5531140000001	Business
+avito.ru	no dialog found	2022-01-29 13:57:39	27.9533457999999	Shopping
+zdnet.com	no dialog found	2022-01-29 13:58:07	31.4427718000002	Information Technology
+jiameng.com	failed to connect	2022-01-29 13:58:38	0.0	Business
+huawei.com	completed	2022-01-29 13:58:59	61.1003148	Information Technology
+grid.id	no dialog found	2022-01-29 14:00:00	40.8770827999999	Entertainment
+worldbank.org	completed	2022-01-29 14:00:40	81.4502794	General Organizations
+elsevier.com	completed	2022-01-29 14:02:02	79.5780084	Education
+iso.org	no dialog found	2022-01-29 14:03:22	11.0089756	Business
+meetup.com	no dialog found	2022-01-29 14:03:33	14.0152808	Social Networking
+disneyplus.com	completed	2022-01-29 14:03:47	74.0469692999998	Streaming Media and Download
+amazon.fr	completed	2022-01-29 14:05:01	93.6313742	Shopping
+youronlinechoices.com	no dialog found	2022-01-29 14:06:34	12.8459293999999	Business
+gosuslugi.ru	no dialog found	2022-01-29 14:06:47	13.008137	Government and Legal Organizations
+chess.com	no dialog found	2022-01-29 14:07:00	15.2003658000001	Games
+trafficmanager.net	failed to connect	2022-01-29 14:07:15	0.0	Information Technology
+upenn.edu	no dialog found	2022-01-29 14:10:20	23.5009553999998	Education
+fastly.net	completed	2022-01-29 14:10:43	99.8365076	Information Technology
+ikea.com	completed	2022-01-29 15:39:01	94.8583755	Shopping
+medium.com	completed	2022-01-29 15:56:30	92.2210219	News and Media
+naver.com	no dialog found	2022-01-29 15:58:35	41.4716328	Search Engines and Portals
+yandex.ru	completed	2022-01-29 15:59:24	103.6266369	Search Engines and Portals
+wix.com	completed	2022-01-29 16:02:48	130.7822692	Information Technology
+fandom.com	completed	2022-01-29 16:18:28	131.0090732	Entertainment
+npr.com	no dialog found	2022-01-29 16:21:09	11.5144169	News and Media
+huffpost.com	completed	2022-01-29 16:23:35	48.0128155	News and Media
+wired.com	completed	2022-01-29 16:24:30	115.9774267	News and Media
+coinmarketcap.com	completed	2022-01-29 16:26:31	62.8896411	Finance and Banking
+intel.com	completed	2022-01-29 16:30:30	91.3143064	Information Technology
+nytimes.com	completed	2022-01-29 16:34:40	162.3661047	News and Media
+opera.com	completed	2022-01-29 16:41:39	84.8407496	Information Technology
+godaddy.com	no dialog found	2022-01-29 16:46:43	181.2917141	Web Hosting
+wikihow.com	completed	2022-01-29 16:58:09	80.8489172	Reference
+w3schools.com	completed	2022-01-29 17:01:50	95.0643088	Information Technology
+zoho.com	completed	2022-01-29 17:07:06	97.0230977	Information Technology
+americanexpress.com	completed	2022-01-29 17:08:47	140.4334726	Finance and Banking
+sciencedaily.com	completed	2022-01-29 17:14:13	111.9886778	News and Media
+steampowered.com	completed	2022-01-29 17:19:56	73.4880987	Games
+academia.com	no dialog found	2022-01-29 17:29:56	9.969152	Information Technology
+theguardian.com	completed	2022-01-29 18:20:37	127.8385252	News and Media
+cpanel.net	dialog collected	2022-01-29 19:28:37	0.0	Web Hosting
+reuters.com	completed	2022-01-30 12:48:53	138.3118273	News and Media
+issuu.com	completed	2022-01-30 12:51:22	310.8415495	News and Media
+wiley.com	completed	2022-01-30 12:56:47	136.1261212	Education
+scribd.com	completed	2022-01-30 13:00:15	119.8453533	File Sharing and Storage
+deepl.com	completed	2022-01-30 13:02:25	124.6335346	Reference
+patreon.com	completed	2022-01-30 13:04:41	193.5102963	Business
+plesk.com	completed	2022-01-30 13:07:59	223.8523559	Information Technology
+indiatimes.com	completed	2022-01-30 13:12:10	88.8140557	News and Media
+webmd.com	completed	2022-01-30 16:48:34	145.6695563	Health and Wellness
+cloudflare.com	completed	2022-01-30 16:51:59	113.2189746	Information Technology
+dailymail.com	completed	2022-01-30 16:54:23	117.6829926	News and Media
+dailymail.co.uk	completed	2022-01-30 16:57:45	110.4959372	News and Media
+bbc.com	no dialog found	2022-01-31 19:06:16	16.216782	News and Media
+bbc.co.uk	completed	2022-01-31 19:07:01	99.7452758	News and Media

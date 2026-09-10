@@ -1,0 +1,183 @@
+{
+  "hard_generalization": {
+    "samples": 70,
+    "accuracy": 0.5285714285714286,
+    "precision": 0.3142857142857143,
+    "recall": 0.55,
+    "f1": 0.4,
+    "fp": 24,
+    "fn": 9
+  },
+  "leave_one_domain_out": {
+    "compliance/privacy": {
+      "samples": 211,
+      "dark_count": 202,
+      "benign_count": 9,
+      "accuracy": 0.04265402843601896,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fp": 0,
+      "fn": 202
+    },
+    "ecommerce": {
+      "samples": 1807,
+      "dark_count": 877,
+      "benign_count": 930,
+      "accuracy": 0.4853348090758163,
+      "f1": 0.6535022354694486,
+      "precision": 0.4853348090758163,
+      "recall": 1.0,
+      "fp": 930,
+      "fn": 0
+    }
+  },
+  "mean_lodo_f1": 0.3267511177347243,
+  "contrastive_pairs": [
+    {
+      "name": "Trial renewal transparency",
+      "normal_prob": 0.8359090565706411,
+      "dark_prob": 0.29517209229455665,
+      "delta": -0.5407369642760844,
+      "flip_success": false
+    },
+    {
+      "name": "Scarcity vs panic",
+      "normal_prob": 0.9563519729974441,
+      "dark_prob": 0.8681080437604521,
+      "delta": -0.08824392923699198,
+      "flip_success": false
+    },
+    {
+      "name": "Cancellation friction",
+      "normal_prob": 0.47848091811766563,
+      "dark_prob": 0.24696663458972912,
+      "delta": -0.23151428352793652,
+      "flip_success": false
+    },
+    {
+      "name": "Drip pricing disclosure",
+      "normal_prob": 0.2655539536731144,
+      "dark_prob": 0.36514051279342746,
+      "delta": 0.09958655912031306,
+      "flip_success": false
+    },
+    {
+      "name": "Sneaked baggage add-on",
+      "normal_prob": 0.284464614321851,
+      "dark_prob": 0.773839180246993,
+      "delta": 0.48937456592514206,
+      "flip_success": true
+    }
+  ],
+  "short_text_policy": [
+    {
+      "text": "Buy now",
+      "predicted_label": 0,
+      "confidence": 0.27479050990531234,
+      "requires_context": true
+    },
+    {
+      "text": "Limited",
+      "predicted_label": 1,
+      "confidence": 0.9516423274976068,
+      "requires_context": true
+    },
+    {
+      "text": "Sale",
+      "predicted_label": 0,
+      "confidence": 0.40446468850862055,
+      "requires_context": true
+    },
+    {
+      "text": "Cancel",
+      "predicted_label": 0,
+      "confidence": 0.32830750648389767,
+      "requires_context": true
+    },
+    {
+      "text": "Only 3 left",
+      "predicted_label": 1,
+      "confidence": 0.9971284238544714,
+      "requires_context": true
+    },
+    {
+      "text": "Special offer",
+      "predicted_label": 1,
+      "confidence": 0.9242934298371394,
+      "requires_context": true
+    },
+    {
+      "text": "Accept all cookies",
+      "predicted_label": 1,
+      "confidence": 0.7136676840952156,
+      "requires_context": true
+    },
+    {
+      "text": "Manage preferences",
+      "predicted_label": 0,
+      "confidence": 0.29826907412076076,
+      "requires_context": true
+    },
+    {
+      "text": "Reject non-essential",
+      "predicted_label": 0,
+      "confidence": 0.16525048935553768,
+      "requires_context": true
+    },
+    {
+      "text": "Close",
+      "predicted_label": 0,
+      "confidence": 0.14927585969247126,
+      "requires_context": true
+    }
+  ],
+  "adversarial_consistency": [
+    {
+      "samples": [
+        "ONLY 3 LEFT!",
+        "Only three left!",
+        "only three items remain in stock.",
+        "3 items remain in stock."
+      ],
+      "probs": [
+        0.9971284238544714,
+        0.9759727786976864,
+        0.9828160118623662,
+        0.9807854691380472
+      ],
+      "std_dev": 0.007880409098957245,
+      "consistent": true
+    },
+    {
+      "samples": [
+        "Limited Time Offer!",
+        "LIMITED TIME OFFER",
+        "Limited time offer \u2014 expires soon",
+        "limited time offer."
+      ],
+      "probs": [
+        0.9851803255410386,
+        0.9851803255410386,
+        0.97545598942009,
+        0.9851803255410386
+      ],
+      "std_dev": 0.00421076105784005,
+      "consistent": true
+    },
+    {
+      "samples": [
+        "Free 30-day trial with automatic renewal",
+        "FREE 30-DAY TRIAL WITH AUTOMATIC RENEWAL",
+        "Free 30-day trial with auto-renewal."
+      ],
+      "probs": [
+        0.679545822301364,
+        0.679545822301364,
+        0.7106930315608248
+      ],
+      "std_dev": 0.014682935254934101,
+      "consistent": true
+    }
+  ]
+}

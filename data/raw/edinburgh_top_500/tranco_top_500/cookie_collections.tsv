@@ -1,0 +1,668 @@
+collection_num	domain	type	timestamp	num_cookies	num_id_like	num_first_party	num_third_party
+2	facebook.com	initial	2022-01-22 15:42:11	0	0	0	0
+3	facebook.com	opt-out option	2022-01-22 15:42:22	1	1	1	0
+4	youtube.com	initial	2022-01-22 15:44:30	3	0	3	0
+5	youtube.com	opt-out option	2022-01-22 15:44:41	14	6	7	7
+6	youtube.com	opt-in option	2022-01-22 15:45:30	8	6	4	4
+7	microsoft.com	initial	2022-01-22 15:52:01	9	4	7	2
+8	microsoft.com	opt-out option	2022-01-22 15:52:14	10	4	8	2
+9	microsoft.com	opt-in option	2022-01-22 15:53:08	10	4	8	2
+10	twitter.com	initial	2022-01-22 15:59:07	8	4	8	0
+11	twitter.com	opt-out option	2022-01-22 15:59:12	8	4	8	0
+12	twitter.com	opt-in option	2022-01-22 16:00:03	9	3	9	0
+13	instagram.com	initial	2022-01-22 16:15:57	0	0	0	0
+14	instagram.com	opt-out option	2022-01-22 16:16:06	3	3	3	0
+15	instagram.com	opt-in option	2022-01-22 16:16:53	3	3	3	0
+16	yahoo.com	initial	2022-01-22 16:21:42	2	0	2	0
+17	yahoo.com	opt-out option	2022-01-22 16:22:17	11	4	10	1
+18	yahoo.com	opt-in option	2022-01-22 16:23:22	49	28	12	37
+19	youtu.be	initial	2022-01-22 16:25:46	4	0	1	3
+20	youtu.be	opt-out option	2022-01-22 16:25:55	15	6	1	14
+21	youtu.be	opt-in option	2022-01-22 16:26:51	9	6	1	8
+23	doubleclick.net	initial	2022-01-22 16:32:38	9	2	1	8
+24	doubleclick.net	opt-out option	2022-01-22 16:32:41	9	2	1	8
+25	doubleclick.net	opt-in option	2022-01-22 16:33:20	4	1	1	3
+26	office.com	initial	2022-01-22 16:34:12	13	8	5	8
+27	office.com	opt-out option	2022-01-22 16:34:14	13	8	5	8
+28	bing.com	initial	2022-01-22 16:36:29	23	6	14	9
+29	bing.com	opt-out option	2022-01-22 16:36:38	31	11	19	12
+30	bing.com	opt-in option	2022-01-22 16:37:25	32	11	19	13
+31	wordpress.com	initial	2022-01-22 16:38:13	34	13	24	10
+32	wordpress.com	opt-out option	2022-01-22 16:38:24	36	13	26	10
+33	wordpress.com	opt-in option	2022-01-22 16:39:16	36	15	26	10
+34	reddit.com	initial	2022-01-22 16:40:14	8	5	6	2
+35	reddit.com	opt-out option	2022-01-22 16:40:18	9	5	7	2
+36	zoom.us	initial	2022-01-22 16:41:28	10	1	10	0
+37	zoom.us	opt-out option	2022-01-22 16:41:32	11	1	11	0
+38	zoom.us	opt-in option	2022-01-22 16:42:19	69	32	28	41
+39	zoom.us	close option	2022-01-22 16:42:58	11	1	11	0
+40	amazonaws.com	initial	2022-01-22 16:45:11	5	1	0	5
+41	amazonaws.com	opt-out option	2022-01-22 16:45:25	6	2	0	6
+42	amazonaws.com	opt-in option	2022-01-22 16:46:34	20	8	0	20
+43	bit.ly	initial	2022-01-22 16:47:17	12	5	0	12
+44	bit.ly	opt-out option	2022-01-22 16:47:19	12	5	0	12
+45	bit.ly	opt-in option	2022-01-22 16:48:11	13	4	0	13
+46	whatsapp.com	initial	2022-01-22 16:50:54	0	0	0	0
+47	whatsapp.com	opt-out option	2022-01-22 16:51:18	2	1	2	0
+48	msn.com	initial	2022-01-22 16:52:57	28	18	3	25
+49	msn.com	opt-out option	2022-01-22 16:53:07	30	19	5	25
+50	msn.com	opt-in option	2022-01-22 16:53:58	30	19	5	25
+51	google-analytics.com	initial	2022-01-22 16:54:30	4	1	0	4
+52	google-analytics.com	opt-out option	2022-01-22 16:54:33	4	1	0	4
+53	google-analytics.com	opt-in option	2022-01-22 16:55:21	4	0	0	4
+62	flickr.com	initial	2022-01-22 17:02:00	17	5	15	2
+63	flickr.com	opt-out option	2022-01-22 17:02:04	17	5	15	2
+64	flickr.com	close option	2022-01-22 17:02:47	18	6	16	2
+65	europa.eu	initial	2022-01-22 17:03:45	4	1	4	0
+66	europa.eu	opt-out option	2022-01-22 17:03:55	2	0	2	0
+67	europa.eu	opt-in option	2022-01-22 17:04:37	3	0	3	0
+68	skype.com	initial	2022-01-22 17:05:27	8	3	4	4
+69	skype.com	opt-out option	2022-01-22 17:05:41	9	3	5	4
+70	skype.com	opt-in option	2022-01-22 17:06:24	9	3	5	4
+71	gravatar.com	initial	2022-01-22 17:07:21	2	0	2	0
+72	gravatar.com	opt-out option	2022-01-22 17:07:23	2	0	2	0
+73	gravatar.com	opt-in option	2022-01-22 17:08:03	3	0	3	0
+74	office365.com	initial	2022-01-22 17:09:04	8	3	0	8
+75	office365.com	opt-out option	2022-01-22 17:09:13	8	3	0	8
+76	office365.com	opt-in option	2022-01-22 17:09:57	11	3	0	11
+77	dropbox.com	initial	2022-01-22 17:10:40	9	4	9	0
+78	dropbox.com	opt-out option	2022-01-22 17:10:46	10	4	10	0
+79	soundcloud.com	initial	2022-01-22 17:12:42	2	1	1	1
+80	soundcloud.com	opt-out option	2022-01-22 17:12:46	2	1	1	1
+81	soundcloud.com	opt-in option	2022-01-22 17:13:29	25	16	9	16
+85	google.com.hk	initial	2022-01-22 17:18:15	1	0	1	0
+86	google.com.hk	opt-out option	2022-01-22 17:18:24	12	3	6	6
+87	spotify.com	initial	2022-01-22 17:20:17	9	2	9	0
+88	spotify.com	opt-out option	2022-01-22 17:20:29	11	3	11	0
+89	spotify.com	opt-in option	2022-01-22 17:21:21	35	19	21	14
+90	macromedia.com	initial	2022-01-22 17:26:12	27	5	0	27
+91	macromedia.com	opt-out option	2022-01-22 17:26:17	27	5	0	27
+92	macromedia.com	opt-in option	2022-01-22 17:26:58	81	32	0	81
+93	cnn.com	initial	2022-01-22 17:32:38	10	1	9	1
+94	cnn.com	opt-out option	2022-01-22 17:32:43	10	1	9	1
+95	ebay.com	initial	2022-01-22 17:34:14	40	25	8	32
+96	ebay.com	opt-out option	2022-01-22 17:34:21	41	25	9	32
+97	ebay.com	opt-in option	2022-01-22 17:35:03	36	22	9	27
+98	forbes.com	initial	2022-01-22 17:36:35	2	1	2	0
+99	forbes.com	opt-out option	2022-01-22 17:36:40	2	1	2	0
+100	forbes.com	opt-in option	2022-01-22 17:37:23	148	66	48	100
+101	fbcdn.net	initial	2022-01-22 17:37:53	0	0	0	0
+102	fbcdn.net	opt-out option	2022-01-22 17:38:05	1	1	0	1
+103	twitch.tv	initial	2022-01-22 17:39:18	6	4	5	1
+104	twitch.tv	opt-out option	2022-01-22 17:39:29	6	4	5	1
+105	twitch.tv	opt-in option	2022-01-22 17:40:32	10	6	5	5
+106	paypal.com	initial	2022-01-22 17:41:11	10	2	9	1
+107	paypal.com	opt-out option	2022-01-22 17:41:16	12	3	11	1
+108	paypal.com	opt-in option	2022-01-22 17:42:16	29	9	15	14
+118	bongacams.com	initial	2022-01-22 17:53:21	13	4	13	0
+119	bongacams.com	opt-out option	2022-01-22 17:53:25	13	4	13	0
+120	googlesyndication.com	initial	2022-01-22 17:54:34	1	0	0	1
+121	googlesyndication.com	opt-out option	2022-01-22 17:54:44	12	3	0	12
+131	etsy.com	initial	2022-01-23 14:35:02	5	3	5	0
+132	etsy.com	opt-out option	2022-01-23 14:35:15	6	4	6	0
+133	etsy.com	opt-in option	2022-01-23 14:35:57	6	4	6	0
+134	washingtonpost.com	initial	2022-01-23 14:40:25	20	1	18	2
+135	washingtonpost.com	opt-out option	2022-01-23 14:41:10	20	1	18	2
+136	washingtonpost.com	opt-in option	2022-01-23 14:41:54	24	4	21	3
+137	canva.com	initial	2022-01-23 14:47:24	7	3	7	0
+138	canva.com	opt-out option	2022-01-23 14:47:36	7	3	7	0
+139	canva.com	opt-in option	2022-01-23 14:48:22	13	4	13	0
+142	digicert.com	initial	2022-01-23 14:54:20	15	6	12	3
+143	digicert.com	opt-out option	2022-01-23 14:54:28	15	6	12	3
+144	digicert.com	opt-in option	2022-01-23 14:55:54	18	7	15	3
+145	digicert.com	close option	2022-01-23 14:57:09	18	7	15	3
+146	tinyurl.com	initial	2022-01-23 15:00:49	7	4	6	1
+147	tinyurl.com	opt-out option	2022-01-23 15:01:04	10	5	7	3
+148	tinyurl.com	opt-in option	2022-01-23 15:02:11	50	29	12	38
+149	tiktok.com	initial	2022-01-23 15:03:45	13	6	11	2
+150	tiktok.com	opt-out option	2022-01-23 15:04:09	18	8	15	3
+151	mail.ru	initial	2022-01-23 15:06:52	158	88	19	139
+152	mail.ru	opt-out option	2022-01-23 15:07:02	161	85	19	142
+153	mail.ru	opt-in option	2022-01-23 15:08:01	114	66	19	95
+158	imgur.com	initial	2022-01-23 15:11:45	12	4	12	0
+159	imgur.com	opt-out option	2022-01-23 15:11:53	15	5	15	0
+160	imgur.com	opt-in option	2022-01-23 15:12:43	118	63	20	98
+161	wsj.com	initial	2022-01-23 15:14:30	27	10	21	6
+162	wsj.com	opt-out option	2022-01-23 15:14:34	27	10	21	6
+163	sciencedirect.com	initial	2022-01-23 15:15:12	16	4	12	4
+164	sciencedirect.com	opt-out option	2022-01-23 15:15:13	16	4	12	4
+165	google.de	initial	2022-01-23 15:15:38	1	0	1	0
+166	google.de	opt-out option	2022-01-23 15:15:46	12	3	6	6
+167	oracle.com	initial	2022-01-23 15:16:56	18	7	14	4
+168	oracle.com	opt-out option	2022-01-23 15:17:05	22	11	18	4
+169	bloomberg.com	initial	2022-01-23 15:19:05	30	9	29	1
+170	bloomberg.com	opt-out option	2022-01-23 15:19:26	38	13	36	2
+171	slideshare.net	initial	2022-01-23 15:20:37	11	1	11	0
+172	slideshare.net	opt-out option	2022-01-23 15:20:42	11	1	11	0
+173	slideshare.net	close option	2022-01-23 15:21:27	11	1	11	0
+174	force.com	initial	2022-01-23 15:29:17	15	1	0	15
+175	force.com	opt-out option	2022-01-23 15:29:18	15	1	0	15
+176	businessinsider.com	initial	2022-01-23 15:30:50	19	5	18	1
+177	businessinsider.com	opt-out option	2022-01-23 15:30:58	57	19	44	13
+180	google.co.in	initial	2022-01-23 15:33:12	1	0	1	0
+181	google.co.in	opt-out option	2022-01-23 15:33:28	12	3	6	6
+182	amazon.co.uk	initial	2022-01-23 15:34:35	7	4	6	1
+183	amazon.co.uk	opt-out option	2022-01-23 15:34:52	7	4	6	1
+184	indeed.com	initial	2022-01-23 15:35:34	17	8	14	3
+185	indeed.com	opt-out option	2022-01-23 15:35:45	18	8	15	3
+186	indeed.com	opt-in option	2022-01-23 15:36:27	22	10	18	4
+187	windows.com	initial	2022-01-23 15:37:39	10	5	0	10
+188	windows.com	opt-out option	2022-01-23 15:37:57	11	5	0	11
+189	windows.com	opt-in option	2022-01-23 15:38:47	11	5	0	11
+192	wp.com	initial	2022-01-23 15:40:28	34	14	0	34
+193	wp.com	opt-out option	2022-01-23 15:40:37	36	14	0	36
+194	wp.com	opt-in option	2022-01-23 15:41:31	36	14	0	36
+195	researchgate.net	initial	2022-01-23 15:44:17	4	1	3	1
+196	researchgate.net	opt-out option	2022-01-23 15:44:29	5	2	4	1
+197	researchgate.net	opt-in option	2022-01-23 15:45:08	12	6	10	2
+198	ok.ru	initial	2022-01-23 15:45:57	20	12	15	5
+199	ok.ru	opt-out option	2022-01-23 15:46:22	20	12	15	5
+200	ok.ru	opt-in option	2022-01-23 15:47:24	20	11	15	5
+201	google.com.br	initial	2022-01-23 15:48:14	1	0	1	0
+202	google.com.br	opt-out option	2022-01-23 15:48:25	11	3	5	6
+206	ibm.com	initial	2022-01-23 15:52:49	26	10	17	9
+207	ibm.com	opt-out option	2022-01-23 15:52:56	30	12	21	9
+208	identrust.com	initial	2022-01-23 16:01:34	21	7	9	12
+209	identrust.com	opt-out option	2022-01-23 16:01:37	20	7	8	12
+210	identrust.com	close option	2022-01-23 16:02:23	21	7	9	12
+211	google.co.jp	initial	2022-01-23 16:04:30	1	0	1	0
+212	google.co.jp	opt-out option	2022-01-23 16:04:40	12	3	6	6
+215	nature.com	initial	2022-01-23 16:09:23	5	2	5	0
+216	nature.com	opt-out option	2022-01-23 16:09:35	5	2	5	0
+217	nature.com	opt-in option	2022-01-23 16:10:17	78	44	19	59
+218	opendns.com	initial	2022-01-23 16:14:33	3	1	3	0
+219	opendns.com	opt-out option	2022-01-23 16:14:37	3	1	3	0
+220	eventbrite.com	initial	2022-01-23 16:15:19	17	5	16	1
+221	eventbrite.com	opt-out option	2022-01-23 16:15:25	17	5	16	1
+222	eventbrite.com	opt-in option	2022-01-23 16:16:07	17	5	16	1
+223	eventbrite.com	close option	2022-01-23 16:16:45	18	5	17	1
+224	telegraph.co.uk	initial	2022-01-23 16:19:17	58	28	36	22
+225	telegraph.co.uk	opt-out option	2022-01-23 16:19:31	71	32	43	28
+226	google.co.uk	initial	2022-01-23 16:21:09	1	0	1	0
+227	google.co.uk	opt-out option	2022-01-23 16:21:18	12	3	6	6
+228	time.com	initial	2022-01-23 16:27:45	13	3	8	5
+229	time.com	opt-out option	2022-01-23 16:27:50	13	3	8	5
+230	time.com	opt-in option	2022-01-23 16:28:34	180	92	30	150
+234	adobe.com	initial	2022-01-24 11:44:24	26	5	25	1
+235	adobe.com	opt-out option	2022-01-24 11:44:33	27	5	26	1
+236	adobe.com	opt-in option	2022-01-24 11:45:13	66	20	40	26
+240	google.com	initial	2022-01-24 12:20:14	1	0	1	0
+241	google.com	opt-out option	2022-01-24 12:20:25	12	3	6	6
+242	google.com	opt-in option	2022-01-24 12:21:05	7	4	4	3
+243	vk.com	initial	2022-01-24 12:21:50	20	6	18	2
+244	vk.com	opt-out option	2022-01-24 12:21:54	20	6	18	2
+245	vk.com	opt-in option	2022-01-24 12:22:41	21	6	19	2
+246	vk.com	close option	2022-01-24 12:23:18	21	6	19	2
+247	stackoverflow.com	initial	2022-01-24 12:24:32	4	1	4	0
+248	stackoverflow.com	opt-out option	2022-01-24 12:24:40	6	1	6	0
+249	stackoverflow.com	opt-in option	2022-01-24 12:25:19	6	1	6	0
+250	netflix.com	initial	2022-01-24 12:43:19	8	4	8	0
+251	netflix.com	opt-out option	2022-01-24 12:43:30	10	4	10	0
+252	netflix.com	opt-in option	2022-01-24 12:44:17	11	4	11	0
+253	netflix.com	close option	2022-01-24 12:44:56	10	4	10	0
+257	samsung.com	initial	2022-01-24 13:39:33	16	1	16	0
+258	samsung.com	opt-out option	2022-01-24 13:39:45	23	4	21	2
+259	samsung.com	opt-in option	2022-01-24 13:40:30	57	24	28	29
+260	bitly.com	initial	2022-01-24 13:42:02	11	4	8	3
+261	bitly.com	opt-out option	2022-01-24 13:42:04	11	4	8	3
+262	bitly.com	opt-in option	2022-01-24 13:42:59	13	4	10	3
+263	springer.com	initial	2022-01-24 13:43:43	32	9	23	9
+264	springer.com	opt-out option	2022-01-24 13:44:06	31	9	22	9
+265	springer.com	opt-in option	2022-01-24 13:44:50	33	9	24	9
+266	yelp.com	initial	2022-01-24 13:45:37	7	3	3	4
+267	yelp.com	opt-out option	2022-01-24 13:45:43	8	3	3	5
+268	yelp.com	opt-in option	2022-01-24 13:46:43	8	3	3	5
+269	www.gov.uk	initial	2022-01-24 13:47:31	1	0	1	0
+270	www.gov.uk	opt-out option	2022-01-24 13:47:38	2	0	2	0
+271	www.gov.uk	opt-in option	2022-01-24 13:48:27	8	0	8	0
+272	npr.org	initial	2022-01-24 13:49:57	0	0	0	0
+273	npr.org	opt-out option	2022-01-24 13:50:27	0	0	0	0
+274	npr.org	opt-in option	2022-01-24 13:51:09	24	9	19	5
+275	aol.com	initial	2022-01-24 13:52:04	2	0	2	0
+276	aol.com	opt-out option	2022-01-24 13:52:22	64	26	7	57
+277	aol.com	opt-in option	2022-01-24 13:53:21	152	64	7	145
+278	behance.net	initial	2022-01-24 13:54:28	12	1	8	4
+279	behance.net	opt-out option	2022-01-24 13:54:37	15	1	11	4
+280	amazon.de	initial	2022-01-24 13:55:31	9	4	8	1
+281	amazon.de	opt-out option	2022-01-24 13:55:47	9	4	8	1
+282	amazon.de	opt-in option	2022-01-24 13:56:37	9	4	8	1
+283	dailymotion.com	initial	2022-01-24 14:04:15	7	1	7	0
+284	dailymotion.com	opt-out option	2022-01-24 14:04:26	9	1	9	0
+285	dailymotion.com	opt-in option	2022-01-24 14:05:18	41	21	22	19
+286	instructure.com	initial	2022-01-24 14:06:05	27	8	12	15
+287	instructure.com	opt-out option	2022-01-24 14:06:16	28	8	13	15
+288	instructure.com	opt-in option	2022-01-24 14:06:59	28	8	13	15
+289	instructure.com	close option	2022-01-24 14:07:37	28	8	13	15
+290	slack.com	initial	2022-01-24 14:09:08	15	6	4	11
+291	slack.com	opt-out option	2022-01-24 14:09:11	16	6	5	11
+292	slack.com	opt-in option	2022-01-24 14:09:53	45	19	22	23
+293	nginx.com	initial	2022-01-24 14:12:35	11	2	5	6
+294	nginx.com	opt-out option	2022-01-24 14:12:52	36	13	21	15
+295	nginx.com	opt-in option	2022-01-24 14:13:41	50	19	22	28
+296	cpanel.com	initial	2022-01-24 14:19:21	0	0	0	0
+297	cpanel.com	opt-out option	2022-01-24 14:19:33	1	0	0	1
+298	cpanel.com	opt-in option	2022-01-24 14:20:15	23	7	0	23
+299	fb.com	initial	2022-01-24 14:20:50	0	0	0	0
+300	fb.com	opt-out option	2022-01-24 14:21:08	1	1	0	1
+301	fb.com	opt-in option	2022-01-24 14:21:54	1	1	0	1
+302	mailchimp.com	initial	2022-01-24 14:22:39	6	2	6	0
+303	mailchimp.com	opt-out option	2022-01-24 14:22:44	7	2	7	0
+304	mailchimp.com	opt-in option	2022-01-24 14:23:31	59	28	30	29
+305	google.fr	initial	2022-01-24 14:24:15	1	0	1	0
+306	google.fr	opt-out option	2022-01-24 14:24:23	12	3	6	6
+307	google.fr	opt-in option	2022-01-24 14:25:07	7	5	4	3
+308	themeforest.net	initial	2022-01-24 14:28:32	6	0	5	1
+309	themeforest.net	opt-out option	2022-01-24 14:28:51	4	0	3	1
+310	themeforest.net	opt-in option	2022-01-24 14:29:32	22	7	13	9
+311	freepik.com	initial	2022-01-24 14:32:32	20	2	19	1
+312	freepik.com	opt-out option	2022-01-24 14:32:40	21	2	20	1
+313	freepik.com	opt-in option	2022-01-24 14:33:21	32	7	30	2
+314	addthis.com	initial	2022-01-24 14:33:47	1	0	0	1
+315	addthis.com	opt-out option	2022-01-24 14:34:36	90	10	2	88
+319	xvideos.com	initial	2022-01-24 14:39:04	4	0	4	0
+320	xvideos.com	opt-out option	2022-01-24 14:39:08	4	0	4	0
+321	techcrunch.com	initial	2022-01-24 14:39:58	2	0	2	0
+322	techcrunch.com	opt-out option	2022-01-24 14:40:08	25	11	20	5
+323	techcrunch.com	opt-in option	2022-01-24 14:40:52	35	17	21	14
+324	grammarly.com	initial	2022-01-24 14:42:22	7	3	7	0
+325	grammarly.com	opt-out option	2022-01-24 14:42:32	8	3	8	0
+326	grammarly.com	opt-in option	2022-01-24 14:43:13	38	13	18	20
+327	grammarly.com	close option	2022-01-24 14:43:51	8	3	8	0
+328	google.es	initial	2022-01-24 14:44:12	1	0	1	0
+329	google.es	opt-out option	2022-01-24 14:44:23	12	3	6	6
+330	google.es	opt-in option	2022-01-24 14:45:04	7	5	4	3
+331	mysql.com	initial	2022-01-24 14:45:40	17	3	12	5
+332	mysql.com	opt-out option	2022-01-24 14:45:52	21	7	16	5
+333	livejasmin.com	initial	2022-01-24 14:47:54	14	2	14	0
+334	livejasmin.com	opt-out option	2022-01-24 14:48:02	19	2	19	0
+335	livejasmin.com	opt-in option	2022-01-24 14:48:43	23	2	23	0
+336	zendesk.com	initial	2022-01-24 15:05:32	12	2	10	2
+337	zendesk.com	opt-out option	2022-01-24 15:05:39	13	2	11	2
+338	zendesk.com	opt-in option	2022-01-24 15:06:18	63	22	39	24
+339	google.ru	initial	2022-01-24 15:06:44	3	0	3	0
+340	google.ru	opt-out option	2022-01-24 15:06:52	12	3	6	6
+341	google.ru	opt-in option	2022-01-24 15:07:30	7	5	4	3
+342	independent.co.uk	initial	2022-01-24 15:08:56	57	22	36	21
+343	independent.co.uk	opt-out option	2022-01-24 15:09:15	78	29	53	25
+344	squarespace.com	initial	2022-01-24 15:10:15	9	5	8	1
+345	squarespace.com	opt-out option	2022-01-24 15:10:31	15	7	12	3
+346	squarespace.com	opt-in option	2022-01-24 15:11:11	91	49	24	67
+347	udemy.com	initial	2022-01-24 15:12:02	22	5	21	1
+348	udemy.com	opt-out option	2022-01-24 15:12:13	23	5	22	1
+349	udemy.com	opt-in option	2022-01-24 15:12:52	26	5	25	1
+350	google.it	initial	2022-01-24 15:13:13	1	0	1	0
+351	google.it	opt-out option	2022-01-24 15:13:21	12	3	6	6
+352	google.it	opt-in option	2022-01-24 15:13:59	7	4	4	3
+353	tripadvisor.com	initial	2022-01-24 15:16:39	17	2	16	1
+354	tripadvisor.com	opt-out option	2022-01-24 15:16:48	21	3	20	1
+355	tripadvisor.com	opt-in option	2022-01-24 15:17:28	84	43	22	62
+356	roblox.com	initial	2022-01-24 15:18:48	4	1	4	0
+357	roblox.com	opt-out option	2022-01-24 15:18:52	5	1	5	0
+358	roblox.com	opt-in option	2022-01-24 15:19:37	5	1	5	0
+359	wetransfer.com	initial	2022-01-24 15:22:07	10	5	8	2
+360	wetransfer.com	opt-out option	2022-01-24 15:22:18	12	6	10	2
+361	wetransfer.com	opt-in option	2022-01-24 15:23:00	28	12	13	15
+362	latimes.com	initial	2022-01-24 15:23:53	3	0	3	0
+363	latimes.com	opt-out option	2022-01-24 15:23:55	3	0	3	0
+364	latimes.com	close option	2022-01-24 15:24:44	4	0	4	0
+365	aliyun.com	initial	2022-01-24 15:27:11	17	5	2	15
+366	aliyun.com	opt-out option	2022-01-24 15:27:17	21	7	2	19
+367	aliyun.com	opt-in option	2022-01-24 15:28:04	45	13	2	43
+368	free.fr	initial	2022-01-24 15:28:54	3	1	3	0
+369	free.fr	opt-out option	2022-01-24 15:29:01	4	2	4	0
+370	free.fr	opt-in option	2022-01-24 15:29:55	4	2	4	0
+371	pixabay.com	initial	2022-01-24 15:31:48	8	2	8	0
+372	pixabay.com	opt-out option	2022-01-24 15:32:03	9	2	8	1
+373	pixabay.com	opt-in option	2022-01-24 15:32:42	7	0	7	0
+374	xhamster.com	initial	2022-01-24 15:33:34	11	1	11	0
+375	xhamster.com	opt-out option	2022-01-24 15:33:37	11	1	11	0
+376	xhamster.com	opt-in option	2022-01-24 15:34:17	12	1	12	0
+381	theverge.com	initial	2022-01-24 15:39:30	3	1	3	0
+382	theverge.com	opt-out option	2022-01-24 15:39:34	3	1	3	0
+383	theverge.com	opt-in option	2022-01-24 15:40:12	111	57	27	84
+389	ft.com	initial	2022-01-24 15:46:51	6	4	4	2
+390	ft.com	opt-out option	2022-01-24 15:47:01	8	4	6	2
+391	ft.com	opt-in option	2022-01-24 15:47:41	8	4	6	2
+392	fiverr.com	initial	2022-01-24 17:15:03	13	4	13	0
+393	fiverr.com	opt-out option	2022-01-24 17:15:14	14	4	14	0
+394	fiverr.com	opt-in option	2022-01-24 17:16:12	83	39	30	53
+395	trello.com	initial	2022-01-24 17:22:27	43	16	21	22
+396	trello.com	opt-out option	2022-01-24 17:22:38	45	16	23	22
+397	trello.com	opt-in option	2022-01-24 17:23:21	43	16	22	21
+398	trello.com	close option	2022-01-24 17:23:59	43	16	22	21
+399	giphy.com	initial	2022-01-24 17:25:10	4	2	4	0
+400	giphy.com	opt-out option	2022-01-24 17:25:26	5	2	5	0
+401	giphy.com	opt-in option	2022-01-24 17:26:14	9	2	9	0
+402	theatlantic.com	initial	2022-01-24 17:32:39	4	2	4	0
+403	theatlantic.com	opt-out option	2022-01-24 17:32:45	7	3	6	1
+404	theatlantic.com	opt-in option	2022-01-24 17:33:24	83	37	32	51
+405	pki.goog	initial	2022-01-24 17:34:23	3	0	3	0
+406	pki.goog	opt-out option	2022-01-24 17:34:27	3	0	3	0
+407	pki.goog	opt-in option	2022-01-24 17:35:09	3	0	3	0
+408	google.ca	initial	2022-01-24 17:36:27	1	0	1	0
+409	google.ca	opt-out option	2022-01-24 17:36:41	12	3	6	6
+410	google.ca	opt-in option	2022-01-24 17:37:22	7	5	4	3
+411	investopedia.com	initial	2022-01-24 17:39:53	8	1	8	0
+412	investopedia.com	opt-out option	2022-01-24 17:40:57	9	2	9	0
+413	investopedia.com	opt-in option	2022-01-24 17:41:50	86	47	17	69
+414	nationalgeographic.com	initial	2022-01-24 17:45:53	18	4	16	2
+415	nationalgeographic.com	opt-out option	2022-01-24 17:46:09	23	5	21	2
+416	nationalgeographic.com	opt-in option	2022-01-24 17:46:55	41	17	27	14
+420	cbsnews.com	initial	2022-01-24 17:52:28	5	0	5	0
+421	cbsnews.com	opt-out option	2022-01-24 17:52:44	14	5	11	3
+422	cisco.com	initial	2022-01-24 17:54:46	5	3	2	3
+423	cisco.com	opt-out option	2022-01-24 17:54:47	5	3	2	3
+424	cisco.com	opt-in option	2022-01-24 17:55:56	47	15	31	16
+425	android.com	initial	2022-01-24 17:56:20	4	0	4	0
+426	android.com	opt-out option	2022-01-24 17:56:29	9	0	4	5
+427	android.com	opt-in option	2022-01-24 17:57:07	5	0	5	0
+428	demdex.net	initial	2022-01-24 17:58:05	27	5	1	26
+429	demdex.net	opt-out option	2022-01-24 17:58:14	31	5	1	30
+430	demdex.net	opt-in option	2022-01-24 17:58:54	90	34	3	87
+431	speedtest.net	initial	2022-01-24 18:00:34	63	30	8	55
+432	speedtest.net	opt-out option	2022-01-24 18:00:50	81	30	11	70
+433	speedtest.net	opt-in option	2022-01-24 18:01:31	85	36	12	73
+434	statista.com	initial	2022-01-24 18:03:17	6	1	6	0
+435	statista.com	opt-out option	2022-01-24 18:03:23	6	1	6	0
+436	statista.com	opt-in option	2022-01-24 18:04:01	30	12	9	21
+437	marketwatch.com	initial	2022-01-24 18:05:19	24	7	18	6
+438	marketwatch.com	opt-out option	2022-01-24 18:05:26	33	14	22	11
+439	webex.com	initial	2022-01-24 18:07:04	34	8	30	4
+440	webex.com	opt-out option	2022-01-24 18:07:12	47	13	33	14
+441	webex.com	opt-in option	2022-01-24 18:08:00	80	26	54	26
+442	nbcnews.com	initial	2022-01-24 18:09:17	74	33	47	27
+443	nbcnews.com	opt-out option	2022-01-24 18:09:29	79	34	52	27
+444	tandfonline.com	initial	2022-01-24 18:10:17	36	12	20	16
+445	tandfonline.com	opt-out option	2022-01-24 18:10:25	36	12	20	16
+446	tandfonline.com	opt-in option	2022-01-24 18:11:11	38	11	22	16
+447	prnewswire.com	initial	2022-01-24 18:13:21	10	4	5	5
+448	prnewswire.com	opt-out option	2022-01-24 18:13:26	12	4	7	5
+449	weather.com	initial	2022-01-24 18:14:29	7	0	7	0
+450	weather.com	opt-out option	2022-01-24 18:15:24	82	7	10	72
+451	weather.com	opt-in option	2022-01-24 18:16:05	23	9	18	5
+452	marriott.com	initial	2022-01-24 18:19:16	124	53	49	75
+453	marriott.com	opt-out option	2022-01-24 18:20:11	202	50	52	150
+454	marriott.com	opt-in option	2022-01-24 18:21:28	134	55	53	81
+455	hubspot.com	initial	2022-01-24 18:22:05	5	0	5	0
+456	hubspot.com	opt-out option	2022-01-24 18:22:10	7	0	7	0
+457	hubspot.com	opt-in option	2022-01-24 18:22:51	31	10	22	9
+458	jimdo.com	initial	2022-01-24 18:23:39	7	1	7	0
+459	jimdo.com	opt-out option	2022-01-24 18:23:46	9	1	9	0
+460	jimdo.com	opt-in option	2022-01-24 18:24:27	37	14	24	13
+461	dell.com	initial	2022-01-24 18:24:53	32	3	32	0
+462	dell.com	opt-out option	2022-01-24 18:24:59	33	3	33	0
+463	dell.com	opt-in option	2022-01-24 18:25:38	88	23	60	28
+467	usnews.com	initial	2022-01-24 18:29:31	20	7	18	2
+468	usnews.com	opt-out option	2022-01-24 18:29:39	20	7	18	2
+469	usnews.com	opt-in option	2022-01-24 18:30:21	21	7	19	2
+470	box.com	initial	2022-01-24 18:33:22	83	27	62	21
+471	box.com	opt-out option	2022-01-24 18:33:26	83	27	62	21
+472	box.com	close option	2022-01-24 18:34:11	85	24	65	20
+473	akismet.com	initial	2022-01-24 18:35:09	17	5	11	6
+474	akismet.com	opt-out option	2022-01-24 18:35:19	16	5	10	6
+475	akismet.com	opt-in option	2022-01-24 18:36:06	19	5	13	6
+476	buzzfeed.com	initial	2022-01-24 18:37:10	40	1	39	1
+477	buzzfeed.com	opt-out option	2022-01-24 18:37:17	41	2	40	1
+478	buzzfeed.com	opt-in option	2022-01-24 18:37:59	159	60	47	112
+479	google.com.sg	initial	2022-01-24 18:38:22	1	0	1	0
+480	google.com.sg	opt-out option	2022-01-24 18:38:35	12	3	6	6
+481	google.com.sg	opt-in option	2022-01-24 18:39:18	7	4	4	3
+482	criteo.com	initial	2022-01-24 18:40:07	3	0	2	1
+483	criteo.com	opt-out option	2022-01-24 18:40:12	4	0	3	1
+484	criteo.com	opt-in option	2022-01-24 18:41:07	106	45	29	77
+485	pubmatic.com	initial	2022-01-24 18:42:27	24	7	9	15
+486	pubmatic.com	opt-out option	2022-01-24 18:42:37	25	7	10	15
+487	pubmatic.com	opt-in option	2022-01-24 18:43:34	26	7	11	15
+488	hicloud.com	initial	2022-01-24 18:44:25	5	0	1	4
+489	hicloud.com	opt-out option	2022-01-24 18:44:37	5	0	1	4
+490	hicloud.com	opt-in option	2022-01-24 18:45:22	8	2	1	7
+491	hicloud.com	close option	2022-01-24 18:46:00	5	0	1	4
+492	cambridge.org	initial	2022-01-24 18:47:45	30	7	18	12
+493	cambridge.org	opt-out option	2022-01-24 18:47:54	31	7	19	12
+494	cambridge.org	opt-in option	2022-01-24 18:48:54	31	7	19	12
+495	cambridge.org	close option	2022-01-24 18:49:57	31	7	19	12
+496	google.com.tw	initial	2022-01-24 18:50:49	1	0	1	0
+497	google.com.tw	opt-out option	2022-01-24 18:51:03	12	3	6	6
+498	google.com.tw	opt-in option	2022-01-24 18:51:42	7	5	4	3
+499	primevideo.com	initial	2022-01-24 18:52:26	4	2	4	0
+500	primevideo.com	opt-out option	2022-01-24 18:52:37	6	4	6	0
+501	primevideo.com	opt-in option	2022-01-24 18:53:22	5	3	5	0
+502	oup.com	initial	2022-01-24 18:54:22	9	0	9	0
+503	oup.com	opt-out option	2022-01-24 18:54:34	9	0	9	0
+504	oup.com	opt-in option	2022-01-24 18:55:20	7	0	7	0
+505	academia.edu	initial	2022-01-24 18:57:21	16	3	13	3
+506	academia.edu	opt-out option	2022-01-24 18:57:22	16	3	13	3
+507	uol.com.br	initial	2022-01-24 19:01:57	68	26	33	35
+508	uol.com.br	opt-out option	2022-01-24 19:01:59	68	26	33	35
+509	uol.com.br	opt-in option	2022-01-24 19:02:50	75	29	35	40
+510	coursera.org	initial	2022-01-24 19:04:50	19	7	11	8
+511	coursera.org	opt-out option	2022-01-24 19:04:55	19	7	11	8
+512	coursera.org	opt-in option	2022-01-24 19:05:47	54	23	27	27
+513	whatsapp.net	initial	2022-01-24 19:08:57	0	0	0	0
+514	whatsapp.net	opt-out option	2022-01-24 19:09:09	2	1	0	2
+515	whatsapp.net	opt-in option	2022-01-24 19:09:59	2	1	0	2
+518	g.page	initial	2022-01-24 19:15:06	4	1	0	4
+519	g.page	opt-out option	2022-01-24 19:15:17	4	1	0	4
+520	g.page	opt-in option	2022-01-24 19:15:56	5	1	0	5
+521	discord.com	initial	2022-01-24 19:16:56	4	2	4	0
+522	discord.com	opt-out option	2022-01-24 19:17:06	5	2	5	0
+523	discord.com	opt-in option	2022-01-24 19:17:54	9	2	9	0
+524	sciencemag.org	initial	2022-01-24 19:19:01	34	14	0	34
+525	sciencemag.org	opt-out option	2022-01-24 19:19:15	35	14	0	35
+526	change.org	initial	2022-01-24 19:22:32	10	3	9	1
+527	change.org	opt-out option	2022-01-24 19:22:37	10	3	9	1
+528	change.org	opt-in option	2022-01-24 19:23:26	10	3	9	1
+529	linktr.ee	initial	2022-01-24 19:24:24	21	8	16	5
+530	linktr.ee	opt-out option	2022-01-24 19:24:29	22	8	17	5
+531	linktr.ee	opt-in option	2022-01-24 19:25:15	22	8	17	5
+532	economist.com	initial	2022-01-29 12:23:46	22	12	18	4
+533	economist.com	opt-out option	2022-01-29 12:23:59	25	12	21	4
+534	economist.com	opt-in option	2022-01-29 12:24:44	50	25	30	20
+535	business.site	initial	2022-01-29 12:34:54	5	2	0	5
+536	business.site	opt-out option	2022-01-29 12:34:58	5	2	0	5
+537	business.site	opt-in option	2022-01-29 12:35:42	5	2	0	5
+538	sagepub.com	initial	2022-01-29 12:36:41	3	1	2	1
+539	sagepub.com	opt-out option	2022-01-29 12:36:44	3	1	2	1
+540	sagepub.com	close option	2022-01-29 12:37:28	36	10	24	12
+541	constantcontact.com	initial	2022-01-29 12:38:02	28	8	26	2
+542	constantcontact.com	opt-out option	2022-01-29 12:38:12	29	8	27	2
+543	constantcontact.com	opt-in option	2022-01-29 12:38:58	48	17	34	14
+544	globo.com	initial	2022-01-29 12:40:35	47	19	24	23
+545	globo.com	opt-out option	2022-01-29 12:40:39	47	19	24	23
+546	globo.com	opt-in option	2022-01-29 12:41:21	49	16	26	23
+547	evernote.com	initial	2022-01-29 12:43:29	30	10	20	10
+548	evernote.com	opt-out option	2022-01-29 12:43:32	30	10	20	10
+554	mashable.com	initial	2022-01-29 12:53:58	20	7	16	4
+555	mashable.com	opt-out option	2022-01-29 12:54:00	20	7	16	4
+556	mashable.com	opt-in option	2022-01-29 12:54:38	26	12	21	5
+557	snapchat.com	initial	2022-01-29 12:57:23	0	0	0	0
+558	snapchat.com	opt-out option	2022-01-29 12:57:46	0	0	0	0
+559	snapchat.com	opt-in option	2022-01-29 12:58:27	7	1	7	0
+565	britannica.com	initial	2022-01-29 13:05:07	32	9	28	4
+566	britannica.com	opt-out option	2022-01-29 13:05:25	37	10	33	4
+567	trustpilot.com	initial	2022-01-29 13:06:59	3	2	2	1
+568	trustpilot.com	opt-out option	2022-01-29 13:07:08	4	2	3	1
+569	trustpilot.com	opt-in option	2022-01-29 13:07:50	14	5	13	1
+570	okta.com	initial	2022-01-29 13:10:02	14	4	13	1
+571	okta.com	opt-out option	2022-01-29 13:10:16	15	4	14	1
+572	okta.com	opt-in option	2022-01-29 13:10:59	66	23	42	24
+573	okta.com	close option	2022-01-29 13:11:38	66	22	42	24
+574	mayoclinic.org	initial	2022-01-29 13:12:33	4	1	2	2
+575	mayoclinic.org	opt-out option	2022-01-29 13:12:38	4	1	2	2
+576	mayoclinic.org	opt-in option	2022-01-29 13:13:29	23	1	21	2
+577	investing.com	initial	2022-01-29 13:14:20	26	5	22	4
+578	investing.com	opt-out option	2022-01-29 13:14:35	28	6	24	4
+579	investing.com	opt-in option	2022-01-29 13:15:22	235	132	35	200
+580	outbrain.com	initial	2022-01-29 13:15:54	2	0	2	0
+581	outbrain.com	opt-out option	2022-01-29 13:16:06	3	0	3	0
+582	outbrain.com	opt-in option	2022-01-29 13:16:51	49	13	31	18
+583	outbrain.com	close option	2022-01-29 13:17:28	3	0	3	0
+584	vice.com	initial	2022-01-29 13:18:21	58	20	29	29
+585	vice.com	opt-out option	2022-01-29 13:18:45	67	27	33	34
+586	columbia.edu	initial	2022-01-29 13:21:11	8	3	4	4
+587	columbia.edu	opt-out option	2022-01-29 13:21:16	8	3	4	4
+588	columbia.edu	opt-in option	2022-01-29 13:22:00	10	3	6	4
+589	google.com.mx	initial	2022-01-29 13:22:59	12	3	6	6
+590	google.com.mx	opt-out option	2022-01-29 13:23:06	12	3	6	6
+591	google.com.mx	opt-in option	2022-01-29 13:23:47	7	5	4	3
+592	rt.com	initial	2022-01-29 13:25:17	16	9	5	11
+593	rt.com	opt-out option	2022-01-29 13:25:22	16	9	5	11
+594	rt.com	opt-in option	2022-01-29 13:26:03	17	10	6	11
+595	fc2.com	initial	2022-01-29 13:26:31	6	0	6	0
+596	fc2.com	opt-out option	2022-01-29 13:26:33	6	0	6	0
+597	fc2.com	opt-in option	2022-01-29 13:27:22	7	0	7	0
+598	umich.edu	initial	2022-01-29 13:27:51	0	0	0	0
+599	umich.edu	opt-out option	2022-01-29 13:27:56	1	0	1	0
+600	umich.edu	opt-in option	2022-01-29 13:28:44	4	1	4	0
+601	moatads.com	initial	2022-01-29 13:30:01	22	7	0	22
+602	moatads.com	opt-out option	2022-01-29 13:30:17	26	11	0	26
+603	smallpdf.com	initial	2022-01-29 13:30:54	1	1	1	0
+604	smallpdf.com	opt-out option	2022-01-29 13:31:04	2	2	2	0
+605	smallpdf.com	opt-in option	2022-01-29 13:31:43	2	2	2	0
+608	businesswire.com	initial	2022-01-29 13:35:40	20	5	11	9
+609	businesswire.com	opt-out option	2022-01-29 13:35:52	20	5	11	9
+610	businesswire.com	opt-in option	2022-01-29 13:36:34	21	5	12	9
+611	google.com.tr	initial	2022-01-29 13:37:03	1	0	1	0
+612	google.com.tr	opt-out option	2022-01-29 13:37:11	11	3	5	6
+613	google.com.tr	opt-in option	2022-01-29 13:37:49	7	5	4	3
+614	cbc.ca	initial	2022-01-29 13:38:56	50	22	31	19
+615	cbc.ca	opt-out option	2022-01-29 13:39:05	58	22	33	25
+616	cbc.ca	close option	2022-01-29 13:39:55	49	20	31	18
+617	vox.com	initial	2022-01-29 13:40:29	3	1	3	0
+618	vox.com	opt-out option	2022-01-29 13:40:47	6	2	3	3
+619	vox.com	opt-in option	2022-01-29 13:41:25	136	71	28	108
+620	azure.com	initial	2022-01-29 13:42:26	19	5	0	19
+621	azure.com	opt-out option	2022-01-29 13:42:42	18	5	0	18
+622	azure.com	opt-in option	2022-01-29 13:43:22	28	8	0	28
+623	getpocket.com	initial	2022-01-29 13:44:03	7	3	7	0
+624	getpocket.com	opt-out option	2022-01-29 13:44:17	8	3	8	0
+625	getpocket.com	opt-in option	2022-01-29 13:44:56	8	3	8	0
+626	redhat.com	initial	2022-01-29 13:45:41	11	3	11	0
+627	redhat.com	opt-out option	2022-01-29 13:45:53	15	5	15	0
+628	appsflyer.com	initial	2022-01-29 13:46:50	12	7	10	2
+629	appsflyer.com	opt-out option	2022-01-29 13:46:54	13	7	11	2
+630	appsflyer.com	opt-in option	2022-01-29 13:47:34	44	20	24	20
+631	ebay.de	initial	2022-01-29 13:49:14	9	5	7	2
+632	ebay.de	opt-out option	2022-01-29 13:49:28	22	15	20	2
+633	ebay.de	opt-in option	2022-01-29 13:50:14	10	5	8	2
+634	engadget.com	initial	2022-01-29 13:51:21	2	0	2	0
+635	engadget.com	opt-out option	2022-01-29 13:51:41	13	5	9	4
+636	engadget.com	opt-in option	2022-01-29 13:52:28	52	35	10	42
+637	gofundme.com	initial	2022-01-29 13:53:07	64	33	14	50
+638	gofundme.com	opt-out option	2022-01-29 13:53:17	74	33	24	50
+639	gofundme.com	opt-in option	2022-01-29 13:54:11	75	35	23	52
+640	teamviewer.com	initial	2022-01-29 13:54:59	3	0	3	0
+641	teamviewer.com	opt-out option	2022-01-29 13:55:12	4	0	4	0
+642	teamviewer.com	opt-in option	2022-01-29 13:55:51	22	5	15	7
+645	huawei.com	initial	2022-01-29 13:59:17	15	4	7	8
+646	huawei.com	opt-out option	2022-01-29 13:59:19	15	4	7	8
+647	huawei.com	close option	2022-01-29 13:59:57	16	4	8	8
+648	worldbank.org	initial	2022-01-29 14:01:11	34	10	21	13
+649	worldbank.org	opt-out option	2022-01-29 14:01:12	34	10	21	13
+650	worldbank.org	close option	2022-01-29 14:01:59	35	10	22	13
+651	elsevier.com	initial	2022-01-29 14:02:30	6	0	6	0
+652	elsevier.com	opt-out option	2022-01-29 14:02:41	7	0	7	0
+653	elsevier.com	opt-in option	2022-01-29 14:03:19	27	9	18	9
+654	disneyplus.com	initial	2022-01-29 14:04:37	2	0	1	1
+655	disneyplus.com	opt-out option	2022-01-29 14:04:41	3	0	2	1
+656	amazon.fr	initial	2022-01-29 14:06:00	7	4	6	1
+657	amazon.fr	opt-out option	2022-01-29 14:06:10	7	4	6	1
+661	fastly.net	initial	2022-01-29 14:11:24	26	9	0	26
+662	fastly.net	opt-out option	2022-01-29 14:11:35	27	9	0	27
+663	fastly.net	opt-in option	2022-01-29 14:12:15	52	21	0	52
+664	ikea.com	initial	2022-01-29 15:39:45	5	1	5	0
+665	ikea.com	opt-out option	2022-01-29 15:39:54	6	1	6	0
+666	ikea.com	opt-in option	2022-01-29 15:40:33	10	1	10	0
+667	medium.com	initial	2022-01-29 15:57:02	9	5	8	1
+668	medium.com	opt-out option	2022-01-29 15:57:10	9	5	8	1
+669	medium.com	close option	2022-01-29 15:58:00	10	4	9	1
+670	yandex.ru	initial	2022-01-29 16:00:09	13	4	11	2
+671	yandex.ru	opt-out option	2022-01-29 16:00:19	13	4	11	2
+672	yandex.ru	opt-in option	2022-01-29 16:01:05	19	6	17	2
+673	wix.com	initial	2022-01-29 16:03:18	15	4	13	2
+674	wix.com	opt-out option	2022-01-29 16:03:24	15	4	13	2
+675	wix.com	opt-in option	2022-01-29 16:04:19	36	13	23	13
+676	wix.com	close option	2022-01-29 16:04:56	16	4	14	2
+680	fandom.com	initial	2022-01-29 16:19:40	2	0	1	1
+681	fandom.com	opt-out option	2022-01-29 16:19:47	2	0	1	1
+682	fandom.com	opt-in option	2022-01-29 16:20:36	71	46	25	46
+686	huffpost.com	initial	2022-01-29 16:24:17	17	6	12	5
+687	huffpost.com	opt-out option	2022-01-29 16:24:19	17	6	12	5
+688	wired.com	initial	2022-01-29 16:25:24	49	20	18	31
+689	wired.com	opt-out option	2022-01-29 16:25:36	52	21	21	31
+690	wired.com	opt-in option	2022-01-29 16:26:22	253	135	51	202
+691	coinmarketcap.com	initial	2022-01-29 16:26:51	16	3	13	3
+692	coinmarketcap.com	opt-out option	2022-01-29 16:26:52	16	3	13	3
+693	coinmarketcap.com	close option	2022-01-29 16:27:31	17	4	14	3
+694	intel.com	initial	2022-01-29 16:31:13	13	4	2	11
+695	intel.com	opt-out option	2022-01-29 16:31:20	14	4	2	12
+696	intel.com	opt-in option	2022-01-29 16:31:58	45	17	2	43
+697	nytimes.com	initial	2022-01-29 16:35:35	29	12	27	2
+698	nytimes.com	opt-out option	2022-01-29 16:35:46	30	12	28	2
+699	nytimes.com	opt-in option	2022-01-29 16:36:34	30	13	28	2
+700	nytimes.com	close option	2022-01-29 16:37:19	29	11	27	2
+704	opera.com	initial	2022-01-29 16:42:10	28	12	18	10
+705	opera.com	opt-out option	2022-01-29 16:42:15	29	12	19	10
+706	opera.com	opt-in option	2022-01-29 16:43:01	30	13	20	10
+707	wikihow.com	initial	2022-01-29 16:58:35	6	2	6	0
+708	wikihow.com	opt-out option	2022-01-29 16:58:50	7	2	7	0
+709	wikihow.com	opt-in option	2022-01-29 16:59:28	7	2	7	0
+710	w3schools.com	initial	2022-01-29 17:02:37	3	1	3	0
+711	w3schools.com	opt-out option	2022-01-29 17:02:44	5	3	5	0
+712	w3schools.com	opt-in option	2022-01-29 17:03:22	24	16	5	19
+713	zoho.com	initial	2022-01-29 17:07:44	9	1	4	5
+714	zoho.com	opt-out option	2022-01-29 17:08:01	9	1	4	5
+715	zoho.com	opt-in option	2022-01-29 17:08:40	9	1	4	5
+716	americanexpress.com	initial	2022-01-29 17:10:18	19	4	18	1
+717	americanexpress.com	opt-out option	2022-01-29 17:10:23	23	4	22	1
+718	americanexpress.com	opt-in option	2022-01-29 17:11:05	19	4	18	1
+719	sciencedaily.com	initial	2022-01-29 17:15:16	2	1	2	0
+720	sciencedaily.com	opt-out option	2022-01-29 17:15:24	5	2	3	2
+721	sciencedaily.com	opt-in option	2022-01-29 17:16:02	145	79	7	138
+722	steampowered.com	initial	2022-01-29 17:20:21	3	0	3	0
+723	steampowered.com	opt-out option	2022-01-29 17:20:25	6	0	4	2
+724	steampowered.com	opt-in option	2022-01-29 17:21:07	6	0	4	2
+725	theguardian.com	initial	2022-01-29 18:22:12	13	3	13	0
+726	theguardian.com	opt-out option	2022-01-29 18:22:25	13	3	13	0
+752	reuters.com	initial	2022-01-30 12:50:04	22	8	16	6
+753	reuters.com	opt-out option	2022-01-30 12:50:10	27	8	21	6
+754	reuters.com	opt-in option	2022-01-30 12:51:07	193	120	34	159
+755	issuu.com	initial	2022-01-30 12:55:42	7	2	7	0
+756	issuu.com	opt-out option	2022-01-30 12:55:50	8	2	8	0
+757	issuu.com	opt-in option	2022-01-30 12:56:30	42	18	26	16
+758	wiley.com	initial	2022-01-30 12:58:01	14	4	13	1
+759	wiley.com	opt-out option	2022-01-30 12:58:08	16	6	15	1
+760	wiley.com	opt-in option	2022-01-30 12:58:54	43	16	34	9
+761	scribd.com	initial	2022-01-30 13:01:21	13	5	8	5
+762	scribd.com	opt-out option	2022-01-30 13:01:27	16	8	11	5
+763	scribd.com	opt-in option	2022-01-30 13:02:06	45	29	27	18
+764	deepl.com	initial	2022-01-30 13:03:43	6	1	6	0
+765	deepl.com	opt-out option	2022-01-30 13:03:49	6	1	6	0
+766	deepl.com	opt-in option	2022-01-30 13:04:28	7	1	7	0
+767	patreon.com	initial	2022-01-30 13:05:49	14	7	11	3
+768	patreon.com	opt-out option	2022-01-30 13:05:59	14	7	11	3
+769	patreon.com	opt-in option	2022-01-30 13:06:43	15	14	23	6
+770	patreon.com	opt-in option	2022-01-30 13:07:14	14	14	23	6
+771	patreon.com	close option	2022-01-30 13:07:52	15	7	12	3
+772	plesk.com	initial	2022-01-30 13:10:52	0	0	0	0
+773	plesk.com	opt-out option	2022-01-30 13:11:01	1	0	1	0
+774	plesk.com	opt-in option	2022-01-30 13:11:40	34	14	17	17
+775	indiatimes.com	initial	2022-01-30 13:12:49	68	46	16	52
+776	indiatimes.com	opt-out option	2022-01-30 13:12:55	69	46	17	52
+777	indiatimes.com	opt-in option	2022-01-30 13:13:36	66	46	12	54
+778	webmd.com	initial	2022-01-30 16:49:41	11	3	11	0
+779	webmd.com	opt-out option	2022-01-30 16:49:57	15	4	15	0
+780	webmd.com	opt-in option	2022-01-30 16:50:56	163	101	36	127
+781	cloudflare.com	initial	2022-01-30 16:52:29	3	0	3	0
+782	cloudflare.com	opt-out option	2022-01-30 16:52:33	4	0	4	0
+783	cloudflare.com	opt-in option	2022-01-30 16:53:13	4	0	4	0
+784	cloudflare.com	close option	2022-01-30 16:53:50	4	0	4	0
+785	dailymail.com	initial	2022-01-30 16:55:08	19	1	0	19
+786	dailymail.com	opt-out option	2022-01-30 16:55:27	22	2	0	22
+787	dailymail.com	opt-in option	2022-01-30 16:56:17	160	95	0	160
+788	dailymail.co.uk	initial	2022-01-30 16:58:37	19	2	15	4
+789	dailymail.co.uk	opt-out option	2022-01-30 16:58:45	23	3	19	4
+790	dailymail.co.uk	opt-in option	2022-01-30 16:59:32	182	95	27	155
+791	bbc.co.uk	initial	2022-01-31 19:07:44	5	1	5	0
+792	bbc.co.uk	opt-out option	2022-01-31 19:07:58	11	2	11	0
+793	bbc.co.uk	opt-in option	2022-01-31 19:08:38	7	1	7	0

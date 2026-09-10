@@ -1,0 +1,272 @@
+collection_num	domain	type	timestamp	num_cookies	num_id_like	num_first_party	num_third_party
+0	cherrymx.de	initial	2022-02-13 11:51:14	6	0	6	0
+1	cherrymx.de	opt-out option	2022-02-13 11:51:17	6	0	6	0
+2	cherrymx.de	opt-in option	2022-02-13 11:52:03	7	0	7	0
+3	philipkingsley.co.uk	initial	2022-02-13 11:54:11	31	5	30	1
+4	philipkingsley.co.uk	opt-out option	2022-02-13 11:54:18	31	5	30	1
+5	philipkingsley.co.uk	opt-in option	2022-02-13 11:55:03	32	6	31	1
+6	cptnacional.org.br	initial	2022-02-13 11:58:46	4	1	4	0
+7	cptnacional.org.br	opt-out option	2022-02-13 11:58:50	4	1	4	0
+8	cptnacional.org.br	opt-in option	2022-02-13 11:59:40	5	1	5	0
+9	webstaqram.com	initial	2022-02-13 12:04:13	92	56	0	92
+10	webstaqram.com	opt-out option	2022-02-13 12:04:19	92	56	0	92
+11	webstaqram.com	opt-in option	2022-02-13 12:05:01	93	56	0	93
+12	webstaqram.com	close option	2022-02-13 12:05:39	93	54	0	93
+13	themesquare.com	initial	2022-02-13 12:06:46	3	1	3	0
+14	themesquare.com	opt-out option	2022-02-13 12:06:47	3	1	3	0
+15	themesquare.com	opt-in option	2022-02-13 12:07:25	4	1	4	0
+16	docpath.com	initial	2022-02-13 12:08:36	22	8	13	9
+17	docpath.com	opt-out option	2022-02-13 12:08:40	22	8	13	9
+18	docpath.com	opt-in option	2022-02-13 12:09:25	24	8	13	11
+19	docpath.com	close option	2022-02-13 12:10:05	17	7	8	9
+20	eyupsabrituncer.com	initial	2022-02-13 12:13:17	57	31	15	42
+21	eyupsabrituncer.com	opt-out option	2022-02-13 12:13:19	57	31	15	42
+22	rbx.gg	initial	2022-02-13 12:14:33	18	10	10	8
+23	rbx.gg	opt-out option	2022-02-13 12:14:40	19	11	11	8
+24	rbx.gg	opt-in option	2022-02-13 12:15:22	104	65	14	90
+25	veygo.com	initial	2022-02-13 12:21:39	5	2	3	2
+26	veygo.com	opt-out option	2022-02-13 12:21:49	4	2	2	2
+27	veygo.com	opt-in option	2022-02-13 12:22:28	17	7	12	5
+28	circleline.com	initial	2022-02-13 12:23:16	87	51	32	55
+29	circleline.com	opt-out option	2022-02-13 12:23:23	87	51	32	55
+30	circleline.com	opt-in option	2022-02-13 12:24:08	88	50	33	55
+31	signeasy.com	initial	2022-02-13 12:24:49	21	5	17	4
+32	signeasy.com	opt-out option	2022-02-13 12:24:51	21	5	17	4
+33	signeasy.com	opt-in option	2022-02-13 12:25:30	21	5	17	4
+34	spio.de	initial	2022-02-13 12:29:04	2	1	0	2
+35	spio.de	opt-out option	2022-02-13 12:29:17	3	1	1	2
+36	spio.de	opt-in option	2022-02-13 12:31:06	5	1	3	2
+37	net-a-porter.com	initial	2022-02-13 12:35:13	18	7	17	1
+38	net-a-porter.com	opt-out option	2022-02-13 12:35:20	20	8	19	1
+39	net-a-porter.com	opt-in option	2022-02-13 12:36:00	107	62	39	68
+40	selligent.com	initial	2022-02-13 12:38:54	18	9	7	11
+41	selligent.com	opt-out option	2022-02-13 12:39:04	22	11	11	11
+42	audi.it	initial	2022-02-13 12:46:54	3	0	3	0
+43	audi.it	opt-out option	2022-02-13 12:46:58	3	0	3	0
+44	audi.it	opt-in option	2022-02-13 12:47:39	22	4	17	5
+45	audi.it	close option	2022-02-13 12:48:17	4	0	4	0
+46	vertexsmb.com	initial	2022-02-13 12:52:11	57	13	0	57
+47	vertexsmb.com	opt-out option	2022-02-13 12:52:17	22	8	0	22
+48	vertexsmb.com	opt-in option	2022-02-13 12:53:00	84	28	0	84
+49	dailycivil.com	initial	2022-02-13 12:56:27	5	2	5	0
+50	dailycivil.com	opt-out option	2022-02-13 12:56:36	6	3	6	0
+51	i3investor.com	initial	2022-02-13 12:57:33	39	18	10	29
+52	i3investor.com	opt-out option	2022-02-13 12:57:37	39	18	10	29
+53	i3investor.com	opt-in option	2022-02-13 12:58:20	25	13	10	15
+54	rmutp.ac.th	initial	2022-02-13 12:59:34	2	1	2	0
+55	rmutp.ac.th	opt-out option	2022-02-13 12:59:37	2	1	2	0
+56	rmutp.ac.th	opt-in option	2022-02-13 13:00:32	4	1	4	0
+57	zszywka.pl	initial	2022-02-13 13:03:08	11	8	6	5
+58	zszywka.pl	opt-out option	2022-02-13 13:03:47	12	9	7	5
+59	zszywka.pl	opt-in option	2022-02-13 13:04:41	21	13	12	9
+60	carid.com	initial	2022-02-13 13:06:39	71	46	18	53
+61	carid.com	opt-out option	2022-02-13 13:06:41	71	46	18	53
+62	soanimesitehd.com	initial	2022-02-13 13:12:38	2	2	0	2
+63	soanimesitehd.com	opt-out option	2022-02-13 13:12:40	2	2	0	2
+64	soanimesitehd.com	opt-in option	2022-02-13 13:13:26	1	0	1	0
+65	dutchwatersector.com	initial	2022-02-13 13:18:31	3	1	2	1
+66	dutchwatersector.com	opt-out option	2022-02-13 13:18:36	2	0	1	1
+67	dutchwatersector.com	opt-in option	2022-02-13 13:19:18	13	4	5	8
+68	virginradio.fr	initial	2022-02-13 13:20:37	11	5	5	6
+69	virginradio.fr	opt-out option	2022-02-13 13:20:47	12	6	6	6
+70	virginradio.fr	opt-in option	2022-02-13 13:21:33	16	7	11	5
+71	nalo.fr	initial	2022-02-13 13:25:20	8	3	8	0
+72	nalo.fr	opt-out option	2022-02-13 13:25:21	8	3	8	0
+73	tempstar.com	initial	2022-02-13 13:28:28	14	2	14	0
+74	tempstar.com	opt-out option	2022-02-13 13:28:35	18	4	18	0
+75	ray.io	initial	2022-02-13 13:30:24	8	1	7	1
+76	ray.io	opt-out option	2022-02-13 13:30:27	8	1	7	1
+77	ray.io	opt-in option	2022-02-13 13:31:08	10	2	9	1
+78	fooddive.com	initial	2022-02-13 13:35:03	16	4	13	3
+79	fooddive.com	opt-out option	2022-02-13 13:35:06	16	4	13	3
+80	fooddive.com	opt-in option	2022-02-13 13:35:45	17	4	14	3
+87	chronometre-en-ligne.com	initial	2022-02-13 13:47:23	18	3	13	5
+88	chronometre-en-ligne.com	opt-out option	2022-02-13 13:47:26	18	3	13	5
+89	chronometre-en-ligne.com	opt-in option	2022-02-13 13:48:06	19	3	14	5
+90	hofstede-insights.com	initial	2022-02-13 13:48:36	9	0	6	3
+91	hofstede-insights.com	opt-out option	2022-02-13 13:48:41	10	0	7	3
+92	hofstede-insights.com	opt-in option	2022-02-13 13:49:19	22	7	11	11
+93	bitcentral.com	initial	2022-02-13 13:50:18	32	11	17	15
+94	bitcentral.com	opt-out option	2022-02-13 13:50:26	33	12	18	15
+95	bitcentral.com	opt-in option	2022-02-13 13:51:10	34	11	19	15
+96	theiphoneblog.com	initial	2022-02-13 13:58:31	34	19	0	34
+97	theiphoneblog.com	opt-out option	2022-02-13 13:58:41	44	24	0	44
+98	clikeo.fr	initial	2022-02-13 14:05:55	3	1	3	0
+99	clikeo.fr	opt-out option	2022-02-13 14:06:08	2	0	2	0
+100	clikeo.fr	opt-in option	2022-02-13 14:06:46	7	2	7	0
+101	clikeo.fr	close option	2022-02-13 14:07:23	6	0	3	3
+102	minnesotanonprofits.org	initial	2022-02-13 14:18:18	1	0	1	0
+103	minnesotanonprofits.org	opt-out option	2022-02-13 14:18:22	2	0	2	0
+104	minnesotanonprofits.org	opt-in option	2022-02-13 14:19:03	5	0	5	0
+105	prombo.de	initial	2022-02-13 14:22:12	1	0	1	0
+106	prombo.de	opt-out option	2022-02-13 14:22:22	2	0	2	0
+107	everydaydiabeticrecipes.com	initial	2022-02-13 14:24:50	54	37	10	44
+108	everydaydiabeticrecipes.com	opt-out option	2022-02-13 14:25:00	57	38	13	44
+109	everydaydiabeticrecipes.com	opt-in option	2022-02-13 14:25:51	151	95	17	134
+110	golf-alcanada.com	initial	2022-02-13 14:26:46	5	1	5	0
+111	golf-alcanada.com	opt-out option	2022-02-13 14:26:50	5	1	5	0
+112	golf-alcanada.com	opt-in option	2022-02-13 14:27:34	6	0	6	0
+113	venteclife.com	initial	2022-02-13 14:29:35	30	12	13	17
+114	venteclife.com	opt-out option	2022-02-13 14:29:37	30	12	13	17
+115	venteclife.com	opt-in option	2022-02-13 14:30:25	31	10	14	17
+116	amazonseoconsultant.com	initial	2022-02-13 14:31:16	23	3	21	2
+117	amazonseoconsultant.com	opt-out option	2022-02-13 14:31:38	23	3	21	2
+118	amazonseoconsultant.com	opt-in option	2022-02-13 14:32:22	25	3	23	2
+119	ezecom.com.kh	initial	2022-02-13 14:33:49	4	2	3	1
+120	ezecom.com.kh	opt-out option	2022-02-13 14:33:53	4	2	3	1
+121	ezecom.com.kh	opt-in option	2022-02-13 14:34:34	5	1	4	1
+122	onlinegamesracing.com	initial	2022-02-13 14:39:08	12	4	9	3
+123	onlinegamesracing.com	opt-out option	2022-02-13 14:39:11	12	4	9	3
+124	onlinegamesracing.com	opt-in option	2022-02-13 14:39:54	12	4	9	3
+125	congreso.es	initial	2022-02-13 14:41:33	4	0	4	0
+126	congreso.es	opt-out option	2022-02-13 14:41:46	5	0	5	0
+127	congreso.es	opt-in option	2022-02-13 14:42:26	5	0	5	0
+128	badeparadies-schwarzwald.de	initial	2022-02-13 14:47:33	11	4	6	5
+129	badeparadies-schwarzwald.de	opt-out option	2022-02-13 14:47:39	11	4	6	5
+130	acteol.com	initial	2022-02-13 14:52:47	85	29	0	85
+131	acteol.com	opt-out option	2022-02-13 14:52:51	85	29	0	85
+132	acteol.com	opt-in option	2022-02-13 14:53:32	86	30	0	86
+133	millbrook.co.uk	initial	2022-02-13 14:54:38	4	0	4	0
+134	millbrook.co.uk	opt-out option	2022-02-13 14:54:46	5	1	5	0
+135	millbrook.co.uk	opt-in option	2022-02-13 14:55:32	8	2	8	0
+136	millbrook.co.uk	close option	2022-02-13 14:56:15	5	1	5	0
+137	jtechdigital.com	initial	2022-02-13 14:57:01	17	5	10	7
+138	jtechdigital.com	opt-out option	2022-02-13 14:57:05	17	5	10	7
+139	jtechdigital.com	opt-in option	2022-02-13 14:57:57	18	4	11	7
+140	camaratenerife.com	initial	2022-02-13 15:01:04	77	48	7	70
+141	camaratenerife.com	opt-out option	2022-02-13 15:01:08	76	48	6	70
+142	camaratenerife.com	opt-in option	2022-02-13 15:01:54	75	42	8	67
+143	gridiron-uniforms.com	initial	2022-02-13 15:02:29	31	23	5	26
+144	gridiron-uniforms.com	opt-out option	2022-02-13 15:02:38	33	23	7	26
+145	gridiron-uniforms.com	opt-in option	2022-02-13 15:03:22	104	67	8	96
+146	boerenbond.nl	initial	2022-02-13 15:06:37	51	16	0	51
+147	boerenbond.nl	opt-out option	2022-02-13 15:06:38	51	16	0	51
+148	boerenbond.nl	opt-in option	2022-02-13 15:07:19	52	16	0	52
+149	kabsis.com.tr	initial	2022-02-13 15:08:25	0	0	0	0
+150	kabsis.com.tr	opt-out option	2022-02-13 15:08:27	0	0	0	0
+151	kabsis.com.tr	opt-in option	2022-02-13 15:09:07	1	0	1	0
+152	castlefest.nl	initial	2022-02-13 15:13:48	11	4	7	4
+153	castlefest.nl	opt-out option	2022-02-13 15:13:58	9	3	5	4
+154	castlefest.nl	opt-in option	2022-02-13 15:15:13	12	6	8	4
+155	longchamp-handbag.us	initial	2022-02-13 15:18:32	6	2	1	5
+156	longchamp-handbag.us	opt-out option	2022-02-13 15:18:36	6	2	1	5
+157	modxcloud.com	initial	2022-02-13 15:19:04	6	1	0	6
+158	modxcloud.com	opt-out option	2022-02-13 15:19:08	7	1	0	7
+159	modxcloud.com	opt-in option	2022-02-13 15:19:49	17	6	0	17
+160	digmo.com	initial	2022-02-13 15:23:26	0	0	0	0
+161	digmo.com	opt-out option	2022-02-13 15:23:34	1	0	1	0
+162	digmo.com	opt-in option	2022-02-13 15:24:17	24	10	4	20
+163	mainstreethost.com	initial	2022-02-13 15:33:22	33	14	17	16
+164	mainstreethost.com	opt-out option	2022-02-13 15:33:24	33	14	17	16
+165	mainstreethost.com	opt-in option	2022-02-13 15:34:05	29	10	13	16
+166	dpamicrophones.com	initial	2022-02-13 15:34:46	28	9	19	9
+167	dpamicrophones.com	opt-out option	2022-02-13 15:34:49	28	9	19	9
+168	dpamicrophones.com	opt-in option	2022-02-13 15:35:29	30	9	21	9
+169	pokergo.com	initial	2022-02-13 15:36:26	8	3	6	2
+170	pokergo.com	opt-out option	2022-02-13 15:36:28	8	3	6	2
+171	pokergo.com	opt-in option	2022-02-13 15:37:14	8	3	6	2
+172	epona-gmbh.de	initial	2022-02-13 15:40:31	2	1	1	1
+173	epona-gmbh.de	opt-out option	2022-02-13 15:40:35	4	2	3	1
+174	epona-gmbh.de	opt-in option	2022-02-13 15:41:18	4	2	3	1
+175	itysp.com	initial	2022-02-13 15:48:16	8	2	7	1
+176	itysp.com	opt-out option	2022-02-13 15:48:17	8	2	7	1
+177	enea.pl	initial	2022-02-13 17:03:10	20	7	15	5
+178	enea.pl	opt-out option	2022-02-13 17:03:16	20	7	15	5
+179	enea.pl	close option	2022-02-13 17:03:56	20	7	15	5
+180	epsom-sthelier.nhs.uk	initial	2022-02-13 17:05:03	4	1	4	0
+181	epsom-sthelier.nhs.uk	opt-out option	2022-02-13 17:05:12	4	1	4	0
+182	epsom-sthelier.nhs.uk	opt-in option	2022-02-13 17:05:56	5	0	5	0
+183	websearch101.com	initial	2022-02-13 17:08:57	17	4	16	1
+184	websearch101.com	opt-out option	2022-02-13 17:09:16	18	4	17	1
+185	websearch101.com	opt-in option	2022-02-13 17:09:57	19	5	18	1
+186	yhoyquecomemos.com	initial	2022-02-13 17:15:20	8	4	4	4
+187	yhoyquecomemos.com	opt-out option	2022-02-13 17:15:29	10	5	6	4
+188	ravennanotizie.it	initial	2022-02-13 17:19:17	12	2	11	1
+189	ravennanotizie.it	opt-out option	2022-02-13 17:19:18	12	2	11	1
+190	bbva.com	initial	2022-02-13 17:20:15	3	0	3	0
+191	bbva.com	opt-out option	2022-02-13 17:20:22	5	0	5	0
+192	bbva.com	opt-in option	2022-02-13 17:21:10	35	6	26	9
+193	j.gs	initial	2022-02-13 17:21:59	15	4	1	14
+194	j.gs	opt-out option	2022-02-13 17:22:00	15	4	1	14
+195	bizarro.com	initial	2022-02-13 17:24:57	3	0	3	0
+196	bizarro.com	opt-out option	2022-02-13 17:24:59	3	0	3	0
+197	bizarro.com	opt-in option	2022-02-13 17:25:44	4	0	4	0
+198	mt4proxy.com	initial	2022-02-13 17:26:25	18	7	0	18
+199	mt4proxy.com	opt-out option	2022-02-13 17:26:27	18	7	0	18
+200	mt4proxy.com	opt-in option	2022-02-13 17:27:09	19	8	0	19
+201	icef.com	initial	2022-02-13 17:34:42	16	6	14	2
+202	icef.com	opt-out option	2022-02-13 17:35:05	5	2	3	2
+203	icef.com	opt-in option	2022-02-13 17:35:46	18	6	16	2
+204	rynek-lotniczy.pl	initial	2022-02-13 17:37:37	8	3	5	3
+205	rynek-lotniczy.pl	opt-out option	2022-02-13 17:37:53	11	5	7	4
+206	duffmart.com	initial	2022-02-13 17:40:21	10	2	9	1
+207	duffmart.com	opt-out option	2022-02-13 17:40:35	10	3	9	1
+208	duffmart.com	opt-in option	2022-02-13 17:41:19	11	2	10	1
+211	aduna.com	initial	2022-02-13 17:45:56	34	12	25	9
+212	aduna.com	opt-out option	2022-02-13 17:46:02	34	12	25	9
+213	fohguild.org	initial	2022-02-13 17:48:27	7	1	0	7
+214	fohguild.org	opt-out option	2022-02-13 17:48:27	7	1	0	7
+215	jofem.org	initial	2022-02-13 17:48:59	1	0	1	0
+216	jofem.org	opt-out option	2022-02-13 17:49:00	1	0	1	0
+217	jofem.org	opt-in option	2022-02-13 17:49:38	2	0	2	0
+218	tinytrk.com	initial	2022-02-13 17:51:27	6	0	3	3
+219	tinytrk.com	opt-out option	2022-02-13 17:51:37	14	4	3	11
+220	tinytrk.com	opt-in option	2022-02-13 17:52:34	43	28	3	40
+221	driving.co.uk	initial	2022-02-13 17:55:20	25	9	15	10
+222	driving.co.uk	opt-out option	2022-02-13 17:55:27	27	9	17	10
+223	wmf.com	initial	2022-02-13 17:58:24	11	3	8	3
+224	wmf.com	opt-out option	2022-02-13 17:58:29	12	3	9	3
+225	wmf.com	opt-in option	2022-02-13 17:59:12	37	15	14	23
+226	awejmp.com	initial	2022-02-13 18:01:55	15	5	1	14
+227	awejmp.com	opt-out option	2022-02-13 18:02:04	19	5	1	18
+228	awejmp.com	opt-in option	2022-02-13 18:02:55	25	6	1	24
+229	magazineluiza.com.br	initial	2022-02-13 18:04:30	92	61	37	55
+230	magazineluiza.com.br	opt-out option	2022-02-13 18:04:32	92	61	37	55
+231	magazineluiza.com.br	opt-in option	2022-02-13 18:05:16	93	61	38	55
+232	anywayanyday.com	initial	2022-02-13 18:07:51	18	9	11	7
+233	anywayanyday.com	opt-out option	2022-02-13 18:07:53	18	9	11	7
+234	anywayanyday.com	close option	2022-02-13 18:08:35	20	6	13	7
+235	lugbz.org	initial	2022-02-13 18:15:46	2	1	2	0
+236	lugbz.org	opt-out option	2022-02-13 18:15:51	3	1	3	0
+237	lugbz.org	opt-in option	2022-02-13 18:16:38	3	1	3	0
+238	techbigs.com	initial	2022-02-13 18:17:45	33	17	6	27
+239	techbigs.com	opt-out option	2022-02-13 18:17:46	33	17	6	27
+240	techbigs.com	opt-in option	2022-02-13 18:18:27	28	12	6	22
+241	doyoureadme.de	initial	2022-02-13 18:23:19	13	2	8	5
+242	doyoureadme.de	opt-out option	2022-02-13 18:23:24	13	2	8	5
+243	altcointrading.net	initial	2022-02-13 18:24:49	17	2	17	0
+244	altcointrading.net	opt-out option	2022-02-13 18:24:54	20	3	20	0
+245	altcointrading.net	opt-in option	2022-02-13 18:25:35	42	15	30	12
+246	luminati-china.io	initial	2022-02-13 18:27:23	51	23	2	49
+247	luminati-china.io	opt-out option	2022-02-13 18:27:26	51	23	2	49
+248	luminati-china.io	opt-in option	2022-02-13 18:28:11	52	23	2	50
+249	apassion4jazz.net	initial	2022-02-13 18:33:16	0	0	0	0
+250	apassion4jazz.net	opt-out option	2022-02-13 18:33:18	0	0	0	0
+251	apassion4jazz.net	opt-in option	2022-02-13 18:33:56	1	0	1	0
+252	gensdeconfiance.com	initial	2022-02-13 18:34:25	5	1	5	0
+253	gensdeconfiance.com	opt-out option	2022-02-13 18:34:34	8	1	8	0
+254	goikogrill.com	initial	2022-02-13 18:42:54	4	0	0	4
+255	goikogrill.com	opt-out option	2022-02-13 18:43:01	5	0	0	5
+256	morninglavender.com	initial	2022-02-13 18:46:03	42	10	37	5
+257	morninglavender.com	opt-out option	2022-02-13 18:46:15	45	11	40	5
+258	dealnews.com	initial	2022-02-13 18:51:43	24	10	14	10
+259	dealnews.com	opt-out option	2022-02-13 18:51:56	113	69	26	87
+260	dealnews.com	opt-in option	2022-02-13 18:52:37	191	120	25	166
+261	ipsos.com	initial	2022-02-13 19:01:01	2	0	2	0
+262	ipsos.com	opt-out option	2022-02-13 19:01:08	4	0	4	0
+263	ipsos.com	opt-in option	2022-02-13 19:01:48	14	5	8	6
+264	egeda.es	initial	2022-02-13 19:02:56	7	2	5	2
+265	egeda.es	opt-out option	2022-02-13 19:02:59	7	2	5	2
+266	zero7.co.uk	initial	2022-02-13 19:05:04	16	5	10	6
+267	zero7.co.uk	opt-out option	2022-02-13 19:05:12	16	5	10	6
+268	astroglide.com	initial	2022-02-13 19:06:01	3	2	1	2
+269	astroglide.com	opt-out option	2022-02-13 19:06:06	5	4	3	2
+270	astroglide.com	opt-in option	2022-02-13 19:06:46	21	11	13	8
+271	hertz.com	initial	2022-02-13 19:24:14	21	5	21	0
+272	hertz.com	opt-out option	2022-02-13 19:24:20	24	5	24	0
+273	pif.org.in	initial	2022-02-13 19:25:51	2	1	0	2
+274	pif.org.in	opt-out option	2022-02-13 19:26:03	3	1	1	2
+275	kaffee-partner.de	initial	2022-02-14 15:29:18	2	0	1	1
+276	kaffee-partner.de	opt-out option	2022-02-14 15:29:22	2	0	1	1
+277	ezgardentips.com	initial	2022-02-14 15:32:03	3	3	0	3
+278	ezgardentips.com	opt-out option	2022-02-14 15:32:16	6	4	2	4

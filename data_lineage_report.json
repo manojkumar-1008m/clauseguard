@@ -1,0 +1,63 @@
+{
+  "audit_date": "2026-09-08",
+  "audit_scope": "ClauseGuard ML Model Release v2.0",
+  "dataset_lineage": {
+    "data/train_v2.csv": {
+      "classification": "TRAINING",
+      "samples": 60,
+      "labels": {"0": 30, "1": 30},
+      "role": "Supervised model parameter optimization (TF-IDF vectorizer fitting and LinearSVC margin learning)",
+      "used_in_model_tuning": true,
+      "used_in_final_evaluation": false
+    },
+    "data/validation_v2.csv": {
+      "classification": "VALIDATION",
+      "samples": 20,
+      "labels": {"0": 10, "1": 10},
+      "role": "Hyperparameter selection (C value, n-gram range, sublinear_tf) and probability threshold calibration",
+      "used_in_model_tuning": true,
+      "used_in_final_evaluation": false
+    },
+    "tests/real_world_test_cases.csv": {
+      "classification": "DEVELOPMENT_TEST",
+      "samples": 20,
+      "labels": {"0": 9, "1": 10, "unknown": 1},
+      "role": "Phase 5C qualitative testing and error-pattern discovery (influenced contrastive pair synthesis; must NOT be reported as clean final test)",
+      "used_in_model_tuning": false,
+      "used_in_final_evaluation": false
+    },
+    "tests/hard_negative_regression.csv": {
+      "classification": "DEVELOPMENT_TEST",
+      "samples": 12,
+      "labels": {"0": 12, "1": 0},
+      "role": "Keyword-memorization regression testing (influenced hard-negative construction)",
+      "used_in_model_tuning": false,
+      "used_in_final_evaluation": false
+    },
+    "tests/adversarial_cases.csv": {
+      "classification": "DEVELOPMENT_TEST",
+      "samples": 25,
+      "labels": {"various": 25},
+      "role": "Adversarial linguistic robustness checks (negation, unicode, currency)",
+      "used_in_model_tuning": false,
+      "used_in_final_evaluation": false
+    },
+    "tests/hard_generalization_v2.csv": {
+      "classification": "DEVELOPMENT_TEST",
+      "samples": 20,
+      "labels": {"0": 11, "1": 9},
+      "role": "Initial generalization evaluation; expanded in Phase 6.5 for polysemy stress testing",
+      "used_in_model_tuning": false,
+      "used_in_final_evaluation": false
+    },
+    "data/clean_final_test_large.csv": {
+      "classification": "CLEAN_FINAL_TEST",
+      "samples": 200,
+      "labels": {"0": 100, "1": 100},
+      "role": "Genuinely unseen, held-out independent evaluation set with multi-domain coverage. Never used for feature extraction, training, or threshold tuning.",
+      "used_in_model_tuning": false,
+      "used_in_final_evaluation": true
+    }
+  },
+  "provenance_verdict": "Strict separation established. Phase 5C real-world set is officially designated DEVELOPMENT_TEST. All final metrics are computed solely against CLEAN_FINAL_TEST."
+}

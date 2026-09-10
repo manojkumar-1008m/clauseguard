@@ -1,0 +1,21 @@
+id,category,text,expected_label,notes
+FT-01,pricing,"All applicable import duties and shipping rates are calculated and displayed before you pay.",0,Clean pricing transparency
+FT-02,pricing,"Additional packaging fees and handling costs will be revealed on your bank statement.",1,Deceptive drip pricing
+FT-03,cancellation,"You may terminate your account at any moment through the self-service dashboard.",0,Self-serve cancellation
+FT-04,cancellation,"To terminate your account you must schedule an exit interview with a customer retention manager.",1,Retention obstacle trap
+FT-05,trial,"Experience our software free for 14 days with zero commitment and no payment required.",0,Transparent free trial
+FT-06,trial,"Claim your free trial now. Warning: Your card will be billed $299 on day 15 with no refunds permitted.",1,Aggressive auto-conversion trial
+FT-07,inventory,"We currently stock three different variations of this camera lens.",0,Objective inventory description
+FT-08,inventory,"ONLY 1 ITEM LEFT! 18 CUSTOMERS ARE CHECKING OUT RIGHT NOW! HURRY!",1,Extreme urgency and false scarcity
+FT-09,consent,"Select your cookie preferences or decline optional tracking cookies.",0,Symmetric cookie consent
+FT-10,consent,"By opening this website you waive all rights to privacy and consent to persistent location tracking.",1,Forced extreme consent
+FT-11,return_policy,"Defective items may be returned within 30 days for an immediate exchange.",0,Standard return guarantee
+FT-12,return_policy,"Returns are accepted only if requested within 15 minutes of purchase completion.",1,Unreasonable return barrier
+FT-13,opt_out,"No thanks, continue without adding warranty coverage.",0,Neutral opt-out
+FT-14,opt_out,"No thanks, I don't value my personal security and prefer taking unnecessary risks.",1,Confirmshaming guilt trip
+FT-15,subscription,"Your subscription will renew on May 1st at the standard rate of $15/month.",0,Transparent subscription renewal notice
+FT-16,subscription,"Subscription renewals are processed at double the introductory rate with no advance warning.",1,Deceptive price hike renewal
+FT-17,marketplace,"This seller has completed over 10,000 verified transactions on our marketplace.",0,Factual seller history
+FT-18,marketplace,"Act fast! 35 people just added this exact item to their shopping carts!",1,Manufactured social proof pressure
+FT-19,fees,"No payment processing fees or surcharge will be applied to this transaction.",0,Zero hidden fees disclosure
+FT-20,fees,"An automatic service gratuity of 22% has been added to your checkout total without consent.",1,Sneak into basket surcharge

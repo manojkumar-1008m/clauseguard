@@ -1,0 +1,3574 @@
+domain	type	auto_value	value
+facebook.com	DP1	False	False
+facebook.com	DP2	True	True
+facebook.com	DP3	False	False
+facebook.com	DP4	False	False
+facebook.com	DP5	True	True
+facebook.com	DP6	False	False
+facebook.com	DP7	False	False
+facebook.com	DP8	False	False
+facebook.com	number of clicks to reject cookies	2	2
+facebook.com	DP10	unconfirmed	False
+facebook.com	DP12	unconfirmed	False
+facebook.com	DP13	unconfirmed	False
+facebook.com	DP14	unconfirmed	False
+facebook.com	DP15	unconfirmed	False
+youtube.com	DP1	False	False
+youtube.com	DP2	False	False
+youtube.com	DP3	False	False
+youtube.com	DP4	True	True
+youtube.com	DP5	True	True
+youtube.com	DP6	False	False
+youtube.com	DP7	False	False
+youtube.com	DP8	False	False
+youtube.com	number of clicks to reject cookies	5	5
+youtube.com	DP10	unconfirmed	False
+youtube.com	DP12	unconfirmed	False
+youtube.com	DP13	unconfirmed	False
+youtube.com	DP14	unconfirmed	False
+youtube.com	DP15	unconfirmed	False
+microsoft.com	DP1	False	False
+microsoft.com	DP2	False	False
+microsoft.com	DP3	False	False
+microsoft.com	DP4	True	True
+microsoft.com	DP5	True	True
+microsoft.com	DP6	False	False
+microsoft.com	DP7	False	False
+microsoft.com	DP8	False	False
+microsoft.com	number of clicks to reject cookies	5	5
+microsoft.com	DP10	unconfirmed	False
+microsoft.com	DP12	unconfirmed	False
+microsoft.com	DP13	unconfirmed	False
+microsoft.com	DP14	unconfirmed	False
+microsoft.com	DP15	unconfirmed	False
+twitter.com	DP1	True	True
+twitter.com	DP2	False	False
+twitter.com	DP3	False	False
+twitter.com	DP4	True	True
+twitter.com	DP5	False	False
+twitter.com	DP6	False	False
+twitter.com	DP7	False	False
+twitter.com	DP8	False	False
+twitter.com	number of clicks to reject cookies	0	0
+twitter.com	DP10	unconfirmed	True
+twitter.com	DP12	unconfirmed	False
+twitter.com	DP13	unconfirmed	False
+twitter.com	DP14	unconfirmed	False
+twitter.com	DP15	unconfirmed	False
+instagram.com	DP1	False	False
+instagram.com	DP2	False	False
+instagram.com	DP3	False	False
+instagram.com	DP4	False	False
+instagram.com	DP5	True	True
+instagram.com	DP6	False	False
+instagram.com	DP7	False	False
+instagram.com	DP8	False	False
+instagram.com	number of clicks to reject cookies	2	2
+instagram.com	DP10	unconfirmed	True
+instagram.com	DP12	unconfirmed	False
+instagram.com	DP13	unconfirmed	False
+instagram.com	DP14	unconfirmed	False
+instagram.com	DP15	unconfirmed	False
+tmall.com	no cookie dialog	True	True
+linkedin.com	no cookie dialog	True	True
+qq.com	no cookie dialog	True	True
+apple.com	no cookie dialog	True	True
+baidu.com	no cookie dialog	True	True
+wikipedia.org	no cookie dialog	True	True
+windowsupdate.com	no cookie dialog	True	True
+live.com	no cookie dialog	True	True
+sohu.com	no cookie dialog	True	True
+googletagmanager.com	no cookie dialog	True	True
+yahoo.com	DP1	False	False
+yahoo.com	DP2	True	True
+yahoo.com	DP3	True	True
+yahoo.com	DP4	False	False
+yahoo.com	DP5	True	True
+yahoo.com	DP6	False	False
+yahoo.com	DP7	False	False
+yahoo.com	DP8	False	False
+yahoo.com	number of clicks to reject cookies	3	3
+yahoo.com	DP10	unconfirmed	True
+yahoo.com	DP12	unconfirmed	True
+yahoo.com	DP13	unconfirmed	False
+yahoo.com	DP14	unconfirmed	False
+yahoo.com	DP15	unconfirmed	False
+amazon.com	no cookie dialog	True	True
+youtu.be	DP1	False	False
+youtu.be	DP2	False	False
+youtu.be	DP3	False	False
+youtu.be	DP4	True	True
+youtu.be	DP5	True	True
+youtu.be	DP6	False	False
+youtu.be	DP7	False	False
+youtu.be	DP8	False	False
+youtu.be	number of clicks to reject cookies	5	5
+youtu.be	DP10	unconfirmed	True
+youtu.be	DP12	unconfirmed	False
+youtu.be	DP13	unconfirmed	False
+youtu.be	DP14	unconfirmed	False
+youtu.be	DP15	unconfirmed	False
+taobao.com	no cookie dialog	True	True
+pinterest.com	no cookie dialog	True	True
+360.cn	no cookie dialog	True	True
+vimeo.com	no cookie dialog	True	True
+doubleclick.net	DP1	True	True
+doubleclick.net	DP2	False	False
+doubleclick.net	DP3	False	False
+doubleclick.net	DP4	False	False
+doubleclick.net	DP5	False	False
+doubleclick.net	DP6	False	False
+doubleclick.net	DP7	False	False
+doubleclick.net	DP8	False	False
+doubleclick.net	number of clicks to reject cookies	0	0
+doubleclick.net	DP10	unconfirmed	True
+doubleclick.net	DP12	unconfirmed	False
+doubleclick.net	DP13	unconfirmed	False
+doubleclick.net	DP14	unconfirmed	False
+doubleclick.net	DP15	unconfirmed	False
+office.com	DP1	False	False
+office.com	DP2	False	False
+office.com	DP3	False	False
+office.com	DP4	False	False
+office.com	DP5	False	False
+office.com	DP6	False	False
+office.com	DP7	False	False
+office.com	DP8	False	False
+office.com	number of clicks to reject cookies	0	0
+office.com	DP10	unconfirmed	True
+office.com	DP12	unconfirmed	False
+office.com	DP13	unconfirmed	False
+office.com	DP14	unconfirmed	False
+office.com	DP15	unconfirmed	False
+netflix.net	no cookie dialog	True	True
+jd.com	no cookie dialog	True	True
+wordpress.org	no cookie dialog	True	True
+bing.com	DP1	False	False
+bing.com	DP2	True	True
+bing.com	DP3	True	True
+bing.com	DP4	True	True
+bing.com	DP5	True	True
+bing.com	DP6	False	False
+bing.com	DP7	False	False
+bing.com	DP8	False	False
+bing.com	number of clicks to reject cookies	2	2
+bing.com	DP10	unconfirmed	True
+bing.com	DP12	unconfirmed	False
+bing.com	DP13	unconfirmed	False
+bing.com	DP14	unconfirmed	False
+bing.com	DP15	unconfirmed	False
+wordpress.com	DP1	False	False
+wordpress.com	DP2	True	True
+wordpress.com	DP3	False	False
+wordpress.com	DP4	True	True
+wordpress.com	DP5	True	True
+wordpress.com	DP6	False	False
+wordpress.com	DP7	False	False
+wordpress.com	DP8	False	False
+wordpress.com	number of clicks to reject cookies	3	3
+wordpress.com	DP10	unconfirmed	True
+wordpress.com	DP12	unconfirmed	False
+wordpress.com	DP13	unconfirmed	False
+wordpress.com	DP14	unconfirmed	False
+wordpress.com	DP15	unconfirmed	False
+reddit.com	DP1	False	False
+reddit.com	DP2	False	False
+reddit.com	DP3	True	True
+reddit.com	DP4	True	True
+reddit.com	DP5	False	False
+reddit.com	DP6	False	False
+reddit.com	DP7	False	False
+reddit.com	DP8	False	False
+reddit.com	number of clicks to reject cookies	1	1
+reddit.com	DP10	unconfirmed	False
+reddit.com	DP12	unconfirmed	False
+reddit.com	DP13	unconfirmed	False
+reddit.com	DP14	unconfirmed	False
+reddit.com	DP15	unconfirmed	False
+zoom.us	DP1	False	False
+zoom.us	DP2	False	False
+zoom.us	DP3	False	False
+zoom.us	DP4	False	False
+zoom.us	DP5	True	True
+zoom.us	DP6	True	True
+zoom.us	DP7	False	False
+zoom.us	DP8	False	False
+zoom.us	number of clicks to reject cookies	1	1
+zoom.us	DP10	unconfirmed	False
+zoom.us	DP12	unconfirmed	False
+zoom.us	DP13	unconfirmed	False
+zoom.us	DP14	unconfirmed	False
+zoom.us	DP15	unconfirmed	False
+goo.gl	no cookie dialog	True	True
+weibo.com	no cookie dialog	True	True
+github.com	no cookie dialog	True	True
+amazonaws.com	DP1	False	False
+amazonaws.com	DP2	True	True
+amazonaws.com	DP3	True	True
+amazonaws.com	DP4	True	True
+amazonaws.com	DP5	True	True
+amazonaws.com	DP6	False	False
+amazonaws.com	DP7	False	False
+amazonaws.com	DP8	False	False
+amazonaws.com	number of clicks to reject cookies	3	3
+amazonaws.com	DP10	unconfirmed	True
+amazonaws.com	DP12	unconfirmed	False
+amazonaws.com	DP13	unconfirmed	False
+amazonaws.com	DP14	unconfirmed	False
+amazonaws.com	DP15	unconfirmed	False
+bit.ly	DP1	True	True
+bit.ly	DP2	False	False
+bit.ly	DP3	False	False
+bit.ly	DP4	False	False
+bit.ly	DP5	False	False
+bit.ly	DP6	False	False
+bit.ly	DP7	False	False
+bit.ly	DP8	False	False
+bit.ly	number of clicks to reject cookies	0	0
+bit.ly	DP10	unconfirmed	True
+bit.ly	DP12	unconfirmed	False
+bit.ly	DP13	unconfirmed	False
+bit.ly	DP14	unconfirmed	False
+bit.ly	DP15	unconfirmed	False
+googleusercontent.com	no cookie dialog	True	True
+sina.com.cn	no cookie dialog	True	True
+blogspot.com	no cookie dialog	True	True
+xinhuanet.com	no cookie dialog	True	True
+mozilla.org	no cookie dialog	True	True
+tumblr.com	no cookie dialog	True	True
+whatsapp.com	DP1	False	False
+whatsapp.com	DP2	True	True
+whatsapp.com	DP3	True	True
+whatsapp.com	DP4	False	False
+whatsapp.com	DP5	True	True
+whatsapp.com	DP6	False	False
+whatsapp.com	DP7	False	False
+whatsapp.com	DP8	False	False
+whatsapp.com	number of clicks to reject cookies	2	2
+whatsapp.com	DP10	unconfirmed	True
+whatsapp.com	DP12	unconfirmed	False
+whatsapp.com	DP13	unconfirmed	False
+whatsapp.com	DP14	unconfirmed	False
+whatsapp.com	DP15	unconfirmed	False
+msn.com	DP1	False	False
+msn.com	DP2	True	True
+msn.com	DP3	True	True
+msn.com	DP4	True	True
+msn.com	DP5	True	True
+msn.com	DP6	False	False
+msn.com	DP7	False	False
+msn.com	DP8	False	False
+msn.com	number of clicks to reject cookies	3	3
+msn.com	DP10	unconfirmed	True
+msn.com	DP12	unconfirmed	True
+msn.com	DP13	unconfirmed	False
+msn.com	DP14	unconfirmed	False
+msn.com	DP15	unconfirmed	False
+google-analytics.com	DP1	True	True
+google-analytics.com	DP2	False	False
+google-analytics.com	DP3	False	False
+google-analytics.com	DP4	False	False
+google-analytics.com	DP5	False	False
+google-analytics.com	DP6	False	False
+google-analytics.com	DP7	False	False
+google-analytics.com	DP8	False	False
+google-analytics.com	number of clicks to reject cookies	0	0
+google-analytics.com	DP10	unconfirmed	True
+google-analytics.com	DP12	unconfirmed	False
+google-analytics.com	DP13	unconfirmed	False
+google-analytics.com	DP14	unconfirmed	False
+google-analytics.com	DP15	unconfirmed	False
+flickr.com	DP1	False	False
+flickr.com	DP2	False	False
+flickr.com	DP3	False	False
+flickr.com	DP4	False	False
+flickr.com	DP5	False	False
+flickr.com	DP6	True	True
+flickr.com	DP7	False	False
+flickr.com	DP8	False	False
+flickr.com	number of clicks to reject cookies	0	0
+flickr.com	DP10	unconfirmed	True
+flickr.com	DP12	unconfirmed	False
+flickr.com	DP13	unconfirmed	False
+flickr.com	DP14	unconfirmed	False
+flickr.com	DP15	unconfirmed	False
+europa.eu	DP1	False	False
+europa.eu	DP2	False	False
+europa.eu	DP3	True	False
+europa.eu	DP4	False	False
+europa.eu	DP5	False	False
+europa.eu	DP6	False	False
+europa.eu	DP7	True	True
+europa.eu	DP8	False	False
+europa.eu	number of clicks to reject cookies	1	1
+europa.eu	DP10	unconfirmed	False
+europa.eu	DP12	unconfirmed	False
+europa.eu	DP13	unconfirmed	False
+europa.eu	DP14	unconfirmed	False
+europa.eu	DP15	unconfirmed	False
+skype.com	DP1	False	False
+skype.com	DP2	False	False
+skype.com	DP3	False	False
+skype.com	DP4	True	True
+skype.com	DP5	True	True
+skype.com	DP6	False	False
+skype.com	DP7	False	False
+skype.com	DP8	False	False
+skype.com	number of clicks to reject cookies	5	5
+skype.com	DP10	unconfirmed	True
+skype.com	DP12	unconfirmed	False
+skype.com	DP13	unconfirmed	False
+skype.com	DP14	unconfirmed	False
+skype.com	DP15	unconfirmed	False
+gravatar.com	DP1	True	True
+gravatar.com	DP2	False	False
+gravatar.com	DP3	False	False
+gravatar.com	DP4	False	False
+gravatar.com	DP5	False	False
+gravatar.com	DP6	False	False
+gravatar.com	DP7	False	False
+gravatar.com	DP8	False	False
+gravatar.com	number of clicks to reject cookies	0	0
+gravatar.com	DP10	unconfirmed	True
+gravatar.com	DP12	unconfirmed	False
+gravatar.com	DP13	unconfirmed	False
+gravatar.com	DP14	unconfirmed	False
+gravatar.com	DP15	unconfirmed	False
+nih.gov	no cookie dialog	True	True
+office365.com	DP1	False	False
+office365.com	DP2	False	False
+office365.com	DP3	False	False
+office365.com	DP4	True	True
+office365.com	DP5	True	True
+office365.com	DP6	False	False
+office365.com	DP7	False	False
+office365.com	DP8	False	False
+office365.com	number of clicks to reject cookies	0	0
+office365.com	DP10	unconfirmed	True
+office365.com	DP12	unconfirmed	False
+office365.com	DP13	unconfirmed	False
+office365.com	DP14	unconfirmed	False
+office365.com	DP15	unconfirmed	False
+dropbox.com	DP1	False	False
+dropbox.com	DP2	True	True
+dropbox.com	DP3	False	False
+dropbox.com	DP4	False	False
+dropbox.com	DP5	True	True
+dropbox.com	DP6	False	False
+dropbox.com	DP7	False	False
+dropbox.com	DP8	False	False
+dropbox.com	number of clicks to reject cookies	1	1
+dropbox.com	DP10	unconfirmed	False
+dropbox.com	DP12	unconfirmed	False
+dropbox.com	DP13	unconfirmed	False
+dropbox.com	DP14	unconfirmed	False
+dropbox.com	DP15	unconfirmed	False
+soundcloud.com	DP1	False	False
+soundcloud.com	DP2	True	True
+soundcloud.com	DP3	False	False
+soundcloud.com	DP4	False	False
+soundcloud.com	DP5	True	True
+soundcloud.com	DP6	False	False
+soundcloud.com	DP7	False	False
+soundcloud.com	DP8	False	False
+soundcloud.com	number of clicks to reject cookies	2	2
+soundcloud.com	DP10	unconfirmed	True
+soundcloud.com	DP12	unconfirmed	False
+soundcloud.com	DP13	unconfirmed	False
+soundcloud.com	DP14	unconfirmed	False
+soundcloud.com	DP15	unconfirmed	False
+panda.tv	no cookie dialog	True	True
+zhanqi.tv	no cookie dialog	True	True
+alipay.com	no cookie dialog	True	True
+t.co	no cookie dialog	True	True
+myshopify.com	no cookie dialog	True	True
+google.com.hk	DP1	False	False
+google.com.hk	DP2	False	False
+google.com.hk	DP3	True	True
+google.com.hk	DP4	True	True
+google.com.hk	DP5	True	True
+google.com.hk	DP6	False	False
+google.com.hk	DP7	False	False
+google.com.hk	DP8	False	False
+google.com.hk	number of clicks to reject cookies	5	5
+google.com.hk	DP10	unconfirmed	True
+google.com.hk	DP12	unconfirmed	False
+google.com.hk	DP13	unconfirmed	False
+google.com.hk	DP14	unconfirmed	False
+google.com.hk	DP15	unconfirmed	False
+spotify.com	DP1	False	False
+spotify.com	DP2	True	True
+spotify.com	DP3	True	True
+spotify.com	DP4	True	True
+spotify.com	DP5	True	True
+spotify.com	DP6	False	False
+spotify.com	DP7	False	False
+spotify.com	DP8	False	False
+spotify.com	number of clicks to reject cookies	2	2
+spotify.com	DP10	unconfirmed	True
+spotify.com	DP12	unconfirmed	False
+spotify.com	DP13	unconfirmed	False
+spotify.com	DP14	unconfirmed	False
+spotify.com	DP15	unconfirmed	False
+apache.org	no cookie dialog	True	True
+macromedia.com	DP1	True	True
+macromedia.com	DP2	False	False
+macromedia.com	DP3	False	False
+macromedia.com	DP4	False	False
+macromedia.com	DP5	False	False
+macromedia.com	DP6	False	False
+macromedia.com	DP7	False	False
+macromedia.com	DP8	False	False
+macromedia.com	number of clicks to reject cookies	2	2
+macromedia.com	DP10	unconfirmed	True
+macromedia.com	DP12	unconfirmed	False
+macromedia.com	DP13	unconfirmed	False
+macromedia.com	DP14	unconfirmed	False
+macromedia.com	DP15	unconfirmed	False
+cnn.com	DP1	False	False
+cnn.com	DP2	False	False
+cnn.com	DP3	False	False
+cnn.com	DP4	True	True
+cnn.com	DP5	True	True
+cnn.com	DP6	False	False
+cnn.com	DP7	False	False
+cnn.com	DP8	False	False
+cnn.com	number of clicks to reject cookies	2	2
+cnn.com	DP10	unconfirmed	True
+cnn.com	DP12	unconfirmed	False
+cnn.com	DP13	unconfirmed	False
+cnn.com	DP14	unconfirmed	False
+cnn.com	DP15	unconfirmed	False
+csdn.net	no cookie dialog	True	True
+ebay.com	DP1	False	False
+ebay.com	DP2	False	False
+ebay.com	DP3	False	False
+ebay.com	DP4	True	True
+ebay.com	DP5	True	True
+ebay.com	DP6	False	False
+ebay.com	DP7	False	False
+ebay.com	DP8	False	False
+ebay.com	number of clicks to reject cookies	1	1
+ebay.com	DP10	unconfirmed	False
+ebay.com	DP12	unconfirmed	False
+ebay.com	DP13	unconfirmed	False
+ebay.com	DP14	unconfirmed	False
+ebay.com	DP15	unconfirmed	False
+forbes.com	DP1	False	False
+forbes.com	DP2	False	False
+forbes.com	DP3	False	False
+forbes.com	DP4	True	True
+forbes.com	DP5	True	True
+forbes.com	DP6	False	False
+forbes.com	DP7	False	False
+forbes.com	DP8	False	False
+forbes.com	number of clicks to reject cookies	0	0
+forbes.com	DP10	unconfirmed	False
+forbes.com	DP12	unconfirmed	False
+forbes.com	DP13	unconfirmed	False
+forbes.com	DP14	unconfirmed	False
+forbes.com	DP15	unconfirmed	False
+fbcdn.net	DP1	False	False
+fbcdn.net	DP2	True	True
+fbcdn.net	DP3	False	False
+fbcdn.net	DP4	False	False
+fbcdn.net	DP5	True	True
+fbcdn.net	DP6	False	False
+fbcdn.net	DP7	False	False
+fbcdn.net	DP8	False	False
+fbcdn.net	number of clicks to reject cookies	2	2
+fbcdn.net	DP10	unconfirmed	True
+fbcdn.net	DP12	unconfirmed	False
+fbcdn.net	DP13	unconfirmed	False
+fbcdn.net	DP14	unconfirmed	False
+fbcdn.net	DP15	unconfirmed	False
+w3.org	no cookie dialog	True	True
+twitch.tv	DP1	False	False
+twitch.tv	DP2	False	False
+twitch.tv	DP3	False	False
+twitch.tv	DP4	True	True
+twitch.tv	DP5	True	True
+twitch.tv	DP6	False	False
+twitch.tv	DP7	False	False
+twitch.tv	DP8	False	False
+twitch.tv	number of clicks to reject cookies	2	2
+twitch.tv	DP10	unconfirmed	True
+twitch.tv	DP12	unconfirmed	False
+twitch.tv	DP13	unconfirmed	False
+twitch.tv	DP14	unconfirmed	False
+twitch.tv	DP15	unconfirmed	False
+paypal.com	DP1	False	False
+paypal.com	DP2	False	False
+paypal.com	DP3	False	False
+paypal.com	DP4	False	False
+paypal.com	DP5	True	True
+paypal.com	DP6	False	False
+paypal.com	DP7	True	False
+paypal.com	DP8	False	False
+paypal.com	number of clicks to reject cookies	1	1
+paypal.com	DP10	unconfirmed	False
+paypal.com	DP12	unconfirmed	False
+paypal.com	DP13	unconfirmed	False
+paypal.com	DP14	unconfirmed	False
+paypal.com	DP15	unconfirmed	False
+yahoo.co.jp	no cookie dialog	True	True
+sourceforge.net	no cookie dialog	True	True
+archive.org	no cookie dialog	True	True
+imdb.com	no cookie dialog	True	True
+github.io	no cookie dialog	True	True
+okezone.com	no cookie dialog	True	True
+icloud.com	no cookie dialog	True	True
+bongacams.com	DP1	False	False
+bongacams.com	DP2	False	False
+bongacams.com	DP3	False	False
+bongacams.com	DP4	False	False
+bongacams.com	DP5	False	False
+bongacams.com	DP6	False	False
+bongacams.com	DP7	False	False
+bongacams.com	DP8	False	False
+bongacams.com	number of clicks to reject cookies	0	0
+bongacams.com	DP10	unconfirmed	True
+bongacams.com	DP12	unconfirmed	False
+bongacams.com	DP13	unconfirmed	False
+bongacams.com	DP14	unconfirmed	False
+bongacams.com	DP15	unconfirmed	False
+googleadservices.com	no cookie dialog	True	True
+aliexpress.com	no cookie dialog	True	True
+googlesyndication.com	DP1	False	False
+googlesyndication.com	DP2	False	False
+googlesyndication.com	DP3	True	True
+googlesyndication.com	DP4	True	True
+googlesyndication.com	DP5	True	True
+googlesyndication.com	DP6	False	False
+googlesyndication.com	DP7	False	False
+googlesyndication.com	DP8	False	False
+googlesyndication.com	number of clicks to reject cookies	5	5
+googlesyndication.com	DP10	unconfirmed	True
+googlesyndication.com	DP12	unconfirmed	False
+googlesyndication.com	DP13	unconfirmed	False
+googlesyndication.com	DP14	unconfirmed	False
+googlesyndication.com	DP15	unconfirmed	False
+windows.net	no cookie dialog	True	True
+creativecommons.org	no cookie dialog	True	True
+who.int	no cookie dialog	True	True
+weebly.com	no cookie dialog	True	True
+wixsite.com	no cookie dialog	True	True
+amazon.in	no cookie dialog	True	True
+etsy.com	DP1	False	False
+etsy.com	DP2	True	True
+etsy.com	DP3	True	True
+etsy.com	DP4	True	True
+etsy.com	DP5	True	True
+etsy.com	DP6	False	False
+etsy.com	DP7	False	False
+etsy.com	DP8	False	False
+etsy.com	number of clicks to reject cookies	2	2
+etsy.com	DP10	unconfirmed	True
+etsy.com	DP12	unconfirmed	False
+etsy.com	DP13	unconfirmed	False
+etsy.com	DP14	unconfirmed	False
+etsy.com	DP15	unconfirmed	False
+amazon.co.jp	no cookie dialog	True	True
+washingtonpost.com	DP1	False	False
+washingtonpost.com	DP2	True	True
+washingtonpost.com	DP3	True	True
+washingtonpost.com	DP4	False	False
+washingtonpost.com	DP5	True	True
+washingtonpost.com	DP6	False	False
+washingtonpost.com	DP7	False	False
+washingtonpost.com	DP8	False	False
+washingtonpost.com	number of clicks to reject cookies	4	4
+washingtonpost.com	DP10	unconfirmed	True
+washingtonpost.com	DP12	unconfirmed	False
+washingtonpost.com	DP13	unconfirmed	False
+washingtonpost.com	DP14	unconfirmed	False
+washingtonpost.com	DP15	unconfirmed	False
+forms.gle	no cookie dialog	True	True
+huanqiu.com	no cookie dialog	True	True
+tianya.cn	no cookie dialog	True	True
+yy.com	no cookie dialog	True	True
+canva.com	DP1	False	False
+canva.com	DP2	False	False
+canva.com	DP3	False	False
+canva.com	DP4	False	False
+canva.com	DP5	True	True
+canva.com	DP6	False	False
+canva.com	DP7	False	False
+canva.com	DP8	False	False
+canva.com	number of clicks to reject cookies	3	3
+canva.com	DP10	unconfirmed	True
+canva.com	DP12	unconfirmed	False
+canva.com	DP13	unconfirmed	False
+canva.com	DP14	unconfirmed	False
+canva.com	DP15	unconfirmed	False
+cdc.gov	no cookie dialog	True	True
+outlook.com	no cookie dialog	True	True
+googlevideo.com	no cookie dialog	True	True
+chaturbate.com	no cookie dialog	True	True
+digicert.com	DP1	True	True
+digicert.com	DP2	False	False
+digicert.com	DP3	False	False
+digicert.com	DP4	True	True
+digicert.com	DP5	False	False
+digicert.com	DP6	True	True
+digicert.com	DP7	False	False
+digicert.com	DP8	False	False
+digicert.com	number of clicks to reject cookies	0	0
+digicert.com	DP10	unconfirmed	True
+digicert.com	DP12	unconfirmed	False
+digicert.com	DP13	unconfirmed	False
+digicert.com	DP14	unconfirmed	False
+digicert.com	DP15	unconfirmed	False
+tinyurl.com	DP1	False	False
+tinyurl.com	DP2	True	True
+tinyurl.com	DP3	False	False
+tinyurl.com	DP4	False	False
+tinyurl.com	DP5	True	True
+tinyurl.com	DP6	False	False
+tinyurl.com	DP7	True	True
+tinyurl.com	DP8	False	False
+tinyurl.com	number of clicks to reject cookies	3	3
+tinyurl.com	DP10	unconfirmed	True
+tinyurl.com	DP12	unconfirmed	False
+tinyurl.com	DP13	unconfirmed	False
+tinyurl.com	DP14	unconfirmed	False
+tinyurl.com	DP15	unconfirmed	False
+tiktok.com	DP1	False	False
+tiktok.com	DP2	False	False
+tiktok.com	DP3	False	False
+tiktok.com	DP4	False	False
+tiktok.com	DP5	True	True
+tiktok.com	DP6	False	False
+tiktok.com	DP7	False	False
+tiktok.com	DP8	False	False
+tiktok.com	number of clicks to reject cookies	5	5
+tiktok.com	DP10	unconfirmed	True
+tiktok.com	DP12	unconfirmed	False
+tiktok.com	DP13	unconfirmed	False
+tiktok.com	DP14	unconfirmed	False
+tiktok.com	DP15	unconfirmed	False
+mail.ru	DP1	False	False
+mail.ru	DP2	True	True
+mail.ru	DP3	False	False
+mail.ru	DP4	True	True
+mail.ru	DP5	True	True
+mail.ru	DP6	False	False
+mail.ru	DP7	False	False
+mail.ru	DP8	False	False
+mail.ru	number of clicks to reject cookies	1	1
+mail.ru	DP10	unconfirmed	False
+mail.ru	DP12	unconfirmed	False
+mail.ru	DP13	unconfirmed	False
+mail.ru	DP14	unconfirmed	False
+mail.ru	DP15	unconfirmed	False
+imgur.com	DP1	False	False
+imgur.com	DP2	True	True
+imgur.com	DP3	False	False
+imgur.com	DP4	False	False
+imgur.com	DP5	True	True
+imgur.com	DP6	False	False
+imgur.com	DP7	False	False
+imgur.com	DP8	False	False
+imgur.com	number of clicks to reject cookies	1	1
+imgur.com	DP10	unconfirmed	False
+imgur.com	DP12	unconfirmed	False
+imgur.com	DP13	unconfirmed	False
+imgur.com	DP14	unconfirmed	False
+imgur.com	DP15	unconfirmed	False
+wsj.com	DP1	False	False
+wsj.com	DP2	False	False
+wsj.com	DP3	True	True
+wsj.com	DP4	True	True
+wsj.com	DP5	False	False
+wsj.com	DP6	False	False
+wsj.com	DP7	False	False
+wsj.com	DP8	False	False
+wsj.com	number of clicks to reject cookies	2	2
+wsj.com	DP10	unconfirmed	True
+wsj.com	DP12	unconfirmed	False
+wsj.com	DP13	unconfirmed	False
+wsj.com	DP14	unconfirmed	False
+wsj.com	DP15	unconfirmed	False
+sciencedirect.com	DP1	False	False
+sciencedirect.com	DP2	False	False
+sciencedirect.com	DP3	False	False
+sciencedirect.com	DP4	False	False
+sciencedirect.com	DP5	False	False
+sciencedirect.com	DP6	False	False
+sciencedirect.com	DP7	False	False
+sciencedirect.com	DP8	False	False
+sciencedirect.com	number of clicks to reject cookies	0	0
+sciencedirect.com	DP10	unconfirmed	True
+sciencedirect.com	DP12	unconfirmed	False
+sciencedirect.com	DP13	unconfirmed	False
+sciencedirect.com	DP14	unconfirmed	False
+sciencedirect.com	DP15	unconfirmed	False
+google.de	DP1	False	False
+google.de	DP2	False	False
+google.de	DP3	True	True
+google.de	DP4	True	True
+google.de	DP5	True	True
+google.de	DP6	False	False
+google.de	DP7	False	False
+google.de	DP8	False	False
+google.de	number of clicks to reject cookies	5	5
+google.de	DP10	unconfirmed	True
+google.de	DP12	unconfirmed	True
+google.de	DP13	unconfirmed	False
+google.de	DP14	unconfirmed	False
+google.de	DP15	unconfirmed	False
+wikimedia.org	no cookie dialog	True	True
+oracle.com	DP1	False	False
+oracle.com	DP2	False	False
+oracle.com	DP3	False	False
+oracle.com	DP4	True	True
+oracle.com	DP5	True	True
+oracle.com	DP6	False	False
+oracle.com	DP7	False	False
+oracle.com	DP8	False	False
+oracle.com	number of clicks to reject cookies	2	2
+oracle.com	DP10	unconfirmed	True
+oracle.com	DP12	unconfirmed	False
+oracle.com	DP13	unconfirmed	False
+oracle.com	DP14	unconfirmed	False
+oracle.com	DP15	unconfirmed	False
+bloomberg.com	DP1	False	False
+bloomberg.com	DP2	False	False
+bloomberg.com	DP3	True	True
+bloomberg.com	DP4	False	False
+bloomberg.com	DP5	True	True
+bloomberg.com	DP6	False	False
+bloomberg.com	DP7	False	False
+bloomberg.com	DP8	False	False
+bloomberg.com	number of clicks to reject cookies	5	5
+bloomberg.com	DP10	unconfirmed	True
+bloomberg.com	DP12	unconfirmed	False
+bloomberg.com	DP13	unconfirmed	False
+bloomberg.com	DP14	unconfirmed	False
+bloomberg.com	DP15	unconfirmed	False
+aparat.com	no cookie dialog	True	True
+slideshare.net	DP1	False	True
+slideshare.net	DP2	False	False
+slideshare.net	DP3	False	False
+slideshare.net	DP4	True	True
+slideshare.net	DP5	False	False
+slideshare.net	DP6	True	True
+slideshare.net	DP7	False	False
+slideshare.net	DP8	False	False
+slideshare.net	number of clicks to reject cookies	0	0
+slideshare.net	DP10	unconfirmed	True
+slideshare.net	DP12	unconfirmed	False
+slideshare.net	DP13	unconfirmed	False
+slideshare.net	DP14	unconfirmed	False
+slideshare.net	DP15	unconfirmed	False
+force.com	DP1	False	False
+force.com	DP2	False	False
+force.com	DP3	False	False
+force.com	DP4	False	False
+force.com	DP5	False	False
+force.com	DP6	False	False
+force.com	DP7	False	False
+force.com	DP8	False	False
+force.com	number of clicks to reject cookies	0	0
+force.com	DP10	unconfirmed	True
+force.com	DP12	unconfirmed	False
+force.com	DP13	unconfirmed	False
+force.com	DP14	unconfirmed	False
+force.com	DP15	unconfirmed	False
+youtube-nocookie.com	no cookie dialog	True	True
+lencr.org	no cookie dialog	True	True
+17ok.com	no cookie dialog	True	True
+t.me	no cookie dialog	True	True
+businessinsider.com	DP1	False	False
+businessinsider.com	DP2	True	True
+businessinsider.com	DP3	True	True
+businessinsider.com	DP4	False	False
+businessinsider.com	DP5	True	True
+businessinsider.com	DP6	False	False
+businessinsider.com	DP7	False	False
+businessinsider.com	DP8	False	False
+businessinsider.com	number of clicks to reject cookies	2	2
+businessinsider.com	DP10	unconfirmed	True
+businessinsider.com	DP12	unconfirmed	False
+businessinsider.com	DP13	unconfirmed	False
+businessinsider.com	DP14	unconfirmed	False
+businessinsider.com	DP15	unconfirmed	False
+php.net	no cookie dialog	True	True
+so.com	no cookie dialog	True	True
+google.co.in	DP1	False	False
+google.co.in	DP2	False	False
+google.co.in	DP3	True	True
+google.co.in	DP4	True	True
+google.co.in	DP5	True	True
+google.co.in	DP6	False	False
+google.co.in	DP7	False	False
+google.co.in	DP8	False	False
+google.co.in	number of clicks to reject cookies	5	5
+google.co.in	DP10	unconfirmed	True
+google.co.in	DP12	unconfirmed	False
+google.co.in	DP13	unconfirmed	False
+google.co.in	DP14	unconfirmed	False
+google.co.in	DP15	unconfirmed	False
+amazon.co.uk	DP1	False	False
+amazon.co.uk	DP2	False	False
+amazon.co.uk	DP3	False	False
+amazon.co.uk	DP4	False	False
+amazon.co.uk	DP5	True	True
+amazon.co.uk	DP6	False	False
+amazon.co.uk	DP7	False	False
+amazon.co.uk	DP8	False	False
+amazon.co.uk	number of clicks to reject cookies	4	4
+amazon.co.uk	DP10	unconfirmed	True
+amazon.co.uk	DP12	unconfirmed	False
+amazon.co.uk	DP13	unconfirmed	False
+amazon.co.uk	DP14	unconfirmed	False
+amazon.co.uk	DP15	unconfirmed	False
+indeed.com	DP1	False	False
+indeed.com	DP2	False	False
+indeed.com	DP3	False	False
+indeed.com	DP4	False	False
+indeed.com	DP5	True	True
+indeed.com	DP6	False	False
+indeed.com	DP7	False	False
+indeed.com	DP8	False	False
+indeed.com	number of clicks to reject cookies	2	2
+indeed.com	DP10	unconfirmed	True
+indeed.com	DP12	unconfirmed	False
+indeed.com	DP13	unconfirmed	False
+indeed.com	DP14	unconfirmed	False
+indeed.com	DP15	unconfirmed	False
+aaplimg.com	no cookie dialog	True	True
+windows.com	DP1	False	False
+windows.com	DP2	False	False
+windows.com	DP3	False	False
+windows.com	DP4	True	True
+windows.com	DP5	True	True
+windows.com	DP6	False	False
+windows.com	DP7	False	False
+windows.com	DP8	False	False
+windows.com	number of clicks to reject cookies	5	5
+windows.com	DP10	unconfirmed	True
+windows.com	DP12	unconfirmed	False
+windows.com	DP13	unconfirmed	False
+windows.com	DP14	unconfirmed	False
+windows.com	DP15	unconfirmed	False
+wp.com	DP1	False	False
+wp.com	DP2	True	True
+wp.com	DP3	False	False
+wp.com	DP4	True	True
+wp.com	DP5	True	True
+wp.com	DP6	False	False
+wp.com	DP7	False	False
+wp.com	DP8	False	False
+wp.com	number of clicks to reject cookies	3	3
+wp.com	DP10	unconfirmed	True
+wp.com	DP12	unconfirmed	False
+wp.com	DP13	unconfirmed	False
+wp.com	DP14	unconfirmed	False
+wp.com	DP15	unconfirmed	False
+harvard.edu	no cookie dialog	True	True
+163.com	no cookie dialog	True	True
+mit.edu	no cookie dialog	True	True
+researchgate.net	DP1	False	False
+researchgate.net	DP2	True	True
+researchgate.net	DP3	False	False
+researchgate.net	DP4	False	False
+researchgate.net	DP5	True	True
+researchgate.net	DP6	False	False
+researchgate.net	DP7	False	False
+researchgate.net	DP8	False	False
+researchgate.net	number of clicks to reject cookies	2	2
+researchgate.net	DP10	unconfirmed	True
+researchgate.net	DP12	unconfirmed	False
+researchgate.net	DP13	unconfirmed	False
+researchgate.net	DP14	unconfirmed	False
+researchgate.net	DP15	unconfirmed	False
+cnet.com	no cookie dialog	True	True
+ok.ru	DP1	False	False
+ok.ru	DP2	True	True
+ok.ru	DP3	False	False
+ok.ru	DP4	True	True
+ok.ru	DP5	True	True
+ok.ru	DP6	False	False
+ok.ru	DP7	True	True
+ok.ru	DP8	False	False
+ok.ru	number of clicks to reject cookies	5	5
+ok.ru	DP10	unconfirmed	True
+ok.ru	DP12	unconfirmed	True
+ok.ru	DP13	unconfirmed	False
+ok.ru	DP14	unconfirmed	False
+ok.ru	DP15	unconfirmed	False
+app-measurement.com	no cookie dialog	True	True
+list-manage.com	no cookie dialog	True	True
+google.com.br	DP1	False	False
+google.com.br	DP2	False	False
+google.com.br	DP3	True	True
+google.com.br	DP4	True	True
+google.com.br	DP5	True	True
+google.com.br	DP6	False	False
+google.com.br	DP7	False	False
+google.com.br	DP8	False	False
+google.com.br	number of clicks to reject cookies	5	5
+google.com.br	DP10	unconfirmed	True
+google.com.br	DP12	unconfirmed	True
+google.com.br	DP13	unconfirmed	False
+google.com.br	DP14	unconfirmed	False
+google.com.br	DP15	unconfirmed	False
+1688.com	no cookie dialog	True	True
+blogger.com	no cookie dialog	True	True
+gnu.org	no cookie dialog	True	True
+ibm.com	DP1	False	False
+ibm.com	DP2	False	False
+ibm.com	DP3	False	False
+ibm.com	DP4	True	True
+ibm.com	DP5	True	True
+ibm.com	DP6	False	False
+ibm.com	DP7	False	False
+ibm.com	DP8	False	False
+ibm.com	number of clicks to reject cookies	1	1
+ibm.com	DP10	unconfirmed	False
+ibm.com	DP12	unconfirmed	False
+ibm.com	DP13	unconfirmed	False
+ibm.com	DP14	unconfirmed	False
+ibm.com	DP15	unconfirmed	False
+sharepoint.com	no cookie dialog	True	True
+alibaba.com	no cookie dialog	True	True
+identrust.com	DP1	False	False
+identrust.com	DP2	False	False
+identrust.com	DP3	False	False
+identrust.com	DP4	False	False
+identrust.com	DP5	False	False
+identrust.com	DP6	True	True
+identrust.com	DP7	False	False
+identrust.com	DP8	False	False
+identrust.com	number of clicks to reject cookies	0	0
+identrust.com	DP10	unconfirmed	True
+identrust.com	DP12	unconfirmed	False
+identrust.com	DP13	unconfirmed	False
+identrust.com	DP14	unconfirmed	False
+identrust.com	DP15	unconfirmed	False
+cnbc.com	no cookie dialog	True	True
+go.com	no cookie dialog	True	True
+google.co.jp	DP1	False	False
+google.co.jp	DP2	False	False
+google.co.jp	DP3	True	True
+google.co.jp	DP4	True	True
+google.co.jp	DP5	True	True
+google.co.jp	DP6	False	False
+google.co.jp	DP7	False	False
+google.co.jp	DP8	False	False
+google.co.jp	number of clicks to reject cookies	5	5
+google.co.jp	DP10	unconfirmed	True
+google.co.jp	DP12	unconfirmed	False
+google.co.jp	DP13	unconfirmed	False
+google.co.jp	DP14	unconfirmed	False
+google.co.jp	DP15	unconfirmed	False
+stanford.edu	no cookie dialog	True	True
+haosou.com	no cookie dialog	True	True
+tradingview.com	no cookie dialog	True	True
+tribunnews.com	no cookie dialog	True	True
+nature.com	DP1	False	False
+nature.com	DP2	False	False
+nature.com	DP3	False	False
+nature.com	DP4	True	True
+nature.com	DP5	True	True
+nature.com	DP6	False	False
+nature.com	DP7	True	True
+nature.com	DP8	False	False
+nature.com	number of clicks to reject cookies	2	2
+nature.com	DP10	unconfirmed	True
+nature.com	DP12	unconfirmed	False
+nature.com	DP13	unconfirmed	False
+nature.com	DP14	unconfirmed	False
+nature.com	DP15	unconfirmed	False
+walmart.com	no cookie dialog	True	True
+un.org	no cookie dialog	True	True
+opendns.com	DP1	False	False
+opendns.com	DP2	False	False
+opendns.com	DP3	False	False
+opendns.com	DP4	False	False
+opendns.com	DP5	True	True
+opendns.com	DP6	False	False
+opendns.com	DP7	False	False
+opendns.com	DP8	False	False
+opendns.com	number of clicks to reject cookies	1	1
+opendns.com	DP10	unconfirmed	False
+opendns.com	DP12	unconfirmed	False
+opendns.com	DP13	unconfirmed	False
+opendns.com	DP14	unconfirmed	False
+opendns.com	DP15	unconfirmed	False
+eventbrite.com	DP1	True	True
+eventbrite.com	DP2	False	False
+eventbrite.com	DP3	False	False
+eventbrite.com	DP4	True	True
+eventbrite.com	DP5	False	False
+eventbrite.com	DP6	True	True
+eventbrite.com	DP7	False	False
+eventbrite.com	DP8	False	False
+eventbrite.com	number of clicks to reject cookies	0	0
+eventbrite.com	DP10	unconfirmed	True
+eventbrite.com	DP12	unconfirmed	False
+eventbrite.com	DP13	unconfirmed	False
+eventbrite.com	DP14	unconfirmed	False
+eventbrite.com	DP15	unconfirmed	False
+telegraph.co.uk	DP1	False	False
+telegraph.co.uk	DP2	True	True
+telegraph.co.uk	DP3	False	False
+telegraph.co.uk	DP4	True	True
+telegraph.co.uk	DP5	True	True
+telegraph.co.uk	DP6	False	False
+telegraph.co.uk	DP7	False	False
+telegraph.co.uk	DP8	False	False
+telegraph.co.uk	number of clicks to reject cookies	2	2
+telegraph.co.uk	DP10	unconfirmed	True
+telegraph.co.uk	DP12	unconfirmed	False
+telegraph.co.uk	DP13	unconfirmed	False
+telegraph.co.uk	DP14	unconfirmed	False
+telegraph.co.uk	DP15	unconfirmed	False
+chase.com	no cookie dialog	True	True
+nginx.org	no cookie dialog	True	True
+nasa.gov	no cookie dialog	True	True
+wa.me	no cookie dialog	True	True
+google.co.uk	DP1	False	False
+google.co.uk	DP2	False	False
+google.co.uk	DP3	True	True
+google.co.uk	DP4	True	True
+google.co.uk	DP5	True	True
+google.co.uk	DP6	False	False
+google.co.uk	DP7	False	False
+google.co.uk	DP8	False	False
+google.co.uk	number of clicks to reject cookies	5	5
+google.co.uk	DP10	unconfirmed	True
+google.co.uk	DP12	unconfirmed	True
+google.co.uk	DP13	unconfirmed	False
+google.co.uk	DP14	unconfirmed	False
+google.co.uk	DP15	unconfirmed	False
+rakuten.co.jp	no cookie dialog	True	True
+pornhub.com	no cookie dialog	True	True
+time.com	DP1	False	False
+time.com	DP2	True	True
+time.com	DP3	False	False
+time.com	DP4	False	False
+time.com	DP5	True	True
+time.com	DP6	False	False
+time.com	DP7	False	False
+time.com	DP8	False	False
+time.com	number of clicks to reject cookies	2	2
+time.com	DP10	unconfirmed	True
+time.com	DP12	unconfirmed	True
+time.com	DP13	unconfirmed	False
+time.com	DP14	unconfirmed	False
+time.com	DP15	unconfirmed	False
+adobe.com	DP1	False	False
+adobe.com	DP2	False	False
+adobe.com	DP3	False	False
+adobe.com	DP4	False	False
+adobe.com	DP5	True	True
+adobe.com	DP6	False	False
+adobe.com	DP7	False	False
+adobe.com	DP8	False	False
+adobe.com	number of clicks to reject cookies	2	2
+adobe.com	DP10	unconfirmed	True
+adobe.com	DP12	unconfirmed	False
+adobe.com	DP13	unconfirmed	False
+adobe.com	DP14	unconfirmed	False
+adobe.com	DP15	unconfirmed	False
+google.com	DP1	False	False
+google.com	DP2	False	False
+google.com	DP3	True	True
+google.com	DP4	True	True
+google.com	DP5	True	True
+google.com	DP6	False	False
+google.com	DP7	False	False
+google.com	DP8	False	False
+google.com	number of clicks to reject cookies	5	5
+google.com	DP10	unconfirmed	True
+google.com	DP12	unconfirmed	True
+google.com	DP13	unconfirmed	False
+google.com	DP14	unconfirmed	False
+google.com	DP15	unconfirmed	False
+vk.com	DP1	True	True
+vk.com	DP2	False	False
+vk.com	DP3	False	False
+vk.com	DP4	False	False
+vk.com	DP5	False	False
+vk.com	DP6	True	True
+vk.com	DP7	False	False
+vk.com	DP8	False	False
+vk.com	number of clicks to reject cookies	0	0
+vk.com	DP10	unconfirmed	True
+vk.com	DP12	unconfirmed	False
+vk.com	DP13	unconfirmed	False
+vk.com	DP14	unconfirmed	False
+vk.com	DP15	unconfirmed	False
+stackoverflow.com	DP1	False	False
+stackoverflow.com	DP2	True	True
+stackoverflow.com	DP3	False	False
+stackoverflow.com	DP4	False	False
+stackoverflow.com	DP5	True	True
+stackoverflow.com	DP6	False	False
+stackoverflow.com	DP7	False	False
+stackoverflow.com	DP8	False	False
+stackoverflow.com	number of clicks to reject cookies	2	2
+stackoverflow.com	DP10	unconfirmed	True
+stackoverflow.com	DP12	unconfirmed	False
+stackoverflow.com	DP13	unconfirmed	False
+stackoverflow.com	DP14	unconfirmed	False
+stackoverflow.com	DP15	unconfirmed	False
+netflix.com	DP1	False	False
+netflix.com	DP2	False	False
+netflix.com	DP3	False	False
+netflix.com	DP4	True	True
+netflix.com	DP5	True	True
+netflix.com	DP6	True	True
+netflix.com	DP7	False	False
+netflix.com	DP8	False	False
+netflix.com	number of clicks to reject cookies	1	1
+netflix.com	DP10	unconfirmed	False
+netflix.com	DP12	unconfirmed	False
+netflix.com	DP13	unconfirmed	False
+netflix.com	DP14	unconfirmed	False
+netflix.com	DP15	unconfirmed	False
+doi.org	no cookie dialog	True	True
+samsung.com	DP1	False	False
+samsung.com	DP2	True	True
+samsung.com	DP3	False	False
+samsung.com	DP4	False	False
+samsung.com	DP5	True	True
+samsung.com	DP6	False	False
+samsung.com	DP7	False	False
+samsung.com	DP8	False	False
+samsung.com	number of clicks to reject cookies	3	3
+samsung.com	DP10	unconfirmed	True
+samsung.com	DP12	unconfirmed	False
+samsung.com	DP13	unconfirmed	False
+samsung.com	DP14	unconfirmed	False
+samsung.com	DP15	unconfirmed	False
+bitly.com	DP1	True	True
+bitly.com	DP2	False	False
+bitly.com	DP3	False	False
+bitly.com	DP4	False	False
+bitly.com	DP5	False	False
+bitly.com	DP6	False	False
+bitly.com	DP7	False	False
+bitly.com	DP8	False	False
+bitly.com	number of clicks to reject cookies	0	0
+bitly.com	DP10	unconfirmed	True
+bitly.com	DP12	unconfirmed	False
+bitly.com	DP13	unconfirmed	False
+bitly.com	DP14	unconfirmed	False
+bitly.com	DP15	unconfirmed	False
+springer.com	DP1	False	False
+springer.com	DP2	False	False
+springer.com	DP3	False	False
+springer.com	DP4	True	True
+springer.com	DP5	True	True
+springer.com	DP6	False	False
+springer.com	DP7	False	False
+springer.com	DP8	False	False
+springer.com	number of clicks to reject cookies	9	9
+springer.com	DP10	unconfirmed	True
+springer.com	DP12	unconfirmed	False
+springer.com	DP13	unconfirmed	False
+springer.com	DP14	unconfirmed	False
+springer.com	DP15	unconfirmed	False
+yelp.com	DP1	False	False
+yelp.com	DP2	False	False
+yelp.com	DP3	False	False
+yelp.com	DP4	False	False
+yelp.com	DP5	True	True
+yelp.com	DP6	False	False
+yelp.com	DP7	False	False
+yelp.com	DP8	False	False
+yelp.com	number of clicks to reject cookies	1	1
+yelp.com	DP10	unconfirmed	False
+yelp.com	DP12	unconfirmed	False
+yelp.com	DP13	unconfirmed	False
+yelp.com	DP14	unconfirmed	False
+yelp.com	DP15	unconfirmed	False
+www.gov.uk	DP1	False	False
+www.gov.uk	DP2	False	False
+www.gov.uk	DP3	False	False
+www.gov.uk	DP4	False	False
+www.gov.uk	DP5	False	False
+www.gov.uk	DP6	False	False
+www.gov.uk	DP7	False	False
+www.gov.uk	DP8	False	False
+www.gov.uk	number of clicks to reject cookies	1	1
+www.gov.uk	DP10	unconfirmed	False
+www.gov.uk	DP12	unconfirmed	False
+www.gov.uk	DP13	unconfirmed	False
+www.gov.uk	DP14	unconfirmed	False
+www.gov.uk	DP15	unconfirmed	False
+npr.org	DP1	False	False
+npr.org	DP2	True	True
+npr.org	DP3	False	False
+npr.org	DP4	True	True
+npr.org	DP5	True	True
+npr.org	DP6	False	False
+npr.org	DP7	False	False
+npr.org	DP8	False	False
+npr.org	number of clicks to reject cookies	2	2
+npr.org	DP10	unconfirmed	True
+npr.org	DP12	unconfirmed	False
+npr.org	DP13	unconfirmed	False
+npr.org	DP14	unconfirmed	False
+npr.org	DP15	unconfirmed	False
+aol.com	DP1	False	False
+aol.com	DP2	True	True
+aol.com	DP3	True	True
+aol.com	DP4	False	False
+aol.com	DP5	True	True
+aol.com	DP6	False	False
+aol.com	DP7	False	False
+aol.com	DP8	False	False
+aol.com	number of clicks to reject cookies	3	3
+aol.com	DP10	unconfirmed	True
+aol.com	DP12	unconfirmed	False
+aol.com	DP13	unconfirmed	False
+aol.com	DP14	unconfirmed	False
+aol.com	DP15	unconfirmed	False
+behance.net	DP1	False	False
+behance.net	DP2	False	False
+behance.net	DP3	False	False
+behance.net	DP4	False	False
+behance.net	DP5	True	True
+behance.net	DP6	False	False
+behance.net	DP7	False	False
+behance.net	DP8	False	False
+behance.net	number of clicks to reject cookies	2	2
+behance.net	DP10	unconfirmed	True
+behance.net	DP12	unconfirmed	False
+behance.net	DP13	unconfirmed	False
+behance.net	DP14	unconfirmed	False
+behance.net	DP15	unconfirmed	False
+amazon.de	DP1	False	False
+amazon.de	DP2	False	True
+amazon.de	DP3	False	False
+amazon.de	DP4	False	False
+amazon.de	DP5	True	True
+amazon.de	DP6	False	False
+amazon.de	DP7	False	False
+amazon.de	DP8	False	False
+amazon.de	number of clicks to reject cookies	2	2
+amazon.de	DP10	unconfirmed	True
+amazon.de	DP12	unconfirmed	False
+amazon.de	DP13	unconfirmed	False
+amazon.de	DP14	unconfirmed	False
+amazon.de	DP15	unconfirmed	False
+msedge.net	no cookie dialog	True	True
+ted.com	no cookie dialog	True	True
+nflximg.com	no cookie dialog	True	True
+dailymotion.com	DP1	False	False
+dailymotion.com	DP2	True	True
+dailymotion.com	DP3	False	True
+dailymotion.com	DP4	True	True
+dailymotion.com	DP5	True	True
+dailymotion.com	DP6	False	False
+dailymotion.com	DP7	False	False
+dailymotion.com	DP8	False	False
+dailymotion.com	number of clicks to reject cookies	1	1
+dailymotion.com	DP10	unconfirmed	False
+dailymotion.com	DP12	unconfirmed	False
+dailymotion.com	DP13	unconfirmed	False
+dailymotion.com	DP14	unconfirmed	False
+dailymotion.com	DP15	unconfirmed	False
+instructure.com	DP1	False	False
+instructure.com	DP2	True	True
+instructure.com	DP3	False	False
+instructure.com	DP4	True	True
+instructure.com	DP5	True	True
+instructure.com	DP6	True	True
+instructure.com	DP7	False	False
+instructure.com	DP8	False	False
+instructure.com	number of clicks to reject cookies	5	5
+instructure.com	DP10	unconfirmed	True
+instructure.com	DP12	unconfirmed	False
+instructure.com	DP13	unconfirmed	False
+instructure.com	DP14	unconfirmed	False
+instructure.com	DP15	unconfirmed	False
+myspace.com	no cookie dialog	True	True
+slack.com	DP1	False	False
+slack.com	DP2	False	False
+slack.com	DP3	False	False
+slack.com	DP4	False	False
+slack.com	DP5	True	True
+slack.com	DP6	False	False
+slack.com	DP7	False	False
+slack.com	DP8	False	False
+slack.com	number of clicks to reject cookies	1	1
+slack.com	DP10	unconfirmed	False
+slack.com	DP12	unconfirmed	False
+slack.com	DP13	unconfirmed	False
+slack.com	DP14	unconfirmed	False
+slack.com	DP15	unconfirmed	False
+nginx.com	DP1	False	False
+nginx.com	DP2	False	False
+nginx.com	DP3	False	False
+nginx.com	DP4	True	True
+nginx.com	DP5	True	True
+nginx.com	DP6	False	False
+nginx.com	DP7	False	False
+nginx.com	DP8	False	False
+nginx.com	number of clicks to reject cookies	3	3
+nginx.com	DP10	unconfirmed	True
+nginx.com	DP12	unconfirmed	False
+nginx.com	DP13	unconfirmed	False
+nginx.com	DP14	unconfirmed	True
+nginx.com	DP15	unconfirmed	False
+ca.gov	no cookie dialog	True	True
+google.cn	no cookie dialog	True	True
+nflxso.net	no cookie dialog	True	True
+scorecardresearch.com	no cookie dialog	True	True
+huffingtonpost.com	no cookie dialog	True	True
+babytree.com	no cookie dialog	True	True
+cpanel.com	DP1	True	True
+cpanel.com	DP2	False	False
+cpanel.com	DP3	False	False
+cpanel.com	DP4	True	True
+cpanel.com	DP5	False	False
+cpanel.com	DP6	False	False
+cpanel.com	DP7	False	False
+cpanel.com	DP8	False	False
+cpanel.com	number of clicks to reject cookies	4	4
+cpanel.com	DP10	unconfirmed	True
+cpanel.com	DP12	unconfirmed	False
+cpanel.com	DP13	unconfirmed	False
+cpanel.com	DP14	unconfirmed	False
+cpanel.com	DP15	unconfirmed	False
+fb.com	DP1	False	False
+fb.com	DP2	True	True
+fb.com	DP3	False	False
+fb.com	DP4	False	False
+fb.com	DP5	True	True
+fb.com	DP6	False	False
+fb.com	DP7	False	False
+fb.com	DP8	False	False
+fb.com	number of clicks to reject cookies	2	2
+fb.com	DP10	unconfirmed	True
+fb.com	DP12	unconfirmed	False
+fb.com	DP13	unconfirmed	False
+fb.com	DP14	unconfirmed	False
+fb.com	DP15	unconfirmed	False
+unsplash.com	no cookie dialog	True	True
+mailchimp.com	DP1	False	False
+mailchimp.com	DP2	False	False
+mailchimp.com	DP3	False	False
+mailchimp.com	DP4	True	True
+mailchimp.com	DP5	True	True
+mailchimp.com	DP6	False	False
+mailchimp.com	DP7	False	False
+mailchimp.com	DP8	False	False
+mailchimp.com	number of clicks to reject cookies	1	1
+mailchimp.com	DP10	unconfirmed	False
+mailchimp.com	DP12	unconfirmed	False
+mailchimp.com	DP13	unconfirmed	False
+mailchimp.com	DP14	unconfirmed	False
+mailchimp.com	DP15	unconfirmed	False
+cnblogs.com	no cookie dialog	True	True
+google.fr	DP1	False	False
+google.fr	DP2	False	False
+google.fr	DP3	True	True
+google.fr	DP4	True	True
+google.fr	DP5	True	True
+google.fr	DP6	False	False
+google.fr	DP7	False	False
+google.fr	DP8	False	False
+google.fr	number of clicks to reject cookies	5	5
+google.fr	DP10	unconfirmed	True
+google.fr	DP12	unconfirmed	True
+google.fr	DP13	unconfirmed	False
+google.fr	DP14	unconfirmed	False
+google.fr	DP15	unconfirmed	False
+themeforest.net	DP1	False	False
+themeforest.net	DP2	False	False
+themeforest.net	DP3	False	False
+themeforest.net	DP4	False	False
+themeforest.net	DP5	True	True
+themeforest.net	DP6	False	False
+themeforest.net	DP7	False	False
+themeforest.net	DP8	False	False
+themeforest.net	number of clicks to reject cookies	6	6
+themeforest.net	DP10	unconfirmed	True
+themeforest.net	DP12	unconfirmed	False
+themeforest.net	DP13	unconfirmed	False
+themeforest.net	DP14	unconfirmed	False
+themeforest.net	DP15	unconfirmed	False
+freepik.com	DP1	False	False
+freepik.com	DP2	False	False
+freepik.com	DP3	False	False
+freepik.com	DP4	True	True
+freepik.com	DP5	True	True
+freepik.com	DP6	False	False
+freepik.com	DP7	False	False
+freepik.com	DP8	False	False
+freepik.com	number of clicks to reject cookies	3	3
+freepik.com	DP10	unconfirmed	True
+freepik.com	DP12	unconfirmed	False
+freepik.com	DP13	unconfirmed	False
+freepik.com	DP14	unconfirmed	False
+freepik.com	DP15	unconfirmed	False
+addthis.com	DP1	False	False
+addthis.com	DP2	True	True
+addthis.com	DP3	False	False
+addthis.com	DP4	True	True
+addthis.com	DP5	True	True
+addthis.com	DP6	False	False
+addthis.com	DP7	False	False
+addthis.com	DP8	False	False
+addthis.com	number of clicks to reject cookies	4	4
+addthis.com	DP10	unconfirmed	True
+addthis.com	DP12	unconfirmed	False
+addthis.com	DP13	unconfirmed	False
+addthis.com	DP14	unconfirmed	False
+addthis.com	DP15	unconfirmed	False
+gome.com.cn	no cookie dialog	True	True
+xvideos.com	DP1	False	False
+xvideos.com	DP2	False	False
+xvideos.com	DP3	False	False
+xvideos.com	DP4	False	False
+xvideos.com	DP5	False	False
+xvideos.com	DP6	False	False
+xvideos.com	DP7	False	False
+xvideos.com	DP8	False	False
+xvideos.com	number of clicks to reject cookies	0	0
+xvideos.com	DP10	unconfirmed	True
+xvideos.com	DP12	unconfirmed	False
+xvideos.com	DP13	unconfirmed	False
+xvideos.com	DP14	unconfirmed	False
+xvideos.com	DP15	unconfirmed	False
+techcrunch.com	DP1	False	False
+techcrunch.com	DP2	True	True
+techcrunch.com	DP3	True	True
+techcrunch.com	DP4	False	False
+techcrunch.com	DP5	True	True
+techcrunch.com	DP6	False	False
+techcrunch.com	DP7	False	False
+techcrunch.com	DP8	False	False
+techcrunch.com	number of clicks to reject cookies	3	3
+techcrunch.com	DP10	unconfirmed	True
+techcrunch.com	DP12	unconfirmed	False
+techcrunch.com	DP13	unconfirmed	False
+techcrunch.com	DP14	unconfirmed	False
+techcrunch.com	DP15	unconfirmed	False
+zillow.com	no cookie dialog	True	True
+grammarly.com	DP1	False	False
+grammarly.com	DP2	True	True
+grammarly.com	DP3	False	False
+grammarly.com	DP4	True	True
+grammarly.com	DP5	True	True
+grammarly.com	DP6	True	True
+grammarly.com	DP7	False	False
+grammarly.com	DP8	False	False
+grammarly.com	number of clicks to reject cookies	2	2
+grammarly.com	DP10	unconfirmed	True
+grammarly.com	DP12	unconfirmed	False
+grammarly.com	DP13	unconfirmed	False
+grammarly.com	DP14	unconfirmed	False
+grammarly.com	DP15	unconfirmed	False
+google.es	DP1	False	False
+google.es	DP2	False	False
+google.es	DP3	True	True
+google.es	DP4	True	True
+google.es	DP5	True	True
+google.es	DP6	False	False
+google.es	DP7	False	False
+google.es	DP8	False	False
+google.es	number of clicks to reject cookies	5	5
+google.es	DP10	unconfirmed	True
+google.es	DP12	unconfirmed	True
+google.es	DP13	unconfirmed	False
+google.es	DP14	unconfirmed	False
+google.es	DP15	unconfirmed	False
+mysql.com	DP1	False	False
+mysql.com	DP2	False	False
+mysql.com	DP3	False	False
+mysql.com	DP4	True	True
+mysql.com	DP5	True	True
+mysql.com	DP6	False	False
+mysql.com	DP7	False	False
+mysql.com	DP8	False	False
+mysql.com	number of clicks to reject cookies	3	3
+mysql.com	DP10	unconfirmed	True
+mysql.com	DP12	unconfirmed	False
+mysql.com	DP13	unconfirmed	False
+mysql.com	DP14	unconfirmed	False
+mysql.com	DP15	unconfirmed	False
+goodreads.com	no cookie dialog	True	True
+livejasmin.com	DP1	False	False
+livejasmin.com	DP2	False	False
+livejasmin.com	DP3	False	False
+livejasmin.com	DP4	True	True
+livejasmin.com	DP5	False	False
+livejasmin.com	DP6	False	False
+livejasmin.com	DP7	False	False
+livejasmin.com	DP8	False	False
+livejasmin.com	number of clicks to reject cookies	4	4
+livejasmin.com	DP10	unconfirmed	True
+livejasmin.com	DP12	unconfirmed	False
+livejasmin.com	DP13	unconfirmed	False
+livejasmin.com	DP14	unconfirmed	False
+livejasmin.com	DP15	unconfirmed	False
+googletagservices.com	no cookie dialog	True	True
+foxnews.com	no cookie dialog	True	True
+intuit.com	no cookie dialog	True	True
+zendesk.com	DP1	False	False
+zendesk.com	DP2	False	False
+zendesk.com	DP3	False	False
+zendesk.com	DP4	True	True
+zendesk.com	DP5	True	True
+zendesk.com	DP6	False	False
+zendesk.com	DP7	False	False
+zendesk.com	DP8	False	False
+zendesk.com	number of clicks to reject cookies	1	1
+zendesk.com	DP10	unconfirmed	False
+zendesk.com	DP12	unconfirmed	False
+zendesk.com	DP13	unconfirmed	False
+zendesk.com	DP14	unconfirmed	False
+zendesk.com	DP15	unconfirmed	False
+google.ru	DP1	False	False
+google.ru	DP2	False	False
+google.ru	DP3	True	True
+google.ru	DP4	True	True
+google.ru	DP5	True	True
+google.ru	DP6	False	False
+google.ru	DP7	False	False
+google.ru	DP8	False	False
+google.ru	number of clicks to reject cookies	5	5
+google.ru	DP10	unconfirmed	True
+google.ru	DP12	unconfirmed	False
+google.ru	DP13	unconfirmed	False
+google.ru	DP14	unconfirmed	False
+google.ru	DP15	unconfirmed	False
+ntp.org	no cookie dialog	True	True
+kompas.com	no cookie dialog	True	True
+independent.co.uk	DP1	False	False
+independent.co.uk	DP2	True	True
+independent.co.uk	DP3	True	True
+independent.co.uk	DP4	False	False
+independent.co.uk	DP5	True	True
+independent.co.uk	DP6	False	False
+independent.co.uk	DP7	False	False
+independent.co.uk	DP8	False	False
+independent.co.uk	number of clicks to reject cookies	5	5
+independent.co.uk	DP10	unconfirmed	True
+independent.co.uk	DP12	unconfirmed	False
+independent.co.uk	DP13	unconfirmed	False
+independent.co.uk	DP14	unconfirmed	False
+independent.co.uk	DP15	unconfirmed	False
+squarespace.com	DP1	False	False
+squarespace.com	DP2	True	True
+squarespace.com	DP3	False	False
+squarespace.com	DP4	True	True
+squarespace.com	DP5	True	True
+squarespace.com	DP6	False	False
+squarespace.com	DP7	False	False
+squarespace.com	DP8	False	False
+squarespace.com	number of clicks to reject cookies	5	5
+squarespace.com	DP10	unconfirmed	True
+squarespace.com	DP12	unconfirmed	False
+squarespace.com	DP13	unconfirmed	False
+squarespace.com	DP14	unconfirmed	False
+squarespace.com	DP15	unconfirmed	False
+udemy.com	DP1	False	False
+udemy.com	DP2	False	False
+udemy.com	DP3	False	False
+udemy.com	DP4	True	True
+udemy.com	DP5	True	True
+udemy.com	DP6	False	False
+udemy.com	DP7	False	False
+udemy.com	DP8	False	False
+udemy.com	number of clicks to reject cookies	7	7
+udemy.com	DP10	unconfirmed	True
+udemy.com	DP12	unconfirmed	False
+udemy.com	DP13	unconfirmed	False
+udemy.com	DP14	unconfirmed	False
+udemy.com	DP15	unconfirmed	False
+google.it	DP1	False	False
+google.it	DP2	False	False
+google.it	DP3	True	True
+google.it	DP4	True	True
+google.it	DP5	True	True
+google.it	DP6	False	False
+google.it	DP7	False	False
+google.it	DP8	False	False
+google.it	number of clicks to reject cookies	5	5
+google.it	DP10	unconfirmed	True
+google.it	DP12	unconfirmed	False
+google.it	DP13	unconfirmed	False
+google.it	DP14	unconfirmed	False
+google.it	DP15	unconfirmed	False
+telegram.org	no cookie dialog	True	True
+6.cn	no cookie dialog	True	True
+healthline.com	no cookie dialog	True	True
+hao123.com	no cookie dialog	True	True
+tripadvisor.com	DP1	False	False
+tripadvisor.com	DP2	True	True
+tripadvisor.com	DP3	False	False
+tripadvisor.com	DP4	True	True
+tripadvisor.com	DP5	True	True
+tripadvisor.com	DP6	False	False
+tripadvisor.com	DP7	False	False
+tripadvisor.com	DP8	False	False
+tripadvisor.com	number of clicks to reject cookies	2	2
+tripadvisor.com	DP10	unconfirmed	True
+tripadvisor.com	DP12	unconfirmed	False
+tripadvisor.com	DP13	unconfirmed	False
+tripadvisor.com	DP14	unconfirmed	False
+tripadvisor.com	DP15	unconfirmed	False
+stackexchange.com	no cookie dialog	True	True
+roblox.com	DP1	False	False
+roblox.com	DP2	False	False
+roblox.com	DP3	False	False
+roblox.com	DP4	False	False
+roblox.com	DP5	True	True
+roblox.com	DP6	False	False
+roblox.com	DP7	False	False
+roblox.com	DP8	False	False
+roblox.com	number of clicks to reject cookies	1	1
+roblox.com	DP10	unconfirmed	False
+roblox.com	DP12	unconfirmed	False
+roblox.com	DP13	unconfirmed	False
+roblox.com	DP14	unconfirmed	False
+roblox.com	DP15	unconfirmed	False
+bilibili.com	no cookie dialog	True	True
+flipkart.com	no cookie dialog	True	True
+berkeley.edu	no cookie dialog	True	True
+line.me	no cookie dialog	True	True
+wetransfer.com	DP1	False	False
+wetransfer.com	DP2	False	False
+wetransfer.com	DP3	False	False
+wetransfer.com	DP4	False	False
+wetransfer.com	DP5	True	True
+wetransfer.com	DP6	False	False
+wetransfer.com	DP7	False	False
+wetransfer.com	DP8	False	False
+wetransfer.com	number of clicks to reject cookies	1	1
+wetransfer.com	DP10	unconfirmed	False
+wetransfer.com	DP12	unconfirmed	False
+wetransfer.com	DP13	unconfirmed	False
+wetransfer.com	DP14	unconfirmed	False
+wetransfer.com	DP15	unconfirmed	False
+addtoany.com	no cookie dialog	True	True
+hugedomains.com	no cookie dialog	True	True
+latimes.com	DP1	False	False
+latimes.com	DP2	False	False
+latimes.com	DP3	False	False
+latimes.com	DP4	False	False
+latimes.com	DP5	False	False
+latimes.com	DP6	True	True
+latimes.com	DP7	False	False
+latimes.com	DP8	False	False
+latimes.com	number of clicks to reject cookies	0	0
+latimes.com	DP10	unconfirmed	True
+latimes.com	DP12	unconfirmed	False
+latimes.com	DP13	unconfirmed	False
+latimes.com	DP14	unconfirmed	False
+latimes.com	DP15	unconfirmed	False
+youku.com	no cookie dialog	True	True
+shopify.com	no cookie dialog	True	True
+amzn.to	no cookie dialog	True	True
+sitemaps.org	no cookie dialog	True	True
+debian.org	no cookie dialog	True	True
+aliyun.com	DP1	False	False
+aliyun.com	DP2	False	False
+aliyun.com	DP3	False	False
+aliyun.com	DP4	True	True
+aliyun.com	DP5	True	True
+aliyun.com	DP6	False	False
+aliyun.com	DP7	False	False
+aliyun.com	DP8	False	False
+aliyun.com	number of clicks to reject cookies	1	1
+aliyun.com	DP10	unconfirmed	False
+aliyun.com	DP12	unconfirmed	False
+aliyun.com	DP13	unconfirmed	False
+aliyun.com	DP14	unconfirmed	False
+aliyun.com	DP15	unconfirmed	False
+free.fr	DP1	False	False
+free.fr	DP2	True	True
+free.fr	DP3	True	True
+free.fr	DP4	True	True
+free.fr	DP5	True	True
+free.fr	DP6	False	False
+free.fr	DP7	False	False
+free.fr	DP8	False	False
+free.fr	number of clicks to reject cookies	1	1
+free.fr	DP10	unconfirmed	False
+free.fr	DP12	unconfirmed	False
+free.fr	DP13	unconfirmed	False
+free.fr	DP14	unconfirmed	True
+free.fr	DP15	unconfirmed	False
+shutterstock.com	no cookie dialog	True	True
+livejournal.com	no cookie dialog	True	True
+pixabay.com	DP1	False	False
+pixabay.com	DP2	True	True
+pixabay.com	DP3	False	False
+pixabay.com	DP4	True	True
+pixabay.com	DP5	True	True
+pixabay.com	DP6	True	True
+pixabay.com	DP7	False	False
+pixabay.com	DP8	False	False
+pixabay.com	number of clicks to reject cookies	6	6
+pixabay.com	DP10	unconfirmed	True
+pixabay.com	DP12	unconfirmed	False
+pixabay.com	DP13	unconfirmed	False
+pixabay.com	DP14	unconfirmed	False
+pixabay.com	DP15	unconfirmed	False
+adnxs.com	no cookie dialog	True	True
+xhamster.com	DP1	True	True
+xhamster.com	DP2	False	False
+xhamster.com	DP3	False	False
+xhamster.com	DP4	False	False
+xhamster.com	DP5	False	False
+xhamster.com	DP6	False	False
+xhamster.com	DP7	False	False
+xhamster.com	DP8	False	False
+xhamster.com	number of clicks to reject cookies	0	0
+xhamster.com	DP10	unconfirmed	True
+xhamster.com	DP12	unconfirmed	False
+xhamster.com	DP13	unconfirmed	False
+xhamster.com	DP14	unconfirmed	False
+xhamster.com	DP15	unconfirmed	False
+taboola.com	no cookie dialog	True	True
+arnebrachhold.de	no cookie dialog	True	True
+statcounter.com	no cookie dialog	True	True
+theverge.com	DP1	True	True
+theverge.com	DP2	False	False
+theverge.com	DP3	False	False
+theverge.com	DP4	False	False
+theverge.com	DP5	False	False
+theverge.com	DP6	False	False
+theverge.com	DP7	False	False
+theverge.com	DP8	False	False
+theverge.com	number of clicks to reject cookies	0	0
+theverge.com	DP10	unconfirmed	True
+theverge.com	DP12	unconfirmed	False
+theverge.com	DP13	unconfirmed	False
+theverge.com	DP14	unconfirmed	False
+theverge.com	DP15	unconfirmed	False
+ft.com	DP1	False	False
+ft.com	DP2	True	True
+ft.com	DP3	False	False
+ft.com	DP4	False	False
+ft.com	DP5	True	True
+ft.com	DP6	False	False
+ft.com	DP7	False	False
+ft.com	DP8	False	False
+ft.com	number of clicks to reject cookies	4	4
+ft.com	DP10	unconfirmed	True
+ft.com	DP12	unconfirmed	False
+ft.com	DP13	unconfirmed	False
+ft.com	DP14	unconfirmed	False
+ft.com	DP15	unconfirmed	False
+kickstarter.com	no cookie dialog	True	True
+savefrom.net	no cookie dialog	True	True
+quora.com	no cookie dialog	True	True
+fiverr.com	DP1	False	False
+fiverr.com	DP2	False	False
+fiverr.com	DP3	False	False
+fiverr.com	DP4	False	False
+fiverr.com	DP5	True	True
+fiverr.com	DP6	False	False
+fiverr.com	DP7	False	False
+fiverr.com	DP8	False	False
+fiverr.com	number of clicks to reject cookies	5	5
+fiverr.com	DP10	unconfirmed	True
+fiverr.com	DP12	unconfirmed	False
+fiverr.com	DP13	unconfirmed	False
+fiverr.com	DP14	unconfirmed	False
+fiverr.com	DP15	unconfirmed	False
+miit.gov.cn	no cookie dialog	True	True
+loc.gov	no cookie dialog	True	True
+daum.net	no cookie dialog	True	True
+cornell.edu	no cookie dialog	True	True
+trello.com	DP1	False	False
+trello.com	DP2	True	True
+trello.com	DP3	False	False
+trello.com	DP4	False	False
+trello.com	DP5	True	True
+trello.com	DP6	True	True
+trello.com	DP7	False	False
+trello.com	DP8	False	False
+trello.com	number of clicks to reject cookies	2	2
+trello.com	DP10	unconfirmed	True
+trello.com	DP12	unconfirmed	False
+trello.com	DP13	unconfirmed	False
+trello.com	DP14	unconfirmed	False
+trello.com	DP15	unconfirmed	False
+giphy.com	DP1	False	False
+giphy.com	DP2	False	False
+giphy.com	DP3	False	False
+giphy.com	DP4	False	False
+giphy.com	DP5	True	True
+giphy.com	DP6	False	False
+giphy.com	DP7	False	False
+giphy.com	DP8	False	False
+giphy.com	number of clicks to reject cookies	4	4
+giphy.com	DP10	unconfirmed	True
+giphy.com	DP12	unconfirmed	False
+giphy.com	DP13	unconfirmed	False
+giphy.com	DP14	unconfirmed	False
+giphy.com	DP15	unconfirmed	False
+ettoday.net	no cookie dialog	True	True
+mediafire.com	no cookie dialog	True	True
+theatlantic.com	DP1	False	False
+theatlantic.com	DP2	True	True
+theatlantic.com	DP3	False	False
+theatlantic.com	DP4	False	False
+theatlantic.com	DP5	True	True
+theatlantic.com	DP6	False	False
+theatlantic.com	DP7	False	False
+theatlantic.com	DP8	False	False
+theatlantic.com	number of clicks to reject cookies	2	2
+theatlantic.com	DP10	unconfirmed	True
+theatlantic.com	DP12	unconfirmed	False
+theatlantic.com	DP13	unconfirmed	False
+theatlantic.com	DP14	unconfirmed	False
+theatlantic.com	DP15	unconfirmed	False
+beian.gov.cn	no cookie dialog	True	True
+pki.goog	DP1	True	True
+pki.goog	DP2	False	True
+pki.goog	DP3	False	False
+pki.goog	DP4	False	False
+pki.goog	DP5	False	False
+pki.goog	DP6	False	False
+pki.goog	DP7	False	False
+pki.goog	DP8	False	False
+pki.goog	number of clicks to reject cookies	0	0
+pki.goog	DP10	unconfirmed	True
+pki.goog	DP12	unconfirmed	False
+pki.goog	DP13	unconfirmed	False
+pki.goog	DP14	unconfirmed	False
+pki.goog	DP15	unconfirmed	False
+detik.com	no cookie dialog	True	True
+google.ca	DP1	False	False
+google.ca	DP2	False	False
+google.ca	DP3	True	True
+google.ca	DP4	True	True
+google.ca	DP5	True	True
+google.ca	DP6	False	False
+google.ca	DP7	False	False
+google.ca	DP8	False	False
+google.ca	number of clicks to reject cookies	5	5
+google.ca	DP10	unconfirmed	True
+google.ca	DP12	unconfirmed	True
+google.ca	DP13	unconfirmed	False
+google.ca	DP14	unconfirmed	False
+google.ca	DP15	unconfirmed	False
+investopedia.com	DP1	False	False
+investopedia.com	DP2	True	True
+investopedia.com	DP3	True	True
+investopedia.com	DP4	True	True
+investopedia.com	DP5	True	True
+investopedia.com	DP6	True	True
+investopedia.com	DP7	False	False
+investopedia.com	DP8	False	False
+investopedia.com	number of clicks to reject cookies	34	34
+investopedia.com	DP10	unconfirmed	True
+investopedia.com	DP12	unconfirmed	False
+investopedia.com	DP13	unconfirmed	False
+investopedia.com	DP14	unconfirmed	False
+investopedia.com	DP15	unconfirmed	False
+nationalgeographic.com	DP1	False	False
+nationalgeographic.com	DP2	False	False
+nationalgeographic.com	DP3	False	False
+nationalgeographic.com	DP4	True	True
+nationalgeographic.com	DP5	True	True
+nationalgeographic.com	DP6	False	False
+nationalgeographic.com	DP7	False	False
+nationalgeographic.com	DP8	False	False
+nationalgeographic.com	number of clicks to reject cookies	2	2
+nationalgeographic.com	DP10	unconfirmed	True
+nationalgeographic.com	DP12	unconfirmed	False
+nationalgeographic.com	DP13	unconfirmed	False
+nationalgeographic.com	DP14	unconfirmed	False
+nationalgeographic.com	DP15	unconfirmed	False
+pikiran-rakyat.com	no cookie dialog	True	True
+ietf.org	no cookie dialog	True	True
+cbsnews.com	DP1	False	False
+cbsnews.com	DP2	False	False
+cbsnews.com	DP3	False	False
+cbsnews.com	DP4	True	True
+cbsnews.com	DP5	True	True
+cbsnews.com	DP6	False	False
+cbsnews.com	DP7	False	False
+cbsnews.com	DP8	False	False
+cbsnews.com	number of clicks to reject cookies	7	7
+cbsnews.com	DP10	unconfirmed	True
+cbsnews.com	DP12	unconfirmed	False
+cbsnews.com	DP13	unconfirmed	False
+cbsnews.com	DP14	unconfirmed	False
+cbsnews.com	DP15	unconfirmed	False
+gmail.com	no cookie dialog	True	True
+cisco.com	DP1	False	False
+cisco.com	DP2	False	False
+cisco.com	DP3	False	False
+cisco.com	DP4	False	False
+cisco.com	DP5	True	True
+cisco.com	DP6	False	False
+cisco.com	DP7	False	False
+cisco.com	DP8	False	False
+cisco.com	number of clicks to reject cookies	0	0
+cisco.com	DP10	unconfirmed	False
+cisco.com	DP12	unconfirmed	False
+cisco.com	DP13	unconfirmed	False
+cisco.com	DP14	unconfirmed	False
+cisco.com	DP15	unconfirmed	False
+android.com	DP1	True	True
+android.com	DP2	False	False
+android.com	DP3	False	False
+android.com	DP4	False	False
+android.com	DP5	False	False
+android.com	DP6	False	False
+android.com	DP7	False	False
+android.com	DP8	False	False
+android.com	number of clicks to reject cookies	2	2
+android.com	DP10	unconfirmed	True
+android.com	DP12	unconfirmed	False
+android.com	DP13	unconfirmed	False
+android.com	DP14	unconfirmed	False
+android.com	DP15	unconfirmed	False
+demdex.net	DP1	False	False
+demdex.net	DP2	False	False
+demdex.net	DP3	False	False
+demdex.net	DP4	False	False
+demdex.net	DP5	True	True
+demdex.net	DP6	False	False
+demdex.net	DP7	False	False
+demdex.net	DP8	False	False
+demdex.net	number of clicks to reject cookies	2	2
+demdex.net	DP10	unconfirmed	True
+demdex.net	DP12	unconfirmed	False
+demdex.net	DP13	unconfirmed	False
+demdex.net	DP14	unconfirmed	False
+demdex.net	DP15	unconfirmed	False
+washington.edu	no cookie dialog	True	True
+zhihu.com	no cookie dialog	True	True
+deviantart.com	no cookie dialog	True	True
+speedtest.net	DP1	False	False
+speedtest.net	DP2	True	True
+speedtest.net	DP3	True	True
+speedtest.net	DP4	False	False
+speedtest.net	DP5	True	True
+speedtest.net	DP6	False	False
+speedtest.net	DP7	False	False
+speedtest.net	DP8	False	False
+speedtest.net	number of clicks to reject cookies	2	2
+speedtest.net	DP10	unconfirmed	True
+speedtest.net	DP12	unconfirmed	False
+speedtest.net	DP13	unconfirmed	False
+speedtest.net	DP14	unconfirmed	False
+speedtest.net	DP15	unconfirmed	False
+statista.com	DP1	False	False
+statista.com	DP2	True	True
+statista.com	DP3	False	False
+statista.com	DP4	True	True
+statista.com	DP5	True	True
+statista.com	DP6	False	False
+statista.com	DP7	False	False
+statista.com	DP8	False	False
+statista.com	number of clicks to reject cookies	2	2
+statista.com	DP10	unconfirmed	True
+statista.com	DP12	unconfirmed	False
+statista.com	DP13	unconfirmed	False
+statista.com	DP14	unconfirmed	False
+statista.com	DP15	unconfirmed	False
+binance.com	no cookie dialog	True	True
+marketwatch.com	DP1	False	False
+marketwatch.com	DP2	True	True
+marketwatch.com	DP3	True	True
+marketwatch.com	DP4	True	True
+marketwatch.com	DP5	True	True
+marketwatch.com	DP6	False	False
+marketwatch.com	DP7	False	False
+marketwatch.com	DP8	False	False
+marketwatch.com	number of clicks to reject cookies	2	2
+marketwatch.com	DP10	unconfirmed	True
+marketwatch.com	DP12	unconfirmed	False
+marketwatch.com	DP13	unconfirmed	False
+marketwatch.com	DP14	unconfirmed	False
+marketwatch.com	DP15	unconfirmed	False
+msftncsi.com	no cookie dialog	True	True
+webex.com	DP1	False	False
+webex.com	DP2	False	False
+webex.com	DP3	False	False
+webex.com	DP4	False	False
+webex.com	DP5	True	True
+webex.com	DP6	False	False
+webex.com	DP7	False	False
+webex.com	DP8	False	False
+webex.com	number of clicks to reject cookies	1	1
+webex.com	DP10	unconfirmed	False
+webex.com	DP12	unconfirmed	False
+webex.com	DP13	unconfirmed	False
+webex.com	DP14	unconfirmed	False
+webex.com	DP15	unconfirmed	False
+nbcnews.com	DP1	True	True
+nbcnews.com	DP2	False	False
+nbcnews.com	DP3	False	False
+nbcnews.com	DP4	True	True
+nbcnews.com	DP5	False	False
+nbcnews.com	DP6	False	False
+nbcnews.com	DP7	False	False
+nbcnews.com	DP8	False	False
+nbcnews.com	number of clicks to reject cookies	1	1
+nbcnews.com	DP10	unconfirmed	True
+nbcnews.com	DP12	unconfirmed	False
+nbcnews.com	DP13	unconfirmed	False
+nbcnews.com	DP14	unconfirmed	False
+nbcnews.com	DP15	unconfirmed	False
+tandfonline.com	DP1	True	True
+tandfonline.com	DP2	False	False
+tandfonline.com	DP3	False	False
+tandfonline.com	DP4	False	False
+tandfonline.com	DP5	False	False
+tandfonline.com	DP6	False	False
+tandfonline.com	DP7	False	False
+tandfonline.com	DP8	False	False
+tandfonline.com	number of clicks to reject cookies	0	0
+tandfonline.com	DP10	unconfirmed	True
+tandfonline.com	DP12	unconfirmed	False
+tandfonline.com	DP13	unconfirmed	False
+tandfonline.com	DP14	unconfirmed	False
+tandfonline.com	DP15	unconfirmed	False
+amazon.ca	no cookie dialog	True	True
+ilovepdf.com	no cookie dialog	True	True
+duckduckgo.com	no cookie dialog	True	True
+prnewswire.com	DP1	False	False
+prnewswire.com	DP2	False	False
+prnewswire.com	DP3	False	False
+prnewswire.com	DP4	False	False
+prnewswire.com	DP5	True	True
+prnewswire.com	DP6	False	False
+prnewswire.com	DP7	False	False
+prnewswire.com	DP8	False	False
+prnewswire.com	number of clicks to reject cookies	2	2
+prnewswire.com	DP10	unconfirmed	True
+prnewswire.com	DP12	unconfirmed	False
+prnewswire.com	DP13	unconfirmed	False
+prnewswire.com	DP14	unconfirmed	False
+prnewswire.com	DP15	unconfirmed	False
+weather.com	DP1	False	False
+weather.com	DP2	True	True
+weather.com	DP3	False	False
+weather.com	DP4	False	False
+weather.com	DP5	True	True
+weather.com	DP6	False	False
+weather.com	DP7	False	False
+weather.com	DP8	False	False
+weather.com	number of clicks to reject cookies	1	1
+weather.com	DP10	unconfirmed	False
+weather.com	DP12	unconfirmed	False
+weather.com	DP13	unconfirmed	False
+weather.com	DP14	unconfirmed	False
+weather.com	DP15	unconfirmed	False
+fda.gov	no cookie dialog	True	True
+adsrvr.org	no cookie dialog	True	True
+digg.com	no cookie dialog	True	True
+marriott.com	DP1	False	False
+marriott.com	DP2	True	True
+marriott.com	DP3	False	False
+marriott.com	DP4	True	True
+marriott.com	DP5	True	True
+marriott.com	DP6	False	False
+marriott.com	DP7	False	False
+marriott.com	DP8	False	False
+marriott.com	number of clicks to reject cookies	4	4
+marriott.com	DP10	unconfirmed	True
+marriott.com	DP12	unconfirmed	False
+marriott.com	DP13	unconfirmed	False
+marriott.com	DP14	unconfirmed	False
+marriott.com	DP15	unconfirmed	True
+hubspot.com	DP1	False	False
+hubspot.com	DP2	False	False
+hubspot.com	DP3	False	False
+hubspot.com	DP4	False	False
+hubspot.com	DP5	False	False
+hubspot.com	DP6	False	False
+hubspot.com	DP7	False	False
+hubspot.com	DP8	False	False
+hubspot.com	number of clicks to reject cookies	1	1
+hubspot.com	DP10	unconfirmed	False
+hubspot.com	DP12	unconfirmed	False
+hubspot.com	DP13	unconfirmed	False
+hubspot.com	DP14	unconfirmed	False
+hubspot.com	DP15	unconfirmed	False
+jimdo.com	DP1	False	False
+jimdo.com	DP2	True	True
+jimdo.com	DP3	False	False
+jimdo.com	DP4	True	True
+jimdo.com	DP5	True	True
+jimdo.com	DP6	False	False
+jimdo.com	DP7	False	False
+jimdo.com	DP8	False	False
+jimdo.com	number of clicks to reject cookies	1	1
+jimdo.com	DP10	unconfirmed	False
+jimdo.com	DP12	unconfirmed	False
+jimdo.com	DP13	unconfirmed	False
+jimdo.com	DP14	unconfirmed	False
+jimdo.com	DP15	unconfirmed	False
+dell.com	DP1	False	False
+dell.com	DP2	True	True
+dell.com	DP3	False	False
+dell.com	DP4	False	False
+dell.com	DP5	True	True
+dell.com	DP6	False	False
+dell.com	DP7	False	False
+dell.com	DP8	False	False
+dell.com	number of clicks to reject cookies	1	1
+dell.com	DP10	unconfirmed	False
+dell.com	DP12	unconfirmed	False
+dell.com	DP13	unconfirmed	False
+dell.com	DP14	unconfirmed	False
+dell.com	DP15	unconfirmed	False
+rubiconproject.com	no cookie dialog	True	True
+usnews.com	DP1	True	True
+usnews.com	DP2	False	False
+usnews.com	DP3	True	True
+usnews.com	DP4	False	False
+usnews.com	DP5	False	False
+usnews.com	DP6	False	False
+usnews.com	DP7	False	False
+usnews.com	DP8	False	False
+usnews.com	number of clicks to reject cookies	0	0
+usnews.com	DP10	unconfirmed	True
+usnews.com	DP12	unconfirmed	False
+usnews.com	DP13	unconfirmed	False
+usnews.com	DP14	unconfirmed	False
+usnews.com	DP15	unconfirmed	False
+cnzz.com	no cookie dialog	True	True
+mailchi.mp	no cookie dialog	True	True
+craigslist.org	no cookie dialog	True	True
+pixnet.net	no cookie dialog	True	True
+box.com	DP1	False	False
+box.com	DP2	False	False
+box.com	DP3	False	False
+box.com	DP4	False	False
+box.com	DP5	False	False
+box.com	DP6	True	True
+box.com	DP7	False	False
+box.com	DP8	False	False
+box.com	number of clicks to reject cookies	0	0
+box.com	DP10	unconfirmed	True
+box.com	DP12	unconfirmed	False
+box.com	DP13	unconfirmed	False
+box.com	DP14	unconfirmed	False
+box.com	DP15	unconfirmed	False
+akismet.com	DP1	True	True
+akismet.com	DP2	False	False
+akismet.com	DP3	False	False
+akismet.com	DP4	False	False
+akismet.com	DP5	False	False
+akismet.com	DP6	False	False
+akismet.com	DP7	False	False
+akismet.com	DP8	False	False
+akismet.com	number of clicks to reject cookies	0	0
+akismet.com	DP10	unconfirmed	True
+akismet.com	DP12	unconfirmed	False
+akismet.com	DP13	unconfirmed	False
+akismet.com	DP14	unconfirmed	False
+akismet.com	DP15	unconfirmed	False
+buzzfeed.com	DP1	False	False
+buzzfeed.com	DP2	True	True
+buzzfeed.com	DP3	False	False
+buzzfeed.com	DP4	False	False
+buzzfeed.com	DP5	True	True
+buzzfeed.com	DP6	False	False
+buzzfeed.com	DP7	False	False
+buzzfeed.com	DP8	False	False
+buzzfeed.com	number of clicks to reject cookies	1	1
+buzzfeed.com	DP10	unconfirmed	False
+buzzfeed.com	DP12	unconfirmed	False
+buzzfeed.com	DP13	unconfirmed	False
+buzzfeed.com	DP14	unconfirmed	False
+buzzfeed.com	DP15	unconfirmed	False
+google.com.sg	DP1	False	False
+google.com.sg	DP2	False	False
+google.com.sg	DP3	True	True
+google.com.sg	DP4	True	True
+google.com.sg	DP5	True	True
+google.com.sg	DP6	False	False
+google.com.sg	DP7	False	False
+google.com.sg	DP8	False	False
+google.com.sg	number of clicks to reject cookies	5	5
+google.com.sg	DP10	unconfirmed	True
+google.com.sg	DP12	unconfirmed	True
+google.com.sg	DP13	unconfirmed	False
+google.com.sg	DP14	unconfirmed	False
+google.com.sg	DP15	unconfirmed	False
+criteo.com	DP1	False	False
+criteo.com	DP2	False	False
+criteo.com	DP3	False	False
+criteo.com	DP4	True	True
+criteo.com	DP5	True	True
+criteo.com	DP6	False	False
+criteo.com	DP7	False	False
+criteo.com	DP8	False	False
+criteo.com	number of clicks to reject cookies	1	1
+criteo.com	DP10	unconfirmed	False
+criteo.com	DP12	unconfirmed	False
+criteo.com	DP13	unconfirmed	False
+criteo.com	DP14	unconfirmed	False
+criteo.com	DP15	unconfirmed	False
+pubmatic.com	DP1	False	False
+pubmatic.com	DP2	False	False
+pubmatic.com	DP3	False	False
+pubmatic.com	DP4	False	False
+pubmatic.com	DP5	True	True
+pubmatic.com	DP6	False	False
+pubmatic.com	DP7	False	False
+pubmatic.com	DP8	False	False
+pubmatic.com	number of clicks to reject cookies	1	1
+pubmatic.com	DP10	unconfirmed	False
+pubmatic.com	DP12	unconfirmed	False
+pubmatic.com	DP13	unconfirmed	False
+pubmatic.com	DP14	unconfirmed	False
+pubmatic.com	DP15	unconfirmed	False
+bestbuy.com	no cookie dialog	True	True
+hicloud.com	DP1	False	False
+hicloud.com	DP2	False	False
+hicloud.com	DP3	False	False
+hicloud.com	DP4	False	False
+hicloud.com	DP5	True	True
+hicloud.com	DP6	True	True
+hicloud.com	DP7	True	False
+hicloud.com	DP8	False	False
+hicloud.com	number of clicks to reject cookies	1	1
+hicloud.com	DP10	unconfirmed	False
+hicloud.com	DP12	unconfirmed	False
+hicloud.com	DP13	unconfirmed	False
+hicloud.com	DP14	unconfirmed	False
+hicloud.com	DP15	unconfirmed	False
+about.com	no cookie dialog	True	True
+irs.gov	no cookie dialog	True	True
+cambridge.org	DP1	False	False
+cambridge.org	DP2	False	False
+cambridge.org	DP3	False	False
+cambridge.org	DP4	True	True
+cambridge.org	DP5	True	True
+cambridge.org	DP6	True	True
+cambridge.org	DP7	False	False
+cambridge.org	DP8	False	False
+cambridge.org	number of clicks to reject cookies	2	2
+cambridge.org	DP10	unconfirmed	True
+cambridge.org	DP12	unconfirmed	False
+cambridge.org	DP13	unconfirmed	False
+cambridge.org	DP14	unconfirmed	False
+cambridge.org	DP15	unconfirmed	False
+aboutads.info	no cookie dialog	True	True
+wellsfargo.com	no cookie dialog	True	True
+google.com.tw	DP1	False	False
+google.com.tw	DP2	False	False
+google.com.tw	DP3	True	True
+google.com.tw	DP4	True	True
+google.com.tw	DP5	True	True
+google.com.tw	DP6	False	False
+google.com.tw	DP7	False	False
+google.com.tw	DP8	False	False
+google.com.tw	number of clicks to reject cookies	6	6
+google.com.tw	DP10	unconfirmed	True
+google.com.tw	DP12	unconfirmed	False
+google.com.tw	DP13	unconfirmed	False
+google.com.tw	DP14	unconfirmed	False
+google.com.tw	DP15	unconfirmed	False
+msftconnecttest.com	no cookie dialog	True	True
+primevideo.com	DP1	False	False
+primevideo.com	DP2	False	False
+primevideo.com	DP3	False	False
+primevideo.com	DP4	False	False
+primevideo.com	DP5	True	True
+primevideo.com	DP6	False	False
+primevideo.com	DP7	False	False
+primevideo.com	DP8	False	False
+primevideo.com	number of clicks to reject cookies	3	3
+primevideo.com	DP10	unconfirmed	True
+primevideo.com	DP12	unconfirmed	False
+primevideo.com	DP13	unconfirmed	False
+primevideo.com	DP14	unconfirmed	False
+primevideo.com	DP15	unconfirmed	False
+ups.com	no cookie dialog	True	True
+oup.com	DP1	True	True
+oup.com	DP2	False	False
+oup.com	DP3	False	False
+oup.com	DP4	False	False
+oup.com	DP5	False	False
+oup.com	DP6	False	False
+oup.com	DP7	False	False
+oup.com	DP8	False	False
+oup.com	number of clicks to reject cookies	2	2
+oup.com	DP10	unconfirmed	True
+oup.com	DP12	unconfirmed	False
+oup.com	DP13	unconfirmed	False
+oup.com	DP14	unconfirmed	False
+oup.com	DP15	unconfirmed	False
+digikala.com	no cookie dialog	True	True
+padlet.com	no cookie dialog	True	True
+academia.edu	DP1	False	False
+academia.edu	DP2	False	False
+academia.edu	DP3	False	False
+academia.edu	DP4	False	False
+academia.edu	DP5	False	False
+academia.edu	DP6	False	False
+academia.edu	DP7	False	False
+academia.edu	DP8	False	False
+academia.edu	number of clicks to reject cookies	0	0
+academia.edu	DP10	unconfirmed	True
+academia.edu	DP12	unconfirmed	False
+academia.edu	DP13	unconfirmed	False
+academia.edu	DP14	unconfirmed	False
+academia.edu	DP15	unconfirmed	False
+uol.com.br	DP1	True	True
+uol.com.br	DP2	False	False
+uol.com.br	DP3	False	False
+uol.com.br	DP4	True	True
+uol.com.br	DP5	False	False
+uol.com.br	DP6	False	False
+uol.com.br	DP7	False	False
+uol.com.br	DP8	False	False
+uol.com.br	number of clicks to reject cookies	0	0
+uol.com.br	DP10	unconfirmed	True
+uol.com.br	DP12	unconfirmed	False
+uol.com.br	DP13	unconfirmed	False
+uol.com.br	DP14	unconfirmed	False
+uol.com.br	DP15	unconfirmed	False
+princeton.edu	no cookie dialog	True	True
+launchpad.net	no cookie dialog	True	True
+coursera.org	DP1	False	False
+coursera.org	DP2	False	False
+coursera.org	DP3	False	False
+coursera.org	DP4	False	False
+coursera.org	DP5	True	True
+coursera.org	DP6	False	False
+coursera.org	DP7	False	False
+coursera.org	DP8	False	False
+coursera.org	number of clicks to reject cookies	2	2
+coursera.org	DP10	unconfirmed	True
+coursera.org	DP12	unconfirmed	False
+coursera.org	DP13	unconfirmed	False
+coursera.org	DP14	unconfirmed	False
+coursera.org	DP15	unconfirmed	False
+state.gov	no cookie dialog	True	True
+typepad.com	no cookie dialog	True	True
+whatsapp.net	DP1	False	False
+whatsapp.net	DP2	True	True
+whatsapp.net	DP3	True	True
+whatsapp.net	DP4	False	False
+whatsapp.net	DP5	True	True
+whatsapp.net	DP6	False	False
+whatsapp.net	DP7	False	False
+whatsapp.net	DP8	False	False
+whatsapp.net	number of clicks to reject cookies	2	2
+whatsapp.net	DP10	unconfirmed	True
+whatsapp.net	DP12	unconfirmed	False
+whatsapp.net	DP13	unconfirmed	False
+whatsapp.net	DP14	unconfirmed	False
+whatsapp.net	DP15	unconfirmed	False
+g.page	DP1	False	False
+g.page	DP2	False	False
+g.page	DP3	True	True
+g.page	DP4	False	False
+g.page	DP5	True	True
+g.page	DP6	False	False
+g.page	DP7	False	False
+g.page	DP8	False	False
+g.page	number of clicks to reject cookies	2	2
+g.page	DP10	unconfirmed	True
+g.page	DP12	unconfirmed	False
+g.page	DP13	unconfirmed	False
+g.page	DP14	unconfirmed	False
+g.page	DP15	unconfirmed	False
+bandcamp.com	no cookie dialog	True	True
+discord.com	DP1	False	False
+discord.com	DP2	True	True
+discord.com	DP3	False	False
+discord.com	DP4	True	True
+discord.com	DP5	True	True
+discord.com	DP6	False	False
+discord.com	DP7	False	False
+discord.com	DP8	False	False
+discord.com	number of clicks to reject cookies	4	4
+discord.com	DP10	unconfirmed	True
+discord.com	DP12	unconfirmed	False
+discord.com	DP13	unconfirmed	False
+discord.com	DP14	unconfirmed	False
+discord.com	DP15	unconfirmed	False
+sciencemag.org	DP1	False	False
+sciencemag.org	DP2	False	False
+sciencemag.org	DP3	False	False
+sciencemag.org	DP4	False	False
+sciencemag.org	DP5	True	True
+sciencemag.org	DP6	False	False
+sciencemag.org	DP7	False	False
+sciencemag.org	DP8	False	False
+sciencemag.org	number of clicks to reject cookies	6	6
+sciencemag.org	DP10	unconfirmed	True
+sciencemag.org	DP12	unconfirmed	False
+sciencemag.org	DP13	unconfirmed	False
+sciencemag.org	DP14	unconfirmed	False
+sciencemag.org	DP15	unconfirmed	False
+disqus.com	no cookie dialog	True	True
+tistory.com	no cookie dialog	True	True
+usps.com	no cookie dialog	True	True
+change.org	DP1	False	False
+change.org	DP2	True	True
+change.org	DP3	False	False
+change.org	DP4	True	True
+change.org	DP5	True	True
+change.org	DP6	False	False
+change.org	DP7	False	False
+change.org	DP8	False	False
+change.org	number of clicks to reject cookies	1	1
+change.org	DP10	unconfirmed	False
+change.org	DP12	unconfirmed	False
+change.org	DP13	unconfirmed	False
+change.org	DP14	unconfirmed	False
+change.org	DP15	unconfirmed	False
+fedex.com	no cookie dialog	True	True
+linktr.ee	DP1	False	False
+linktr.ee	DP2	True	True
+linktr.ee	DP3	False	False
+linktr.ee	DP4	True	True
+linktr.ee	DP5	True	True
+linktr.ee	DP6	False	False
+linktr.ee	DP7	False	False
+linktr.ee	DP8	False	False
+linktr.ee	number of clicks to reject cookies	1	1
+linktr.ee	DP10	unconfirmed	False
+linktr.ee	DP12	unconfirmed	False
+linktr.ee	DP13	unconfirmed	False
+linktr.ee	DP14	unconfirmed	False
+linktr.ee	DP15	unconfirmed	False
+airbnb.com	no cookie dialog	True	True
+sogou.com	no cookie dialog	True	True
+pinimg.com	no cookie dialog	True	True
+economist.com	DP1	False	False
+economist.com	DP2	True	True
+economist.com	DP3	True	True
+economist.com	DP4	False	False
+economist.com	DP5	True	True
+economist.com	DP6	False	False
+economist.com	DP7	False	False
+economist.com	DP8	False	False
+economist.com	number of clicks to reject cookies	2	2
+economist.com	DP10	unconfirmed	True
+economist.com	DP12	unconfirmed	False
+economist.com	DP13	unconfirmed	False
+economist.com	DP14	unconfirmed	False
+economist.com	DP15	unconfirmed	False
+business.site	DP1	True	True
+business.site	DP2	False	False
+business.site	DP3	False	False
+business.site	DP4	False	False
+business.site	DP5	False	False
+business.site	DP6	False	False
+business.site	DP7	False	False
+business.site	DP8	False	False
+business.site	number of clicks to reject cookies	0	0
+business.site	DP10	unconfirmed	True
+business.site	DP12	unconfirmed	False
+business.site	DP13	unconfirmed	False
+business.site	DP14	unconfirmed	False
+business.site	DP15	unconfirmed	False
+sagepub.com	DP1	False	False
+sagepub.com	DP2	False	False
+sagepub.com	DP3	False	False
+sagepub.com	DP4	False	False
+sagepub.com	DP5	False	False
+sagepub.com	DP6	True	True
+sagepub.com	DP7	False	False
+sagepub.com	DP8	False	False
+sagepub.com	number of clicks to reject cookies	0	0
+sagepub.com	DP10	unconfirmed	True
+sagepub.com	DP12	unconfirmed	False
+sagepub.com	DP13	unconfirmed	False
+sagepub.com	DP14	unconfirmed	False
+sagepub.com	DP15	unconfirmed	False
+constantcontact.com	DP1	False	False
+constantcontact.com	DP2	True	True
+constantcontact.com	DP3	True	True
+constantcontact.com	DP4	False	False
+constantcontact.com	DP5	True	True
+constantcontact.com	DP6	False	False
+constantcontact.com	DP7	False	False
+constantcontact.com	DP8	False	False
+constantcontact.com	number of clicks to reject cookies	5	5
+constantcontact.com	DP10	unconfirmed	True
+constantcontact.com	DP12	unconfirmed	False
+constantcontact.com	DP13	unconfirmed	False
+constantcontact.com	DP14	unconfirmed	False
+constantcontact.com	DP15	unconfirmed	False
+ampproject.org	no cookie dialog	True	True
+globo.com	DP1	True	True
+globo.com	DP2	False	False
+globo.com	DP3	False	False
+globo.com	DP4	True	True
+globo.com	DP5	False	False
+globo.com	DP6	False	False
+globo.com	DP7	False	False
+globo.com	DP8	False	False
+globo.com	number of clicks to reject cookies	0	0
+globo.com	DP10	unconfirmed	True
+globo.com	DP12	unconfirmed	False
+globo.com	DP13	unconfirmed	False
+globo.com	DP14	unconfirmed	False
+globo.com	DP15	unconfirmed	False
+51.la	no cookie dialog	True	True
+evernote.com	DP1	True	True
+evernote.com	DP2	False	False
+evernote.com	DP3	False	False
+evernote.com	DP4	False	False
+evernote.com	DP5	False	False
+evernote.com	DP6	False	False
+evernote.com	DP7	False	False
+evernote.com	DP8	False	False
+evernote.com	number of clicks to reject cookies	0	0
+evernote.com	DP10	unconfirmed	True
+evernote.com	DP12	unconfirmed	False
+evernote.com	DP13	unconfirmed	False
+evernote.com	DP14	unconfirmed	False
+evernote.com	DP15	unconfirmed	False
+hbr.org	no cookie dialog	True	True
+rlcdn.com	no cookie dialog	True	True
+stumbleupon.com	no cookie dialog	True	True
+unesco.org	no cookie dialog	True	True
+mashable.com	DP1	False	False
+mashable.com	DP2	True	True
+mashable.com	DP3	False	False
+mashable.com	DP4	False	False
+mashable.com	DP5	True	True
+mashable.com	DP6	False	False
+mashable.com	DP7	False	False
+mashable.com	DP8	False	False
+mashable.com	number of clicks to reject cookies	0	0
+mashable.com	DP10	unconfirmed	False
+mashable.com	DP12	unconfirmed	False
+mashable.com	DP13	unconfirmed	False
+mashable.com	DP14	unconfirmed	False
+mashable.com	DP15	unconfirmed	False
+pbs.org	no cookie dialog	True	True
+nypost.com	no cookie dialog	True	True
+casalemedia.com	no cookie dialog	True	True
+allaboutcookies.org	no cookie dialog	True	True
+snapchat.com	DP1	False	False
+snapchat.com	DP2	True	True
+snapchat.com	DP3	False	False
+snapchat.com	DP4	False	False
+snapchat.com	DP5	True	True
+snapchat.com	DP6	False	False
+snapchat.com	DP7	False	False
+snapchat.com	DP8	False	False
+snapchat.com	number of clicks to reject cookies	2	2
+snapchat.com	DP10	unconfirmed	True
+snapchat.com	DP12	unconfirmed	False
+snapchat.com	DP13	unconfirmed	False
+snapchat.com	DP14	unconfirmed	False
+snapchat.com	DP15	unconfirmed	False
+whitehouse.gov	no cookie dialog	True	True
+azureedge.net	no cookie dialog	True	True
+homedepot.com	no cookie dialog	True	True
+networkadvertising.org	no cookie dialog	True	True
+edgekey.net	no cookie dialog	True	True
+usda.gov	no cookie dialog	True	True
+target.com	no cookie dialog	True	True
+britannica.com	DP1	False	False
+britannica.com	DP2	True	True
+britannica.com	DP3	False	False
+britannica.com	DP4	True	True
+britannica.com	DP5	True	True
+britannica.com	DP6	True	True
+britannica.com	DP7	False	False
+britannica.com	DP8	False	False
+britannica.com	number of clicks to reject cookies	3	3
+britannica.com	DP10	unconfirmed	True
+britannica.com	DP12	unconfirmed	False
+britannica.com	DP13	unconfirmed	False
+britannica.com	DP14	unconfirmed	False
+britannica.com	DP15	unconfirmed	False
+trustpilot.com	DP1	False	False
+trustpilot.com	DP2	True	True
+trustpilot.com	DP3	True	True
+trustpilot.com	DP4	False	False
+trustpilot.com	DP5	True	True
+trustpilot.com	DP6	False	False
+trustpilot.com	DP7	False	False
+trustpilot.com	DP8	False	False
+trustpilot.com	number of clicks to reject cookies	2	2
+trustpilot.com	DP10	unconfirmed	True
+trustpilot.com	DP12	unconfirmed	False
+trustpilot.com	DP13	unconfirmed	False
+trustpilot.com	DP14	unconfirmed	False
+trustpilot.com	DP15	unconfirmed	False
+hulu.com	no cookie dialog	True	True
+okta.com	DP1	False	False
+okta.com	DP2	True	True
+okta.com	DP3	False	False
+okta.com	DP4	False	False
+okta.com	DP5	True	True
+okta.com	DP6	True	True
+okta.com	DP7	False	False
+okta.com	DP8	False	False
+okta.com	number of clicks to reject cookies	9	9
+okta.com	DP10	unconfirmed	True
+okta.com	DP12	unconfirmed	False
+okta.com	DP13	unconfirmed	False
+okta.com	DP14	unconfirmed	False
+okta.com	DP15	unconfirmed	False
+mayoclinic.org	DP1	False	False
+mayoclinic.org	DP2	False	False
+mayoclinic.org	DP3	False	False
+mayoclinic.org	DP4	True	True
+mayoclinic.org	DP5	True	True
+mayoclinic.org	DP6	False	False
+mayoclinic.org	DP7	False	False
+mayoclinic.org	DP8	False	False
+mayoclinic.org	number of clicks to reject cookies	0	0
+mayoclinic.org	DP10	unconfirmed	False
+mayoclinic.org	DP12	unconfirmed	False
+mayoclinic.org	DP13	unconfirmed	False
+mayoclinic.org	DP14	unconfirmed	False
+mayoclinic.org	DP15	unconfirmed	False
+investing.com	DP1	False	False
+investing.com	DP2	False	False
+investing.com	DP3	False	False
+investing.com	DP4	False	False
+investing.com	DP5	True	True
+investing.com	DP6	False	False
+investing.com	DP7	False	False
+investing.com	DP8	False	False
+investing.com	number of clicks to reject cookies	5	5
+investing.com	DP10	unconfirmed	True
+investing.com	DP12	unconfirmed	False
+investing.com	DP13	unconfirmed	False
+investing.com	DP14	unconfirmed	False
+investing.com	DP15	unconfirmed	False
+outbrain.com	DP1	False	False
+outbrain.com	DP2	True	True
+outbrain.com	DP3	False	False
+outbrain.com	DP4	False	False
+outbrain.com	DP5	True	True
+outbrain.com	DP6	True	True
+outbrain.com	DP7	False	False
+outbrain.com	DP8	False	False
+outbrain.com	number of clicks to reject cookies	2	2
+outbrain.com	DP10	unconfirmed	True
+outbrain.com	DP12	unconfirmed	False
+outbrain.com	DP13	unconfirmed	False
+outbrain.com	DP14	unconfirmed	False
+outbrain.com	DP15	unconfirmed	False
+vice.com	DP1	False	False
+vice.com	DP2	False	False
+vice.com	DP3	True	True
+vice.com	DP4	True	True
+vice.com	DP5	True	True
+vice.com	DP6	False	False
+vice.com	DP7	False	False
+vice.com	DP8	False	False
+vice.com	number of clicks to reject cookies	4	4
+vice.com	DP10	unconfirmed	True
+vice.com	DP12	unconfirmed	False
+vice.com	DP13	unconfirmed	False
+vice.com	DP14	unconfirmed	False
+vice.com	DP15	unconfirmed	False
+crashlytics.com	no cookie dialog	True	True
+columbia.edu	DP1	True	True
+columbia.edu	DP2	False	False
+columbia.edu	DP3	False	False
+columbia.edu	DP4	True	True
+columbia.edu	DP5	False	False
+columbia.edu	DP6	False	False
+columbia.edu	DP7	False	False
+columbia.edu	DP8	False	False
+columbia.edu	number of clicks to reject cookies	0	0
+columbia.edu	DP10	unconfirmed	True
+columbia.edu	DP12	unconfirmed	False
+columbia.edu	DP13	unconfirmed	False
+columbia.edu	DP14	unconfirmed	False
+columbia.edu	DP15	unconfirmed	False
+feedburner.com	no cookie dialog	True	True
+google.com.mx	DP1	False	False
+google.com.mx	DP2	False	False
+google.com.mx	DP3	True	True
+google.com.mx	DP4	True	True
+google.com.mx	DP5	True	True
+google.com.mx	DP6	False	False
+google.com.mx	DP7	False	False
+google.com.mx	DP8	False	False
+google.com.mx	number of clicks to reject cookies	5	5
+google.com.mx	DP10	unconfirmed	True
+google.com.mx	DP12	unconfirmed	True
+google.com.mx	DP13	unconfirmed	False
+google.com.mx	DP14	unconfirmed	False
+google.com.mx	DP15	unconfirmed	False
+onlinesbi.com	no cookie dialog	True	True
+eepurl.com	no cookie dialog	True	True
+rt.com	DP1	True	True
+rt.com	DP2	False	False
+rt.com	DP3	False	False
+rt.com	DP4	True	True
+rt.com	DP5	False	False
+rt.com	DP6	False	False
+rt.com	DP7	False	False
+rt.com	DP8	False	False
+rt.com	number of clicks to reject cookies	0	0
+rt.com	DP10	unconfirmed	True
+rt.com	DP12	unconfirmed	False
+rt.com	DP13	unconfirmed	False
+rt.com	DP14	unconfirmed	False
+rt.com	DP15	unconfirmed	False
+fc2.com	DP1	True	True
+fc2.com	DP2	False	False
+fc2.com	DP3	True	True
+fc2.com	DP4	False	False
+fc2.com	DP5	False	False
+fc2.com	DP6	False	False
+fc2.com	DP7	False	False
+fc2.com	DP8	False	False
+fc2.com	number of clicks to reject cookies	0	0
+fc2.com	DP10	unconfirmed	True
+fc2.com	DP12	unconfirmed	False
+fc2.com	DP13	unconfirmed	False
+fc2.com	DP14	unconfirmed	False
+fc2.com	DP15	unconfirmed	False
+umich.edu	DP1	False	False
+umich.edu	DP2	False	False
+umich.edu	DP3	False	False
+umich.edu	DP4	False	False
+umich.edu	DP5	False	False
+umich.edu	DP6	False	False
+umich.edu	DP7	False	False
+umich.edu	DP8	False	False
+umich.edu	number of clicks to reject cookies	1	1
+umich.edu	DP10	unconfirmed	False
+umich.edu	DP12	unconfirmed	False
+umich.edu	DP13	unconfirmed	False
+umich.edu	DP14	unconfirmed	False
+umich.edu	DP15	unconfirmed	False
+pexels.com	no cookie dialog	True	True
+arcgis.com	no cookie dialog	True	True
+moatads.com	DP1	False	False
+moatads.com	DP2	False	False
+moatads.com	DP3	False	False
+moatads.com	DP4	True	True
+moatads.com	DP5	True	True
+moatads.com	DP6	False	False
+moatads.com	DP7	False	False
+moatads.com	DP8	False	False
+moatads.com	number of clicks to reject cookies	4	4
+moatads.com	DP10	unconfirmed	True
+moatads.com	DP12	unconfirmed	False
+moatads.com	DP13	unconfirmed	False
+moatads.com	DP14	unconfirmed	False
+moatads.com	DP15	unconfirmed	False
+smallpdf.com	DP1	False	False
+smallpdf.com	DP2	True	True
+smallpdf.com	DP3	False	False
+smallpdf.com	DP4	False	False
+smallpdf.com	DP5	True	True
+smallpdf.com	DP6	False	False
+smallpdf.com	DP7	False	False
+smallpdf.com	DP8	False	False
+smallpdf.com	number of clicks to reject cookies	2	2
+smallpdf.com	DP10	unconfirmed	True
+smallpdf.com	DP12	unconfirmed	False
+smallpdf.com	DP13	unconfirmed	False
+smallpdf.com	DP14	unconfirmed	False
+smallpdf.com	DP15	unconfirmed	False
+noaa.gov	no cookie dialog	True	True
+webs.com	no cookie dialog	True	True
+jquery.com	no cookie dialog	True	True
+varzesh3.com	no cookie dialog	True	True
+epa.gov	no cookie dialog	True	True
+businesswire.com	DP1	False	False
+businesswire.com	DP2	False	False
+businesswire.com	DP3	False	False
+businesswire.com	DP4	True	True
+businesswire.com	DP5	True	True
+businesswire.com	DP6	True	True
+businesswire.com	DP7	False	False
+businesswire.com	DP8	False	False
+businesswire.com	number of clicks to reject cookies	6	6
+businesswire.com	DP10	unconfirmed	True
+businesswire.com	DP12	unconfirmed	False
+businesswire.com	DP13	unconfirmed	False
+businesswire.com	DP14	unconfirmed	False
+businesswire.com	DP15	unconfirmed	False
+google.com.tr	DP1	False	False
+google.com.tr	DP2	False	False
+google.com.tr	DP3	True	True
+google.com.tr	DP4	True	True
+google.com.tr	DP5	True	True
+google.com.tr	DP6	False	False
+google.com.tr	DP7	False	False
+google.com.tr	DP8	False	False
+google.com.tr	number of clicks to reject cookies	5	5
+google.com.tr	DP10	unconfirmed	True
+google.com.tr	DP12	unconfirmed	False
+google.com.tr	DP13	unconfirmed	False
+google.com.tr	DP14	unconfirmed	False
+google.com.tr	DP15	unconfirmed	False
+mozilla.com	no cookie dialog	True	True
+cbc.ca	DP1	False	False
+cbc.ca	DP2	False	False
+cbc.ca	DP3	False	False
+cbc.ca	DP4	False	False
+cbc.ca	DP5	True	True
+cbc.ca	DP6	True	True
+cbc.ca	DP7	False	False
+cbc.ca	DP8	False	False
+cbc.ca	number of clicks to reject cookies	2	2
+cbc.ca	DP10	unconfirmed	False
+cbc.ca	DP12	unconfirmed	False
+cbc.ca	DP13	unconfirmed	False
+cbc.ca	DP14	unconfirmed	False
+cbc.ca	DP15	unconfirmed	False
+vox.com	DP1	True	True
+vox.com	DP2	False	False
+vox.com	DP3	False	False
+vox.com	DP4	False	False
+vox.com	DP5	False	False
+vox.com	DP6	False	False
+vox.com	DP7	False	False
+vox.com	DP8	False	False
+vox.com	number of clicks to reject cookies	2	2
+vox.com	DP10	unconfirmed	True
+vox.com	DP12	unconfirmed	False
+vox.com	DP13	unconfirmed	False
+vox.com	DP14	unconfirmed	False
+vox.com	DP15	unconfirmed	False
+azure.com	DP1	False	False
+azure.com	DP2	False	False
+azure.com	DP3	False	False
+azure.com	DP4	True	True
+azure.com	DP5	True	True
+azure.com	DP6	False	False
+azure.com	DP7	False	False
+azure.com	DP8	False	False
+azure.com	number of clicks to reject cookies	5	5
+azure.com	DP10	unconfirmed	True
+azure.com	DP12	unconfirmed	False
+azure.com	DP13	unconfirmed	False
+azure.com	DP14	unconfirmed	False
+azure.com	DP15	unconfirmed	False
+getpocket.com	DP1	False	False
+getpocket.com	DP2	False	False
+getpocket.com	DP3	False	False
+getpocket.com	DP4	False	False
+getpocket.com	DP5	True	True
+getpocket.com	DP6	False	False
+getpocket.com	DP7	False	False
+getpocket.com	DP8	False	False
+getpocket.com	number of clicks to reject cookies	6	6
+getpocket.com	DP10	unconfirmed	True
+getpocket.com	DP12	unconfirmed	False
+getpocket.com	DP13	unconfirmed	False
+getpocket.com	DP14	unconfirmed	False
+getpocket.com	DP15	unconfirmed	False
+redhat.com	DP1	False	False
+redhat.com	DP2	False	False
+redhat.com	DP3	False	False
+redhat.com	DP4	True	True
+redhat.com	DP5	True	True
+redhat.com	DP6	False	False
+redhat.com	DP7	False	False
+redhat.com	DP8	False	False
+redhat.com	number of clicks to reject cookies	2	2
+redhat.com	DP10	unconfirmed	True
+redhat.com	DP12	unconfirmed	False
+redhat.com	DP13	unconfirmed	False
+redhat.com	DP14	unconfirmed	False
+redhat.com	DP15	unconfirmed	False
+appsflyer.com	DP1	False	False
+appsflyer.com	DP2	False	False
+appsflyer.com	DP3	False	False
+appsflyer.com	DP4	True	True
+appsflyer.com	DP5	False	False
+appsflyer.com	DP6	False	False
+appsflyer.com	DP7	False	False
+appsflyer.com	DP8	False	False
+appsflyer.com	number of clicks to reject cookies	1	1
+appsflyer.com	DP10	unconfirmed	False
+appsflyer.com	DP12	unconfirmed	False
+appsflyer.com	DP13	unconfirmed	False
+appsflyer.com	DP14	unconfirmed	False
+appsflyer.com	DP15	unconfirmed	False
+ebay.de	DP1	False	False
+ebay.de	DP2	False	False
+ebay.de	DP3	False	False
+ebay.de	DP4	True	True
+ebay.de	DP5	True	True
+ebay.de	DP6	False	False
+ebay.de	DP7	True	True
+ebay.de	DP8	False	False
+ebay.de	number of clicks to reject cookies	2	2
+ebay.de	DP10	unconfirmed	True
+ebay.de	DP12	unconfirmed	False
+ebay.de	DP13	unconfirmed	False
+ebay.de	DP14	unconfirmed	False
+ebay.de	DP15	unconfirmed	False
+bidswitch.net	no cookie dialog	True	True
+psu.edu	no cookie dialog	True	True
+engadget.com	DP1	False	False
+engadget.com	DP2	True	True
+engadget.com	DP3	True	True
+engadget.com	DP4	True	True
+engadget.com	DP5	True	True
+engadget.com	DP6	False	False
+engadget.com	DP7	False	False
+engadget.com	DP8	False	False
+engadget.com	number of clicks to reject cookies	11	11
+engadget.com	DP10	unconfirmed	True
+engadget.com	DP12	unconfirmed	False
+engadget.com	DP13	unconfirmed	False
+engadget.com	DP14	unconfirmed	False
+engadget.com	DP15	unconfirmed	False
+gofundme.com	DP1	False	False
+gofundme.com	DP2	False	False
+gofundme.com	DP3	False	False
+gofundme.com	DP4	False	False
+gofundme.com	DP5	True	True
+gofundme.com	DP6	False	False
+gofundme.com	DP7	False	False
+gofundme.com	DP8	False	False
+gofundme.com	number of clicks to reject cookies	3	3
+gofundme.com	DP10	unconfirmed	True
+gofundme.com	DP12	unconfirmed	False
+gofundme.com	DP13	unconfirmed	False
+gofundme.com	DP14	unconfirmed	False
+gofundme.com	DP15	unconfirmed	False
+abc.net.au	no cookie dialog	True	True
+teamviewer.com	DP1	False	False
+teamviewer.com	DP2	True	True
+teamviewer.com	DP3	True	True
+teamviewer.com	DP4	True	True
+teamviewer.com	DP5	True	True
+teamviewer.com	DP6	False	False
+teamviewer.com	DP7	False	False
+teamviewer.com	DP8	False	False
+teamviewer.com	number of clicks to reject cookies	2	2
+teamviewer.com	DP10	unconfirmed	True
+teamviewer.com	DP12	unconfirmed	False
+teamviewer.com	DP13	unconfirmed	False
+teamviewer.com	DP14	unconfirmed	False
+teamviewer.com	DP15	unconfirmed	False
+example.com	no cookie dialog	True	True
+yale.edu	no cookie dialog	True	True
+advertising.com	no cookie dialog	True	True
+dribbble.com	no cookie dialog	True	True
+typeform.com	no cookie dialog	True	True
+avito.ru	no cookie dialog	True	True
+zdnet.com	no cookie dialog	True	True
+huawei.com	DP1	False	False
+huawei.com	DP2	False	False
+huawei.com	DP3	False	False
+huawei.com	DP4	False	False
+huawei.com	DP5	False	False
+huawei.com	DP6	True	True
+huawei.com	DP7	False	False
+huawei.com	DP8	False	False
+huawei.com	number of clicks to reject cookies	0	0
+huawei.com	DP10	unconfirmed	True
+huawei.com	DP12	unconfirmed	False
+huawei.com	DP13	unconfirmed	False
+huawei.com	DP14	unconfirmed	False
+huawei.com	DP15	unconfirmed	False
+grid.id	no cookie dialog	True	True
+worldbank.org	DP1	False	False
+worldbank.org	DP2	False	False
+worldbank.org	DP3	False	False
+worldbank.org	DP4	False	False
+worldbank.org	DP5	False	False
+worldbank.org	DP6	True	True
+worldbank.org	DP7	False	False
+worldbank.org	DP8	False	False
+worldbank.org	number of clicks to reject cookies	0	0
+worldbank.org	DP10	unconfirmed	True
+worldbank.org	DP12	unconfirmed	False
+worldbank.org	DP13	unconfirmed	False
+worldbank.org	DP14	unconfirmed	False
+worldbank.org	DP15	unconfirmed	False
+elsevier.com	DP1	False	False
+elsevier.com	DP2	True	True
+elsevier.com	DP3	False	False
+elsevier.com	DP4	True	True
+elsevier.com	DP5	True	True
+elsevier.com	DP6	False	False
+elsevier.com	DP7	False	False
+elsevier.com	DP8	False	False
+elsevier.com	number of clicks to reject cookies	4	4
+elsevier.com	DP10	unconfirmed	True
+elsevier.com	DP12	unconfirmed	False
+elsevier.com	DP13	unconfirmed	False
+elsevier.com	DP14	unconfirmed	False
+elsevier.com	DP15	unconfirmed	False
+iso.org	no cookie dialog	True	True
+meetup.com	no cookie dialog	True	True
+disneyplus.com	DP1	False	False
+disneyplus.com	DP2	False	False
+disneyplus.com	DP3	False	False
+disneyplus.com	DP4	True	True
+disneyplus.com	DP5	True	True
+disneyplus.com	DP6	False	False
+disneyplus.com	DP7	False	False
+disneyplus.com	DP8	False	False
+disneyplus.com	number of clicks to reject cookies	1	1
+disneyplus.com	DP10	unconfirmed	False
+disneyplus.com	DP12	unconfirmed	False
+disneyplus.com	DP13	unconfirmed	False
+disneyplus.com	DP14	unconfirmed	False
+disneyplus.com	DP15	unconfirmed	False
+amazon.fr	DP1	False	False
+amazon.fr	DP2	False	False
+amazon.fr	DP3	False	False
+amazon.fr	DP4	False	False
+amazon.fr	DP5	True	True
+amazon.fr	DP6	False	False
+amazon.fr	DP7	False	False
+amazon.fr	DP8	False	False
+amazon.fr	number of clicks to reject cookies	2	2
+amazon.fr	DP10	unconfirmed	True
+amazon.fr	DP12	unconfirmed	False
+amazon.fr	DP13	unconfirmed	False
+amazon.fr	DP14	unconfirmed	False
+amazon.fr	DP15	unconfirmed	False
+youronlinechoices.com	no cookie dialog	True	True
+gosuslugi.ru	no cookie dialog	True	True
+chess.com	no cookie dialog	True	True
+upenn.edu	no cookie dialog	True	True
+fastly.net	DP1	False	False
+fastly.net	DP2	True	True
+fastly.net	DP3	False	False
+fastly.net	DP4	True	True
+fastly.net	DP5	True	True
+fastly.net	DP6	True	True
+fastly.net	DP7	False	False
+fastly.net	DP8	False	False
+fastly.net	number of clicks to reject cookies	3	3
+fastly.net	DP10	unconfirmed	True
+fastly.net	DP12	unconfirmed	False
+fastly.net	DP13	unconfirmed	False
+fastly.net	DP14	unconfirmed	False
+fastly.net	DP15	unconfirmed	False
+ikea.com	DP1	False	False
+ikea.com	DP2	True	True
+ikea.com	DP3	False	False
+ikea.com	DP4	False	False
+ikea.com	DP5	True	True
+ikea.com	DP6	False	False
+ikea.com	DP7	False	False
+ikea.com	DP8	False	False
+ikea.com	number of clicks to reject cookies	2	2
+ikea.com	DP10	unconfirmed	True
+ikea.com	DP12	unconfirmed	False
+ikea.com	DP13	unconfirmed	False
+ikea.com	DP14	unconfirmed	False
+ikea.com	DP15	unconfirmed	False
+medium.com	DP1	False	False
+medium.com	DP2	False	False
+medium.com	DP3	False	False
+medium.com	DP4	False	False
+medium.com	DP5	False	False
+medium.com	DP6	True	True
+medium.com	DP7	True	False
+medium.com	DP8	False	False
+medium.com	number of clicks to reject cookies	0	0
+medium.com	DP10	unconfirmed	True
+medium.com	DP12	unconfirmed	False
+medium.com	DP13	unconfirmed	False
+medium.com	DP14	unconfirmed	False
+medium.com	DP15	unconfirmed	False
+naver.com	no cookie dialog	True	True
+yandex.ru	DP1	False	False
+yandex.ru	DP2	False	False
+yandex.ru	DP3	False	False
+yandex.ru	DP4	False	False
+yandex.ru	DP5	True	True
+yandex.ru	DP6	False	False
+yandex.ru	DP7	False	False
+yandex.ru	DP8	False	False
+yandex.ru	number of clicks to reject cookies	2	2
+yandex.ru	DP10	unconfirmed	True
+yandex.ru	DP12	unconfirmed	False
+yandex.ru	DP13	unconfirmed	False
+yandex.ru	DP14	unconfirmed	False
+yandex.ru	DP15	unconfirmed	False
+wix.com	DP1	False	False
+wix.com	DP2	True	True
+wix.com	DP3	False	False
+wix.com	DP4	False	False
+wix.com	DP5	True	True
+wix.com	DP6	True	True
+wix.com	DP7	False	False
+wix.com	DP8	False	False
+wix.com	number of clicks to reject cookies	2	2
+wix.com	DP10	unconfirmed	True
+wix.com	DP12	unconfirmed	False
+wix.com	DP13	unconfirmed	False
+wix.com	DP14	unconfirmed	False
+wix.com	DP15	unconfirmed	False
+fandom.com	DP1	False	False
+fandom.com	DP2	True	True
+fandom.com	DP3	False	False
+fandom.com	DP4	True	True
+fandom.com	DP5	True	True
+fandom.com	DP6	False	False
+fandom.com	DP7	False	False
+fandom.com	DP8	False	False
+fandom.com	number of clicks to reject cookies	0	0
+fandom.com	DP10	unconfirmed	False
+fandom.com	DP12	unconfirmed	False
+fandom.com	DP13	unconfirmed	False
+fandom.com	DP14	unconfirmed	False
+fandom.com	DP15	unconfirmed	False
+npr.com	no cookie dialog	True	True
+huffpost.com	DP1	False	False
+huffpost.com	DP2	False	False
+huffpost.com	DP3	False	False
+huffpost.com	DP4	True	True
+huffpost.com	DP5	True	True
+huffpost.com	DP6	False	False
+huffpost.com	DP7	False	False
+huffpost.com	DP8	False	False
+huffpost.com	number of clicks to reject cookies	0	0
+huffpost.com	DP10	unconfirmed	False
+huffpost.com	DP12	unconfirmed	False
+huffpost.com	DP13	unconfirmed	False
+huffpost.com	DP14	unconfirmed	False
+huffpost.com	DP15	unconfirmed	False
+wired.com	DP1	False	False
+wired.com	DP2	True	True
+wired.com	DP3	False	False
+wired.com	DP4	False	False
+wired.com	DP5	True	True
+wired.com	DP6	False	False
+wired.com	DP7	True	True
+wired.com	DP8	False	False
+wired.com	number of clicks to reject cookies	2	2
+wired.com	DP10	unconfirmed	True
+wired.com	DP12	unconfirmed	False
+wired.com	DP13	unconfirmed	False
+wired.com	DP14	unconfirmed	False
+wired.com	DP15	unconfirmed	False
+coinmarketcap.com	DP1	False	False
+coinmarketcap.com	DP2	False	False
+coinmarketcap.com	DP3	False	False
+coinmarketcap.com	DP4	False	False
+coinmarketcap.com	DP5	False	False
+coinmarketcap.com	DP6	True	True
+coinmarketcap.com	DP7	False	False
+coinmarketcap.com	DP8	False	False
+coinmarketcap.com	number of clicks to reject cookies	0	0
+coinmarketcap.com	DP10	unconfirmed	True
+coinmarketcap.com	DP12	unconfirmed	False
+coinmarketcap.com	DP13	unconfirmed	False
+coinmarketcap.com	DP14	unconfirmed	False
+coinmarketcap.com	DP15	unconfirmed	False
+intel.com	DP1	False	False
+intel.com	DP2	False	False
+intel.com	DP3	False	False
+intel.com	DP4	True	True
+intel.com	DP5	True	True
+intel.com	DP6	False	False
+intel.com	DP7	False	False
+intel.com	DP8	False	False
+intel.com	number of clicks to reject cookies	1	1
+intel.com	DP10	unconfirmed	False
+intel.com	DP12	unconfirmed	False
+intel.com	DP13	unconfirmed	False
+intel.com	DP14	unconfirmed	False
+intel.com	DP15	unconfirmed	False
+nytimes.com	DP1	False	False
+nytimes.com	DP2	False	False
+nytimes.com	DP3	False	False
+nytimes.com	DP4	False	False
+nytimes.com	DP5	True	True
+nytimes.com	DP6	True	True
+nytimes.com	DP7	False	False
+nytimes.com	DP8	False	False
+nytimes.com	number of clicks to reject cookies	1	1
+nytimes.com	DP10	unconfirmed	False
+nytimes.com	DP12	unconfirmed	False
+nytimes.com	DP13	unconfirmed	False
+nytimes.com	DP14	unconfirmed	False
+nytimes.com	DP15	unconfirmed	False
+opera.com	DP1	False	False
+opera.com	DP2	True	True
+opera.com	DP3	True	True
+opera.com	DP4	False	False
+opera.com	DP5	True	True
+opera.com	DP6	False	False
+opera.com	DP7	False	False
+opera.com	DP8	False	False
+opera.com	number of clicks to reject cookies	3	3
+opera.com	DP10	unconfirmed	True
+opera.com	DP12	unconfirmed	False
+opera.com	DP13	unconfirmed	False
+opera.com	DP14	unconfirmed	False
+opera.com	DP15	unconfirmed	False
+godaddy.com	no cookie dialog	True	True
+wikihow.com	DP1	False	False
+wikihow.com	DP2	False	False
+wikihow.com	DP3	False	False
+wikihow.com	DP4	False	False
+wikihow.com	DP5	True	True
+wikihow.com	DP6	False	False
+wikihow.com	DP7	False	False
+wikihow.com	DP8	False	False
+wikihow.com	number of clicks to reject cookies	4	4
+wikihow.com	DP10	unconfirmed	True
+wikihow.com	DP12	unconfirmed	False
+wikihow.com	DP13	unconfirmed	False
+wikihow.com	DP14	unconfirmed	False
+wikihow.com	DP15	unconfirmed	False
+w3schools.com	DP1	False	False
+w3schools.com	DP2	True	True
+w3schools.com	DP3	True	True
+w3schools.com	DP4	False	False
+w3schools.com	DP5	True	True
+w3schools.com	DP6	False	False
+w3schools.com	DP7	False	False
+w3schools.com	DP8	False	False
+w3schools.com	number of clicks to reject cookies	2	2
+w3schools.com	DP10	unconfirmed	True
+w3schools.com	DP12	unconfirmed	False
+w3schools.com	DP13	unconfirmed	False
+w3schools.com	DP14	unconfirmed	False
+w3schools.com	DP15	unconfirmed	False
+zoho.com	DP1	False	False
+zoho.com	DP2	False	False
+zoho.com	DP3	False	False
+zoho.com	DP4	False	False
+zoho.com	DP5	True	True
+zoho.com	DP6	False	False
+zoho.com	DP7	True	True
+zoho.com	DP8	False	False
+zoho.com	number of clicks to reject cookies	3	3
+zoho.com	DP10	unconfirmed	True
+zoho.com	DP12	unconfirmed	False
+zoho.com	DP13	unconfirmed	False
+zoho.com	DP14	unconfirmed	False
+zoho.com	DP15	unconfirmed	False
+americanexpress.com	DP1	False	False
+americanexpress.com	DP2	False	False
+americanexpress.com	DP3	False	False
+americanexpress.com	DP4	False	False
+americanexpress.com	DP5	False	False
+americanexpress.com	DP6	False	False
+americanexpress.com	DP7	False	False
+americanexpress.com	DP8	False	False
+americanexpress.com	number of clicks to reject cookies	1	1
+americanexpress.com	DP10	unconfirmed	False
+americanexpress.com	DP12	unconfirmed	False
+americanexpress.com	DP13	unconfirmed	False
+americanexpress.com	DP14	unconfirmed	False
+americanexpress.com	DP15	unconfirmed	False
+sciencedaily.com	DP1	False	False
+sciencedaily.com	DP2	True	True
+sciencedaily.com	DP3	True	True
+sciencedaily.com	DP4	False	False
+sciencedaily.com	DP5	True	True
+sciencedaily.com	DP6	False	False
+sciencedaily.com	DP7	True	True
+sciencedaily.com	DP8	False	False
+sciencedaily.com	number of clicks to reject cookies	3	3
+sciencedaily.com	DP10	unconfirmed	True
+sciencedaily.com	DP12	unconfirmed	False
+sciencedaily.com	DP13	unconfirmed	False
+sciencedaily.com	DP14	unconfirmed	False
+sciencedaily.com	DP15	unconfirmed	False
+steampowered.com	DP1	False	False
+steampowered.com	DP2	False	False
+steampowered.com	DP3	False	False
+steampowered.com	DP4	False	False
+steampowered.com	DP5	True	True
+steampowered.com	DP6	False	False
+steampowered.com	DP7	False	False
+steampowered.com	DP8	False	False
+steampowered.com	number of clicks to reject cookies	1	1
+steampowered.com	DP10	unconfirmed	False
+steampowered.com	DP12	unconfirmed	False
+steampowered.com	DP13	unconfirmed	False
+steampowered.com	DP14	unconfirmed	False
+steampowered.com	DP15	unconfirmed	False
+academia.com	no cookie dialog	True	True
+theguardian.com	DP1	False	False
+theguardian.com	DP2	False	False
+theguardian.com	DP3	True	True
+theguardian.com	DP4	True	True
+theguardian.com	DP5	True	True
+theguardian.com	DP6	False	False
+theguardian.com	DP7	False	False
+theguardian.com	DP8	False	False
+theguardian.com	number of clicks to reject cookies	4	4
+theguardian.com	DP10	unconfirmed	True
+theguardian.com	DP12	unconfirmed	False
+theguardian.com	DP13	unconfirmed	False
+theguardian.com	DP14	unconfirmed	False
+theguardian.com	DP15	unconfirmed	False
+reuters.com	DP1	False	False
+reuters.com	DP2	True	True
+reuters.com	DP3	False	False
+reuters.com	DP4	True	True
+reuters.com	DP5	False	False
+reuters.com	DP6	False	False
+reuters.com	DP7	False	False
+reuters.com	DP8	False	False
+reuters.com	number of clicks to reject cookies	1	1
+reuters.com	DP10	unconfirmed	False
+reuters.com	DP12	unconfirmed	False
+reuters.com	DP13	unconfirmed	False
+reuters.com	DP14	unconfirmed	False
+reuters.com	DP15	unconfirmed	False
+issuu.com	DP1	False	False
+issuu.com	DP2	False	False
+issuu.com	DP3	False	False
+issuu.com	DP4	True	True
+issuu.com	DP5	False	False
+issuu.com	DP6	False	False
+issuu.com	DP7	False	False
+issuu.com	DP8	False	False
+issuu.com	number of clicks to reject cookies	1	1
+issuu.com	DP10	unconfirmed	False
+issuu.com	DP12	unconfirmed	False
+issuu.com	DP13	unconfirmed	False
+issuu.com	DP14	unconfirmed	False
+issuu.com	DP15	unconfirmed	False
+wiley.com	DP1	False	False
+wiley.com	DP2	False	False
+wiley.com	DP3	True	True
+wiley.com	DP4	True	True
+wiley.com	DP5	True	True
+wiley.com	DP6	True	True
+wiley.com	DP7	False	False
+wiley.com	DP8	False	False
+wiley.com	number of clicks to reject cookies	1	1
+wiley.com	DP10	unconfirmed	False
+wiley.com	DP12	unconfirmed	False
+wiley.com	DP13	unconfirmed	False
+wiley.com	DP14	unconfirmed	False
+wiley.com	DP15	unconfirmed	False
+scribd.com	DP1	True	True
+scribd.com	DP2	False	False
+scribd.com	DP3	True	True
+scribd.com	DP4	True	True
+scribd.com	DP5	False	False
+scribd.com	DP6	True	True
+scribd.com	DP7	False	False
+scribd.com	DP8	False	False
+scribd.com	number of clicks to reject cookies	1	1
+scribd.com	DP10	unconfirmed	True
+scribd.com	DP12	unconfirmed	False
+scribd.com	DP13	unconfirmed	False
+scribd.com	DP14	unconfirmed	False
+scribd.com	DP15	unconfirmed	False
+deepl.com	DP1	True	True
+deepl.com	DP2	False	False
+deepl.com	DP3	False	False
+deepl.com	DP4	False	False
+deepl.com	DP5	False	False
+deepl.com	DP6	False	False
+deepl.com	DP7	False	False
+deepl.com	DP8	False	False
+deepl.com	number of clicks to reject cookies	1	1
+deepl.com	DP10	unconfirmed	True
+deepl.com	DP12	unconfirmed	False
+deepl.com	DP13	unconfirmed	False
+deepl.com	DP14	unconfirmed	False
+deepl.com	DP15	unconfirmed	False
+patreon.com	DP1	False	False
+patreon.com	DP2	False	False
+patreon.com	DP3	False	False
+patreon.com	DP4	True	True
+patreon.com	DP5	False	False
+patreon.com	DP6	True	True
+patreon.com	DP7	False	False
+patreon.com	DP8	True	True
+patreon.com	number of clicks to reject cookies	2	2
+patreon.com	DP10	unconfirmed	True
+patreon.com	DP12	unconfirmed	False
+patreon.com	DP13	unconfirmed	False
+patreon.com	DP14	unconfirmed	False
+patreon.com	DP15	unconfirmed	False
+plesk.com	DP1	False	False
+plesk.com	DP2	False	False
+plesk.com	DP3	False	False
+plesk.com	DP4	False	False
+plesk.com	DP5	False	False
+plesk.com	DP6	False	False
+plesk.com	DP7	False	False
+plesk.com	DP8	False	False
+plesk.com	number of clicks to reject cookies	1	1
+plesk.com	DP10	unconfirmed	False
+plesk.com	DP12	unconfirmed	False
+plesk.com	DP13	unconfirmed	False
+plesk.com	DP14	unconfirmed	False
+plesk.com	DP15	unconfirmed	False
+indiatimes.com	DP1	True	True
+indiatimes.com	DP2	False	False
+indiatimes.com	DP3	False	False
+indiatimes.com	DP4	True	True
+indiatimes.com	DP5	False	False
+indiatimes.com	DP6	False	False
+indiatimes.com	DP7	False	False
+indiatimes.com	DP8	False	False
+indiatimes.com	number of clicks to reject cookies	1	1
+indiatimes.com	DP10	unconfirmed	True
+indiatimes.com	DP12	unconfirmed	False
+indiatimes.com	DP13	unconfirmed	False
+indiatimes.com	DP14	unconfirmed	False
+indiatimes.com	DP15	unconfirmed	False
+webmd.com	DP1	False	False
+webmd.com	DP2	True	True
+webmd.com	DP3	False	False
+webmd.com	DP4	True	True
+webmd.com	DP5	True	True
+webmd.com	DP6	False	False
+webmd.com	DP7	False	False
+webmd.com	DP8	False	False
+webmd.com	number of clicks to reject cookies	2	2
+webmd.com	DP10	unconfirmed	True
+webmd.com	DP12	unconfirmed	False
+webmd.com	DP13	unconfirmed	False
+webmd.com	DP14	unconfirmed	False
+webmd.com	DP15	unconfirmed	False
+cloudflare.com	DP1	False	False
+cloudflare.com	DP2	False	False
+cloudflare.com	DP3	True	True
+cloudflare.com	DP4	False	False
+cloudflare.com	DP5	True	True
+cloudflare.com	DP6	True	True
+cloudflare.com	DP7	False	False
+cloudflare.com	DP8	False	False
+cloudflare.com	number of clicks to reject cookies	1	1
+cloudflare.com	DP10	unconfirmed	False
+cloudflare.com	DP12	unconfirmed	False
+cloudflare.com	DP13	unconfirmed	False
+cloudflare.com	DP14	unconfirmed	False
+cloudflare.com	DP15	unconfirmed	False
+dailymail.com	DP1	False	False
+dailymail.com	DP2	False	False
+dailymail.com	DP3	True	True
+dailymail.com	DP4	True	True
+dailymail.com	DP5	True	True
+dailymail.com	DP6	False	False
+dailymail.com	DP7	False	False
+dailymail.com	DP8	False	False
+dailymail.com	number of clicks to reject cookies	3	3
+dailymail.com	DP10	unconfirmed	True
+dailymail.com	DP12	unconfirmed	False
+dailymail.com	DP13	unconfirmed	False
+dailymail.com	DP14	unconfirmed	False
+dailymail.com	DP15	unconfirmed	False
+dailymail.co.uk	DP1	False	False
+dailymail.co.uk	DP2	False	False
+dailymail.co.uk	DP3	False	False
+dailymail.co.uk	DP4	True	True
+dailymail.co.uk	DP5	True	True
+dailymail.co.uk	DP6	False	False
+dailymail.co.uk	DP7	False	False
+dailymail.co.uk	DP8	False	False
+dailymail.co.uk	number of clicks to reject cookies	3	3
+dailymail.co.uk	DP10	unconfirmed	True
+dailymail.co.uk	DP12	unconfirmed	False
+dailymail.co.uk	DP13	unconfirmed	False
+dailymail.co.uk	DP14	unconfirmed	False
+dailymail.co.uk	DP15	unconfirmed	False
+bbc.com	no cookie dialog	True	True
+bbc.co.uk	DP1	False	False
+bbc.co.uk	DP2	False	False
+bbc.co.uk	DP3	False	False
+bbc.co.uk	DP4	False	False
+bbc.co.uk	DP5	True	True
+bbc.co.uk	DP6	False	False
+bbc.co.uk	DP7	False	False
+bbc.co.uk	DP8	False	False
+bbc.co.uk	number of clicks to reject cookies	2	2
+bbc.co.uk	DP10	unconfirmed	True
+bbc.co.uk	DP12	unconfirmed	False
+bbc.co.uk	DP13	unconfirmed	False
+bbc.co.uk	DP14	unconfirmed	False
+bbc.co.uk	DP15	unconfirmed	False
+addthis.com	DP11	True	True
+aliyun.com	DP11	True	True
+amazonaws.com	DP11	True	True
+aol.com	DP11	True	True
+bbc.co.uk	DP11	True	True
+bing.com	DP11	True	True
+bloomberg.com	DP11	True	True
+britannica.com	DP11	True	True
+businessinsider.com	DP11	True	True
+buzzfeed.com	DP11	True	True
+cbsnews.com	DP11	True	True
+coinmarketcap.com	DP9	True	True
+dailymail.co.uk	DP11	True	True
+dailymail.com	DP11	True	True
+digicert.com	DP9	True	True
+ebay.de	DP11	True	True
+engadget.com	DP11	True	True
+etsy.com	DP11	True	True
+facebook.com	DP11	True	True
+fb.com	DP11	True	True
+fbcdn.net	DP11	True	True
+flickr.com	DP9	True	True
+free.fr	DP11	True	True
+google.ca	DP11	True	True
+google.co.in	DP11	True	True
+google.co.jp	DP11	True	True
+google.co.uk	DP11	True	True
+google.com	DP11	True	True
+google.com.br	DP11	True	True
+google.com.hk	DP11	True	True
+google.com.sg	DP11	True	True
+google.com.tr	DP11	True	True
+google.com.tw	DP11	True	True
+google.de	DP11	True	True
+google.es	DP11	True	True
+google.fr	DP11	True	True
+google.it	DP11	True	True
+google.ru	DP11	True	True
+googlesyndication.com	DP11	True	True
+ibm.com	DP11	True	True
+imgur.com	DP11	True	True
+independent.co.uk	DP11	True	True
+instagram.com	DP11	True	True
+investing.com	DP11	True	True
+investopedia.com	DP11	True	True
+marketwatch.com	DP11	True	True
+moatads.com	DP11	True	True
+msn.com	DP11	True	True
+mysql.com	DP11	True	True
+nationalgeographic.com	DP11	True	True
+nbcnews.com	DP11	True	True
+nginx.com	DP11	True	True
+okta.com	DP9	True	True
+oracle.com	DP11	True	True
+paypal.com	DP11	True	True
+primevideo.com	DP11	True	True
+redhat.com	DP11	True	True
+researchgate.net	DP11	True	True
+sagepub.com	DP9	True	True
+samsung.com	DP11	True	True
+sciencedaily.com	DP11	True	True
+scribd.com	DP11	True	True
+smallpdf.com	DP11	True	True
+spotify.com	DP11	True	True
+squarespace.com	DP11	True	True
+techcrunch.com	DP11	True	True
+telegraph.co.uk	DP11	True	True
+theatlantic.com	DP11	True	True
+tiktok.com	DP11	True	True
+tinyurl.com	DP11	True	True
+tripadvisor.com	DP11	True	True
+vice.com	DP11	True	True
+vox.com	DP11	True	True
+w3schools.com	DP11	True	True
+weather.com	DP11	True	True
+webex.com	DP11	True	True
+webmd.com	DP11	True	True
+wetransfer.com	DP11	True	True
+whatsapp.com	DP11	True	True
+whatsapp.net	DP11	True	True
+wiley.com	DP11	True	True
+wired.com	DP11	True	True
+yahoo.com	DP11	True	True
+youtu.be	DP11	True	True
+youtube.com	DP11	True	True

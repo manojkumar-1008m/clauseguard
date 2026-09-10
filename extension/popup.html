@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClauseGuard</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-shield">🛡️</span>
+        <h1 class="title">ClauseGuard</h1>
+      </div>
+      <p id="tagline" class="tagline">Protect your digital decisions.</p>
+    </header>
+
+    <!-- Action Section -->
+    <div class="action-section">
+      <button id="analyzeBtn" class="btn-primary">Analyze This Page</button>
+    </div>
+
+    <!-- State 2: ANALYZING -->
+    <div id="status" class="status-card hidden">
+      <div class="spinner"></div>
+      <p id="statusText" class="status-text">Analyzing page...</p>
+    </div>
+
+    <!-- State 7: ERROR -->
+    <div id="error" class="error-card hidden">
+      <p id="errorMsg" class="error-msg"></p>
+      <button id="retryBtn" class="btn-secondary">Retry</button>
+    </div>
+
+    <!-- State 3-6: UNIFIED RESULT -->
+    <div id="result" class="result-card hidden">
+      <!-- Status Badge / Icon -->
+      <div class="result-header">
+        <span id="icon" class="status-icon">🛡️</span>
+        <span id="riskBadge" class="risk-badge badge-low">No Strong Signal</span>
+      </div>
+
+      <!-- Contract fields for backward compatibility -->
+      <p id="confidence" class="result-detail hidden"></p>
+      <p id="modelVersion" class="result-meta hidden"></p>
+
+      <!-- WHAT WE FOUND -->
+      <div class="section-block what-we-found">
+        <h2 id="resultTitle" class="result-title"></h2>
+        <p id="resultSummary" class="result-summary"></p>
+      </div>
+
+      <!-- WHY IT MATTERS -->
+      <div id="consumerConsequenceSection" class="section-block hidden">
+        <h3 class="section-title">WHY IT MATTERS</h3>
+        <p id="consumerConsequence" class="section-text"></p>
+      </div>
+
+      <!-- FINANCIAL IMPACT -->
+      <div id="financialImpactSection" class="section-block hidden">
+        <h3 class="section-title">FINANCIAL IMPACT</h3>
+        <p id="financialConsequence" class="section-text"></p>
+        <div id="financialMetrics" class="financial-metrics hidden"></div>
+      </div>
+
+      <!-- WHAT YOU CAN DO -->
+      <div id="recommendedActionSection" class="section-block">
+        <h3 class="section-title">WHAT YOU CAN DO</h3>
+        <p id="recommendedAction" class="section-text action-text"></p>
+      </div>
+
+      <!-- EXPANDABLE: EVIDENCE -->
+      <div id="evidenceSection" class="section-block evidence-block">
+        <button id="evidenceToggle" class="accordion-toggle" type="button">
+          <span>Why am I seeing this?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div id="evidenceContent" class="accordion-content hidden">
+          <ul id="evidenceList" class="evidence-list"></ul>
+        </div>
+      </div>
+
+      <!-- EXPANDABLE: ADDITIONAL FINDINGS -->
+      <div id="additionalFindingsSection" class="section-block additional-findings-block hidden">
+        <button id="additionalFindingsToggle" class="accordion-toggle" type="button">
+          <span id="additionalFindingsCount">Other Findings</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div id="additionalFindingsContent" class="accordion-content hidden">
+          <div id="additionalFindingsList" class="additional-findings-list"></div>
+        </div>
+      </div>
+
+      <!-- Compact Disclaimer -->
+      <p id="disclaimer" class="result-disclaimer">Prediction confidence is not legal certainty.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "ec_darkpattern": {
+    "file": "ec_darkpattern.tsv",
+    "sha256": "bd7bc7d93f5bf08591b10886d7aa3a7ba8ac266f5ce8206c00cd4daf7868508a",
+    "bytes": 152183,
+    "license": "Apache-2.0",
+    "citation": "Yuki Yada et al., 2022. Dark patterns in e-commerce: a dataset and its baseline evaluations (arXiv:2211.06543)"
+  },
+  "princeton_darkpatterns": {
+    "file": "princeton_dark_patterns.csv",
+    "sha256": "fb2877af3b7bef359abcfb415f3a477df02481300d84f5eb9762b3ca2523bc9b",
+    "bytes": 344481,
+    "license": "Research Open Access (Attribution Required)",
+    "citation": "Arunesh Mathur et al., 2019. Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites (CSCW 2019)"
+  },
+  "edinburgh_random_500": {
+    "file": "tranco_random_500.zip",
+    "sha256": "91de11ca028d3e179c9c2c05e1d70f8b3f21125dafc3bdb26bf4cb0c35dacc3e",
+    "bytes": 9248399,
+    "license": "CC-BY-4.0",
+    "citation": "Daniel Kirkman & Kami Vaniea, 2022. Collected cookie dialogs and dark patterns (doi:10.7488/ds/3475)"
+  },
+  "edinburgh_top_500": {
+    "file": "tranco_top_500.zip",
+    "sha256": "076a6f64cb473f90dafcccbc2d9446b30ce59b6e400ddd523eda475078e38bf2",
+    "bytes": 23902720,
+    "license": "CC-BY-4.0",
+    "citation": "Daniel Kirkman & Kami Vaniea, 2022. Collected cookie dialogs and dark patterns (doi:10.7488/ds/3475)"
+  }
+}

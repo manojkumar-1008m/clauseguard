@@ -1,0 +1,43 @@
+{
+  "dataset_name": "ClauseGuard-Text-V3",
+  "total_deduplicated_samples": 2597,
+  "splits": {
+    "train_size": 1484,
+    "val_size": 539,
+    "hard_test_size": 70,
+    "final_test_size": 504,
+    "final_test_locked": true,
+    "final_test_sha256": "405ee5ea82059edb47402a2b8f67ce8ef123de40cd325462b6b675fd3c05c36e",
+    "domains": {
+      "ecommerce": 2253,
+      "compliance/privacy": 269,
+      "general": 2,
+      "subscriptions": 2,
+      "saas": 1
+    },
+    "categories": {
+      "None": 1175,
+      "Scarcity": 351,
+      "Social Proof": 312,
+      "Obstruction": 284,
+      "Urgency": 206,
+      "Misdirection": 182,
+      "Sneaking": 12,
+      "Forced Action": 4,
+      "Subscription Trap": 1
+    }
+  },
+  "text_length_distribution": {
+    "1-10": 157,
+    "11-30": 1152,
+    "31-80": 754,
+    "81-200": 284,
+    "201-500": 155,
+    "500+": 95
+  },
+  "leakage_checks": {
+    "exact_duplicate_leakage": 0,
+    "group_leakage": 0,
+    "status": "PASSED"
+  }
+}

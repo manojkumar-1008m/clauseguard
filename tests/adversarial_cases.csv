@@ -1,0 +1,26 @@
+test_id,test_type,base_phrase,variant_text,expected_category,notes
+ADV-01,case_variation,"Only 3 left!","ONLY 3 LEFT!",scarcity,Uppercase urgency
+ADV-02,case_variation,"Only 3 left!","only 3 left",scarcity,Lowercase urgency
+ADV-03,case_variation,"Only 3 left!","ONLY THREE LEFT",scarcity,Spelled-out number uppercase
+ADV-04,case_variation,"Only 3 left!","Only three items remain.",scarcity,Formal scarcity variant
+ADV-05,case_variation,"Only 3 left!","3 items remain in stock.",scarcity,Neutral stock variant
+ADV-06,negation,"Cancellation requires contacting support.","Cancellation requires contacting support.",cancellation,Baseline dark pattern
+ADV-07,negation,"Cancellation requires contacting support.","Cancellation does not require contacting support.",cancellation,Negated statement (should be benign)
+ADV-08,negation,"Fees are hidden until payment.","Fees are hidden until payment.",fees,Baseline dark pattern
+ADV-09,negation,"Fees are hidden until payment.","Fees are not hidden and are shown before payment.",fees,Negated statement (should be benign)
+ADV-10,negation,"The user must accept marketing messages.","The user must accept marketing messages.",consent,Forced consent
+ADV-11,negation,"The user must accept marketing messages.","The user does not have to accept marketing messages.",consent,Negated voluntary consent
+ADV-12,numeric,"Only 3 items left!","Only 300 items left!",scarcity,Quantity scale variation
+ADV-13,numeric,"Price is ₹99.","Price is ₹999.",pricing,Currency magnitude variation
+ADV-14,numeric,"Offer ends in 10 minutes!","Offer ends in 10 days.",urgency,Time horizon variation
+ADV-15,currency,"Plan is $999 per year.","Plan is ₹999 per year.",currency,INR currency symbol
+ADV-16,currency,"Plan is $999 per year.","Plan is €999 per year.",currency,Euro currency symbol
+ADV-17,currency,"Plan is $999 per year.","Plan is £999 per year.",currency,GBP currency symbol
+ADV-18,unicode,"Only 3 left!","🔥 ONLY 3 LEFT 🔥",unicode,Emoji injection in scarcity
+ADV-19,unicode,"Hurry, limited time offer.","⚠️ HURRY! LIMITED-TIME OFFER ⚠️",unicode,Warning emoji and all-caps
+ADV-20,short_input,"Sale","Sale",short_input,Single word benign/neutral
+ADV-21,short_input,"Buy now","Buy now",short_input,Standard CTA
+ADV-22,short_input,"Cancel","Cancel",short_input,Single action keyword
+ADV-23,short_input,"Limited","Limited",short_input,Ambiguous single descriptor
+ADV-24,short_input,"₹999","₹999",short_input,Single price token
+ADV-25,shaming,"Decline discount","No thanks, I prefer paying full price because I don't like discounts.",confirmshaming,Manipulative opt-out copy

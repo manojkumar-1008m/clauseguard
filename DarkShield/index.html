@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamPlus | Unlimited entertainment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="logo" href="#home" data-route="home">Stream<span>Plus</span></a>
+    <div class="nav-links">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#pricing" data-route="pricing">Pricing</a>
+      <a href="#account" data-route="account">My Account</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="page card" data-page="home">
+      <span class="eyebrow">STREAMPLUS MEMBERSHIP</span>
+      <h1>Unlimited<br><em>entertainment.</em></h1>
+      <p class="lead">Your next favorite story is waiting. Stream acclaimed films, original series, and live moments in one place.</p>
+      <div class="plan">
+        <h2>Premium Plan</h2>
+        <p class="price">₹999 <span>/ month</span></p>
+        <p>7 Days Free Trial · Then ₹999/month</p>
+        <button class="primary" data-action="start-trial">Start Free Trial</button>
+      </div>
+    </section>
+
+    <section id="pricing" class="page card hidden" data-page="pricing">
+      <span class="eyebrow">SIMPLE, FLEXIBLE ACCESS</span>
+      <h1>Choose your <em>pace.</em></h1>
+      <div class="pricing-grid">
+        <article class="price-card"><span class="plan-label">FREE TRIAL</span><h2>7 days</h2><p class="price">₹0 <span>for 7 days</span></p><p>Full access to the StreamPlus library during your trial.</p><button class="primary" data-action="start-trial">Start Free Trial</button></article>
+        <article class="price-card featured"><span class="plan-label">PREMIUM</span><h2>One complete plan</h2><p class="price">₹999 <span>/ month after trial</span></p><p>Continue watching without interruption after your 7-day trial.</p><button class="secondary" data-route="account">View My Account</button></article>
+      </div>
+    </section>
+
+    <section id="account" class="page card hidden" data-page="account">
+      <span class="eyebrow">MY ACCOUNT</span><h1>Your membership, <em>at a glance.</em></h1>
+      <div class="account-status"><span class="status-dot"></span><div><strong id="subscription-status">Premium Plan – Active</strong><span id="subscription-detail">Free trial active</span></div></div>
+      <p class="renewal">Next renewal: <strong id="renewal-price">₹999</strong></p>
+      <div class="actions"><button class="primary" data-action="manage-subscription">Manage Subscription</button><button class="danger" data-action="start-cancellation">Cancel Subscription</button></div>
+      <button class="text-button" data-route="home">Return to Home</button>
+    </section>
+
+    <section id="cancel" class="page card hidden" data-page="cancel">
+      <span class="step">STEP 1 OF 4</span>
+      <h2>Are you sure you want to cancel?</h2>
+      <p>You'll lose access to premium content.</p><div class="actions stacked"><button class="offer" data-action="show-offer">Keep My Subscription – Get 30% Off</button><button class="secondary" data-action="continue-cancellation">Continue Cancellation</button></div>
+    </section>
+
+    <section id="offer" class="page card hidden" data-page="offer">
+      <span class="step">STEP 2 OF 4</span>
+      <h2>We have a special offer for you!</h2>
+      <p>Stay with us and get <strong>30% OFF</strong> for the next 3 months.</p><div class="actions stacked"><button class="offer" data-action="accept-offer">Accept Offer</button><button class="secondary" data-action="decline-offer">No thanks, continue cancelling</button></div>
+    </section>
+
+    <section id="survey" class="page card hidden" data-page="survey">
+      <span class="step">STEP 3 OF 4</span>
+      <h2>One last thing...</h2>
+      <p>Tell us why you're cancelling.</p><form id="cancellation-survey"><label for="reason">Your reason for cancelling</label><select id="reason" name="reason" required>
+        <option value="">Choose a reason</option>
+        <option>Too expensive</option>
+        <option>Don't use it enough</option>
+        <option>Technical problems</option>
+        <option>Other</option></select><button class="primary" type="submit">Submit &amp; Continue</button></form>
+    </section>
+
+    <section id="confirm" class="page card hidden" data-page="confirm">
+      <span class="step">STEP 4 OF 4</span><h2>One last thing...</h2><p>Are you absolutely sure you want to cancel?</p><div class="actions stacked"><button class="offer" data-action="keep-subscription">Keep Subscription</button><button class="danger" data-action="finish-cancellation">Yes, Cancel Subscription</button></div>
+    </section>
+
+    <section id="success" class="page card hidden" data-page="success">
+      <span class="success-mark">✓</span>
+      <h2>Cancellation Complete</h2>
+      <p>Your subscription has been cancelled successfully.</p><button class="secondary" data-route="account">View My Account</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

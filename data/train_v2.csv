@@ -1,0 +1,61 @@
+id,text,label,category,source_type,contrastive_pair_id
+D-001,"In stock. Ships from and sold by Amazon.com. Eligible for free Return within 30 days of receipt.",0,return_policy,curated_synthetic,PAIR-01
+D-002,"Returns are subject to a mandatory 35% restocking fee deducted from your refund.",1,hidden_fees,curated_synthetic,PAIR-01
+D-003,"Start 7-day free trial. Free trial ends on Oct 14. You will be billed ₹3299/month unless cancelled before trial end date.",0,trial,curated_synthetic,PAIR-02
+D-004,"Start 7-day free trial. The high recurring renewal price is hidden until after your credit card is charged.",1,trial,curated_synthetic,PAIR-02
+D-005,"Try Canva Pro for 30 days. We'll remind you 7 days before your trial ends. Cancel anytime with 1 click.",0,trial,curated_synthetic,PAIR-03
+D-006,"Try our Pro plan for 30 days. Canceling requires a mandatory 30-minute retention phone call.",1,cancellation,curated_synthetic,PAIR-03
+D-007,"Top Rated Plus seller. 30 day returns. Free 3 day shipping. 5 sold in last 24 hours.",0,marketplace,curated_synthetic,PAIR-04
+D-008,"5 people are purchasing this right now — checkout immediately before stock runs out!",1,urgency,curated_synthetic,PAIR-04
+D-009,"GitHub Team is $4 per user/month. Free 14-day trial, no credit card required to get started.",0,saas_pricing,curated_synthetic,PAIR-05
+D-010,"Free 14-day trial. Automatic conversion into a non-refundable $480 annual contract.",1,forced_continuity,curated_synthetic,PAIR-05
+D-011,"Only three colors are currently available for this model.",0,inventory,curated_synthetic,PAIR-06
+D-012,"Only three left! Buy NOW before someone else takes it!",1,scarcity,curated_synthetic,PAIR-06
+D-013,"Only three rooms remain in our standard inventory.",0,inventory,curated_synthetic,PAIR-07
+D-014,"Only 3 rooms left! 14 travelers are viewing this right now!",1,scarcity,curated_synthetic,PAIR-07
+D-015,"Your subscription renews monthly at ₹999 unless you cancel before the renewal date.",0,subscription,curated_synthetic,PAIR-08
+D-016,"Your subscription renews automatically and cannot be cancelled online.",1,cancellation,curated_synthetic,PAIR-08
+D-017,"You can cancel your subscription from Account Settings anytime.",0,cancellation,curated_synthetic,PAIR-09
+D-018,"Canceling your subscription requires contacting customer support.",1,cancellation,curated_synthetic,PAIR-09
+D-019,"The service fee is shown before payment.",0,fees,curated_synthetic,PAIR-10
+D-020,"A mandatory service fee will be revealed after you enter your payment details.",1,fees,curated_synthetic,PAIR-10
+D-021,"The total price including all mandatory fees is shown before payment.",0,pricing,curated_synthetic,PAIR-11
+D-022,"Mandatory processing charges will appear after payment details are entered.",1,fees,curated_synthetic,PAIR-11
+D-023,"Sign up for a 3-day guest pass. Bring photo ID upon arrival to receive your gym locker.",0,free_trial,curated_synthetic,PAIR-12
+D-024,"Sign up for a 3-day guest pass. Requires valid credit card on file and attendance at a mandatory 60-minute sales consultation.",1,coercive_terms,curated_synthetic,PAIR-12
+D-025,"Optional travel insurance is available for $15. Check the box to add coverage.",0,checkout,curated_synthetic,PAIR-13
+D-026,"Shipping Insurance $1.99 has been pre-selected for your package protection. Uncheck if you do not want coverage.",1,preselection,curated_synthetic,PAIR-13
+D-027,"No thanks, continue without a subscription.",0,opt_out,curated_synthetic,PAIR-14
+D-028,"No thanks I hate saving money and prefer paying full price on all future purchases.",1,confirmshaming,curated_synthetic,PAIR-14
+D-029,"I prefer to skip this discount and proceed to checkout.",0,opt_out,curated_synthetic,PAIR-15
+D-030,"No, I don't care about personal safety and will risk traveling without insurance.",1,confirmshaming,curated_synthetic,PAIR-15
+D-031,"Total ₹14500 for 3 nights includes ₹2100 cleaning fee and ₹1800 service fee. Full breakdown shown before booking.",0,pricing,curated_synthetic,PAIR-16
+D-032,"Total price excludes mandatory resort fees of $45/night payable only at check-in.",1,drip_pricing,curated_synthetic,PAIR-16
+D-033,"Accept all cookies or manage your cookie preferences in settings.",0,cookie_consent,curated_synthetic,PAIR-17
+D-034,"By clicking Accept you agree to unrestricted data tracking. Rejection is unavailable.",1,forced_consent,curated_synthetic,PAIR-17
+D-035,"You can opt out of marketing communications at any time by clicking unsubscribe.",0,consent,curated_synthetic,PAIR-18
+D-036,"Uncheck the box below if you do not want to receive promotional offers from our 24 partners.",1,preselection,curated_synthetic,PAIR-18
+D-037,"Cancel anytime with two clicks from your billing settings.",0,cancellation,curated_synthetic,PAIR-19
+D-038,"To cancel your membership you must send written notice via postal mail 60 days in advance.",1,cancellation,curated_synthetic,PAIR-19
+D-039,"Special introductory offer: $1 for the first month, then $10 per month thereafter.",0,pricing,curated_synthetic,PAIR-20
+D-040,"Special offer $1 today. Warning: Early cancellation incurs an undisclosed $200 termination penalty.",1,hidden_penalties,curated_synthetic,PAIR-20
+D-041,"Watch anywhere. Cancel online anytime. No commitments.",0,cancellation,curated_synthetic,PAIR-21
+D-042,"Cancellation link is hidden inside nested sub-menus to prevent members from leaving.",1,cancellation,curated_synthetic,PAIR-21
+D-043,"3 items remain in stock for immediate dispatch.",0,inventory,curated_synthetic,PAIR-22
+D-044,"Almost gone! Complete your purchase in 04:59 before your cart is cleared!",1,urgency,curated_synthetic,PAIR-22
+D-045,"Our standard cancellation policy allows full refunds within 48 hours of booking.",0,return_policy,curated_synthetic,PAIR-23
+D-046,"All bookings are final and no cancellations are permitted even for medical emergencies.",1,coercive_terms,curated_synthetic,PAIR-23
+D-047,"Select whether you want express delivery for an additional ₹150.",0,checkout,curated_synthetic,PAIR-24
+D-048,"We automatically added a VIP Priority Pass to your order for ₹299.",1,preselection,curated_synthetic,PAIR-24
+D-049,"We clearly display our pricing structure and billing schedules.",0,pricing,curated_synthetic,PAIR-25
+D-050,"Hidden administrative fees and processing charges are disclosed only after checkout.",1,fees,curated_synthetic,PAIR-25
+D-051,"Cancellation does not require contacting support.",0,negation,curated_synthetic,PAIR-26
+D-052,"Cancellation requires contacting support.",1,cancellation,curated_synthetic,PAIR-26
+D-053,"Fees are not hidden and are shown before payment.",0,negation,curated_synthetic,PAIR-27
+D-054,"Fees are hidden until payment.",1,fees,curated_synthetic,PAIR-27
+D-055,"The user does not have to accept marketing messages.",0,negation,curated_synthetic,PAIR-28
+D-056,"The user must accept marketing messages to use this basic service.",1,forced_consent,curated_synthetic,PAIR-28
+D-057,"Clear trial end date of November 30 with email notice.",0,trial,curated_synthetic,PAIR-29
+D-058,"Trial auto-bills without notice and refund requests are strictly rejected.",1,forced_continuity,curated_synthetic,PAIR-29
+D-059,"Your annual membership costs $120 billed yearly.",0,pricing,curated_synthetic,PAIR-30
+D-060,"Membership enrollment requires a non-negotiable 36-month lock-in contract.",1,forced_continuity,curated_synthetic,PAIR-30

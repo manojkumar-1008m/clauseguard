@@ -1,0 +1,13 @@
+test_id,category,text,expected_label,notes
+HN-01,subscription,"Your subscription renews monthly at ₹999 unless you cancel before the renewal date.",not_dark_pattern,Clear automatic renewal disclosure with stated price and date
+HN-02,cancellation,"You can cancel your subscription from Account Settings.",not_dark_pattern,Standard self-serve cancellation disclosure
+HN-03,inventory,"The page displays current inventory levels.",not_dark_pattern,Factual inventory information
+HN-04,fees,"The service fee is shown before payment.",not_dark_pattern,Transparent upfront fee disclosure
+HN-05,trial,"The trial end date is clearly displayed.",not_dark_pattern,Transparent trial duration notice
+HN-06,social_proof,"The page includes customer reviews for reference.",not_dark_pattern,Standard review section label
+HN-07,inventory,"Only three colors are currently available for this model.",not_dark_pattern,Factual variant availability notice without urgency
+HN-08,pricing,"The total price including all taxes and delivery charges is displayed on this screen.",not_dark_pattern,Upfront full price transparency
+HN-09,cookies,"Customize your cookie preferences or decline non-essential cookies.",not_dark_pattern,Symmetric cookie consent choice
+HN-10,cancellation,"To stop recurring payments simply toggle auto-renew off in billing preferences.",not_dark_pattern,One-click self-service toggle
+HN-11,fees,"All mandatory charges and payment processing fees have been calculated and included above.",not_dark_pattern,Comprehensive fee breakdown
+HN-12,subscription,"We will notify you via email 7 days before your annual subscription renews.",not_dark_pattern,Proactive advance renewal notification

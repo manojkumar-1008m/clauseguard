@@ -1,0 +1,47 @@
+{
+  "Ablation A (Real Only)": {
+    "val_accuracy": 0.9146567717996289,
+    "val_f1": 0.9175627240143369,
+    "hard_accuracy": 0.5428571428571428,
+    "hard_f1": 0.4074074074074074,
+    "hard_fp": 23,
+    "hard_fn": 9,
+    "contrast_acc": 0.0
+  },
+  "Ablation B (Real + Hard Negatives)": {
+    "val_accuracy": 0.9165120593692022,
+    "val_f1": 0.918918918918919,
+    "hard_accuracy": 0.7428571428571429,
+    "hard_f1": 0.55,
+    "hard_fp": 9,
+    "hard_fn": 9,
+    "contrast_acc": 0.0
+  },
+  "Ablation C (Real + Hard Positives)": {
+    "val_accuracy": 0.9072356215213359,
+    "val_f1": 0.9110320284697508,
+    "hard_accuracy": 0.5428571428571428,
+    "hard_f1": 0.5555555555555556,
+    "hard_fp": 32,
+    "hard_fn": 0,
+    "contrast_acc": 0.0
+  },
+  "Ablation D (Real + Contrastive Pairs)": {
+    "val_accuracy": 0.9109461966604824,
+    "val_f1": 0.9139784946236559,
+    "hard_accuracy": 0.8714285714285714,
+    "hard_f1": 0.8163265306122449,
+    "hard_fp": 9,
+    "hard_fn": 0,
+    "contrast_acc": 0.3333333333333333
+  },
+  "Ablation E (Full Dataset)": {
+    "val_accuracy": 0.9146567717996289,
+    "val_f1": 0.9166666666666666,
+    "hard_accuracy": 1.0,
+    "hard_f1": 1.0,
+    "hard_fp": 0,
+    "hard_fn": 0,
+    "contrast_acc": 0.3333333333333333
+  }
+}

@@ -1,0 +1,45 @@
+test_id,category,text,expected_label,notes
+HG-01,trial,"Clinical trial results for this pharmaceutical product are published in open medical journals.",0,Scientific medical trial usage
+HG-02,trial,"The trial software license will automatically terminate after 30 days without charging your card.",0,Harmless auto-termination trial
+HG-03,trial,"Sign up for our 7-day trial. Cancel before day 7 or your card will be charged $120/year automatically.",1,Forced continuity auto-conversion trial
+HG-04,cancellation,"Free cancellation up to 24 hours prior to check-in for a full refund.",0,Transparent travel cancellation policy
+HG-05,cancellation,"Cancellation must be completed via certified postal mail with a signed affidavit.",1,Extreme roach motel obstacle to cancellation
+HG-06,return,"Our standard return window allows exchange within 45 days at any retail location.",0,Generous standard retail return policy
+HG-07,return,"All returns require paying return postage plus an unannounced 25% restocking surcharge.",1,Hidden penalty on returns
+HG-08,inventory,"Only three students are assigned to each instructor in our coding workshops.",0,Educational ratio description
+HG-09,inventory,"ONLY 2 ITEMS LEFT IN STOCK! 9 PEOPLE ARE LOOKING AT THIS RIGHT NOW!",1,Manufactured scarcity and urgency
+HG-10,fees,"School registration fees and laboratory charges are listed in the syllabus.",0,Academic fee disclosure
+HG-11,fees,"An unlisted delivery surcharge of $8.95 was added to your order after card validation.",1,Drip pricing hidden fee
+HG-12,subscription,"Subscribe to our podcast on Spotify, Apple Podcasts, or YouTube for free.",0,Free media subscription
+HG-13,subscription,"Your subscription will renew indefinitely and customer support does not accept cancellation requests.",1,Predatory continuity lock-in
+HG-14,confirmshaming,"I decline the extended coverage plan and accept the manufacturer warranty.",0,Neutral opt-out choice
+HG-15,confirmshaming,"No, I prefer being vulnerable to cyberattacks and losing all my digital data.",1,Severe confirmshaming manipulation
+HG-16,preselection,"Check here if you wish to receive our weekly product newsletter.",0,Explicit opt-in newsletter
+HG-17,preselection,"We have added a recurring $5 monthly donation to your cart automatically. Uncheck to decline.",1,Sneak into basket preselected donation
+HG-18,social_proof,"Over 500 academic citations have referenced this research methodology.",0,Factual scientific social proof
+HG-19,social_proof,"Hurry! 42 people are trying to reserve this exact seat right now!",1,Fabricated high-pressure social proof
+HG-20,negation,"You do not have to purchase travel insurance to book this flight.",0,Negated voluntary ancillary service
+HG-21,polysemy_trial,"Phase 3 clinical trial data demonstrates 94% efficacy against viral transmission.",0,Clinical trial polysemy
+HG-22,polysemy_trial,"Mock trial competition for first-year law students will take place in the auditorium.",0,Academic mock trial polysemy
+HG-23,polysemy_trial,"Download a 30-day trial of our desktop CAD application without entering financial details.",0,Benign software trial
+HG-24,polysemy_trial,"Free trial requires payment authorization and enrolls you in an uncancelable 2-year contract.",1,Deceptive trial conversion
+HG-25,polysemy_fees,"Research fees for archival document retrieval are set at $15 per document request.",0,Archival research fee polysemy
+HG-26,polysemy_fees,"University tuition and laboratory equipment fees are published on the registrar website.",0,Academic tuition fee polysemy
+HG-27,polysemy_fees,"An arbitrary platform maintenance fee was added on the final transaction confirmation page.",1,Hidden drip fee
+HG-28,polysemy_fees,"Mandatory legal documentation preparation fees will be disclosed only after contract signing.",1,Postponed fee disclosure
+HG-29,polysemy_return,"The annual return on this index fund has averaged 7.5% over the past two decades.",0,Financial investment return polysemy
+HG-30,polysemy_return,"Return flights from Frankfurt to Tokyo depart daily from Terminal 2.",0,Travel return journey polysemy
+HG-31,polysemy_return,"Returns are permitted only if customer pays an undisclosed $40 return processing fine.",1,Coercive return penalty
+HG-32,polysemy_subscription,"Subscription to the scientific journal includes 12 peer-reviewed print issues per year.",0,Academic journal subscription polysemy
+HG-33,polysemy_subscription,"Subscribe to our municipal transit alert notification service via SMS for free.",0,Public transit alert subscription polysemy
+HG-34,polysemy_subscription,"Subscription renewal will occur 30 days early without notice and cannot be refunded.",1,Predatory auto-renewal
+HG-35,polysemy_limited,"Limited study participants will be selected based on clinical inclusion criteria.",0,Scientific study limitation polysemy
+HG-36,polysemy_limited,"Limited seating is available in the university lecture hall due to fire safety regulations.",0,Safety regulation capacity polysemy
+HG-37,polysemy_limited,"LIMITED TIME SALE! ONLY 1 ITEM LEFT IN STOCK! BUY NOW OR MISS OUT FOREVER!",1,High-pressure manufactured urgency
+HG-38,polysemy_only,"Only three chapters are required reading for the midterm examination.",0,Academic curriculum instruction polysemy
+HG-39,polysemy_only,"Only three spots remain! 25 shoppers are competing for this exact item right now!",1,Deceptive scarcity pressure
+HG-40,polysemy_sold,"The estate sold several historic paintings at public auction last month.",0,Historical auction transaction polysemy
+HG-41,polysemy_sold,"Sold out notices for community orchestra tickets are updated on the box office bulletin.",0,Box office factual notice polysemy
+HG-42,polysemy_sold,"95% sold in last 5 minutes! Act immediately before inventory disappears completely!",1,Manufactured social panic
+HG-43,polysemy_support,"Our technical support team provides free assistance via email Monday through Friday.",0,Technical customer service assistance
+HG-44,polysemy_support,"Subscription cancellation is restricted and requires calling telephone support abroad.",1,Roach motel obstacle to cancellation

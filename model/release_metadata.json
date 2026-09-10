@@ -1,0 +1,47 @@
+{
+  "model_version": "clauseguard-text-v2-release",
+  "algorithm": "Pipeline(TfidfVectorizer(ngram=(1,1), sublinear_tf=True, max_features=20000), CalibratedClassifierCV(LinearSVC(C=1.0), cv=3))",
+  "dataset_version": "v2.5-large-audit",
+  "training_configuration": {
+    "train_samples": 60,
+    "validation_samples": 20,
+    "group_cv_folds": 5,
+    "mean_group_cv_f1": 0.6185017596782303,
+    "std_group_cv_f1": 0.17758145444729762
+  },
+  "validation_metrics": {
+    "group_cv_folds": 5,
+    "mean_f1": 0.6185017596782303,
+    "std_f1": 0.17758145444729762,
+    "mean_precision": 0.6511111111111112,
+    "mean_recall": 0.625
+  },
+  "final_test_metrics": {
+    "samples": 200,
+    "accuracy": 0.735,
+    "precision": 0.7117117117117117,
+    "recall": 0.79,
+    "f1_score": 0.7488151658767772,
+    "false_positives": 32,
+    "false_negatives": 21,
+    "brier_score": 0.18358876543599095
+  },
+  "hard_test_metrics": {
+    "samples": 44,
+    "accuracy": 0.7045454545454546,
+    "precision": 0.6,
+    "recall": 0.8333333333333334,
+    "f1_score": 0.6976744186046512,
+    "false_positives": 10,
+    "false_negatives": 3
+  },
+  "threshold": 0.5,
+  "python_version": "3.13.2",
+  "sklearn_version": "1.7.1",
+  "release_classification": "READY FOR LIMITED MVP DEPLOYMENT",
+  "known_limitations": [
+    "Cannot inspect interactive DOM attributes (e.g. checked='true' or hidden CSS)",
+    "Isolated short call-to-actions without clauses (e.g. 'Buy now') require visual context",
+    "Out-of-domain polysemy words (clinical trials, academic fees) require surrounding clause context"
+  ]
+}

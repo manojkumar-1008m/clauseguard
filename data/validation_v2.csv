@@ -1,0 +1,21 @@
+id,text,label,category,source_type,contrastive_pair_id
+D-061,"Customer reviews are submitted by verified purchasers.",0,social_proof,curated_synthetic,PAIR-31
+D-062,"1,400 people are looking at this right now! Only 1 left!",1,social_proof,curated_synthetic,PAIR-31
+D-063,"Prices include all applicable state and federal taxes.",0,pricing,curated_synthetic,PAIR-32
+D-064,"Mandatory facility fees and service surcharges will be added at payment.",1,fees,curated_synthetic,PAIR-32
+D-065,"Manage notification preferences in your profile.",0,consent,curated_synthetic,PAIR-33
+D-066,"Disabling notifications requires verifying your identity with our marketing team.",1,obstacle,curated_synthetic,PAIR-33
+D-067,"Items in your cart will remain reserved for 30 minutes.",0,checkout,curated_synthetic,PAIR-34
+D-068,"HURRY! YOUR CART EXPIRES IN 30 SECONDS! CLICK NOW!",1,urgency,curated_synthetic,PAIR-34
+D-069,"Returns accepted within 30 days of purchase with receipt.",0,return_policy,curated_synthetic,PAIR-35
+D-070,"Returns are strictly prohibited once the digital receipt has been emailed.",1,coercive_terms,curated_synthetic,PAIR-35
+D-071,"All subscription tiers can be upgraded or downgraded freely.",0,subscription,curated_synthetic,PAIR-36
+D-072,"Downgrading to the free plan incurs an unexpected $50 administrative fee.",1,hidden_penalties,curated_synthetic,PAIR-36
+D-073,"Subscription billing date is visible on your dashboard.",0,subscription,curated_synthetic,PAIR-37
+D-074,"Subscription renewal charges occur 10 days before the billing cycle without alert.",1,forced_continuity,curated_synthetic,PAIR-37
+D-075,"Free shipping is included on all orders over ₹499.",0,pricing,curated_synthetic,PAIR-38
+D-076,"Claim free shipping by entering payment details for an automatic monthly subscription.",1,forced_continuity,curated_synthetic,PAIR-38
+D-077,"Choose between monthly billing or annual billing with a 10% discount.",0,pricing,curated_synthetic,PAIR-39
+D-078,"Annual billing is selected by default with no indication of total upfront commitment.",1,preselection,curated_synthetic,PAIR-39
+D-079,"Feel free to explore our product catalog without creating an account.",0,general,curated_synthetic,PAIR-40
+D-080,"You must create an account and submit your phone number just to browse product prices.",1,forced_action,curated_synthetic,PAIR-40

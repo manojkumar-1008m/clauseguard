@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "model_version": "clauseguard-text-v3",
+    "algorithm": "Pipeline(TfidfVectorizer(ngram_range=(1,3), sublinear_tf=True, max_features=30000, min_df=2), CalibratedClassifierCV(LinearSVC(C=1.0), method='sigmoid', cv=3))",
+    "dataset_version": "ClauseGuard-Text-V3",
+    "training_samples": 1569,
+    "final_test_samples": 504,
+    "threshold": 0.5,
+    "python_version": "3.13.2",
+    "sklearn_version": "1.7.1",
+    "validation_metrics": {
+      "val_f1": 0.918,
+      "val_accuracy": 0.915
+    },
+    "final_test_metrics": {
+      "accuracy": 0.9563492063492064,
+      "precision": 0.9496402877697842,
+      "recall": 0.9705882352941176,
+      "f1_score": 0.96,
+      "roc_auc": 0.9861340010141987,
+      "pr_auc": 0.9876301356824606,
+      "brier_score": 0.05111842551544779,
+      "false_positives": 14,
+      "false_negatives": 8,
+      "fpr": 0.0603448275862069,
+      "fnr": 0.029411764705882353
+    },
+    "domain_metrics": {
+      "compliance/privacy": {
+        "samples": 58,
+        "accuracy": 0.9655172413793104,
+        "f1": 0.9821428571428571,
+        "precision": 0.9649122807017544,
+        "recall": 1.0,
+        "fp": 2,
+        "fn": 0
+      },
+      "ecommerce": {
+        "samples": 446,
+        "accuracy": 0.9551569506726457,
+        "f1": 0.954337899543379,
+        "precision": 0.9457013574660633,
+        "recall": 0.9631336405529954,
+        "fp": 12,
+        "fn": 8
+      }
+    },
+    "calibration_distribution": [
+      {
+        "bin": "[0.0, 0.2]",
+        "count": 167,
+        "avg_confidence": 0.160807874934091,
+        "observed_accuracy": 0.005988023952095809
+      },
+      {
+        "bin": "[0.2, 0.4]",
+        "count": 52,
+        "avg_confidence": 0.2694054550716886,
+        "observed_accuracy": 0.09615384615384616
+      },
+      {
+        "bin": "[0.4, 0.6]",
+        "count": 10,
+        "avg_confidence": 0.4870193785169435,
+        "observed_accuracy": 0.4
+      },
+      {
+        "bin": "[0.6, 0.8]",
+        "count": 38,
+        "avg_confidence": 0.7397219454197238,
+        "observed_accuracy": 0.8157894736842105
+      },
+      {
+        "bin": "[0.8, 1.0]",
+        "count": 237,
+        "avg_confidence": 0.9295942627496531,
+        "observed_accuracy": 0.9746835443037974
+      }
+    ],
+    "error_analysis_summary": {
+      "total_errors": 22,
+      "root_cause_counts": {
+        "DOMAIN_SHIFT": 9,
+        "VOCABULARY_GAP": 7,
+        "REQUIRES_CONTEXT": 5,
+        "CONTEXT_FAILURE": 1
+      }
+    },
+    "release_classification": "READY FOR LIMITED MVP",
+    "known_limitations": [
+      "Cannot inspect interactive DOM attributes (checked state, hidden styling, CSS visibility)",
+      "Short isolated CTA text (<=80 chars) requires visual/page context and flags requires_context=true",
+      "Out-of-domain polysemy words without surrounding clause context may introduce uncertainty"
+    ]
+  },
+  "errors": [
+    {
+      "sample_id": "EC-00004",
+      "text": "newsletter signup (privacy policy)",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.7780129890870735,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "REQUIRES_CONTEXT"
+    },
+    {
+      "sample_id": "EC-00022",
+      "text": "Supply & Demand",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.7337707701772307,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "REQUIRES_CONTEXT"
+    },
+    {
+      "sample_id": "EC-00197",
+      "text": "00DAYS00HOURS14MINUTES21SECONDS",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.18626279754641584,
+      "domain": "ecommerce",
+      "category": "Urgency",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-00227",
+      "text": "Before you check out, can we tempt you?",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.27374155517242293,
+      "domain": "ecommerce",
+      "category": "Misdirection",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-00287",
+      "text": "This site uses cookies to provide and improve your shopping experience. If you want to benefit from this improved service, please opt-in.",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.8522951424192007,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EC-00369",
+      "text": "Our most recent customers are from New Rochelle, Roseville, and Brooksville",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.48138101453129295,
+      "domain": "ecommerce",
+      "category": "Social Proof",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-00388",
+      "text": "Package RecyclingWe do try when possible to reuse packaging from our own suppliers in order to send purchased items to our customers, we ask if the packaging is still in good condition after you've received your goods then please try to use it again or recycle if not possible.",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.8902187849433362,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EC-00477",
+      "text": "Best-Selling Products",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.5850180173959988,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "REQUIRES_CONTEXT"
+    },
+    {
+      "sample_id": "EC-00731",
+      "text": "Plus, get free shipping on your first order!",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.8081091956858794,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EC-00737",
+      "text": "Don't forget the essentials Get up to 2 years of accidental damage coverage with AppleCare+.",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.2679469256866143,
+      "domain": "ecommerce",
+      "category": "Misdirection",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-00994",
+      "text": "Score! You've Qualified for a Checkout Bonus",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.21338108745138284,
+      "domain": "ecommerce",
+      "category": "Misdirection",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-01048",
+      "text": "MOST POPULAR",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.3583206104055942,
+      "domain": "ecommerce",
+      "category": "Social Proof",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-01183",
+      "text": "Free Shipping*",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.7358963914817228,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "REQUIRES_CONTEXT"
+    },
+    {
+      "sample_id": "EC-01363",
+      "text": "Muc-Off",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.8542758260233508,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "REQUIRES_CONTEXT"
+    },
+    {
+      "sample_id": "EC-01555",
+      "text": "Born for adventures across land, desert, and ice. Cruise over Tarmac-free roads or adapt it to be your 'do anything' commuter.",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.6569295678600958,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EC-01744",
+      "text": "Like many websites, we share certain information, such as your IP address, device ID or similar online identifier, with certain third parties, such as social networks and advertising networks. This information is used to personalize advertising you see after you\u2019ve visited our website. The California Consumer Privacy Act (\u201cCCPA\u201d) considers our sharing of that information in this manner to be a \u201csale.\u201dFor more information about the First and Third Party Cookies used please follow this link.",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.7883065774341783,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EC-01764",
+      "text": "308 viewed per day",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.4698203625390536,
+      "domain": "ecommerce",
+      "category": "Social Proof",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "VOCABULARY_GAP"
+    },
+    {
+      "sample_id": "EC-02135",
+      "text": "I accept the Terms & Conditions of the FREE Brother Care Program and agree to receive exclusive offers and general promotions from Brother. I may withdraw my consent at any time.",
+      "actual": 1,
+      "predicted": 0,
+      "confidence": 0.3790027404232414,
+      "domain": "ecommerce",
+      "category": "Forced Action",
+      "error_type": "FALSE_NEGATIVE",
+      "root_cause": "CONTEXT_FAILURE"
+    },
+    {
+      "sample_id": "EC-02179",
+      "text": "Email us ASAP (like seriously) at getflat@flattummyco.com and we will do everything we can to update this for you. As soon as you order, we will send you a confirmation email so please check your details carefully.",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.7915130962616352,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EC-02202",
+      "text": "Track your order by entering your order number and email below or if you would like to create an account or log in (click here)",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.7786633135841367,
+      "domain": "ecommerce",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EDIN-00032",
+      "text": "We use cookies to improve your user experience and optimize our website functionality. You do not have to accept cookies to visit our website. But if you do not accept cookies, some features of our website will not be available to you.See our Privacy Policy for information.AcceptDecline",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.8511686898251348,
+      "domain": "compliance/privacy",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    },
+    {
+      "sample_id": "EDIN-00157",
+      "text": "Cookies on GOV.UKWe use some essential cookies to make this website work.We\u2019d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.We also use cookies set by other sites to help us deliver content from their services.Accept additional cookiesReject additional cookiesView cookies",
+      "actual": 0,
+      "predicted": 1,
+      "confidence": 0.8209142212547907,
+      "domain": "compliance/privacy",
+      "category": "nan",
+      "error_type": "FALSE_POSITIVE",
+      "root_cause": "DOMAIN_SHIFT"
+    }
+  ]
+}
