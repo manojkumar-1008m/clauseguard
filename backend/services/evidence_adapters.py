@@ -211,7 +211,7 @@ def adapt_price_analysis(
 
     # D. Additional costs / fees
     add_amt = analysis.additional_cost if analysis.additional_cost is not None else analysis.additional_costs
-    if add_amt is not None:
+    if analysis.additional_cost_detected and add_amt is not None and add_amt > 0:
         curr = analysis.currency or (analysis.displayed_price.currency if analysis.displayed_price else None)
         pct_str = f" (+{analysis.additional_cost_percentage}%)" if analysis.additional_cost_percentage else ""
         items.append(

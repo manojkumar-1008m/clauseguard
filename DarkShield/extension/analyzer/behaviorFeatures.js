@@ -11,9 +11,10 @@
 
 /* global ANALYZER_RULES */
 
-const analyzerRules = typeof ANALYZER_RULES !== "undefined"
-	? ANALYZER_RULES
-	: (typeof require === "function" ? require("./rules.js").ANALYZER_RULES : null);
+(function (root) {
+	"use strict";
+
+const analyzerRules = root.analyzerRules || root.ANALYZER_RULES;
 
 const INFORMATIVE_CANCEL_PHRASES = [
 	"policy",
@@ -522,3 +523,6 @@ if (typeof module !== "undefined" && module.exports) {
 		extractBehaviorFeatures
 	};
 }
+
+root.extractBehaviorFeatures = extractBehaviorFeatures;
+})(globalThis);

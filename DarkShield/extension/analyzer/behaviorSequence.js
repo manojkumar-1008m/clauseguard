@@ -11,14 +11,15 @@
  * - Signal 'strength' is behavioral evidence strength ('weak' | 'moderate' | 'strong'), NOT probability
  */
 
-/* global ANALYZER_RULES, extractBehaviorFeatures */
+/* global ANALYZER_RULES */
 
-const analyzerRules = typeof ANALYZER_RULES !== "undefined"
-	? ANALYZER_RULES
-	: (typeof require === "function" ? require("./rules.js").ANALYZER_RULES : null);
+(function (root) {
+	"use strict";
 
-const b2Module = typeof extractBehaviorFeatures === "function"
-	? { extractBehaviorFeatures }
+const analyzerRules = root.analyzerRules || root.ANALYZER_RULES;
+
+const b2Module = typeof root.extractBehaviorFeatures === "function"
+	? { extractBehaviorFeatures: root.extractBehaviorFeatures }
 	: (typeof require === "function" ? require("./behaviorFeatures.js") : null);
 
 const INFORMATIVE_CANCEL_PHRASES = [
@@ -695,6 +696,5 @@ if (typeof module !== "undefined" && module.exports) {
 	};
 }
 
-if (typeof globalThis !== "undefined") {
-	globalThis.analyzeBehaviorSequence = analyzeBehaviorSequence;
-}
+root.analyzeBehaviorSequence = analyzeBehaviorSequence;
+})(globalThis);

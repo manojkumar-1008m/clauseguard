@@ -385,7 +385,9 @@
 			...extra
 		};
 
-		chrome.runtime.sendMessage({ type: "BEHAVIOR_EVENT", event: eventData });
+		try {
+			chrome.runtime.sendMessage({ type: "BEHAVIOR_EVENT", event: eventData });
+		} catch {}
 	}
 
 	function recordNavigation() {
@@ -395,6 +397,13 @@
 			collectEvent("NAVIGATION", null);
 		}
 	}
+
+	chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+		if (request?.type !== "GET_PAGE_DATA") return false;
+		const text = document.body?.innerText?.trim().slice(0, 20000) || "";
+		sendResponse({ text });
+		return false;
+	});
 
 	// Establish the page/session boundary. The background service worker assigns
 	// the durable session_id and tab/window metadata.

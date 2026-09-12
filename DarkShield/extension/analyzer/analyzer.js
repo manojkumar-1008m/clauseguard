@@ -1,9 +1,14 @@
 /* global ANALYZER_RULES */
 
-const analyzerRules = typeof ANALYZER_RULES !== "undefined"
-	? ANALYZER_RULES
+(function (root) {
+	"use strict";
+
+const analyzerRules = typeof root.ANALYZER_RULES !== "undefined"
+	? root.ANALYZER_RULES
 	: (typeof require === "function" ? require("./rules.js").ANALYZER_RULES : null);
 const datasetMatcher = typeof require === "function" ? require("./datasetMatcher.js") : null;
+
+root.analyzerRules = analyzerRules;
 
 if (!analyzerRules) {
 	throw new Error("ANALYZER_RULES is required before analyzer.js");
@@ -616,17 +621,102 @@ function analyzeBehavior(events = []) {
 			"Multiple friction signals were detected during cancellation.");
 	}
 
-	const hasRepeatedRetention = features.repeatedRetentionDetected;
+	const supportingEvidenceByType = new Map();
+	const addSupportingEvidence = (type, source, evidence) => {
+		if (!evidence) return;
+		if (!supportingEvidenceByType.has(type)) supportingEvidenceByType.set(type, []);
+		supportingEvidenceByType.get(type).push({ source, ...evidence });
+	};
+	const existingBehaviorTypes = new Set(behaviors.map(behavior => behavior.type));
+	const addCorroboratedBehavior = (type, severity, evidence, source, support) => {
+		addSupportingEvidence(type, source, support);
+		if (existingBehaviorTypes.has(type)) return;
+		addBehavior(behaviors, type, severity, evidence);
+		existingBehaviorTypes.add(type);
+	};
+
+	let b2Result = null;
+	let b3Result = null;
+	try {
+		if (typeof root.extractBehaviorFeatures === "function") {
+			b2Result = root.extractBehaviorFeatures(safeEvents);
+		}
+	} catch {}
+
+	try {
+		if (typeof root.analyzeBehaviorSequence === "function") {
+			b3Result = root.analyzeBehaviorSequence(safeEvents, b2Result);
+		}
+	} catch {}
+
+	const b2Features = b2Result?.behavior_features;
+	if (features.cancellationDetected && b2Features) {
+		const b2Evidence = Array.isArray(b2Result.evidence) ? b2Result.evidence : [];
+		const evidenceFor = feature => b2Evidence.find(item => item.feature === feature);
+		if (b2Features.cancellation_steps >= analyzerRules.thresholds.cancellationStepsHigh) {
+			addCorroboratedBehavior("EXCESSIVE_STEPS", "HIGH",
+				"B2 confirmed excessive cancellation steps.", "b2", evidenceFor("cancellation_steps"));
+		}
+		if (b2Features.repeated_prompt_count >= analyzerRules.thresholds.repeatedPromptsMedium) {
+			addCorroboratedBehavior("REPEATED_PROMPTS", severityForRepeatedPrompts(b2Features.repeated_prompt_count),
+				"B2 confirmed repeated cancellation prompts.", "b2", evidenceFor("repeated_prompt_count"));
+		}
+		if (b2Features.retention_offer_count > 0) {
+			addCorroboratedBehavior("RETENTION_INTERFERENCE", "MEDIUM",
+				"B2 confirmed retention offers during cancellation.", "b2", evidenceFor("retention_offer_count"));
+		}
+		if (b2Features.retention_offer_count >= 2) {
+			addCorroboratedBehavior("REPEATED_RETENTION", "HIGH",
+				"B2 confirmed repeated retention offers during cancellation.", "b2", evidenceFor("retention_offer_count"));
+		}
+		if (b2Features.forced_action_count > 0 && b2Features.survey_required === true) {
+			addCorroboratedBehavior("FORCED_ACTION", "HIGH",
+				"B2 confirmed a mandatory action during cancellation.", "b2", evidenceFor("forced_action_count"));
+		}
+		if (b2Features.backtracking_count > 0) {
+			addCorroboratedBehavior("BACKTRACKING", severityForBacktracking(b2Features.backtracking_count),
+				"B2 confirmed cancellation-flow backtracking.", "b2", evidenceFor("backtracking_count"));
+		}
+	}
+
+	const b3Signals = Array.isArray(b3Result?.behavior_signals) ? b3Result.behavior_signals : [];
+	for (const signal of features.cancellationDetected ? b3Signals : []) {
+		const support = {
+			signal_type: signal.type,
+			strength: signal.strength,
+			event_indices: signal.event_indices,
+			route_sequence: signal.route_sequence
+		};
+		if (signal.type === "repeated_retention_interference") {
+			addCorroboratedBehavior("REPEATED_RETENTION", "HIGH", signal.reason, "b3", support);
+		} else if (signal.type === "required_survey" || signal.type === "forced_action_sequence") {
+			addCorroboratedBehavior("FORCED_ACTION", "HIGH", signal.reason, "b3", support);
+		} else if (signal.type === "backtracking_loop" && signal.strength !== "weak") {
+			addCorroboratedBehavior("BACKTRACKING", severityForBacktracking(features.meaningfulBacktracking || 2), signal.reason, "b3", support);
+		} else if (signal.type === "cancellation_obstruction") {
+			addCorroboratedBehavior("DIFFICULT_CANCELLATION", "HIGH", signal.reason, "b3", support);
+		} else if (signal.type === "dead_end_behavior" && signal.strength === "strong") {
+			addCorroboratedBehavior("OBSTRUCTION", "MEDIUM", signal.reason, "b3", support);
+		}
+	}
+
+	const hasRepeatedRetention = behaviors.some(behavior => behavior.type === "REPEATED_RETENTION");
 	const riskScore = Math.min(100, behaviors.reduce((score, behavior) => {
 		// Repeated retention is the stronger version of the same offer signal;
 		// count its weight once instead of adding both retention weights.
 		if (hasRepeatedRetention && behavior.type === "RETENTION_INTERFERENCE") return score;
 		return score + analyzerRules.weights[behavior.type];
 	}, 0));
-	const friendlyBehaviors = enrichBehaviors(behaviors, features, cancellationSegment, safeEvents);
+	const friendlyBehaviors = enrichBehaviors(behaviors, features, cancellationSegment, safeEvents)
+		.map(behavior => ({
+			...behavior,
+			...(supportingEvidenceByType.has(behavior.type)
+				? { supportingEvidence: supportingEvidenceByType.get(behavior.type) }
+				: {})
+		}));
 	const summary = summaryForRisk(riskScore);
-	const matchDataset = typeof matchBehaviorToDataset === "function"
-		? matchBehaviorToDataset
+	const matchDataset = typeof root.matchBehaviorToDataset === "function"
+		? root.matchBehaviorToDataset
 		: datasetMatcher?.matchBehaviorToDataset;
 	const datasetMatches = matchDataset ? matchDataset(features) : [];
 
@@ -660,3 +750,6 @@ function analyzeBehavior(events = []) {
 if (typeof module !== "undefined" && module.exports) {
 	module.exports = { normalizeText, classifyAction, extractFeatures, analyzeBehavior };
 }
+
+root.analyzeBehavior = analyzeBehavior;
+})(globalThis);

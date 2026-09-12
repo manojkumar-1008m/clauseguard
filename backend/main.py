@@ -18,6 +18,7 @@ from .services import (
     ModelUnavailableError,
     PredictionExecutionError,
 )
+from .vision import VisionService
 
 app = FastAPI(title="ClauseGuard API")
 text_predictor = TextPredictor()
@@ -29,6 +30,7 @@ evidence_fusion_engine = EvidenceFusionEngine(
 consumer_explanation_engine = ConsumerExplanationEngine(
     fusion_engine=evidence_fusion_engine,
 )
+vision_service = None
 
 
 
@@ -118,6 +120,32 @@ async def analyze_price(request: schemas.PriceAnalysisRequest):
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Price analysis execution failed",
+        )
+
+
+@app.post("/vision/predict")
+async def vision_predict(request: Request, frame_id: str | None = None):
+    """Run the trained Vision detector and return image evidence."""
+    global vision_service
+    image_bytes = await request.body()
+    if not image_bytes:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Image body is required")
+
+    try:
+        if vision_service is None:
+            vision_service = VisionService()
+        content_type = request.headers.get("content-type", "image/png").split(";", 1)[0].lower()
+        suffix = {
+            "image/jpeg": ".jpg",
+            "image/webp": ".webp",
+            "image/bmp": ".bmp",
+        }.get(content_type, ".png")
+        return vision_service.predict_bytes(image_bytes, suffix=suffix, frame_id=frame_id)
+    except Exception as exc:
+        _logger.exception("Vision inference failed: %s", exc)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Vision model unavailable or image inference failed",
         )
 
 @app.post("/fuse-evidence", response_model=schemas.EvidenceFusionResponse)

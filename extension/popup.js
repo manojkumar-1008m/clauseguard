@@ -290,7 +290,54 @@ document.addEventListener("DOMContentLoaded", () => {
     return await resp.json();
   }
 
-  function buildFusionRequest(text, predictResult, priceResult) {
+  async function gatherDarkShieldEvidence() {
+    try {
+      const stored = await new Promise(resolve => {
+        chrome.storage.local.get(
+          {
+            "behaviorSessions": {},
+            "behaviorAnalysis": null,
+            "behaviorTabSessions": {}
+          },
+          resolve
+        );
+      });
+
+      const sessions = stored.behaviorSessions || {};
+      const analysis = stored.behaviorAnalysis;
+      const tabSessions = stored.behaviorTabSessions || {};
+
+      // Get the most recently active session
+      const sessionIds = Object.keys(sessions);
+      if (sessionIds.length === 0) {
+        return { dom: [], behavior: null };
+      }
+
+      // Use the most recent session
+      const latestSessionId = sessionIds[sessionIds.length - 1];
+      const latestSession = sessions[latestSessionId];
+
+      if (!latestSession) {
+        return { dom: [], behavior: null };
+      }
+
+      // Extract DOM signals (from diff_signals stored by background.js)
+      const domSignals = latestSession.diff_signals || [];
+
+      // Extract behavior analysis (prefer session-specific analysis if available)
+      const behaviorAnalysis = latestSession.analysis || analysis;
+
+      return {
+        dom: domSignals,
+        behavior: behaviorAnalysis
+      };
+    } catch (e) {
+      console.warn("Could not gather DarkShield evidence:", e);
+      return { dom: [], behavior: null };
+    }
+  }
+
+  function buildFusionRequest(text, predictResult, priceResult, domEvidence, behaviorEvidence) {
     const fusionRequest = { text };
     if (predictResult) {
       fusionRequest.text_prediction = predictResult;
@@ -298,6 +345,38 @@ document.addEventListener("DOMContentLoaded", () => {
     if (priceResult) {
       fusionRequest.price_analysis = priceResult;
     }
+
+    // Add DOM evidence if available
+    if (domEvidence && domEvidence.length > 0) {
+      fusionRequest.dom_evidence = {
+        dom_signals: domEvidence
+      };
+    }
+
+    // Add behavior evidence if available
+    if (behaviorEvidence) {
+      // Extract existing behaviors and convert to backend format
+      const behaviors = behaviorEvidence.behaviors || [];
+      if (behaviors.length > 0) {
+        // Convert behaviors to signal objects for backend consumption
+        const behaviorSignals = behaviors.map(behavior => ({
+          type: behavior.type,
+          detected: true,
+          strength: (behavior.severity === "HIGH" ? "strong" : (behavior.severity === "MEDIUM" ? "moderate" : "weak")),
+          reason: behavior.description || behavior.title || "",
+          decision_context: "cancellation", // Behaviors are primarily from cancellation context
+          metadata: {
+            severity: behavior.severity,
+            count: behavior.count
+          }
+        }));
+
+        fusionRequest.behavior_evidence = {
+          behavior_signals: behaviorSignals
+        };
+      }
+    }
+
     return fusionRequest;
   }
 
@@ -548,10 +627,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Both succeeded (or price succeeded alone) -> proceed to fusion
     setAnalyzingState("Fusing evidence...");
 
+    // Gather existing DOM and behavior evidence from DarkShield
+    const darkShieldEvidence = await gatherDarkShieldEvidence();
+
     const fusionRequest = buildFusionRequest(
       analysisText,
       analysisState.predict.result,
-      analysisState.price.result
+      analysisState.price.result,
+      darkShieldEvidence.dom,
+      darkShieldEvidence.behavior
     );
 
     try {

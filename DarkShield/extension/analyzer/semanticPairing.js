@@ -13,6 +13,9 @@
  * - Produces objective observable facts and traceable evidence records.
  */
 
+(function (root) {
+	"use strict";
+
 // =========================================================
 // SELF-CONTAINED VISUAL PROMINENCE & CONTRAST HELPERS
 // =========================================================
@@ -1020,9 +1023,8 @@ if (typeof module !== "undefined" && module.exports) {
 	};
 }
 
-if (typeof globalThis !== "undefined") {
-	globalThis.normalizeAction = normalizeAction;
-	globalThis.isCompetingAction = isCompetingAction;
-	globalThis.findSemanticPairs = findSemanticPairs;
-	globalThis.analyzeSemanticPairs = analyzeSemanticPairs;
-}
+root.normalizeAction = normalizeAction;
+root.isCompetingAction = isCompetingAction;
+root.findSemanticPairs = findSemanticPairs;
+root.analyzeSemanticPairs = analyzeSemanticPairs;
+})(globalThis);

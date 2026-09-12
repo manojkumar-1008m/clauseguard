@@ -297,6 +297,7 @@ class EvidenceFusionResponse(BaseModel):
     transaction_state: Optional[Dict[str, Any]] = Field(None, description="Deterministic transaction state and continuity ledger (Phase B5.6)")
     # Phase B5.7: Intelligence Analysis Layer fields
     intelligence_analysis: Optional[IntelligenceAnalysisResponse] = Field(None, description="Structured intelligence analysis output (Phase B5.7)")
+    risk_analysis: Optional[Dict[str, Any]] = None
 
 
 class PatternAssessment(BaseModel):

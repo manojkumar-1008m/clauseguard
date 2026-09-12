@@ -4,7 +4,8 @@
 	"version": "1.0",
 	"description": "Collects non-sensitive interaction metadata for behavior analysis.",
 	"permissions": [
-		"storage"
+		"storage",
+		"activeTab"
 	],
 	"host_permissions": [
 		"http://localhost/*",
@@ -15,10 +16,7 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"http://localhost/*",
-				"https://localhost/*",
-				"http://127.0.0.1/*",
-				"https://127.0.0.1/*"
+				"<all_urls>"
 			],
 			"js": [
 				"content.js"

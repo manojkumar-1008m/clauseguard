@@ -15,6 +15,9 @@
  * - Observable facts only; never declares legal violation or final consumer risk.
  */
 
+(function (root) {
+	"use strict";
+
 // =========================================================
 // LEXICONS & KEYWORDS
 // =========================================================
@@ -835,8 +838,7 @@ if (typeof module !== "undefined" && module.exports) {
 	};
 }
 
-if (typeof globalThis !== "undefined") {
-	globalThis.createSnapshot = createSnapshot;
-	globalThis.matchElements = matchElements;
-	globalThis.diffSnapshots = diffSnapshots;
-}
+root.createSnapshot = createSnapshot;
+root.matchElements = matchElements;
+root.diffSnapshots = diffSnapshots;
+})(globalThis);

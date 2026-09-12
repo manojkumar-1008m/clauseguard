@@ -14,6 +14,9 @@
  * - Performance benchmark note: performance benchmark not independently established.
  */
 
+(function (root) {
+	"use strict";
+
 let domDiffModule = null;
 try {
 	domDiffModule = require("./domDiff.js");
@@ -25,13 +28,13 @@ try {
 } catch {}
 
 function getDiffSnapshotsFn() {
-	if (typeof diffSnapshots === "function") return diffSnapshots;
+	if (typeof root.diffSnapshots === "function") return root.diffSnapshots;
 	if (domDiffModule && typeof domDiffModule.diffSnapshots === "function") return domDiffModule.diffSnapshots;
 	return null;
 }
 
 function getSemanticPairsFn() {
-	if (typeof analyzeSemanticPairs === "function") return analyzeSemanticPairs;
+	if (typeof root.analyzeSemanticPairs === "function") return root.analyzeSemanticPairs;
 	if (semanticPairingModule && typeof semanticPairingModule.analyzeSemanticPairs === "function") return semanticPairingModule.analyzeSemanticPairs;
 	return null;
 }
@@ -1111,13 +1114,12 @@ if (typeof module !== "undefined" && module.exports) {
 	};
 }
 
-if (typeof globalThis !== "undefined") {
-	globalThis.analyzeDomContext = analyzeDomContext;
-	globalThis.makeElementRef = makeElementRef;
-	globalThis.calculateContrastRatio = calculateContrastRatio;
-	globalThis.computeProminenceMetrics = computeProminenceMetrics;
-	globalThis.getEffectiveOpacity = getEffectiveOpacity;
-	globalThis.diffSnapshots = getDiffSnapshotsFn();
-	globalThis.analyzeSemanticPairs = getSemanticPairsFn();
-}
+root.analyzeDomContext = analyzeDomContext;
+root.makeElementRef = makeElementRef;
+root.calculateContrastRatio = calculateContrastRatio;
+root.computeProminenceMetrics = computeProminenceMetrics;
+root.getEffectiveOpacity = getEffectiveOpacity;
+root.diffSnapshots = getDiffSnapshotsFn();
+root.analyzeSemanticPairs = getSemanticPairsFn();
+})(globalThis);
 
