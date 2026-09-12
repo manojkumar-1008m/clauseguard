@@ -31,6 +31,8 @@ from .price_analyzer import PriceAnalyzer
 from .temporal_engine import TemporalEngine
 from .text_predictor import TextPredictor
 from .intelligence_engine import IntelligenceEngine
+from .regulatory_engine import RegulatoryEngine
+from .risk_orchestrator import calculate_complete_risk
 from .evidence_adapters import (
     adapt_behavior_evidence,
     adapt_dom_evidence,
@@ -102,7 +104,19 @@ def _extract_signals(
             signals.append("price:renewal_price")
         if price_analysis.recurring:
             signals.append("price:recurring_billing")
-        if price_analysis.additional_cost is not None or price_analysis.additional_cost_detected or price_analysis.additional_costs is not None:
+        if (
+            price_analysis.additional_cost_detected
+            and (
+                price_analysis.additional_cost
+                if price_analysis.additional_cost is not None
+                else price_analysis.additional_costs
+            ) is not None
+            and (
+                price_analysis.additional_cost
+                if price_analysis.additional_cost is not None
+                else price_analysis.additional_costs
+            ) > 0
+        ):
             signals.append("price:additional_cost")
         if price_analysis.late_disclosed is True or price_analysis.late_disclosure_detected:
             signals.append("price:late_disclosure")
@@ -243,23 +257,24 @@ class EvidenceFusionEngine:
         has_text_scarcity = False
         has_text_social_proof = False
 
-        if text_prediction and text_prediction.prediction == 1:
-            raw_cat = text_prediction.pattern_category or "potential_dark_pattern"
-            pat = raw_cat.lower().replace(" ", "_")
-            req_ctx = bool(text_prediction.requires_context)
-            text_requires_context = req_ctx
-            has_context_required = req_ctx
+        if text_prediction:
+            if text_prediction.prediction == 1:
+                raw_cat = text_prediction.pattern_category or "potential_dark_pattern"
+                pat = raw_cat.lower().replace(" ", "_")
+                req_ctx = bool(text_prediction.requires_context)
+                text_requires_context = req_ctx
+                has_context_required = req_ctx
 
-            if "subscription" in pat or pat == "subscription_trap":
-                has_text_sub = True
-            elif "drip" in pat or pat == "drip_pricing":
-                has_text_drip = True
-            elif "urgency" in pat:
-                has_text_urgency = True
-            elif "scarcity" in pat:
-                has_text_scarcity = True
-            elif "social_proof" in pat:
-                has_text_social_proof = True
+                if "subscription" in pat or pat == "subscription_trap":
+                    has_text_sub = True
+                elif "drip" in pat or pat == "drip_pricing":
+                    has_text_drip = True
+                elif "urgency" in pat:
+                    has_text_urgency = True
+                elif "scarcity" in pat:
+                    has_text_scarcity = True
+                elif "social_proof" in pat:
+                    has_text_social_proof = True
 
             evidence_items.extend(
                 adapt_text_prediction(
@@ -312,6 +327,18 @@ class EvidenceFusionEngine:
             text_prediction=text_prediction,
             price_analysis=price_analysis,
         )
+        has_negative_fee_declaration = any(
+            e.source == "text" and (e.metadata or {}).get("negative_declaration") is True
+            for e in evidence_items
+        )
+        intelligence_contradictions = [
+            contradiction for contradiction in contradictions
+            if not (
+                has_negative_fee_declaration
+                and contradiction.type == "text_vs_price"
+                and contradiction.pattern == "drip_pricing"
+            )
+        ]
 
         temporal_relationships = self.temporal_engine.detect_temporal_relationships(
             evidence_items=evidence_items,
@@ -853,6 +880,18 @@ class EvidenceFusionEngine:
                 price_change=price_analysis.price_change,
                 price_change_percentage=price_analysis.price_change_percentage,
             )
+        elif not all_auxiliary:
+            dom_amounts = [
+                float(e.value)
+                for e in evidence_items
+                if e.source == "dom"
+                and e.detected
+                and isinstance(e.value, (int, float))
+                and e.value > 0
+                and e.type in ("preselected_option", "preselected_commercial_choice", "post_action_fee_added")
+            ]
+            if dom_amounts:
+                financial_impact = FinancialImpact(additional_cost=max(dom_amounts))
 
         consumer_consequence: Optional[ConsumerConsequence] = None
         if price_analysis and not all_auxiliary:
@@ -1096,6 +1135,47 @@ class EvidenceFusionEngine:
             "image": False,
         }
 
+        intelligence_analysis = IntelligenceEngine.analyze(
+            evidence_items=evidence_items,
+            contradictions=intelligence_contradictions,
+            temporal_relationships=temporal_relationships,
+            text_prediction=text_prediction,
+            price_analysis=price_analysis,
+            transaction_state={
+                "journey_id": next((e.journey_id for e in all_input_observations if getattr(e, "journey_id", None)), None),
+                "current_stage": (
+                    [e.journey_stage for e in all_input_observations if getattr(e, "journey_stage", None)][-1]
+                    if any(getattr(e, "journey_stage", None) for e in all_input_observations) else None
+                ),
+                "stages_traversed": [e.journey_stage for e in all_input_observations if getattr(e, "journey_stage", None)],
+                "stage_transitions_count": sum(1 for e in graph.edges if e.relation_type == "STAGE_TRANSITION"),
+            } if any(getattr(e, "journey_stage", None) for e in all_input_observations) else None,
+        )
+        first_observation = all_input_observations[0] if all_input_observations else None
+        first_metadata = getattr(first_observation, "metadata", {}) or {}
+        regulatory_response = RegulatoryEngine.evaluate(
+            intelligence_analysis=intelligence_analysis,
+            raw_evidence=all_input_observations,
+            jurisdiction=request.jurisdiction,
+            transaction_date=request.transaction_date,
+            journey_id=next((e.journey_id for e in all_input_observations if getattr(e, "journey_id", None)), None),
+            product_id=first_metadata.get("product_id") if isinstance(first_metadata, dict) else None,
+            tab_id=first_metadata.get("tab_id") if isinstance(first_metadata, dict) else None,
+            contradictions=contradictions,
+            temporal_relationships=temporal_relationships,
+            include_non_applicable=True,
+            entity_type=request.entity_type,
+            member_state=request.member_state,
+        )
+        risk_analysis = calculate_complete_risk(
+            pattern_assessments=intelligence_analysis.pattern_assessments,
+            financial_impact=financial_impact,
+            consumer_consequences=intelligence_analysis.consumer_consequences,
+            price_analysis=price_analysis,
+            regulatory_response=regulatory_response,
+            historical_changes=intelligence_analysis.historical_changes,
+        )
+
         return EvidenceFusionResponse(
             source="evidence_fusion",
             risk_level=risk_level,
@@ -1135,20 +1215,6 @@ class EvidenceFusionEngine:
                 "stage_transitions_count": sum(1 for e in graph.edges if e.relation_type == "STAGE_TRANSITION"),
             } if any(getattr(e, "journey_stage", None) for e in all_input_observations) else None,
             # Phase B5.7 fields
-            intelligence_analysis=IntelligenceEngine.analyze(
-                evidence_items=evidence_items,
-                contradictions=contradictions,
-                temporal_relationships=temporal_relationships,
-                text_prediction=text_prediction,
-                price_analysis=price_analysis,
-                transaction_state={
-                    "journey_id": next((e.journey_id for e in all_input_observations if getattr(e, "journey_id", None)), None),
-                    "current_stage": (
-                        [e.journey_stage for e in all_input_observations if getattr(e, "journey_stage", None)][-1]
-                        if any(getattr(e, "journey_stage", None) for e in all_input_observations) else None
-                    ),
-                    "stages_traversed": [e.journey_stage for e in all_input_observations if getattr(e, "journey_stage", None)],
-                    "stage_transitions_count": sum(1 for e in graph.edges if e.relation_type == "STAGE_TRANSITION"),
-                } if any(getattr(e, "journey_stage", None) for e in all_input_observations) else None,
-            ),
+            intelligence_analysis=intelligence_analysis,
+            risk_analysis=risk_analysis,
         )

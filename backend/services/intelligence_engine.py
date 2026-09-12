@@ -856,7 +856,17 @@ class ConsumerConsequenceEngine:
     ) -> Optional[ConsumerConsequenceDetail]:
         """Derive incremental fee consequence from temporal addition or late disclosure."""
         fee_items = [e for e in evidence if e.type in ("additional_cost", "late_disclosure", "post_action_fee_added")]
-        has_add = bool(price_analysis and (getattr(price_analysis, "additional_cost", None) is not None or getattr(price_analysis, "additional_costs", None) is not None))
+        additional_cost_value = (
+            getattr(price_analysis, "additional_cost", None)
+            if price_analysis and getattr(price_analysis, "additional_cost", None) is not None
+            else getattr(price_analysis, "additional_costs", None)
+        )
+        has_add = bool(
+            price_analysis
+            and getattr(price_analysis, "additional_cost_detected", False)
+            and additional_cost_value is not None
+            and additional_cost_value > 0
+        )
         if not fee_items and not has_add:
             return None
 

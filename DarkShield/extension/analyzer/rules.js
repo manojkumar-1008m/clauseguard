@@ -60,6 +60,8 @@ const ANALYZER_RULES = Object.freeze({
 	})
 });
 
+globalThis.ANALYZER_RULES = ANALYZER_RULES;
+
 if (typeof module !== "undefined" && module.exports) {
 	module.exports = { ANALYZER_RULES };
 }

@@ -514,6 +514,29 @@ class ContradictionEngine:
         # -----------------------------------------------------------------
         # 6. IMAGE_VS_TEXT (Future-Compatible Visual Evidence)
         # -----------------------------------------------------------------
+        artificial_urgency_types = {
+            "timer_reset",
+            "timer_loop",
+            "timer_restart",
+            "artificial_countdown",
+            "artificial_urgency",
+        }
+        has_explicit_artificial_urgency = any(
+            item.type in artificial_urgency_types
+            or "reset" in (item.description or "").lower()
+            or "restart" in (item.description or "").lower()
+            or "loop" in (item.description or "").lower()
+            or (item.metadata or {}).get("timer_reset") is True
+            or (item.metadata or {}).get("is_artificial") is True
+            for item in evidence_items
+            if item.detected
+        ) or any(
+            contradiction.pattern in ("urgency", "false_urgency")
+            or "deadline" in contradiction.reason.lower()
+            or "timer" in contradiction.reason.lower()
+            for contradiction in contradictions
+        )
+
         for img in image_items:
             if getattr(img, "is_auxiliary", False):
                 continue
@@ -526,7 +549,7 @@ class ContradictionEngine:
                     "urgency" in (e.pattern or "") or "scarcity" in (e.pattern or "") or "hurry" in (e.description or "").lower()
                     for e in text_items
                 ) or (raw_text and any(k in raw_text.lower() for k in ("hurry", "countdown", "expires soon", "limited time")))
-                if not text_has_urgency:
+                if not text_has_urgency and has_explicit_artificial_urgency:
                     text_id = text_items[0].evidence_id if text_items else "E_TEXT"
                     contradictions.append(
                         ContradictionItem(

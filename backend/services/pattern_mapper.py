@@ -89,6 +89,7 @@ PATTERN_RULES = [
     (
         "Scarcity",
         [
+			re.compile(r"(?:only\s+\d+\s+items?\s+left\s+in\s+stock)", re.IGNORECASE),
             re.compile(r"(?:only\s+(?:\d+|three|two|four|a\s+few)\s+left[^\.,;]*order\s+soon)", re.IGNORECASE),
             re.compile(r"(?:only\s+(?:\d+|three|two|four|a\s+few)\s+left\s*[—–-]\s*buy\s+now)", re.IGNORECASE),
             re.compile(r"(?:only\s+(?:\d+|three|two|four|a\s+few)\s+left\b(?!\s+(?:colors|sizes|variants)))", re.IGNORECASE),
@@ -114,6 +115,7 @@ PATTERN_RULES = [
     (
         "Confirm Shaming",
         [
+			re.compile(r"(?:no,?\s+i\s+don'?t\s+want\s+to\s+save\s+money)", re.IGNORECASE),
             re.compile(r"(?:no\s+thanks,?\s*i\s+don'?t\s+want\s+to\s+protect\s+my\s+purchase)", re.IGNORECASE),
             re.compile(r"(?:no\s+thanks,?\s*i\s+prefer\s+to\s+pay\s+full\s+price)", re.IGNORECASE),
             re.compile(r"(?:no\s+thanks,?\s*i\s+don'?t\s+care)", re.IGNORECASE),

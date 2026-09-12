@@ -1,5 +1,8 @@
 const EVENTS_KEY = "behaviorEvents";
 const ANALYSIS_KEY = "behaviorAnalysis";
+const SESSIONS_KEY = "behaviorSessions";
+const FUSION_ENDPOINT = "http://127.0.0.1:8000/fuse-evidence";
+const VISION_ENDPOINT = "http://127.0.0.1:8000/vision/predict";
 const eventCount = document.getElementById("event-count");
 const eventList = document.getElementById("event-list");
 const emptyState = document.getElementById("empty-state");
@@ -14,6 +17,8 @@ const whatHappened = document.getElementById("what-happened");
 const whyThisMatters = document.getElementById("why-this-matters");
 const datasetMatchList = document.getElementById("dataset-match-list");
 const datasetEmpty = document.getElementById("dataset-empty");
+const behaviorScoreLabel = document.querySelector(".risk-summary span");
+let riskEnginePanel;
 
 const EMPTY_ANALYSIS = {
 	riskScore: 0,
@@ -76,11 +81,13 @@ function renderEvents(events) {
 	});
 }
 
-function renderAnalysis(analysis) {
-	const result = { ...EMPTY_ANALYSIS, ...(analysis || {}) };
+function renderAnalysis(behaviorAnalysis) {
+	const result = { ...EMPTY_ANALYSIS, ...(behaviorAnalysis || {}) };
 	const behaviors = Array.isArray(result.behaviors) ? result.behaviors : [];
 	const summary = result.summary || EMPTY_ANALYSIS.summary;
-	riskScore.textContent = result.riskScore || 0;
+	const behaviorScore = Number.isFinite(Number(behaviorAnalysis?.riskScore)) ? Number(behaviorAnalysis.riskScore) : 0;
+	if (behaviorScoreLabel) behaviorScoreLabel.textContent = "Behavior score";
+	riskScore.textContent = behaviorScore;
 	analysisSeverity.textContent = result.overallSeverity || "LOW";
 	analysisSeverity.className = `severity-badge ${(result.overallSeverity || "LOW").toLowerCase()}`;
 	summaryTitle.textContent = summary.title;
@@ -133,10 +140,184 @@ function renderAnalysis(analysis) {
 	});
 }
 
+function ensureRiskEnginePanel() {
+	if (riskEnginePanel) return riskEnginePanel;
+	const analysisSection = document.querySelector(".analysis-section");
+	if (!analysisSection) return null;
+
+	riskEnginePanel = document.createElement("section");
+	riskEnginePanel.className = "analysis-section risk-engine-section";
+	riskEnginePanel.innerHTML = `
+		<div class="section-heading">
+			<h2>Risk Engine</h2>
+			<span data-risk-engine-level class="severity-badge unavailable">Unavailable</span>
+		</div>
+		<div class="risk-summary">
+			<span>Overall risk</span>
+			<strong><span data-risk-engine-score>Unavailable</span> / 100</strong>
+		</div>
+		<ul data-risk-engine-components class="dataset-match-list"></ul>
+	`;
+	analysisSection.insertAdjacentElement("afterend", riskEnginePanel);
+	return riskEnginePanel;
+}
+
+function renderRiskEngineUnavailable() {
+	const panel = ensureRiskEnginePanel();
+	if (!panel) return;
+	panel.querySelector("[data-risk-engine-score]").textContent = "Unavailable";
+	const level = panel.querySelector("[data-risk-engine-level]");
+	level.textContent = "Unavailable";
+	level.className = "severity-badge unavailable";
+	panel.querySelector("[data-risk-engine-components]").replaceChildren();
+}
+
+function renderRiskEngine(fusionResponse, overallRisk) {
+	const panel = ensureRiskEnginePanel();
+	if (!panel) return;
+	const score = overallRisk?.overall_score;
+	const level = overallRisk?.risk_level;
+	panel.querySelector("[data-risk-engine-score]").textContent = typeof score === "number" && Number.isFinite(score) ? score : "Unavailable";
+	const levelElement = panel.querySelector("[data-risk-engine-level]");
+	levelElement.textContent = level || "Unavailable";
+	levelElement.className = `severity-badge ${(level || "unavailable").toLowerCase()}`;
+
+	const componentLabels = {
+		dark_pattern_risk: "Dark Pattern Risk",
+		financial_risk: "Financial Risk",
+		transparency_risk: "Transparency Risk",
+		regulatory_risk: "Regulatory Risk",
+		historical_risk: "Historical Risk"
+	};
+	const componentScores = {
+		dark_pattern_risk: fusionResponse?.risk_analysis?.dark_pattern_risk?.risk_score,
+		financial_risk: fusionResponse?.risk_analysis?.financial_risk?.risk_score,
+		transparency_risk: fusionResponse?.risk_analysis?.transparency_risk?.risk_score,
+		regulatory_risk: fusionResponse?.risk_analysis?.regulatory_risk?.risk_score,
+		historical_risk: fusionResponse?.risk_analysis?.historical_risk?.risk_score
+	};
+	const list = panel.querySelector("[data-risk-engine-components]");
+	list.replaceChildren();
+	Object.entries(componentLabels).forEach(([key, label]) => {
+		const item = document.createElement("li");
+		const componentScore = typeof componentScores[key] === "number"
+			? componentScores[key]
+			: "Unavailable";
+		item.textContent = `${label}: ${componentScore}`;
+		list.appendChild(item);
+	});
+}
+
+function buildFusionRequest(events, analysis, sessions, pageText = "", imageEvidence = []) {
+	const fallbackText = events
+		.map(event => event.text || event.element?.text || "")
+		.filter(Boolean)
+		.join(" ")
+		.slice(0, 20000);
+	const text = pageText.trim().slice(0, 20000) || fallbackText;
+	const sessionList = Object.values(sessions || {});
+	const latestSession = sessionList.sort(
+		(a, b) => Number(b?.last_activity || 0) - Number(a?.last_activity || 0)
+	)[0];
+	const domSignals = latestSession?.diff_signals || [];
+	const behaviors = analysis?.behaviors || latestSession?.analysis?.behaviors || [];
+	const behaviorSignals = behaviors.map(behavior => ({
+		type: behavior.type,
+		detected: true,
+		strength: behavior.severity === "HIGH" ? "strong" : (behavior.severity === "MEDIUM" ? "moderate" : "weak"),
+		description: behavior.explanation || behavior.evidence || behavior.title || "",
+		decision_context: "cancellation",
+		metadata: { severity: behavior.severity }
+	}));
+
+	const fusionRequest = { text };
+	if (domSignals.length > 0) fusionRequest.dom_evidence = { dom_signals: domSignals };
+	if (behaviorSignals.length > 0) fusionRequest.behavior_evidence = { behavior_signals: behaviorSignals };
+	if (Array.isArray(imageEvidence) && imageEvidence.length > 0) {
+		fusionRequest.image_evidence = imageEvidence;
+	}
+	return fusionRequest;
+}
+
+async function getActivePageText() {
+	try {
+		const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+		const activeTab = tabs?.[0];
+		if (!activeTab?.id) return "";
+		const response = await chrome.tabs.sendMessage(activeTab.id, { type: "GET_PAGE_DATA" });
+		return typeof response?.text === "string" ? response.text : "";
+	} catch {
+		return "";
+	}
+}
+
+async function getVisionEvidence() {
+	try {
+		const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+		const activeTab = tabs?.[0];
+		if (!activeTab?.windowId) throw new Error("Active tab is unavailable");
+		const screenshotDataUrl = await chrome.tabs.captureVisibleTab(activeTab.windowId, { format: "png" });
+		const imageResponse = await fetch(screenshotDataUrl);
+		if (!imageResponse.ok) throw new Error("Screenshot payload could not be read");
+		const imageBytes = await imageResponse.arrayBuffer();
+		const visionResponse = await fetch(VISION_ENDPOINT, {
+			method: "POST",
+			headers: { "Content-Type": "image/png" },
+			body: imageBytes
+		});
+		if (!visionResponse.ok) throw new Error(`Vision request failed with HTTP ${visionResponse.status}`);
+		const visionResult = await visionResponse.json();
+		const imageEvidence = Array.isArray(visionResult?.image_evidence)
+			? visionResult.image_evidence
+			: [];
+		console.log("[ClauseGuard] Vision response:", {
+			model: visionResult?.model,
+			version: visionResult?.version,
+			predictionCount: Object.keys(visionResult?.predictions || {}).length,
+			imageEvidenceCount: imageEvidence.length
+		});
+		return imageEvidence;
+	} catch (error) {
+		console.warn("[ClauseGuard] Vision capture failed:", error?.message || error);
+		console.warn("[ClauseGuard] Vision unavailable; continuing without image evidence.");
+		return [];
+	}
+}
+
+async function loadRiskEngineScore(events, analysis, sessions) {
+	const pageText = await getActivePageText();
+	const imageEvidence = await getVisionEvidence();
+	const fusionRequest = buildFusionRequest(events, analysis, sessions, pageText, imageEvidence);
+	console.log("[ClauseGuard] Fusion request:", fusionRequest);
+	try {
+		const response = await fetch(FUSION_ENDPOINT, {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify(fusionRequest)
+		});
+		if (!response.ok) throw new Error(`Fusion request failed with HTTP ${response.status}`);
+		const fusionResponse = await response.json();
+		console.log("[ClauseGuard] Fusion response:", fusionResponse);
+		const overallRisk = fusionResponse?.risk_analysis?.overall_risk;
+		const score = overallRisk?.overall_score;
+		console.log("[ClauseGuard] Risk Engine score:", score);
+		if (typeof score !== "number" || !Number.isFinite(score)) {
+			renderRiskEngineUnavailable();
+			return;
+		}
+		renderRiskEngine(fusionResponse, overallRisk);
+	} catch (error) {
+		console.warn("[ClauseGuard] Risk Engine unavailable:", error);
+		renderRiskEngineUnavailable();
+	}
+}
+
 function loadEvents() {
-	chrome.storage.local.get({ [EVENTS_KEY]: [], [ANALYSIS_KEY]: null }, stored => {
-		renderEvents(stored[EVENTS_KEY]);
+	chrome.storage.local.get({ [EVENTS_KEY]: [], [ANALYSIS_KEY]: null, [SESSIONS_KEY]: {} }, stored => {
+		const events = Array.isArray(stored[EVENTS_KEY]) ? stored[EVENTS_KEY] : [];
+		renderEvents(events);
 		renderAnalysis(stored[ANALYSIS_KEY]);
+		loadRiskEngineScore(events, stored[ANALYSIS_KEY], stored[SESSIONS_KEY]);
 	});
 }
 
@@ -151,6 +332,9 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 	if (areaName !== "local") return;
 	if (changes[EVENTS_KEY]) renderEvents(changes[EVENTS_KEY].newValue || []);
 	if (changes[ANALYSIS_KEY]) renderAnalysis(changes[ANALYSIS_KEY].newValue);
+	if (changes[EVENTS_KEY] || changes[ANALYSIS_KEY] || changes[SESSIONS_KEY]) {
+		loadEvents();
+	}
 });
 
 loadEvents();

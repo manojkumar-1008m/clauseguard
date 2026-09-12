@@ -30,7 +30,41 @@ def adapt_text_prediction(
     - character offsets are preserved if available, never invented.
     """
     if prediction.prediction != 1:
-        return []
+        negative_declaration_patterns = (
+            "no extra fee",
+            "no additional fee",
+            "no hidden fee",
+            "no extra charge",
+            "no additional charge",
+            "no service fee",
+            "no platform fee",
+        )
+        declaration_text = (raw_text or prediction.evidence or "").lower()
+        if not any(pattern in declaration_text for pattern in negative_declaration_patterns):
+            return []
+
+        declaration = raw_text.strip() if raw_text else prediction.evidence or ""
+        contradiction_text = declaration if "no additional fees" in declaration.lower() else f"{declaration} no additional fees"
+        eid = next_id_fn() if next_id_fn else "E001"
+        return [
+            EvidenceItem(
+                evidence_id=eid,
+                source="text",
+                type="fee_disclosure_declaration",
+                pattern=None,
+                description=contradiction_text,
+                detected=True,
+                strength="moderate",
+                model_confidence=prediction.confidence,
+                confidence=prediction.confidence,
+                provenance=prediction.model_version or "text_predictor",
+                temporal_position="static",
+                metadata={
+                    "negative_declaration": True,
+                    "label": prediction.label,
+                },
+            )
+        ]
 
     raw_cat = prediction.pattern_category or "potential_dark_pattern"
     pat = raw_cat.lower().replace(" ", "_")
@@ -211,7 +245,7 @@ def adapt_price_analysis(
 
     # D. Additional costs / fees
     add_amt = analysis.additional_cost if analysis.additional_cost is not None else analysis.additional_costs
-    if add_amt is not None:
+    if analysis.additional_cost_detected and add_amt is not None and add_amt > 0:
         curr = analysis.currency or (analysis.displayed_price.currency if analysis.displayed_price else None)
         pct_str = f" (+{analysis.additional_cost_percentage}%)" if analysis.additional_cost_percentage else ""
         items.append(
@@ -357,10 +391,15 @@ BEHAVIOR_SIGNAL_PATTERN_MAP: Dict[str, str] = {
     "forced_action_sequence": "forced_action",
 }
 
+BEHAVIOR_ANALYZER_OBSTRUCTION_TYPES = {
+    "DIFFICULT_CANCELLATION",
+    "EXCESSIVE_STEPS",
+    "REPEATED_PROMPTS",
+}
+
 DOM_SIGNAL_PATTERN_MAP: Dict[str, str] = {
     # Obstruction / cancellation friction
     "cancel_action_visually_deemphasized": "obstruction",
-    "action_visual_deemphasis": "obstruction",
     "cancel_action_disabled": "obstruction",
     "disabled_action": "obstruction",
     "hidden_alternative": "obstruction",
@@ -374,6 +413,7 @@ DOM_SIGNAL_PATTERN_MAP: Dict[str, str] = {
     # Confirm shaming
     "asymmetric_confirmation": "confirm_shaming",
     # Misdirection / visual prominence asymmetry
+    "action_visual_deemphasis": "misdirection",
     "action_size_asymmetry": "misdirection",
     "contrast_asymmetry": "misdirection",
     "typography_asymmetry": "misdirection",
@@ -455,6 +495,8 @@ def adapt_behavior_evidence(
 
     for entry in raw_list:
         if isinstance(entry, EvidenceItem):
+            if not entry.detected:
+                continue
             item = entry.model_copy() if hasattr(entry, "model_copy") else entry.copy()
             if item.decision_context is not None:
                 item.decision_context = normalize_decision_context(item.decision_context)
@@ -490,8 +532,22 @@ def adapt_behavior_evidence(
             else:
                 decision_context = None
 
-        # Canonical pattern mapping
-        pat = entry.get("pattern") or BEHAVIOR_SIGNAL_PATTERN_MAP.get(sig_type) or sig_type
+        # Canonical pattern mapping. High-level analyzer findings become
+        # obstruction evidence only when explicitly tied to cancellation.
+        detected = bool(entry.get("detected", True))
+        has_cancellation_context = decision_context in ("cancellation", "account_deletion")
+        analyzer_obstruction = (
+            not entry.get("pattern")
+            and detected
+            and sig_type in BEHAVIOR_ANALYZER_OBSTRUCTION_TYPES
+            and has_cancellation_context
+        )
+        pat = (
+            entry.get("pattern")
+            or ("obstruction" if analyzer_obstruction else None)
+            or BEHAVIOR_SIGNAL_PATTERN_MAP.get(sig_type)
+            or sig_type
+        )
 
         # Temporal position
         temporal_pos = entry.get("temporal_position")
@@ -507,7 +563,7 @@ def adapt_behavior_evidence(
                 type=sig_type,
                 pattern=pat,
                 description=reason,
-                detected=bool(entry.get("detected", True)),
+                detected=detected,
                 strength=strength,
                 model_confidence=None,  # Deterministic sequence reasoning
                 confidence=None,
@@ -613,6 +669,9 @@ def adapt_dom_evidence(
         eid = next_id_fn() if next_id_fn else f"E{len(items) + 1:03d}"
 
         dom_props = entry.get("dom_properties") or {}
+        dom_value = entry.get("value")
+        if dom_value is None and isinstance(dom_props, dict):
+            dom_value = dom_props.get("amount")
 
         items.append(
             EvidenceItem(
@@ -621,6 +680,7 @@ def adapt_dom_evidence(
                 type=sig_type,
                 pattern=pat,
                 description=reason,
+                value=dom_value,
                 detected=bool(entry.get("detected", True)),
                 strength=strength,
                 model_confidence=None,  # Deterministic DOM reasoning
@@ -688,7 +748,17 @@ def adapt_image_evidence(
         if not isinstance(entry, dict):
             continue
 
-        sig_type = entry.get("signal_type") or entry.get("type") or entry.get("class") or "visual_pattern"
+        original_label = entry.get("signal_type") or entry.get("type") or entry.get("class") or "visual_pattern"
+        detected = bool(entry.get("detected", True))
+        if not detected:
+            continue
+
+        vision_type_map = {
+            "activity_message": "activity_notification",
+            "limited_time_message": "urgency",
+            "low_stock_message": "scarcity",
+        }
+        sig_type = vision_type_map.get(original_label, original_label)
         m_conf = entry.get("model_confidence")
         if m_conf is None and "confidence" in entry and isinstance(entry["confidence"], (int, float)):
             m_conf = float(entry["confidence"])
@@ -697,12 +767,27 @@ def adapt_image_evidence(
         if not strength:
             strength = "strong" if (m_conf or 0.0) > 0.85 else "moderate"
 
-        desc = entry.get("description") or f"Visual detection of {sig_type}"
+        desc = entry.get("description") or f"Visual detection of {original_label}"
         bbox = entry.get("bounding_box") or entry.get("bbox")
         frame_id = entry.get("frame_id")
         temporal_pos = entry.get("temporal_position") or "static"
 
         eid = next_id_fn() if next_id_fn else f"E{len(items) + 1:03d}"
+        original_metadata = entry.get("metadata") if isinstance(entry.get("metadata"), dict) else {}
+        fallback_metadata = {
+            k: v for k, v in entry.items()
+            if k not in {
+                "signal_type", "type", "class", "strength", "description",
+                "model_confidence", "confidence", "bounding_box", "bbox",
+                "frame_id", "temporal_position", "decision_context",
+                "severity", "provenance", "metadata", "detected"
+            }
+        }
+        metadata = {
+            **fallback_metadata,
+            **original_metadata,
+            "original_vision_label": original_label,
+        }
 
         raw_ctx = entry.get("decision_context")
         decision_context = normalize_decision_context(raw_ctx) if raw_ctx is not None else None
@@ -714,7 +799,7 @@ def adapt_image_evidence(
                 type=sig_type,
                 pattern=sig_type,
                 description=desc,
-                detected=bool(entry.get("detected", True)),
+                detected=detected,
                 strength=strength,
                 model_confidence=m_conf,
                 confidence=m_conf,  # legacy
@@ -724,15 +809,7 @@ def adapt_image_evidence(
                 decision_context=decision_context,
                 severity=entry.get("severity") or ("high" if strength == "strong" else "medium"),
                 provenance=entry.get("provenance") or "image_analyzer",
-                metadata=entry.get("metadata") or {
-                    k: v for k, v in entry.items()
-                    if k not in {
-                        "signal_type", "type", "class", "strength", "description",
-                        "model_confidence", "confidence", "bounding_box", "bbox",
-                        "frame_id", "temporal_position", "decision_context",
-                        "severity", "provenance"
-                    }
-                },
+                metadata=metadata,
             )
         )
 
