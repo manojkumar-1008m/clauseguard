@@ -312,7 +312,13 @@ def _detect_price_change(
             and re.search(r'\b(?:and\s+)?now\s+(?:renews?(?:\s+at)?|is)\b|\bnow\s+renews?(?:\s+at)?\b', between)
         )
 
-        if is_from_to or is_prev_now or is_was_now_renew:
+        # Trigger 4: explicit Previous price / Current price labels.
+        is_labeled_change = bool(
+            re.search(r'\bprevious\s+price\s*:', before_i)
+            and re.search(r'\bcurrent\s+price\s*:', between)
+        )
+
+        if is_from_to or is_prev_now or is_was_now_renew or is_labeled_change:
             return (i, i + 1)
 
     return None
@@ -467,6 +473,12 @@ def _classify_and_link_entities(
             if b_period is None and promo_months is not None:
                 b_period = "month"
             initial.append(("initial_price", "trial_offer", b_period, True))
+            continue
+
+        # Explicit fee labels take precedence over a nearby base-price label.
+        label_before_entity = text[max(0, start - 60):start]
+        if re.search(r'\badditional\s+fee\b', label_before_entity, re.IGNORECASE):
+            initial.append(("other_fee", "additional_cost", b_period, False))
             continue
 
         # 8. Base Price from keywords (e.g. "Base price is ₹999/month")

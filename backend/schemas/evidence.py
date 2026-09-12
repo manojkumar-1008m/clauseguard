@@ -220,6 +220,10 @@ class EvidenceFusionRequest(BaseModel):
     text: Optional[str] = Field(None, description="Raw input text to analyze across pipelines")
     text_prediction: Optional[PredictResponse] = Field(None, description="Pre-computed text prediction response")
     price_analysis: Optional[PriceAnalysisResponse] = Field(None, description="Pre-computed price analysis response")
+    jurisdiction: Optional[str] = None
+    transaction_date: Optional[str] = None
+    entity_type: Optional[str] = None
+    member_state: Optional[str] = None
     ui_evidence: Optional[Union[List[EvidenceItem], List[Dict[str, Any]], Dict[str, Any], Any]] = Field(default_factory=list, description="External UI/DOM evidence items (legacy alias)")
     dom_evidence: Optional[Union[List[EvidenceItem], List[Dict[str, Any]], Dict[str, Any], Any]] = Field(default_factory=list, description="External DOM / interaction context evidence items")
     behavior_evidence: Optional[Union[List[EvidenceItem], List[Dict[str, Any]], Dict[str, Any], Any]] = Field(default_factory=list, description="External user behavior evidence items")
