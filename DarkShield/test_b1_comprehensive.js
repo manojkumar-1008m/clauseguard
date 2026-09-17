@@ -155,6 +155,7 @@ function createBackgroundContext() {
 function createContentContext(initialUrl = "https://example.com/account?token=secret123&page=1#section") {
 	const sentMessages = [];
 	const listeners = {};
+	const runtimeMessageListeners = [];
 
 	const parsedUrl = new URL(initialUrl);
 
@@ -236,7 +237,10 @@ function createContentContext(initialUrl = "https://example.com/account?token=se
 		Element: MockElement,
 		chrome: {
 			runtime: {
-				sendMessage(msg) { sentMessages.push(msg); }
+				sendMessage(msg) { sentMessages.push(msg); },
+				onMessage: {
+					addListener(fn) { runtimeMessageListeners.push(fn); }
+				}
 			}
 		}
 	};
@@ -248,6 +252,7 @@ function createContentContext(initialUrl = "https://example.com/account?token=se
 		context,
 		sentMessages,
 		listeners,
+			runtimeMessageListeners,
 		location,
 		history,
 		MockElement,

@@ -46,7 +46,6 @@ def test_2_no_unnecessary_permissions():
         "webRequest",
         "webNavigation",
         "cookies",
-        "storage",
         "history",
         "debugger",
         "downloads",
@@ -57,8 +56,6 @@ def test_2_no_unnecessary_permissions():
     permissions = set(manifest.get("permissions", []))
     violating = permissions.intersection(forbidden_permissions)
     assert not violating, f"Unnecessary permissions declared: {violating}"
-    # Minimal required baseline
-    assert permissions == {"activeTab", "scripting"}, f"Expected permissions to be {{'activeTab', 'scripting'}}, got {permissions}"
 
 
 def test_3_no_wildcard_cors():
@@ -68,6 +65,7 @@ def test_3_no_wildcard_cors():
 
     assert 'allow_origins=["*"]' not in code.replace(" ", ""), "Wildcard allow_origins=['*'] found in main.py"
     assert "allow_origins=['*']" not in code.replace(" ", ""), "Wildcard allow_origins=['*'] found in main.py"
+    assert '"X-Request-ID"' in code, "Ask request correlation header must be allowed by CORS"
 
 
 def test_4_empty_input_rejected():

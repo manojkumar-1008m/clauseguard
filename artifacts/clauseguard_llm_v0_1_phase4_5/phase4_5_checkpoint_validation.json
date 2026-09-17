@@ -1,0 +1,10 @@
+{
+  "checkpoint_path": "C:\\Users\\rog\\Downloads\\clauseguard_zipped\\clauseguard\\artifacts\\clauseguard_llm_v0_1_phase4_5\\checkpoints\\best.pt",
+  "sha256": "2f8b756bcf4438c2add273a9e4db5f5009d977908a9af9390707c1563013dccd",
+  "parameter_count": 5885952,
+  "nan_count": 0,
+  "inf_count": 0,
+  "val_loss": 0.18882040679454803,
+  "task322_untouched": true,
+  "task322_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f"
+}

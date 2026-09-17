@@ -1,0 +1,101 @@
+{
+  "corpus_size": 3000,
+  "train_size": 2527,
+  "validation_size": 232,
+  "test_size": 241,
+  "vocabulary_size": 1414,
+  "unknown_token_rate": 0.0,
+  "parameter_count": 5853184,
+  "epochs": 1,
+  "train_loss": 21.173665082907373,
+  "validation_loss": 5.37120271551198,
+  "test_loss": 5.647627046031337,
+  "duration_seconds": 147.86704880000252,
+  "generation_checks": {
+    "outputs": [
+      {
+        "question": "What is social proof?",
+        "raw_output": "what is social proof claim claim : a confirm shaming concept is being reviewed . a permitted example signal is additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 44
+      },
+      {
+        "question": "Why did ClauseGuard flag this?",
+        "raw_output": "why did clauseguard this 2 : clauseguard dataset dataset concept is being reviewed . a permitted example signal is",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 19
+      },
+      {
+        "question": "What evidence supports the finding?",
+        "raw_output": "what evidence supports the finding 2 : clauseguard sees sees concept is being reviewed . a permitted example signal is selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting selecting",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 45
+      },
+      {
+        "question": "How can this affect me?",
+        "raw_output": "how can this affect me in an ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce ecommerce",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 20
+      },
+      {
+        "question": "Could this cost me more?",
+        "raw_output": "could this cost me more 2 : a stronger claim is being reviewed . a permitted example signal is unknown unknown . status under review : identify identify identify identify identify identify identify identify identify identify identify identify 228 228 228 228 228 228 228",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 45
+      },
+      {
+        "question": "What should I check before buying?",
+        "raw_output": "what should i check before buying : clauseguard sees a stronger claim . status under review : this is unknown unknown tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 46
+      },
+      {
+        "question": "Is this definitely a dark pattern?",
+        "raw_output": "is this definitely a : a drip pricing concept is being reviewed . a permitted example signal is additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional additional",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 44
+      },
+      {
+        "question": "What does the evidence mean?",
+        "raw_output": "what does the evidence mean 2 : clauseguard sees a stronger claim . status under review : unknown is visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 45
+      },
+      {
+        "question": "Why should I be careful?",
+        "raw_output": "why should i be careful 2 : a misdirection concept is being reviewed . a permitted example signal is visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual visual",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 45
+      },
+      {
+        "question": "Explain this in simple words.",
+        "raw_output": "explain this in simple words . : clauseguard tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler tyler",
+        "empty": false,
+        "repetitive": true,
+        "token_count": 46
+      },
+      {
+        "question": "What happens if I cancel the subscription?",
+        "raw_output": "what if i cancel the subscription",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 6
+      }
+    ],
+    "empty_count": 0,
+    "repetitive_count": 9
+  },
+  "provenance_counts": {
+    "synthetic_canonical": 2500,
+    "observed_dataset": 500
+  }
+}

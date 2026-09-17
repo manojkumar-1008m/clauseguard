@@ -14,12 +14,26 @@
         <h1 class="title">ClauseGuard</h1>
       </div>
       <p id="tagline" class="tagline">Protect your digital decisions.</p>
+      <div id="headerRiskBadge" class="header-risk-badge hidden" aria-label="Risk score">
+        <span class="header-risk-label">Risk Score</span>
+        <strong id="headerRiskScore" class="header-risk-score"></strong>
+        <span id="headerRiskLevel" class="header-risk-level"></span>
+      </div>
     </header>
 
     <!-- Action Section -->
     <div class="action-section">
       <button id="analyzeBtn" class="btn-primary">Analyze This Page</button>
     </div>
+
+    <section class="journey-monitor" aria-label="Journey monitor">
+      <div class="journey-heading">
+        <span>JOURNEY MONITOR</span>
+        <span class="monitor-status">Active</span>
+      </div>
+      <p id="currentPage" class="journey-page">Current page</p>
+      <p class="journey-meta"><span id="journeyStage">Page</span> · <span id="eventCount">0</span> events monitored</p>
+    </section>
 
     <!-- State 2: ANALYZING -->
     <div id="status" class="status-card hidden">
@@ -49,6 +63,20 @@
       <div class="section-block what-we-found">
         <h2 id="resultTitle" class="result-title"></h2>
         <p id="resultSummary" class="result-summary"></p>
+      </div>
+
+      <div id="scoreBreakdownSection" class="section-block score-breakdown-block hidden">
+        <div class="score-summary">
+          <span class="score-label">Risk Score</span>
+          <strong id="riskScoreValue" class="risk-score-value"></strong>
+        </div>
+        <button id="scoreBreakdownToggle" class="accordion-toggle" type="button" aria-expanded="false">
+          <span>Why this score?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div id="scoreBreakdownContent" class="accordion-content hidden">
+          <div id="scoreBreakdownDetails" class="score-breakdown-details"></div>
+        </div>
       </div>
 
       <!-- WHY IT MATTERS -->
@@ -95,6 +123,24 @@
       <!-- Compact Disclaimer -->
       <p id="disclaimer" class="result-disclaimer">Prediction confidence is not legal certainty.</p>
     </div>
+
+    <section id="askSection" class="ask-section" aria-labelledby="askTitle">
+      <div class="ask-heading">
+        <div>
+          <h2 id="askTitle">ASK CLAUSEGUARD</h2>
+          <p>Ask about the current page assessment.</p>
+        </div>
+        <span class="ask-mark">?</span>
+      </div>
+      <div id="quickQuestions" class="quick-questions" aria-label="Suggested questions"></div>
+      <div id="askConversation" class="ask-conversation" aria-live="polite"></div>
+      <form id="askForm" class="ask-form">
+        <label class="sr-only" for="askQuestion">Ask ClauseGuard about this page</label>
+        <input id="askQuestion" type="text" maxlength="2000" placeholder="Ask about this page..." autocomplete="off" />
+        <button id="askButton" class="btn-secondary" type="submit">Ask</button>
+      </form>
+      <p id="askError" class="ask-error hidden"></p>
+    </section>
   </div>
   <script src="popup.js"></script>
 </body>

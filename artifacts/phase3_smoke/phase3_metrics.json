@@ -1,0 +1,406 @@
+{
+  "objective": "Improve from-scratch ClauseGuard-specific generation without /ask integration.",
+  "baseline": "Phase 2 had 3,000 records, 5.85M parameters, 9/11 repetitive outputs, and no meaningful complete answers.",
+  "corpus": {
+    "total_examples": 500,
+    "unique_questions": 500,
+    "unique_answers": 404,
+    "duplicate_question_count": 0,
+    "duplicate_pair_count": 0,
+    "malformed_count": 0,
+    "prohibited_reference_count": 0,
+    "unsupported_category_count": 0,
+    "category_distribution": {
+      "risk": 5,
+      "drip pricing": 44,
+      "social proof": 37,
+      "basket snaking": 50,
+      "subscription trap": 42,
+      "scarcity": 47,
+      "journey": 5,
+      "obstruction": 43,
+      "false urgency": 47,
+      "misdirection": 44,
+      "confirm shaming": 49,
+      "forced action": 59,
+      "evidence": 7,
+      "clear": 5,
+      "regulatory": 4,
+      "simple": 3,
+      "uncertainty": 2,
+      "price": 2,
+      "comparison": 4,
+      "consequence": 1
+    },
+    "status_distribution": {
+      "POTENTIAL": 106,
+      "UNKNOWN": 83,
+      "NOT_SUPPORTED": 76,
+      "CLEAR": 71,
+      "ACTIONABLE_RISK": 76,
+      "SUPPORTED": 88
+    }
+  },
+  "splits": {
+    "train": 399,
+    "validation": 50,
+    "test": 51,
+    "leakage": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    }
+  },
+  "model": {
+    "parameters": 105984,
+    "config": {
+      "vocab_size": 512,
+      "context_length": 96,
+      "embedding_dim": 64,
+      "num_layers": 2,
+      "num_heads": 4,
+      "feedforward_dim": 128,
+      "dropout": 0.1,
+      "batch_size": 16,
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.001,
+      "device": "cpu",
+      "tie_weights": true,
+      "domain_name": "ClauseGuard-LLM-v0.1"
+    }
+  },
+  "training": {
+    "epochs": 5,
+    "best_epoch": 5,
+    "best_validation_loss": 7.100588083267212,
+    "test_loss": 7.08165431022644,
+    "epoch_metrics": [
+      {
+        "epoch": 1,
+        "train_loss": 36.22277069091797,
+        "validation_loss": 29.210075855255127
+      },
+      {
+        "epoch": 2,
+        "train_loss": 22.2931485748291,
+        "validation_loss": 16.16999864578247
+      },
+      {
+        "epoch": 3,
+        "train_loss": 13.856284713745117,
+        "validation_loss": 11.12063193321228
+      },
+      {
+        "epoch": 4,
+        "train_loss": 10.347268447875976,
+        "validation_loss": 8.654727220535278
+      },
+      {
+        "epoch": 5,
+        "train_loss": 8.305497684478759,
+        "validation_loss": 7.100588083267212
+      }
+    ],
+    "duration_seconds": 6.297797700000956
+  },
+  "decoding_matrix": [
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.92,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.05,
+        "repeated_token_rate": 0.7021651356259679,
+        "repeated_ngram_rate": 0.009005869981479741,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 43.0,
+        "unique_token_ratio": 0.29783486437403206,
+        "meaningful_answer_rate": 0.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.92,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.5844750754646052,
+        "repeated_ngram_rate": 0.0025641025641025663,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 44.25,
+        "unique_token_ratio": 0.4155249245353948,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.92,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.5019618511850901,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 44.1,
+        "unique_token_ratio": 0.49803814881490993,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.92,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.3499126002837575,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 44.8,
+        "unique_token_ratio": 0.6500873997162425,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 40,
+        "top_p": 0.92,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.6691367386434207,
+        "repeated_ngram_rate": 0.0073318470595092385,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 43.35,
+        "unique_token_ratio": 0.3308632613565793,
+        "meaningful_answer_rate": 0.3,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 40,
+        "top_p": 0.92,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.5583877144343201,
+        "repeated_ngram_rate": 0.001315789473684209,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 45.25,
+        "unique_token_ratio": 0.44161228556567983,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 40,
+        "top_p": 0.92,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.47264371167333,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 44.05,
+        "unique_token_ratio": 0.52735628832667,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 40,
+        "top_p": 0.92,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.348914300435179,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 45.15,
+        "unique_token_ratio": 0.651085699564821,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 60,
+        "top_p": 0.92,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.6441072049377696,
+        "repeated_ngram_rate": 0.005077913279132795,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 42.55,
+        "unique_token_ratio": 0.3558927950622305,
+        "meaningful_answer_rate": 0.55,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 60,
+        "top_p": 0.92,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.5514703403014012,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 44.45,
+        "unique_token_ratio": 0.4485296596985987,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 60,
+        "top_p": 0.92,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.45913961182537866,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 44.65,
+        "unique_token_ratio": 0.5408603881746213,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    },
+    {
+      "decoding": {
+        "temperature": 0.6,
+        "top_k": 60,
+        "top_p": 0.92,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3
+      },
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.32915961130136207,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 45.05,
+        "unique_token_ratio": 0.6708403886986379,
+        "meaningful_answer_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "legal_overclaim_rate": 0.0
+      }
+    }
+  ],
+  "selected_decoding": {
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.92,
+    "repetition_penalty": 1.05,
+    "no_repeat_ngram_size": 3
+  },
+  "unseen_metrics": {
+    "empty_output_rate": 0.0,
+    "repetition_rate": 0.02,
+    "repeated_token_rate": 0.5943520626260593,
+    "repeated_ngram_rate": 0.0029774053350045226,
+    "eos_completion_rate": 0.0,
+    "average_answer_length": 44.11,
+    "unique_token_ratio": 0.40564793737394067,
+    "meaningful_answer_rate": 0.88,
+    "unsupported_claim_rate": 0.0,
+    "legal_overclaim_rate": 0.0
+  },
+  "golden_metrics": {
+    "empty_output_rate": 0.0,
+    "repetition_rate": 0.03333333333333333,
+    "repeated_token_rate": 0.5992082682496199,
+    "repeated_ngram_rate": 0.004767441860465119,
+    "eos_completion_rate": 0.0,
+    "average_answer_length": 44.0,
+    "unique_token_ratio": 0.40079173175038013,
+    "meaningful_answer_rate": 0.8333333333333334,
+    "unsupported_claim_rate": 0.03333333333333333,
+    "legal_overclaim_rate": 0.0
+  },
+  "quality_gate": {
+    "empty_outputs": true,
+    "severe_repetition": true,
+    "meaningful_answers": true,
+    "eos_completion": false,
+    "legal_overclaims": true,
+    "unseen_semantic_acceptance": true
+  },
+  "status": "NOT READY",
+  "ask_integration": "NOT ALLOWED unless every quality-gate threshold passes",
+  "limitations": [
+    "Synthetic examples are canonical concept explanations, not observations.",
+    "Runtime webpage facts are not encoded as universal facts.",
+    "A lower loss does not establish conversational quality."
+  ]
+}

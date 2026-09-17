@@ -1,0 +1,227 @@
+[
+  {
+    "question": "What is the consumer-facing explanation for the pricing disclosure? (unseen quer",
+    "intent": "PRICE",
+    "generated": "the product flow after a clear and transparent in the basket flow during the recorded observation is : an optional extra is : the secondary option was",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 0.0,
+    "failure_reason": "D: context ignored"
+  },
+  {
+    "question": "What is the consumer-facing explanation for the monthly exposure? (unseen query ",
+    "intent": "FINANCIAL",
+    "generated": "in the recorded observation is : appears clear and transparent in the subscription flow after a return to checkout clauseguard identified . this addre",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "Before I proceed, how should I interpret the monthly exposure? (unseen query #19",
+    "intent": "FINANCIAL",
+    "generated": "the disclosure appears clear and transparent in the recorded observation is : the product flow during the cancellation route . this addresses the init",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "What does the supplied ClauseGuard record tell me about the monthly exposure? (u",
+    "intent": "FINANCIAL",
+    "generated": "in the recorded observation is : appears clear and transparent in the checkout flow after the basket effect : the user opened the basket . this addres",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "What does the supplied ClauseGuard record tell me about the dark pattern categor",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the product flow during the recorded observation is : the basket flow after the secondary option wa",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Can the current findings answer my question about the pricing disclosure? (unsee",
+    "intent": "PRICE",
+    "generated": "the recorded observation is : appears clear and transparent in the product flow during the basket . this addresses the recorded mobile journey details",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "Looking only at this analysis, what should I understand about the dark pattern c",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : the recorded mobile journey clauseguard observed an optional extra is",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Looking only at this analysis, what should I understand about the pricing disclo",
+    "intent": "PRICE",
+    "generated": "in the recorded observation is : appears clear and transparent in the basket flow during the product view clauseguard observed an optional extra is : ",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "What does the supplied ClauseGuard record tell me about the pricing disclosure? ",
+    "intent": "PRICE",
+    "generated": "the recorded observation is : appears clear and transparent in the basket flow after a return to checkout flow during the basket effect : the subscrip",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "Can the current findings answer my question about the dark pattern category? (un",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : the basket flow during the basket . this addresses the secondary opti",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Which part of the report addresses the dark pattern category? (unseen query #164",
+    "intent": "PATTERN",
+    "generated": "the disclosure appears clear and transparent in the recorded observation is : the basket flow after the subscription flow during the checkout clausegu",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "What is the consumer-facing explanation for the dark pattern category? (unseen q",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : an optional extra is : the basket flow after the user opened the init",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "How does the system justify the assessment for the monthly exposure? (unseen que",
+    "intent": "FINANCIAL",
+    "generated": "the disclosure appears clear and transparent in the recorded observation is : appears clear finding . this addresses the recorded mobile journey detai",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "Which part of the report addresses the dark pattern category? (unseen query #60)",
+    "intent": "PATTERN",
+    "generated": "in the recorded observation is : appears clear and transparent in the product flow during the disclosure appears clear finding . this addresses the ba",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "What is the practical takeaway regarding the dark pattern category? (unseen quer",
+    "intent": "PATTERN",
+    "generated": "in the product flow after a return to checkout flow during the recorded observation is : the disclosure appears clear and transparent in the initial p",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "How does the system justify the assessment for the dark pattern category? (unsee",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : an additional \u20b9 79 fee appeared clauseguard observed an optional extr",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Looking only at this analysis, what should I understand about the monthly exposu",
+    "intent": "FINANCIAL",
+    "generated": "the disclosure appears clear and transparent in the product flow during the recorded observation is : the recorded mobile journey . this addresses the",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "What is the consumer-facing explanation for the dark pattern category? (unseen q",
+    "intent": "PATTERN",
+    "generated": "in the recorded observation is : the recorded mobile journey clauseguard identified by clauseguard observed an optional extra is : refusal may pressur",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Before I proceed, how should I interpret the dark pattern category? (unseen quer",
+    "intent": "PATTERN",
+    "generated": "in the recorded observation is : appears clear and transparent in the disclosure appears clear finding . this addresses the basket flow after the tria",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Before I proceed, how should I interpret the pricing disclosure? (unseen query #",
+    "intent": "PRICE",
+    "generated": "the recorded observation is : appears clear and transparent in the subscription flow during the recorded mobile journey . this addresses the secondary",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "Looking only at this analysis, what should I understand about the dark pattern c",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : an optional extra is : the user opened the basket clauseguard observe",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "Before I proceed, how should I interpret the pricing disclosure? (unseen query #",
+    "intent": "PRICE",
+    "generated": "in the recorded observation is : an optional extra is : appears clear and transparent in the user opened the basket flow after the secondary option wa",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "Looking only at this analysis, what should I understand about the monthly exposu",
+    "intent": "FINANCIAL",
+    "generated": "in the recorded observation is : appears clear and transparent in the disclosure appears clear case question under a return to checkout clauseguard ob",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete answer (missing price)"
+  },
+  {
+    "question": "What is the practical takeaway regarding the dark pattern category? (unseen quer",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : appears clear case question under a specific financial amount for thi",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  },
+  {
+    "question": "What does the supplied ClauseGuard record tell me about the dark pattern categor",
+    "intent": "PATTERN",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : an optional extra . this addresses the recorded mobile journey detail",
+    "expected": null,
+    "semantic_score": 0.0,
+    "grounding_score": 1.0,
+    "failure_reason": "B: incomplete or misaligned answer"
+  }
+]

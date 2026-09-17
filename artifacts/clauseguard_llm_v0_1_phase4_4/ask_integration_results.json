@@ -1,0 +1,254 @@
+[
+  {
+    "scenario": "A",
+    "name": "Clear case",
+    "question": "Why is there no actionable risk?",
+    "intent": "CLEAR_CASE",
+    "pattern": null,
+    "risk_level": "LOW",
+    "answer": "<QUESTION> risk context context context : before legal cancellation <QUESTION> case consequence subscription before legal appeared consumer evidence . risk context : in appeared subscription before true actionable medium <ANSWER> consumer evidence countdown timing <QUESTION> conclusion synthetic </analysis> . false : confidence <ANSWER> consumer clauseguard evidence determined affect <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "B",
+    "name": "Potential signal",
+    "question": "Why is this only a potential signal?",
+    "intent": "POTENTIAL_CASE",
+    "pattern": "FALSE_URGENCY",
+    "risk_level": "MEDIUM",
+    "answer": "<QUESTION> supported dark evidence <ANALYSIS> preselected 2 activity mixed u20b9999 displayed timing <QUESTION> source the <ANSWER> consumer clauseguard subs . does",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "C",
+    "name": "Supported risk",
+    "question": "What evidence supports this finding?",
+    "intent": "EVIDENCE",
+    "pattern": "DRIP_PRICING",
+    "risk_level": "HIGH",
+    "answer": "<QUESTION> supported dark evidence <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "D",
+    "name": "Missing price",
+    "question": "Could the renewal price be determined?",
+    "intent": "MISSING_INFORMATION",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL",
+    "answer": "<QUESTION> it false : confidence <ANSWER> cost false liability route to up <ANSWER> consumer evidence <QUESTION> risk context : synthetic feel . false : in near impact unable",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "E",
+    "name": "Subscription trap",
+    "question": "What consequence could I face?",
+    "intent": "CONSEQUENCE",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL",
+    "answer": "<QUESTION> is initial immediate cannot consumer clauseguard urges <QUESTION> it synthetic </analysis> . false : confidence <ANSWER> disclosure <QUESTION> confirming <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "F",
+    "name": "Drip pricing",
+    "question": "What happened during the checkout journey?",
+    "intent": "JOURNEY",
+    "pattern": "DRIP_PRICING",
+    "risk_level": "HIGH",
+    "answer": "<QUESTION> is confidence <ANSWER> consumer evidence . risk context : in appeared snaking _ synthetic </analysis> . review addresses confidence <ANSWER> <QUESTION> appears </QUESTION> near an exceed actionable medium <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "G",
+    "name": "Obstruction",
+    "question": "What should I do before cancelling?",
+    "intent": "RECOMMENDATION",
+    "pattern": "OBSTRUCTION",
+    "risk_level": "HIGH",
+    "answer": "<QUESTION> null </QUESTION> </ANSWER> review addresses is before legal cancellation <QUESTION> clauseguard subs . review addresses confidence <ANSWER> consumer evidence <QUESTION> risk context independent evaluation proceed <QUESTION> trap high . review could did proceed <QUESTION> comparison synthetic </analysis> . review confidence <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "H",
+    "name": "Social proof",
+    "question": "Is this a dark pattern?",
+    "intent": "CONCEPT",
+    "pattern": "SOCIAL_PROOF",
+    "risk_level": "POTENTIAL",
+    "answer": "<QUESTION> null service supported dark evidence . does context independent consequence subscription initial synthetic </analysis> . mixed of <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "I",
+    "name": "False urgency",
+    "question": "Why is this considered risky?",
+    "intent": "RISK",
+    "pattern": "FALSE_URGENCY",
+    "risk_level": "MEDIUM",
+    "answer": "<QUESTION> clauseguard subs . false : confidence <ANSWER> consumer evidence <QUESTION> risk context independent evaluation proceed <QUESTION> trap high . false liability route synthetic </analysis> . false 9 confirming near impact unable",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "J",
+    "name": "Regulatory uncertainty",
+    "question": "What regulatory relevance was recorded?",
+    "intent": "REGULATORY",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "HIGH",
+    "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case steps full <QUESTION> case warning disclosed context : scenario cancellation <QUESTION> supported 3 null <ANSWER> cost false liability route to up <ANSWER> consumer fixture <QUESTION> charge synthetic </analysis> . false : confidence <ANSWER> <QUESTION> unintended incur charges clear review could or <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "K",
+    "name": "Multi-turn follow-up",
+    "question": "So what does that mean for me?",
+    "intent": "FOLLOW_UP",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL",
+    "answer": "<QUESTION> is confidence <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  },
+  {
+    "scenario": "L",
+    "name": "Context switching",
+    "question": "What consequence could I face?",
+    "intent": "CONSEQUENCE",
+    "pattern": null,
+    "risk_level": "LOW",
+    "answer": "<QUESTION> flow trial was does context decline context : before legal cancellation <QUESTION> case consequence subscription before legal appeared scenario social <QUESTION> no 2 to drip <ANSWER> cost false liability route to up <ANSWER> consumer fixture <QUESTION> subscription initial synthetic </analysis> . false : confidence <ANSWER> <QUESTION> in near impact unable",
+    "eos_completed": true,
+    "meaningful": true,
+    "legal_overclaim": false,
+    "model_used": "ClauseGuardDecoderLM-v0.1",
+    "checkpoint_sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+    "generation_parameters": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repetition_penalty": 1.15,
+      "no_repeat_ngram_size": 3
+    }
+  }
+]

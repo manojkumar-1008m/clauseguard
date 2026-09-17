@@ -1,0 +1,99 @@
+{
+  "corpus_size": 300,
+  "train_size": 254,
+  "validation_size": 37,
+  "test_size": 9,
+  "vocabulary_size": 472,
+  "parameter_count": 105984,
+  "epochs": 1,
+  "train_loss": 23.576882898807526,
+  "validation_loss": 12.463064765930175,
+  "duration_seconds": 0.9957947000002605,
+  "generation_checks": {
+    "outputs": [
+      {
+        "question": "What is social proof?",
+        "raw_output": "what is social proof sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 44
+      },
+      {
+        "question": "Why did ClauseGuard flag this?",
+        "raw_output": "why did clauseguard this link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 44
+      },
+      {
+        "question": "What evidence supports the finding?",
+        "raw_output": "what evidence supports the finding basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 45
+      },
+      {
+        "question": "How can this affect me?",
+        "raw_output": "how can this affect basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis basis",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 44
+      },
+      {
+        "question": "Could this cost me more?",
+        "raw_output": "could this cost link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 43
+      },
+      {
+        "question": "What should I check before buying?",
+        "raw_output": "what should i check before link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 45
+      },
+      {
+        "question": "Is this definitely a dark pattern?",
+        "raw_output": "is this definitely a sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 44
+      },
+      {
+        "question": "What does the evidence mean?",
+        "raw_output": "what does the evidence mean : : : . . . . . . . . . . . . . . . . . . . sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 45
+      },
+      {
+        "question": "Why should I be careful?",
+        "raw_output": "why should i be careful : . . . . . . . . . limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited limited",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 45
+      },
+      {
+        "question": "Explain this in simple words.",
+        "raw_output": "explain this in simple words . . . . . . . . . . . . . . . . . . . . . . . sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees sees",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 46
+      },
+      {
+        "question": "What happens if I cancel the subscription?",
+        "raw_output": "what if i cancel the subscription",
+        "empty": false,
+        "repetitive": false,
+        "token_count": 6
+      }
+    ],
+    "empty_count": 0,
+    "repetitive_count": 0
+  },
+  "provenance_counts": {
+    "observed_dataset": 60,
+    "synthetic_canonical": 240
+  }
+}

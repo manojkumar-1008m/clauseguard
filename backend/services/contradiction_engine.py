@@ -515,6 +515,7 @@ class ContradictionEngine:
         # 6. IMAGE_VS_TEXT (Future-Compatible Visual Evidence)
         # -----------------------------------------------------------------
         artificial_urgency_types = {
+            "countdown_timer",
             "timer_reset",
             "timer_loop",
             "timer_restart",

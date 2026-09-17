@@ -1,0 +1,50 @@
+{
+  "total_examples": 500,
+  "unique_questions": 500,
+  "unique_answers": 404,
+  "duplicate_question_count": 0,
+  "duplicate_pair_count": 0,
+  "malformed_count": 0,
+  "prohibited_reference_count": 0,
+  "unsupported_category_count": 0,
+  "category_distribution": {
+    "risk": 5,
+    "drip pricing": 44,
+    "social proof": 37,
+    "basket snaking": 50,
+    "subscription trap": 42,
+    "scarcity": 47,
+    "journey": 5,
+    "obstruction": 43,
+    "false urgency": 47,
+    "misdirection": 44,
+    "confirm shaming": 49,
+    "forced action": 59,
+    "evidence": 7,
+    "clear": 5,
+    "regulatory": 4,
+    "simple": 3,
+    "uncertainty": 2,
+    "price": 2,
+    "comparison": 4,
+    "consequence": 1
+  },
+  "status_distribution": {
+    "POTENTIAL": 106,
+    "UNKNOWN": 83,
+    "NOT_SUPPORTED": 76,
+    "CLEAR": 71,
+    "ACTIONABLE_RISK": 76,
+    "SUPPORTED": 88
+  },
+  "leakage": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "train_size": 399,
+  "validation_size": 50,
+  "test_size": 51,
+  "vocabulary_size": 477,
+  "unknown_token_rate": 0.0
+}

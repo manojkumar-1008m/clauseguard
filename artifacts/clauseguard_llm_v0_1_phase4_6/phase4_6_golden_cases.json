@@ -1,0 +1,636 @@
+[
+  {
+    "case_id": "G01",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹999",
+    "gate": "ACTIONABLE_RISK",
+    "question": "How much could I be charged after the trial?",
+    "answer": "the analysis indicates a future charge of ₹ 999 upon renewal .",
+    "required_facts": [
+      "999"
+    ],
+    "forbidden_facts": [
+      "definitely illegal"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G02",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹499",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What will I pay upon renewal?",
+    "answer": "you will pay ₹ 499 .",
+    "required_facts": [
+      "499"
+    ],
+    "forbidden_facts": [
+      "999"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G03",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "UNKNOWN",
+    "gate": "ACTIONABLE_RISK",
+    "question": "How much will I pay?",
+    "answer": "the renewal amount could not be determined from the analysis .",
+    "required_facts": [
+      "could not",
+      "unknown",
+      "undisclosed",
+      "cannot",
+      "not"
+    ],
+    "forbidden_facts": [
+      "999",
+      "499"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G04",
+    "pattern": "DRIP_PRICING",
+    "cost": "₹578",
+    "gate": "ACTIONABLE_RISK",
+    "question": "How much will I actually pay in total?",
+    "answer": "the warning is justified because observation confirmed an additional fee appeared later in checkout in checkout flow .",
+    "required_facts": [
+      "price",
+      "fee",
+      "total",
+      "578",
+      "499",
+      "79",
+      "initial",
+      "warning"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G05",
+    "pattern": "CLEAR_RENEWAL",
+    "cost": "₹499",
+    "gate": "CLEAR",
+    "question": "Why was this flow considered clear?",
+    "answer": "the disclosure is clear and transparent on the subscription screen with no actionable dark patterns identified .",
+    "required_facts": [
+      "clear",
+      "transparent",
+      "no",
+      "disclosed",
+      "renewal",
+      "straightforward",
+      "terms"
+    ],
+    "forbidden_facts": [
+      "definitely"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G06",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹999",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What consequence could I face here?",
+    "answer": "as a consumer you could face consumer may incur recurring charges including a renewal fee of ₹ 999 .",
+    "required_facts": [
+      "charge",
+      "consequence",
+      "renewal",
+      "recurring",
+      "fee",
+      "pay",
+      "999"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G07",
+    "pattern": "OBSTRUCTION",
+    "cost": "UNKNOWN",
+    "gate": "ACTIONABLE_RISK",
+    "question": "Why did ClauseGuard flag this finding?",
+    "answer": "the analysis indicates high because cancellation requires contacting support via phone .",
+    "required_facts": [
+      "cancellation",
+      "effort",
+      "support",
+      "step",
+      "retention",
+      "obstruction",
+      "flow",
+      "phone",
+      "recorded",
+      "evidence"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G08",
+    "pattern": "FALSE_URGENCY",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "Why did ClauseGuard flag this finding?",
+    "answer": "the analysis flagged this was flagged due to potential consumer harm regarding false urgency with a countdown timer urges immediate action with a medium risk rating .",
+    "required_facts": [
+      "timer",
+      "countdown",
+      "urgency",
+      "decision",
+      "pressure",
+      "action",
+      "immediate",
+      "recorded",
+      "evidence",
+      "potential",
+      "flagged"
+    ],
+    "forbidden_facts": [
+      "violation"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G09",
+    "pattern": "SCARCITY",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "What does this message indicate?",
+    "answer": "the terms regarding scarcity .",
+    "required_facts": [
+      "stock",
+      "demand",
+      "banner",
+      "scarcity",
+      "pressure",
+      "purchase",
+      "rush",
+      "notification",
+      "transaction",
+      "assessment",
+      "terms"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G10",
+    "pattern": "SOCIAL_PROOF",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "Can you explain the dark pattern detected in simple language?",
+    "answer": "the warning is justified because observation confirmed an unverified message states many people bought this recently on the product screen .",
+    "required_facts": [
+      "social",
+      "consensus",
+      "influence",
+      "activity",
+      "potential",
+      "indicator",
+      "assessment",
+      "unverified",
+      "proof",
+      "warning",
+      "confirmed"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G11",
+    "pattern": "MISDIRECTION",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "Why did ClauseGuard flag this finding?",
+    "answer": "the analysis flagged this because the accept button is prominently colored while decline is faded was identified on the product screen .",
+    "required_facts": [
+      "button",
+      "color",
+      "decline",
+      "option",
+      "obscured",
+      "visual",
+      "prominent",
+      "accept",
+      "alternative",
+      "choice",
+      "misdirection",
+      "flagged",
+      "harm"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G12",
+    "pattern": "BASKET_SNAKING",
+    "cost": "₹149",
+    "gate": "ACTIONABLE_RISK",
+    "question": "Was an item added to my basket?",
+    "answer": "the analysis flagged this was flagged due to potential consumer harm regarding basket snaking with a medium risk rating .",
+    "required_facts": [
+      "basket",
+      "optional",
+      "extra",
+      "preselected",
+      "item",
+      "consent",
+      "unintended",
+      "snaking",
+      "harm"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G13",
+    "pattern": "FORCED_ACTION",
+    "cost": "UNKNOWN",
+    "gate": "ACTIONABLE_RISK",
+    "question": "Why did ClauseGuard flag this finding?",
+    "answer": "the analysis flagged this because account creation is required before viewing details was identified in this flow .",
+    "required_facts": [
+      "account",
+      "proceed",
+      "required",
+      "personal",
+      "registration",
+      "data",
+      "information",
+      "creation"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G14",
+    "pattern": "CONFIRM_SHAMING",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "Why did ClauseGuard flag this finding?",
+    "answer": "the analysis flagged this was flagged due to potential consumer harm regarding confirm shaming with a potential consumer harm regarding confirm shaming with a medium risk rating .",
+    "required_facts": [
+      "decline",
+      "derogatory",
+      "language",
+      "guilt",
+      "shaming",
+      "opt",
+      "pressure",
+      "uncomfortable"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G15",
+    "pattern": "DRIP_PRICING",
+    "cost": "₹299",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What extra fee was added?",
+    "answer": "the warning is justified because observation confirmed an additional fee appeared later in checkout in checkout flow .",
+    "required_facts": [
+      "fee",
+      "added",
+      "299",
+      "increase",
+      "price",
+      "total",
+      "checkout",
+      "initial",
+      "unexpected",
+      "warning"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G16",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "How much will I be charged when the trial ends?",
+    "answer": "the renewal amount could not be determined from the available evidence .",
+    "required_facts": [
+      "cannot",
+      "unknown",
+      "undisclosed",
+      "not",
+      "could not",
+      "determined"
+    ],
+    "forbidden_facts": [
+      "999"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G17",
+    "pattern": "FALSE_URGENCY",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "Does this prove the company broke the law?",
+    "answer": "the warning is justified because observation confirmed a countdown timer urges immediate action at checkout .",
+    "required_facts": [
+      "not",
+      "assessment",
+      "indicator",
+      "potential",
+      "observation",
+      "risk",
+      "judicial",
+      "liability",
+      "warning",
+      "timer"
+    ],
+    "forbidden_facts": [
+      "definitely",
+      "violated"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G18",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹1299",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What is the renewal cost?",
+    "answer": "the subscription renews at ₹ 1299 .",
+    "required_facts": [
+      "1299"
+    ],
+    "forbidden_facts": [
+      "999"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G19",
+    "pattern": "CLEAR_RENEWAL",
+    "cost": "UNKNOWN",
+    "gate": "CLEAR",
+    "question": "Why was this flow considered clear?",
+    "answer": "the disclosure is clear and transparent on the subscription screen with no actionable dark patterns identified .",
+    "required_facts": [
+      "clear",
+      "transparent",
+      "no",
+      "disclosed",
+      "renewal",
+      "straightforward",
+      "terms"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G20",
+    "pattern": "OBSTRUCTION",
+    "cost": "UNKNOWN",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What evidence supports this consumer assessment?",
+    "answer": "the warning is justified because observation confirmed cancellation requires contacting support via phone in the warning is required before viewing details on the warning is justified because observation confirmed cancellation screen .",
+    "required_facts": [
+      "cancellation",
+      "support",
+      "phone",
+      "evidence",
+      "recorded",
+      "effort",
+      "warning"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G21",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹799",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What will I pay after the trial?",
+    "answer": "you will pay ₹ 799 after the trial concludes .",
+    "required_facts": [
+      "799",
+      "trial",
+      "renewal",
+      "charge",
+      "recurring",
+      "pay"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G22",
+    "pattern": "DRIP_PRICING",
+    "cost": "₹899",
+    "gate": "ACTIONABLE_RISK",
+    "question": "How much will I actually pay in total?",
+    "answer": "the warning is justified because observation confirmed an additional fee appeared later in checkout in checkout flow .",
+    "required_facts": [
+      "price",
+      "fee",
+      "checkout",
+      "total",
+      "increase",
+      "899",
+      "known",
+      "initial",
+      "warning"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G23",
+    "pattern": "SOCIAL_PROOF",
+    "cost": "₹149",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "What risk does this pattern pose?",
+    "answer": "the consumer harm regarding social proof before checking the terms regarding social proof before checking the product journey .",
+    "required_facts": [
+      "social",
+      "influence",
+      "consensus",
+      "consumer",
+      "purchasing",
+      "accelerate",
+      "decision",
+      "proof"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G24",
+    "pattern": "CONFIRM_SHAMING",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "What consequence could I face here?",
+    "answer": "the offer is marked as potential consumer harm regarding confirm shaming as potential consumer risk because the flow presents a medium risk of confirm shaming .",
+    "required_facts": [
+      "decline",
+      "social",
+      "choice",
+      "consequence",
+      "pressure",
+      "guilt",
+      "opt",
+      "uncomfortable",
+      "confirm",
+      "shaming",
+      "harm"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G25",
+    "pattern": "FALSE_URGENCY",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "Does this pattern constitute an unlawful act?",
+    "answer": "the findings reflect deceptive design risks rather than a conclusive legal ruling .",
+    "required_facts": [
+      "potential",
+      "not",
+      "indicator",
+      "assessment",
+      "observation",
+      "risk",
+      "liability",
+      "deceptive"
+    ],
+    "forbidden_facts": [
+      "definitely"
+    ],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G26",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹1499",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What is the renewal cost?",
+    "answer": "the subscription renews at ₹ 1499 .",
+    "required_facts": [
+      "1499",
+      "recurring",
+      "charge"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G27",
+    "pattern": "OBSTRUCTION",
+    "cost": "UNKNOWN",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What practical takeaway applies to this page?",
+    "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+    "required_facts": [
+      "cancellation",
+      "retention",
+      "journey",
+      "flow",
+      "step",
+      "support",
+      "disclosures",
+      "check",
+      "review",
+      "terms"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G28",
+    "pattern": "SCARCITY",
+    "cost": "UNKNOWN",
+    "gate": "POTENTIAL_SIGNAL",
+    "question": "What evidence was observed?",
+    "answer": "the assessment is supported by recorded evidence showing a limited - stock banner indicates high demand .",
+    "required_facts": [
+      "stock",
+      "banner",
+      "evidence",
+      "recorded",
+      "demand",
+      "scarcity",
+      "observation",
+      "pressure",
+      "limited"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G29",
+    "pattern": "BASKET_SNAKING",
+    "cost": "₹49",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What consequence could I face here?",
+    "answer": "the primary consequence is that the basket contains an unintended extra item including a medium risk of basket .",
+    "required_facts": [
+      "basket",
+      "extra",
+      "optional",
+      "preselected",
+      "item",
+      "unintended"
+    ],
+    "forbidden_facts": [],
+    "passed": true,
+    "eos": true
+  },
+  {
+    "case_id": "G30",
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "₹1999",
+    "gate": "ACTIONABLE_RISK",
+    "question": "What is the renewal cost?",
+    "answer": "the subscription renews at ₹ 1999 .",
+    "required_facts": [
+      "1999"
+    ],
+    "forbidden_facts": [
+      "999"
+    ],
+    "passed": true,
+    "eos": true
+  }
+]

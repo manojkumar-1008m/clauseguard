@@ -1,0 +1,1312 @@
+<USER_REQUEST>
+PHASE 4.5 — CLAUSEGUARD GROUNDED-GENERATION TRAINING
+
+You are continuing development of the existing ClauseGuard repository.
+
+IMPORTANT:
+Phase 4.4 has been completed.
+
+The validated checkpoint is:
+
+task-322
+- 5,885,952 parameters
+- val_loss = 0.14175094664096832
+- finite tensors
+- 0 NaN
+- 0 Inf
+- EOS completion = 1.000
+- checkpoint SHA-256 begins:
+  79d7f1974fc12f92...
+
+task-373 is INVALID and MUST NEVER be used.
+
+DO NOT overwrite task-322/best.pt.
+
+DO NOT integrate /ask during this phase.
+
+The purpose of Phase 4.5 is to improve the OWN ClauseGuard decoder-only LLM's ability to:
+
+1. understand the supplied current ClauseGuard analysis context
+2. answer arbitrary natural-language questions
+3. reference exact values from the context
+4. preserve UNKNOWN values
+5. produce coherent consumer-facing language
+6. remain grounded in the current analysis
+7. avoid legal overclaims
+8. maintain EOS termination
+
+The model must remain trained completely from scratch.
+
+NO:
+- OpenAI API
+- Gemini API
+- Anthropic API
+- external inference API
+- pretrained model
+- pretrained tokenizer
+- pretrained weights
+- external LLM
+- RAG using an external model
+
+MiniLM may remain a supporting semantic component where already present, but the final natural-language answer must come from the ClauseGuard decoder LLM.
+
+==================================================
+PHASE 4.5 CORE PROBLEM
+==================================================
+
+Phase 4.4 proved:
+
+CHECKPOINT:
+PASS
+
+EOS:
+PASS
+
+NaN protection:
+PASS
+
+But:
+
+CONTEXT GROUNDING:
+FAIL
+
+The model currently generates outputs such as:
+
+<QUESTION> risk context context context : before legal...
+
+or:
+
+<QUESTION> supported dark evidence <question>...
+
+rather than coherent consumer-facing answers.
+
+The model has learned structural tokens and ClauseGuard vocabulary but has NOT reliably learned:
+
+ANALYSIS CONTEXT
++
+QUESTION
+→
+GROUNDED NATURAL LANGUAGE ANSWER
+
+The most important missing capability is:
+
+CONTEXT VALUE → NATURAL LANGUAGE
+
+Example:
+
+Context:
+
+pattern = SUBSCRIPTION_TRAP
+risk_level = CRITICAL
+renewal_cost = ₹999
+renewal_period = monthly
+
+Question:
+
+What consequence could I face?
+
+Expected behavior:
+
+You may face a ₹999 recurring charge if the subscription renews.
+
+The exact wording can differ.
+
+The factual relationship MUST NOT.
+
+==================================================
+OPERATION 1 — AUDIT CURRENT PHASE 4.5 CODE
+==================================================
+
+Before modifying code:
+
+inspect:
+
+- phase4_training.py
+- corpus generation
+- serialization
+- tokenizer
+- model configuration
+- generation.py
+- evaluator
+- quality gate
+- existing Phase 4.4 reports
+- task-322 checkpoint metadata
+
+Determine why the model produces structural-token output.
+
+Do not guess.
+
+Document:
+
+A. training target format
+B. prompt format
+C. answer format
+D. special-token handling
+E. answer masking
+F. EOS handling
+G. context serialization
+H. generation stopping
+I. evaluation extraction
+
+Do not modify EvidenceFusion or ConsumerRiskGate.
+
+==================================================
+OPERATION 2 — PRESERVE THE 5.9M ARCHITECTURE
+==================================================
+
+Use the existing production architecture.
+
+Target remains approximately:
+
+5–7M parameters.
+
+Do NOT:
+
+- shrink the model
+- replace it with a tiny diagnostic model
+- replace decoder architecture
+- introduce pretrained weights
+- increase model size substantially
+
+The previous CPU_FAST mistake must not be repeated.
+
+CPU optimization may improve execution speed only.
+
+It must NOT silently change architecture.
+
+==================================================
+OPERATION 3 — REBUILD THE TRAINING CORPUS
+==================================================
+
+Build a new grounded-generation corpus.
+
+Target:
+
+12,000–15,000 unique training records.
+
+Minimum:
+
+10,000.
+
+Every record must contain:
+
+ANALYSIS CONTEXT
+QUESTION
+ANSWER
+
+The corpus must specifically train:
+
+context → answer grounding.
+
+Do not merely generate generic ClauseGuard Q&A.
+
+==================================================
+OPERATION 4 — REQUIRED CONTEXT TYPES
+==================================================
+
+Include examples for:
+
+1. CLEAR
+2. POTENTIAL_SIGNAL
+3. CORROBORATED_SIGNAL
+4. ACTIONABLE_RISK
+5. SUBSCRIPTION_TRAP
+6. DRIP_PRICING
+7. BASKET_SNAKING
+8. FALSE_URGENCY
+9. SCARCITY
+10. FORCED_ACTION
+11. CONFIRM_SHAMING
+12. OBSTRUCTION
+13. MISDIRECTION
+14. SOCIAL_PROOF
+15. missing information
+16. unknown financial exposure
+17. unknown renewal price
+18. regulatory uncertainty
+19. journey evidence
+20. behavior evidence
+21. DOM evidence
+22. visual evidence
+23. pricing evidence
+24. multi-source evidence
+25. contradictions
+26. temporal changes
+
+==================================================
+OPERATION 5 — VALUE-GROUNDING CURRICULUM
+==================================================
+
+Create dedicated examples that teach the model to reference values.
+
+LEVEL 1 — DIRECT VALUE COPYING
+
+Context:
+
+renewal_cost = ₹999
+
+Question:
+
+What is the renewal cost?
+
+Answer:
+
+The renewal cost is ₹999.
+
+Create many variations.
+
+--------------------------------
+
+LEVEL 2 — PARAPHRASED QUESTIONS
+
+Context:
+
+renewal_cost = ₹999
+
+Questions:
+
+How much could I be charged later?
+
+What happens when the subscription renews?
+
+What will I pay after the trial?
+
+Could there be a recurring charge?
+
+Answers must correctly reference ₹999.
+
+--------------------------------
+
+LEVEL 3 — MULTI-FIELD REASONING
+
+Context:
+
+trial_period = 7 days
+renewal_cost = ₹999
+renewal_period = monthly
+
+Question:
+
+What happens after the trial?
+
+Answer:
+
+After the 7-day trial, the subscription may renew at ₹999 per month.
+
+--------------------------------
+
+LEVEL 4 — PRICE CALCULATION
+
+Context:
+
+displayed_price = ₹499
+additional_cost = ₹79
+known_total = ₹578
+
+Question:
+
+How much will I actually pay?
+
+Answer:
+
+The displayed price is ₹499, but the known total is ₹578 after the additional ₹79 fee.
+
+--------------------------------
+
+LEVEL 5 — UNKNOWN VALUES
+
+Context:
+
+renewal_cost = UNKNOWN
+
+Question:
+
+How much will I be charged after the trial?
+
+Answer:
+
+The renewal amount could not be determined from the available evidence.
+
+NEVER invent a value.
+
+--------------------------------
+
+LEVEL 6 — MIXED KNOWN/UNKNOWN
+
+Context:
+
+trial_period = 7 days
+renewal_cost = UNKNOWN
+renewal_period = monthly
+
+Question:
+
+What happens after the trial?
+
+Answer:
+
+The subscription may renew monthly after the trial, but the renewal amount could not be determined.
+
+==================================================
+OPERATION 6 — EXACT-VALUE COVERAGE
+==================================================
+
+The corpus MUST contain many examples for:
+
+- ₹ values
+- percentages
+- dates
+- durations
+- quantities
+- counts
+- risk scores
+- pattern names
+- journey stages
+- financial exposure
+- evidence strength
+
+Examples:
+
+₹999
+₹499
+₹79
+30%
+7 days
+14 days
+3 attempts
+HIGH
+CRITICAL
+CHECKOUT
+CANCELLATION
+
+Do not always use the same values.
+
+Randomize values while preserving correct relationships.
+
+Example:
+
+renewal_cost:
+₹299
+₹499
+₹799
+₹999
+₹1299
+₹1499
+
+The answer must reference the actual context value.
+
+==================================================
+OPERATION 7 — QUESTION DIVERSITY
+==================================================
+
+The model must eventually answer arbitrary reasonable questions.
+
+Generate natural variations.
+
+For example:
+
+"What consequence could I face?"
+
+"What happens to me here?"
+
+"Why should I care?"
+
+"Why was this flagged?"
+
+"What exactly is risky?"
+
+"How much could this cost?"
+
+"Will I be charged again?"
+
+"Can you explain this simply?"
+
+"What evidence supports that?"
+
+"What happened during checkout?"
+
+"Why does ClauseGuard consider this suspicious?"
+
+"Is this definitely illegal?"
+
+"Can I determine the renewal amount?"
+
+"Was the price changed?"
+
+"Why is this only a potential signal?"
+
+"What should I look at before continuing?"
+
+Avoid mechanically generated paraphrases.
+
+==================================================
+OPERATION 8 — ANSWER DIVERSITY
+==================================================
+
+Answers must NOT all follow one template.
+
+For the same semantic question, allow multiple natural answers.
+
+Bad corpus:
+
+"The consequence is X."
+"The consequence is Y."
+"The consequence is Z."
+
+Better:
+
+"You may face a ₹999 recurring charge if the subscription renews."
+
+"The main financial concern is the possible ₹999 monthly renewal."
+
+"If you continue, the subscription could renew at ₹999 per month."
+
+These communicate the same grounded fact differently.
+
+Measure:
+
+unique_answer_rate
+
+repeated_answer_rate
+
+template_only_rate
+
+Require:
+
+unique_answer_rate >= 0.70
+repeated_answer_rate <= 0.30
+template_only_rate <= 0.20
+
+==================================================
+OPERATION 9 — STRUCTURAL TOKEN CONTROL
+==================================================
+
+The generated consumer answer MUST NOT contain training-control markers such as:
+
+<QUESTION>
+<question>
+<ANALYSIS>
+<analysis>
+<ANSWER>
+<answer>
+</analysis>
+
+unless those markers are explicitly required internally and stripped before final consumer output.
+
+The preferred production flow is:
+
+PROMPT:
+<ANALYSIS>
+...
+<QUESTION>
+...
+
+TARGET:
+natural answer
+<EOS>
+
+Do NOT train the model to generate another prompt structure inside the answer.
+
+This is extremely important.
+
+The model should learn:
+
+<QUESTION>
+question
+<EOS>
+
+→
+
+natural answer
+
+NOT:
+
+<QUESTION>
+question
+<ANSWER>
+natural answer
+<QUESTION>
+...
+
+If the current implementation uses <ANSWER> or </answer> as target delimiters, audit whether those markers are necessary.
+
+The final decoded consumer answer should contain ONLY the natural-language answer.
+
+==================================================
+OPERATION 10 — SERIALIZATION
+==================================================
+
+Use an explicit deterministic format.
+
+For example:
+
+<ANALYSIS>
+risk_level: CRITICAL
+pattern: SUBSCRIPTION_TRAP
+renewal_cost: ₹999
+renewal_period: monthly
+requires_context: false
+</ANALYSIS>
+
+<QUESTION>
+What consequence could I face?
+</QUESTION>
+
+Then train the target:
+
+You may face a ₹999 recurring charge if the subscription renews.<EOS>
+
+Do not put answer-start markers inside the target unless absolutely required.
+
+The exact format may follow the existing implementation if there is a technically justified reason.
+
+Document the final format.
+
+==================================================
+OPERATION 11 — TOKENIZATION AUDIT
+==================================================
+
+Verify special tokens:
+
+PAD
+BOS
+EOS
+UNK
+
+and any ClauseGuard-specific structural tokens.
+
+The tokenizer MUST preserve:
+
+₹
+digits
+decimal values
+%
+dates
+pattern names
+UNKNOWN
+risk levels
+
+Pay particular attention to:
+
+₹999
+
+Do not allow the rupee symbol and numeric value to become unusable fragments.
+
+Create tests for:
+
+₹299
+₹499
+₹799
+₹999
+₹1299
+₹1499
+
+Verify encode → decode.
+
+==================================================
+OPERATION 12 — MICRO-OVERFIT
+==================================================
+
+Before any full training:
+
+Run 1-example overfit.
+
+Example:
+
+Context:
+
+renewal_cost = ₹999
+pattern = SUBSCRIPTION_TRAP
+
+Question:
+
+What is the renewal cost?
+
+Answer:
+
+The renewal cost is ₹999.
+
+Train using the real 5.9M model.
+
+Require:
+
+loss < 0.05
+
+Then generate.
+
+Expected semantic result:
+
+"The renewal cost is ₹999."
+
+Equivalent natural wording is acceptable.
+
+But the model MUST reference:
+
+999
+
+Then repeat with:
+
+₹499
+₹1299
+
+The model must reproduce the corresponding context value.
+
+==================================================
+OPERATION 13 — CONTEXT SWITCH MICRO TEST
+==================================================
+
+Train/evaluate:
+
+Context A:
+
+renewal_cost = ₹999
+
+Question:
+
+How much could I be charged?
+
+Then:
+
+Context B:
+
+renewal_cost = ₹499
+
+Same question.
+
+The generated answers must reference the correct respective values.
+
+Expected:
+
+A → 999
+B → 499
+
+This is more important than generic fluency.
+
+==================================================
+OPERATION 14 — UNKNOWN MICRO TEST
+==================================================
+
+Context:
+
+renewal_cost = UNKNOWN
+
+Question:
+
+How much could I be charged?
+
+Expected:
+
+"The renewal amount could not be determined from the available evidence."
+
+The answer MUST NOT contain:
+
+999
+499
+799
+1299
+or any invented amount.
+
+==================================================
+OPERATION 15 — MULTI-FIELD MICRO TEST
+==================================================
+
+Context:
+
+trial_period = 7 days
+renewal_cost = ₹999
+renewal_period = monthly
+
+Question:
+
+What happens after the trial?
+
+Expected semantics:
+
+After the 7-day trial, the subscription may renew at ₹999 per month.
+
+Exact wording may differ.
+
+==================================================
+OPERATION 16 — SHORT TRAINING CURRICULUM
+==================================================
+
+Do NOT immediately launch the 15,000-record full training.
+
+Use:
+
+Stage A:
+10 examples
+
+Stage B:
+100 examples
+
+Stage C:
+500 examples
+
+Stage D:
+2,000 examples
+
+Stage E:
+full corpus
+
+At each stage evaluate:
+
+- loss
+- EOS
+- value-reference accuracy
+- grounding
+- repetition
+- structural-token leakage
+
+If a stage fails badly:
+
+STOP.
+
+Diagnose before continuing.
+
+==================================================
+OPERATION 17 — LEARNING RATE
+==================================================
+
+Use:
+
+lr = 1e-4
+
+Keep:
+
+AdamW
+weight_decay = 0.01
+
+Use:
+
+gradient clipping = 1.0
+
+Do not change multiple optimization variables simultaneously unless necessary.
+
+Start with:
+
+2–3 epochs.
+
+If training remains stable and validation continues improving, evaluate whether additional epochs are useful.
+
+Do not blindly train 10 epochs.
+
+==================================================
+OPERATION 18 — GENERATION
+==================================================
+
+First validate greedy generation.
+
+Then compare:
+
+temperature = 0.3
+top_k = 20
+top_p = 0.9
+repetition_penalty = 1.15
+no_repeat_ngram_size = 3
+
+But do NOT use sampling to conceal model failures.
+
+Greedy generation MUST produce coherent answers first.
+
+Verify:
+
+EOS_ID
+PAD_ID
+attention_mask
+stopping condition
+max_new_tokens
+
+==================================================
+OPERATION 19 — STRUCTURAL-TOKEN LEAKAGE METRIC
+==================================================
+
+Add:
+
+structural_token_leakage_rate
+
+Count answers containing:
+
+<QUESTION>
+<ANSWER>
+<ANALYSIS>
+</question>
+</answer>
+</analysis>
+
+Target:
+
+0%
+
+If any appear in final consumer output:
+
+FAIL.
+
+==================================================
+OPERATION 20 — KNOWN VALUE REFERENCE METRIC
+==================================================
+
+Add a dedicated metric:
+
+known_value_reference_accuracy
+
+For every test case where a concrete value is present in context:
+
+Check whether the answer correctly references the required value.
+
+Examples:
+
+Context:
+renewal_cost = ₹999
+
+Answer must reference:
+999
+
+Context:
+additional_cost = ₹79
+
+Answer must reference:
+79
+
+Context:
+trial_period = 7 days
+
+Answer must reference:
+7 days
+
+Target:
+
+>= 0.90
+
+This metric is mandatory.
+
+==================================================
+OPERATION 21 — UNKNOWN PRESERVATION METRIC
+==================================================
+
+Add:
+
+unknown_value_preservation_rate
+
+When:
+
+renewal_cost = UNKNOWN
+
+the answer must NOT invent a value.
+
+Target:
+
+>= 0.95
+
+==================================================
+OPERATION 22 — GROUNDING
+==================================================
+
+Grounding means:
+
+the answer is factually consistent with the supplied analysis context.
+
+It does NOT mean:
+
+every generated word must appear in the context.
+
+Do NOT implement lexical copying penalties.
+
+Natural explanation words are allowed.
+
+Example:
+
+Context:
+renewal_cost = ₹999
+
+Answer:
+
+"You may face a ₹999 recurring charge if the subscription renews."
+
+This is grounded even though words like "may", "face", "charge", and "if" are not literally present in the context.
+
+==================================================
+OPERATION 23 — LEGAL SAFETY
+==================================================
+
+Train and test legal questions.
+
+Examples:
+
+"Is this definitely illegal?"
+
+"Did the company break the law?"
+
+"Can I sue them?"
+
+"Is this legally prohibited?"
+
+Expected model behavior:
+
+- explain what the analysis detected
+- preserve uncertainty
+- avoid definitive legal conclusions
+
+For example:
+
+"The analysis indicates a potential consumer risk, but it does not establish a legal violation."
+
+Target:
+
+legal_overclaim_rate = 0
+
+==================================================
+OPERATION 24 — MULTI-TURN
+==================================================
+
+Create multi-turn training examples.
+
+Example:
+
+User:
+Why was this flagged?
+
+Assistant:
+The page shows a potential subscription risk because...
+
+User:
+How much could I be charged?
+
+Assistant:
+You may face a ₹999 monthly renewal charge.
+
+The second answer must still use the CURRENT analysis context.
+
+Include 20–30% multi-turn records.
+
+==================================================
+OPERATION 25 — UNSEEN TEST SET
+==================================================
+
+Create at least:
+
+300 unseen questions.
+
+Do NOT use mechanically duplicated training questions.
+
+Split:
+
+- 70% normal arbitrary questions
+- 10% value-grounding
+- 10% missing-information
+- 5% context-switch
+- 5% legal-safety
+
+Also maintain:
+
+50 golden questions.
+
+==================================================
+OPERATION 26 — ADVERSARIAL TESTS
+==================================================
+
+Test:
+
+A. Same question, different renewal prices
+
+₹499
+₹999
+₹1499
+
+B. Same pattern, different consequences
+
+C. Same price, different patterns
+
+D. UNKNOWN versus known
+
+E. Clear versus risky
+
+F. LOW versus HIGH risk
+
+G. Subscription versus cancellation
+
+H. Product A versus Product B
+
+I. Context A → Context B → Context A
+
+The answer must follow the current context.
+
+==================================================
+OPERATION 27 — CONTEXT SWITCH LEAKAGE
+==================================================
+
+Run:
+
+Context A:
+renewal_cost = ₹999
+
+Question:
+How much will I pay?
+
+Then:
+
+Context B:
+renewal_cost = ₹499
+
+Same question.
+
+Then:
+
+Context C:
+renewal_cost = UNKNOWN
+
+Same question.
+
+Expected:
+
+A → 999
+B → 499
+C → UNKNOWN
+
+No cross-context leakage.
+
+==================================================
+OPERATION 28 — EVALUATION METRICS
+==================================================
+
+Report:
+
+1. empty_output_rate
+2. severe_repetition_rate
+3. meaningful_answer_rate
+4. semantic_acceptance_rate
+5. context_grounding_rate
+6. eos_completion_rate
+7. hallucination_rate
+8. legal_overclaim_rate
+9. structural_token_leakage_rate
+10. known_value_reference_accuracy
+11. unknown_value_preservation_rate
+12. context_switch_accuracy
+13. multi_turn_accuracy
+
+==================================================
+QUALITY GATE
+==================================================
+
+Required:
+
+empty_output_rate = 0
+
+severe_repetition_rate < 0.10
+
+meaningful_answer_rate >= 0.90
+
+semantic_acceptance_rate >= 0.90
+
+context_grounding_rate >= 0.90
+
+eos_completion_rate >= 0.90
+
+hallucination_rate < 0.05
+
+legal_overclaim_rate = 0
+
+structural_token_leakage_rate = 0
+
+known_value_reference_accuracy >= 0.90
+
+unknown_value_preservation_rate >= 0.95
+
+context_switch_accuracy >= 0.90
+
+multi_turn_accuracy >= 0.80
+
+training_loss_finite = true
+
+validation_loss_finite = true
+
+checkpoint_finite = true
+
+external_api_usage = false
+
+pretrained_weights = false
+
+==================================================
+IMPORTANT EVALUATION RULE
+==================================================
+
+Do NOT count:
+
+"<QUESTION> blah blah..."
+
+as a meaningful answer merely because:
+
+len(output) > 10
+
+Meaningfulness must require:
+
+- natural-language structure
+- answer relevance
+- no structural-token leakage
+- semantic relation to question
+- grounded facts
+
+Fix the evaluator if necessary.
+
+Do not artificially make metrics pass.
+
+==================================================
+CHECKPOINT SAFETY
+==================================================
+
+Never overwrite:
+
+task-322/best.pt
+
+Save Phase 4.5 checkpoints separately:
+
+artifacts/clauseguard_llm_v0_1_phase4_5/
+
+Keep:
+
+best.pt
+epoch checkpoints
+tokenizer
+config
+training metrics
+evaluation results
+SHA-256
+
+Every checkpoint must pass:
+
+NaN check
+Inf check
+architecture check
+parameter count check
+tokenizer compatibility check
+
+==================================================
+/ask INTEGRATION
+==================================================
+
+DO NOT integrate into /ask during Phase 4.5.
+
+Even if the model looks better, integration remains blocked until the final quality gate passes.
+
+==================================================
+FINAL DELIVERABLES
+==================================================
+
+Create:
+
+phase4_5_corpus_report.md
+
+phase4_5_training_report.md
+
+phase4_5_grounding_report.md
+
+phase4_5_evaluation_report.md
+
+phase4_5_quality_gate.md
+
+phase4_5_report.md
+
+Also save machine-readable:
+
+phase4_5_metrics.json
+
+phase4_5_checkpoint_validation.json
+
+phase4_5_generation_samples.json
+
+==================================================
+FINAL REPORT MUST SHOW
+==================================================
+
+1. Dataset size
+2. Train/validation/test split
+3. Model parameter count
+4. Training duration
+5. Epochs
+6. Train loss
+7. Validation loss
+8. EOS rate
+9. Semantic rate
+10. Grounding rate
+11. Known-value reference accuracy
+12. UNKNOWN preservation
+13. Structural-token leakage
+14. Context-switch accuracy
+15. Hallucination
+16. Legal overclaim
+17. Multi-turn accuracy
+18. Checkpoint SHA-256
+19. Whether task-322 remains untouched
+20. Final quality-gate decision
+
+==================================================
+FINAL STATUS RULE
+==================================================
+
+If ALL gates pass:
+
+READY FOR PHASE 4.6 /ask INTEGRATION
+
+Otherwise:
+
+NOT READY
+
+Do not mark READY because:
+
+- output is non-empty
+- EOS exists
+- loss is low
+- output contains ClauseGuard vocabulary
+
+The model must actually answer questions coherently and use the current analysis context.
+
+==================================================
+ABSOLUTE RULES
+==================================================
+
+NO external inference APIs.
+
+NO pretrained models.
+
+NO pretrained weights.
+
+NO external LLM.
+
+NO modification to EvidenceFusion.
+
+NO modification to ConsumerRiskGate.
+
+NO modification to risk thresholds.
+
+NO fabricated metrics.
+
+NO fake grounding.
+
+NO lexical-copying grounding loss.
+
+NO blind 10-epoch training.
+
+NO overwriting task-322.
+
+NO /ask integration before gate passes.
+
+If any unexpected failure occurs:
+
+STOP → diagnose → report → fix → rerun the smallest relevant test.
+
+Do not silently work around failures.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-14T11:57:03+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\rog\Downloads\clauseguard_zipped\clauseguard\artifacts\clauseguard_llm_v0_1_phase4_4\ask_integration_report.md (LANGUAGE_MARKDOWN)
+Cursor is on line: 142
+Other open documents:
+- c:\Users\rog\Downloads\clauseguard_zipped\clauseguard\artifacts\clauseguard_llm_v0_1_phase4_4\ask_integration_report.md (LANGUAGE_MARKDOWN)
+- c:\Users\rog\Downloads\clauseguard_zipped\clauseguard\artifacts\clauseguard_llm_v0_1_phase4_4\nan_gate_regression_report.md (LANGUAGE_MARKDOWN)
+- c:\Users\rog\Downloads\clauseguard_zipped\clauseguard\artifacts\clauseguard_llm_v0_1_phase4_4\checkpoint_verification_report.md (LANGUAGE_MARKDOWN)
+- c:\Users\rog\Downloads\clauseguard_zipped\clauseguard\backend\clauseguard_llm\phase4_training.py (LANGUAGE_PYTHON)
+- c:\Users\rog\Downloads\clauseguard_zipped\compute_hn_accuracy.py (LANGUAGE_PYTHON)
+</ADDITIONAL_METADATA>

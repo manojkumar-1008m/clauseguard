@@ -259,11 +259,32 @@ class TemporalRelationshipItem(BaseModel):
     reason: str = Field(..., description="Explainable description of what changed across the interaction")
 
 
+class ScoreBreakdown(BaseModel):
+    """Explainable components of the canonical deterministic risk score."""
+    weak_contribution: float = 0.0
+    moderate_contribution: float = 0.0
+    strong_contribution: float = 0.0
+    dom_contribution: float = 0.0
+    dom_cap: float = 3.5
+    behavior_contribution: float = 0.0
+    behavior_cap: float = 3.5
+    corroboration_bonus: float = 0.0
+    multi_source_bonus: float = 0.0
+    contradiction_escalation: float = 0.0
+    conflict_penalty: float = 0.0
+    pre_ceiling_score: float = 0.0
+    final_score: float = 0.0
+    global_score_ceiling: float = 10.0
+    ceiling_applied: bool = False
+    evidence_sources: List[str] = Field(default_factory=list)
+
+
 class EvidenceFusionResponse(BaseModel):
     """Unified response payload from Evidence Fusion Engine."""
     source: str = Field(default="evidence_fusion", description="Source analyzer identifier")
     risk_level: str = Field(default="LOW", description="Deterministic risk level: 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL'")
     risk_score: float = Field(default=0.0, description="Deterministic risk score")
+    score_breakdown: ScoreBreakdown = Field(default_factory=ScoreBreakdown, description="Explainable components of risk_score")
     confidence: Optional[float] = Field(None, description="Evidence-backed confidence between 0.0 and 1.0")
     potential_pattern: Optional[str] = Field(None, description="Primary detected pattern if corroborated or strongly indicated")
     dark_pattern: Optional[str] = Field(None, description="Dark pattern label if warranted; null for pure financial signals")
@@ -301,7 +322,6 @@ class EvidenceFusionResponse(BaseModel):
     transaction_state: Optional[Dict[str, Any]] = Field(None, description="Deterministic transaction state and continuity ledger (Phase B5.6)")
     # Phase B5.7: Intelligence Analysis Layer fields
     intelligence_analysis: Optional[IntelligenceAnalysisResponse] = Field(None, description="Structured intelligence analysis output (Phase B5.7)")
-    risk_analysis: Optional[Dict[str, Any]] = None
 
 
 class PatternAssessment(BaseModel):

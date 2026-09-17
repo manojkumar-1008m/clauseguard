@@ -1,0 +1,15 @@
+{
+  "vocab_size": 512,
+  "context_length": 256,
+  "embedding_dim": 64,
+  "num_layers": 1,
+  "num_heads": 4,
+  "feedforward_dim": 256,
+  "dropout": 0.1,
+  "batch_size": 128,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 0.0003,
+  "device": "cpu",
+  "tie_weights": true,
+  "domain_name": "ClauseGuard-LLM-v0.1"
+}

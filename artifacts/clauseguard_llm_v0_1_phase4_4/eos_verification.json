@@ -1,0 +1,117 @@
+{
+  "eos_completion_rate": 1.0,
+  "eos_rate_passes_gate": true,
+  "sample_count": 10,
+  "records": [
+    {
+      "question": "What consequence could I face?",
+      "answer": "<QUESTION> is initial immediate cannot consumer clauseguard urges <QUESTION> 5 trial synthetic </analysis> . false : con",
+      "new_token_count": 20,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "What happened during checkout?",
+      "answer": "<QUESTION> is confidence <ANSWER> consumer evidence <QUESTION> risk context independent evaluation proceed <QUESTION> tr",
+      "new_token_count": 18,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": false,
+      "ans_end_in_raw_ids": true,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "Why is there no actionable risk?",
+      "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case 2 to drip scenario social <QUESTION> ",
+      "new_token_count": 62,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "What should I do about cancellation?",
+      "answer": "<QUESTION> is is before legal cancellation <QUESTION> clauseguard subs . false liability route to up <ANSWER> consumer f",
+      "new_token_count": 41,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "Why is this only a potential signal?",
+      "answer": "<QUESTION> appears clauseguard follow review high . false : confidence <ANSWER> consumer evidence . available observed s",
+      "new_token_count": 32,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "What evidence was found?",
+      "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> null </QUESTION> scenario timing <QUESTION",
+      "new_token_count": 49,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "Could the renewal price be determined?",
+      "answer": "<QUESTION> it null service supported </QUESTION> actionable feel . mixed of <ANSWER> <question>",
+      "new_token_count": 14,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "What regulatory relevance was recorded?",
+      "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case steps full <QUESTION> clauseguard sub",
+      "new_token_count": 46,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "How much could this cost me?",
+      "answer": "<QUESTION> is initial immediate cannot consumer clauseguard urges <QUESTION> 5 trial synthetic </analysis> . false : con",
+      "new_token_count": 20,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    },
+    {
+      "question": "Why was this flagged?",
+      "answer": "<QUESTION> supported dark evidence <question>",
+      "new_token_count": 6,
+      "at_max_new_tokens": false,
+      "eos_in_raw_ids": true,
+      "ans_end_in_raw_ids": false,
+      "eos_completed_raw": true,
+      "eos_completed_flag": true,
+      "flags_agree": true
+    }
+  ]
+}

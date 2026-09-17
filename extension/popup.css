@@ -1,8 +1,9 @@
-/* popup.css – ClauseGuard Extension Styling (Phase 9.0) */
+/* popup.css – ClauseGuard Extension Styling */
 
 :root {
   --bg-dark: hsl(222, 24%, 10%);
   --bg-card: hsl(222, 20%, 15%);
+  --bg-surface: hsl(222, 22%, 12%);
   --bg-hover: hsl(222, 20%, 20%);
   --border-subtle: hsl(222, 16%, 22%);
   --border-focus: hsl(212, 100%, 60%);
@@ -32,7 +33,7 @@ body {
   background: var(--bg-dark);
   color: var(--text-main);
   width: 360px;
-  max-height: 560px;
+  max-height: 600px;
   overflow-y: auto;
 }
 
@@ -58,6 +59,7 @@ body::-webkit-scrollbar-thumb {
 /* Header */
 .header {
   text-align: center;
+  position: relative;
 }
 
 .brand {
@@ -85,6 +87,61 @@ body::-webkit-scrollbar-thumb {
   margin: 0.2rem 0 0 0;
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+/* Header Risk Badge */
+.header-risk-badge {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+}
+
+.header-risk-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.header-risk-score {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.header-risk-level {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.header-risk-badge.critical .header-risk-level,
+.header-risk-badge.actionable_risk .header-risk-level {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.header-risk-badge.high .header-risk-level {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.header-risk-badge.medium .header-risk-level,
+.header-risk-badge.corroborated_signal .header-risk-level {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.header-risk-badge.low .header-risk-level,
+.header-risk-badge.potential_signal .header-risk-level,
+.header-risk-badge.clear .header-risk-level {
+  background: var(--success-bg);
+  color: var(--success);
 }
 
 /* Action Button */
@@ -124,16 +181,73 @@ body::-webkit-scrollbar-thumb {
   background: var(--bg-hover);
   border: 1px solid var(--border-subtle);
   color: var(--text-main);
-  padding: 0.4rem 0.85rem;
+  padding: 0.45rem 0.85rem;
   border-radius: 0.35rem;
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .btn-secondary:hover {
   background: hsl(222, 20%, 25%);
+  border-color: var(--border-focus);
+}
+
+/* Journey Monitor Card */
+.journey-monitor {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.journey-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-subtle);
+}
+
+.monitor-status {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 0.1rem 0.45rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.monitor-status::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+.journey-page {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-main);
+  word-break: break-all;
+}
+
+.journey-meta {
+  margin: 0;
+  font-size: 0.74rem;
+  color: var(--text-muted);
 }
 
 /* Loading Status Card */
@@ -206,6 +320,7 @@ body::-webkit-scrollbar-thumb {
 
 .status-icon {
   font-size: 1.4rem;
+  line-height: 1;
 }
 
 .risk-badge {
@@ -280,6 +395,66 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-main);
 }
 
+/* Score Breakdown Section */
+.score-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.score-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.risk-score-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.score-breakdown-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.score-breakdown-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.score-breakdown-group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.score-breakdown-group h4 {
+  margin: 0 0 0.2rem 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.score-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.score-breakdown-row strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
 /* Recommended Action Highlight Box */
 .action-text {
   background: hsla(212, 100%, 60%, 0.08);
@@ -324,7 +499,7 @@ body::-webkit-scrollbar-thumb {
 .accordion-content {
   margin-top: 0.4rem;
   padding: 0.5rem;
-  background: hsl(222, 22%, 12%);
+  background: var(--bg-surface);
   border-radius: 0.35rem;
   font-size: 0.78rem;
 }
@@ -371,6 +546,13 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-muted);
 }
 
+/* Financial Metrics */
+.financial-metrics {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
 /* Disclaimer */
 .result-disclaimer {
   margin: 0.4rem 0 0 0;
@@ -400,6 +582,150 @@ body::-webkit-scrollbar-thumb {
   color: hsl(0, 100%, 90%);
   font-size: 0.84rem;
   line-height: 1.4;
+}
+
+/* Ask ClauseGuard Section */
+.ask-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ask-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ask-heading h2 {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-main);
+}
+
+.ask-heading p {
+  margin: 0.15rem 0 0 0;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.ask-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.quick-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.quick-question {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.quick-question:hover {
+  background: var(--bg-hover);
+  color: var(--text-main);
+  border-color: var(--border-focus);
+}
+
+.ask-conversation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.ask-message {
+  margin: 0;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.4rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.ask-message.question {
+  align-self: flex-end;
+  background: hsla(212, 100%, 60%, 0.18);
+  border: 1px solid hsla(212, 100%, 60%, 0.3);
+  color: var(--text-main);
+  max-width: 85%;
+}
+
+.ask-message.answer {
+  align-self: flex-start;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  max-width: 90%;
+}
+
+.ask-form {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.ask-form input {
+  flex: 1;
+  background: var(--bg-dark);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.35rem;
+  padding: 0.45rem 0.6rem;
+  color: var(--text-main);
+  font-size: 0.8rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.ask-form input:focus {
+  border-color: var(--border-focus);
+}
+
+.ask-form input::placeholder {
+  color: var(--text-subtle);
+}
+
+.ask-error {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--danger);
+}
+
+/* Accessibility & Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .hidden {

@@ -1,0 +1,1639 @@
+{
+  "results": [
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CLEAR",
+        "risk_score": 1.0,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "CLEAR_RENEWAL",
+        "detected_patterns": [
+          "CLEAR_RENEWAL"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-CLEA",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "CLEAR_RENEWAL",
+            "description": "The renewal amount and date are clearly disclosed (during the cancellation route)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "No hidden renewal consequence is established; timing is during the cancellation route"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what does that mean for me? (follow-up case 2561)",
+      "answer": "The recorded observation is: The renewal amount and date are clearly disclosed (during the cancellation route). This addresses the evidence question under a not supported finding. The answer depends on the journey details recorded here.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "CLEAR_RENEWAL:NOT_SUPPORTED:EVIDENCE:3:3",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed CLEAR_RENEWAL based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ question evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.125,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 8.0,
+        "unique_token_ratio": 0.875,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "LOW",
+        "risk_score": 0.0,
+        "gate_decision": "CLEAR",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": false,
+        "primary_pattern": null,
+        "detected_patterns": [],
+        "evidence": [
+          {
+            "evidence_id": "E-CONF",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "CONFIRM_SHAMING",
+            "description": "The decline choice uses guilt-based wording (near the payment decision)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Proceed only after confirming the clear terms.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up case 2420)",
+      "answer": "The disclosure appears clear and transparent in the subscription flow (near the payment decision). No actionable dark pattern was identified. This addresses the clear case question under a clear finding. This is the consumer-facing reading of the supplied record.",
+      "intent": "FOLLOW_UP",
+      "status": "CLEAR",
+      "provenance": "synthetic_phase4",
+      "family": "CONFIRM_SHAMING:CLEAR:CLEAR_CASE:2:4",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed the flow based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case steps full <QUESTION> case 2 to drip <ANSWER> cost false liability route to up <ANSWER> consumer evidence . risk context : synthetic feel . false : confidence <ANSWER> <QUESTION> in near",
+      "eos_completed": false,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.275,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 40.0,
+        "unique_token_ratio": 0.725,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "checkout",
+        "decision_context": "checkout decision",
+        "risk_level": "UNKNOWN",
+        "risk_score": 1.0,
+        "gate_decision": "UNKNOWN",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "MIXED_EVIDENCE",
+        "detected_patterns": [
+          "MIXED_EVIDENCE"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-MIXE",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "MIXED_EVIDENCE",
+            "description": "Signals conflict and the journey context is incomplete (after the trial information appeared)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "checkout",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The consumer impact cannot yet be determined; timing is after the trial information appeared"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up case 2500)",
+      "answer": "For this checkout journey (after the trial information appeared), review the evidence and terms before continuing. This addresses the recommendation question under a unknown finding. No fact outside this analysis is being assumed.",
+      "intent": "FOLLOW_UP",
+      "status": "UNKNOWN",
+      "provenance": "synthetic_phase4",
+      "family": "MIXED_EVIDENCE:UNKNOWN:RECOMMENDATION:4:2",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed MIXED_EVIDENCE based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ before true actionable reading true <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.2222222222222222,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 9.0,
+        "unique_token_ratio": 0.7777777777777778,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "checkout",
+        "decision_context": "checkout decision",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "FORCED_ACTION",
+        "detected_patterns": [
+          "FORCED_ACTION"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-FORC",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "FORCED_ACTION",
+            "description": "Registration is required before continuation (during the cancellation route)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "checkout",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The user may be unable to proceed without an unrelated action; timing is during the cancellation route"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What could I pay after that? (follow-up case 1443)",
+      "answer": "This is a consumer-risk assessment for forced action (during the cancellation route), not a formal legal determination of liability. This addresses the uncertainty question under a not supported finding. The answer depends on the journey details recorded here.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "FORCED_ACTION:NOT_SUPPORTED:UNCERTAINTY:3:3",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed FORCED_ACTION based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ before true actionable reading true <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.2222222222222222,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 9.0,
+        "unique_token_ratio": 0.7777777777777778,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "cancellation",
+        "decision_context": "cancellation journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "OBSTRUCTION",
+        "detected_patterns": [
+          "OBSTRUCTION"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-OBST",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "OBSTRUCTION",
+            "description": "Cancellation requires several retention steps (after the trial information appeared)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "cancellation",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Leaving the service may require extra effort; timing is after the trial information appeared"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": "multiple steps",
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What could I pay after that? (follow-up case 2751)",
+      "answer": "This is a consumer-risk assessment for obstruction (after the trial information appeared), not a formal legal determination of liability. This addresses the regulatory question under a potential finding. Review the recorded context before drawing a stronger conclusion.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "OBSTRUCTION:POTENTIAL:REGULATORY:4:0",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed OBSTRUCTION based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> conclusion up <ANSWER> <answer> <QUESTION> view </ANSWER> <ANSWER> <answer> being clauseguard urges <QUESTION> _ question evidence determined affect <ANSWER> <answer>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.33333333333333337,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 21.0,
+        "unique_token_ratio": 0.6666666666666666,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CLEAR",
+        "risk_score": 1.0,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "CLEAR_RENEWAL",
+        "detected_patterns": [
+          "CLEAR_RENEWAL"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-CLEA",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "CLEAR_RENEWAL",
+            "description": "The renewal amount and date are clearly disclosed (near the payment decision)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "No hidden renewal consequence is established; timing is near the payment decision"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What could I pay after that? (follow-up case 611)",
+      "answer": "The disclosure appears clear and transparent in the subscription flow (near the payment decision). No actionable dark pattern was identified. This addresses the clear case question under a potential finding. Only the facts present in this analysis support the explanation.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "CLEAR_RENEWAL:POTENTIAL:CLEAR_CASE:2:8",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed CLEAR_RENEWAL based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ before several retention later based return <ANALYSIS> <QUESTION> it evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.125,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 16.0,
+        "unique_token_ratio": 0.875,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "checkout",
+        "decision_context": "checkout decision",
+        "risk_level": "UNKNOWN",
+        "risk_score": 1.0,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "MIXED_EVIDENCE",
+        "detected_patterns": [
+          "MIXED_EVIDENCE"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-MIXE",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "MIXED_EVIDENCE",
+            "description": "Signals conflict and the journey context is incomplete (when the secondary option was inspected)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "checkout",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The consumer impact cannot yet be determined; timing is when the secondary option was inspected"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up case 1344)",
+      "answer": "In the checkout flow (when the secondary option was inspected), ClauseGuard observed Signals conflict and the journey context is incomplete; effect: The consumer impact cannot yet be determined. This addresses the missing information question under a potential finding. This is the consumer-facing reading of the supplied record.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "MIXED_EVIDENCE:POTENTIAL:MISSING_INFORMATION:5:4",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed MIXED_EVIDENCE based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ synthetic </analysis> . false : confidence <ANSWER> <QUESTION> unintended incur charges clear review could or <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.1578947368421053,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 19.0,
+        "unique_token_ratio": 0.8421052631578947,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "checkout",
+        "decision_context": "checkout decision",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "DRIP_PRICING",
+        "detected_patterns": [
+          "DRIP_PRICING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-DRIP",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "DRIP_PRICING",
+            "description": "An additional \u20b979 fee appeared later in checkout (when the secondary option was inspected)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "checkout",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The final cost may exceed the initial price; timing is when the secondary option was inspected"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9578"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [
+          "late disclosure"
+        ],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what does that mean for me? (follow-up case 697)",
+      "answer": "In the checkout flow (when the secondary option was inspected), ClauseGuard observed An additional \u20b979 fee appeared later in checkout; effect: The final cost may exceed the initial price. This addresses the missing information question under a supported finding. Review the recorded context before drawing a stronger conclusion.",
+      "intent": "FOLLOW_UP",
+      "status": "SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "DRIP_PRICING:SUPPORTED:MISSING_INFORMATION:5:0",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed DRIP_PRICING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.25,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 4.0,
+        "unique_token_ratio": 0.75,
+        "meaningful_answer_rate": 0.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 0.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "basket",
+        "decision_context": "basket journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "BASKET_SNAKING",
+        "detected_patterns": [
+          "BASKET_SNAKING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-BASK",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "BASKET_SNAKING",
+            "description": "An optional extra is preselected in the basket (in the recorded mobile journey)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "basket",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The basket may include an unintended extra; timing is in the recorded mobile journey"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b949"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What should I check next? (follow-up case 2574)",
+      "answer": "The disclosure appears clear and transparent in the basket flow (in the recorded mobile journey). No actionable dark pattern was identified. This addresses the clear case question under a potential finding. The conclusion remains limited to the supplied ClauseGuard context.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "BASKET_SNAKING:POTENTIAL:CLEAR_CASE:6:9",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed BASKET_SNAKING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> view </ANSWER> <ANSWER> consumer fixture <QUESTION> 9 confirming synthetic </analysis> . false : confidence <ANSWER> cost immediate cannot consumer clauseguard evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.1923076923076923,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 26.0,
+        "unique_token_ratio": 0.8076923076923077,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "checkout",
+        "decision_context": "checkout decision",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "DRIP_PRICING",
+        "detected_patterns": [
+          "DRIP_PRICING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-DRIP",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "DRIP_PRICING",
+            "description": "An additional \u20b979 fee appeared later in checkout (after the user opened the basket)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "checkout",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The final cost may exceed the initial price; timing is after the user opened the basket"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9578"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [
+          "late disclosure"
+        ],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What should I check next? (follow-up case 790)",
+      "answer": "For this checkout journey (after the user opened the basket), review the evidence and terms before continuing. This addresses the recommendation question under a actionable risk finding. Review the recorded context before drawing a stronger conclusion.",
+      "intent": "FOLLOW_UP",
+      "status": "ACTIONABLE_RISK",
+      "provenance": "synthetic_phase4",
+      "family": "DRIP_PRICING:ACTIONABLE_RISK:RECOMMENDATION:1:0",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed DRIP_PRICING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ <ANSWER> consumer fixture <QUESTION> it synthetic </analysis> . is confidence <ANSWER> cost immediate cannot consumer clauseguard evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.21739130434782605,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 23.0,
+        "unique_token_ratio": 0.782608695652174,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "POTENTIAL",
+        "risk_score": 3.2,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "CONFIRM_SHAMING",
+        "detected_patterns": [
+          "CONFIRM_SHAMING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-CONF",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "CONFIRM_SHAMING",
+            "description": "The decline choice uses guilt-based wording (during the initial product view)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Refusal may feel socially costly; timing is during the initial product view"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What could I pay after that? (follow-up case 811)",
+      "answer": "In the subscription flow (during the initial product view), ClauseGuard observed The decline choice uses guilt-based wording; effect: Refusal may feel socially costly. This addresses the simple explanation question under a potential finding. No fact outside this analysis is being assumed.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "CONFIRM_SHAMING:POTENTIAL:SIMPLE_EXPLANATION:0:2",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed CONFIRM_SHAMING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> user low question evidence cancellation <QUESTION> conclusion up <ANSWER> <answer> <QUESTION> _ question evidence inspected <QUESTION> view </ANSWER> <ANSWER> consumer fixture <QUESTION> conclusion synthetic </analysis> . false : confidence <ANSWER> <answer> consumer evidence <QUESTION> risk context independent evaluation proceed",
+      "eos_completed": false,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.35,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 40.0,
+        "unique_token_ratio": 0.65,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "product",
+        "decision_context": "product journey",
+        "risk_level": "MEDIUM",
+        "risk_score": 5.0,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "FALSE_URGENCY",
+        "detected_patterns": [
+          "FALSE_URGENCY"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-FALS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "FALSE_URGENCY",
+            "description": "A countdown urges immediate action (during the cancellation route)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "product",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The user may commit before checking terms; timing is during the cancellation route"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up case 2064)",
+      "answer": "The recorded observation is: A countdown urges immediate action (during the cancellation route). This addresses the dom question under a actionable risk finding. The status describes analytical confidence, not legal liability.",
+      "intent": "FOLLOW_UP",
+      "status": "ACTIONABLE_RISK",
+      "provenance": "synthetic_phase4",
+      "family": "FALSE_URGENCY:ACTIONABLE_RISK:DOM:3:5",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed FALSE_URGENCY based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ before legal cancellation consumer evidence determined affect <ANSWER> . false : synthetic feel . false liability route to up near impact unable",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.08333333333333337,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 24.0,
+        "unique_token_ratio": 0.9166666666666666,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "product",
+        "decision_context": "product journey",
+        "risk_level": "MEDIUM",
+        "risk_score": 5.0,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "FALSE_URGENCY",
+        "detected_patterns": [
+          "FALSE_URGENCY"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-FALS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "FALSE_URGENCY",
+            "description": "A countdown urges immediate action (during the initial product view)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "product",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The user may commit before checking terms; timing is during the initial product view"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what does that mean for me? (follow-up case 337)",
+      "answer": "This is a consumer-risk assessment for false urgency (during the initial product view), not a formal legal determination of liability. This addresses the regulatory question under a actionable risk finding. Only the facts present in this analysis support the explanation.",
+      "intent": "FOLLOW_UP",
+      "status": "ACTIONABLE_RISK",
+      "provenance": "synthetic_phase4",
+      "family": "FALSE_URGENCY:ACTIONABLE_RISK:REGULATORY:0:8",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed FALSE_URGENCY based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ synthetic </analysis> . false : confidence <ANSWER> disclosure <QUESTION> pressure final cancellation consumer clauseguard urges <QUESTION> confirming <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.19047619047619047,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 21.0,
+        "unique_token_ratio": 0.8095238095238095,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "basket",
+        "decision_context": "basket journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "BASKET_SNAKING",
+        "detected_patterns": [
+          "BASKET_SNAKING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-BASK",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "BASKET_SNAKING",
+            "description": "An optional extra is preselected in the basket (in the recorded mobile journey)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "basket",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The basket may include an unintended extra; timing is in the recorded mobile journey"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b949"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what does that mean for me? (follow-up case 1553)",
+      "answer": "In the basket flow (in the recorded mobile journey), ClauseGuard observed An optional extra is preselected in the basket; effect: The basket may include an unintended extra. This addresses the follow up question under a potential finding. Review the recorded context before drawing a stronger conclusion.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "BASKET_SNAKING:POTENTIAL:FOLLOW_UP:6:0",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed BASKET_SNAKING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> user low question evidence cancellation <QUESTION> conclusion evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.23076923076923073,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 13.0,
+        "unique_token_ratio": 0.7692307692307693,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "basket",
+        "decision_context": "basket journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "BASKET_SNAKING",
+        "detected_patterns": [
+          "BASKET_SNAKING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-BASK",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "BASKET_SNAKING",
+            "description": "An optional extra is preselected in the basket (after the user opened the basket)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "basket",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The basket may include an unintended extra; timing is after the user opened the basket"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b949"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What could I pay after that? (follow-up case 2311)",
+      "answer": "The recorded observation is: An optional extra is preselected in the basket (after the user opened the basket). This addresses the evidence question under a potential finding. Review the recorded context before drawing a stronger conclusion.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "BASKET_SNAKING:POTENTIAL:EVIDENCE:1:0",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed BASKET_SNAKING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ before true actionable reading true <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.2222222222222222,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 9.0,
+        "unique_token_ratio": 0.7777777777777778,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "basket",
+        "decision_context": "basket journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "POTENTIAL",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "BASKET_SNAKING",
+        "detected_patterns": [
+          "BASKET_SNAKING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-BASK",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "BASKET_SNAKING",
+            "description": "An optional extra is preselected in the basket (in the recorded mobile journey)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "basket",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The basket may include an unintended extra; timing is in the recorded mobile journey"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b949"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up case 128)",
+      "answer": "The recorded observation is: An optional extra is preselected in the basket (in the recorded mobile journey). This addresses the evidence question under a potential finding. This is the consumer-facing reading of the supplied record.",
+      "intent": "FOLLOW_UP",
+      "status": "POTENTIAL",
+      "provenance": "synthetic_phase4",
+      "family": "BASKET_SNAKING:POTENTIAL:EVIDENCE:6:4",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed BASKET_SNAKING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> view </ANSWER> <ANSWER> consumer evidence . false : synthetic subs . false liability route to up <ANSWER> <QUESTION> null service supported </QUESTION> actionable feel . mixed of <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.23333333333333328,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 30.0,
+        "unique_token_ratio": 0.7666666666666667,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial (after the trial information appeared)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges; timing is after the trial information appeared"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what does that mean for me? (follow-up case 2769)",
+      "answer": "The recorded observation is: Recurring renewal follows a free trial (after the trial information appeared). This addresses the dom question under a supported finding. A different route or disclosure could change the assessment.",
+      "intent": "FOLLOW_UP",
+      "status": "SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:SUPPORTED:DOM:4:6",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed SUBSCRIPTION_TRAP based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> _ <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.25,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 4.0,
+        "unique_token_ratio": 0.75,
+        "meaningful_answer_rate": 0.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 0.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "basket",
+        "decision_context": "basket journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "UNKNOWN",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "BASKET_SNAKING",
+        "detected_patterns": [
+          "BASKET_SNAKING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-BASK",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "BASKET_SNAKING",
+            "description": "An optional extra is preselected in the basket (when the secondary option was inspected)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "basket",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The basket may include an unintended extra; timing is when the secondary option was inspected"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b949"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What could I pay after that? (follow-up case 1343)",
+      "answer": "The analysis identifies a unknown basket snaking signal (when the secondary option was inspected). This addresses the concept question under a unknown finding. The assessment should remain proportional to the evidence.",
+      "intent": "FOLLOW_UP",
+      "status": "UNKNOWN",
+      "provenance": "synthetic_phase4",
+      "family": "BASKET_SNAKING:UNKNOWN:CONCEPT:5:1",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed BASKET_SNAKING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> user low question evidence cancellation <QUESTION> conclusion evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.23076923076923073,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 13.0,
+        "unique_token_ratio": 0.7692307692307693,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "POTENTIAL",
+        "risk_score": 3.2,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "CONFIRM_SHAMING",
+        "detected_patterns": [
+          "CONFIRM_SHAMING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-CONF",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "CONFIRM_SHAMING",
+            "description": "The decline choice uses guilt-based wording (after the user opened the basket)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Refusal may feel socially costly; timing is after the user opened the basket"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What should I check next? (follow-up case 2190)",
+      "answer": "In the subscription flow (after the user opened the basket), ClauseGuard observed The decline choice uses guilt-based wording; effect: Refusal may feel socially costly. This addresses the simple explanation question under a not supported finding. The assessment should remain proportional to the evidence.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "CONFIRM_SHAMING:NOT_SUPPORTED:SIMPLE_EXPLANATION:1:1",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed CONFIRM_SHAMING based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> misdirection 1 to drip <ANSWER> cost false : synthetic subs . false : confidence <ANSWER> cost immediate cannot consumer clauseguard evidence determined affect <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.23076923076923073,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 26.0,
+        "unique_token_ratio": 0.7692307692307693,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "cancellation",
+        "decision_context": "cancellation journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "UNKNOWN",
+        "actionable": false,
+        "requires_context": true,
+        "risk_detected": true,
+        "primary_pattern": "OBSTRUCTION",
+        "detected_patterns": [
+          "OBSTRUCTION"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-OBST",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "OBSTRUCTION",
+            "description": "Cancellation requires several retention steps (during the initial product view)",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "cancellation",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Leaving the service may require extra effort; timing is during the initial product view"
+        ],
+        "financial_exposure": null,
+        "consumer_effort": "multiple steps",
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what does that mean for me? (follow-up case 1457)",
+      "answer": "In the cancellation flow (during the initial product view), ClauseGuard observed Cancellation requires several retention steps; effect: Leaving the service may require extra effort. This addresses the journey question under a unknown finding. The conclusion remains limited to the supplied ClauseGuard context.",
+      "intent": "FOLLOW_UP",
+      "status": "UNKNOWN",
+      "provenance": "synthetic_phase4",
+      "family": "OBSTRUCTION:UNKNOWN:JOURNEY:0:9",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard analyzed OBSTRUCTION based on recorded journey evidence."
+        }
+      ],
+      "generated_answer": "<QUESTION> conclusion up <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.19999999999999996,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 5.0,
+        "unique_token_ratio": 0.8,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 0.0
+      }
+    }
+  ],
+  "metrics": {
+    "empty_output_rate": 0.0,
+    "repetition_rate": 0.0,
+    "repeated_token_rate": 0.21710221414740866,
+    "repeated_ngram_rate": 0.0,
+    "eos_completion_rate": 0.9,
+    "average_answer_length": 18.0,
+    "unique_token_ratio": 0.7828977858525914,
+    "meaningful_answer_rate": 0.9,
+    "semantic_acceptance_rate": 1.0,
+    "unsupported_claim_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "legal_overclaim_rate": 0.0,
+    "context_grounding_rate": 0.85
+  }
+}

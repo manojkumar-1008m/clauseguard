@@ -1,0 +1,59 @@
+[
+  {
+    "question": "How does the system justify the assessment for the missing facts? (unseen query ",
+    "intent": "MISSING_INFORMATION",
+    "status": "NOT_SUPPORTED",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : an optional extra is : the basket after the basket effect : the user ",
+    "primary_pattern": "SOCIAL_PROOF",
+    "risk_level": "POTENTIAL",
+    "financial_exposure": null,
+    "grounding_score": 0.0,
+    "hallucination": false
+  },
+  {
+    "question": "What is the consumer-facing explanation for the pricing disclosure? (unseen quer",
+    "intent": "PRICE",
+    "status": "POTENTIAL",
+    "generated": "the product flow after a clear and transparent in the basket flow during the recorded observation is : an optional extra is : the secondary option was",
+    "primary_pattern": "DRIP_PRICING",
+    "risk_level": "HIGH",
+    "financial_exposure": {
+      "renewal_cost": "\u20b9578"
+    },
+    "grounding_score": 0.0,
+    "hallucination": false
+  },
+  {
+    "question": "What is the practical takeaway regarding the risk rating? (unseen query #136)",
+    "intent": "RISK",
+    "status": "ACTIONABLE_RISK",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : appears clear finding . this addresses the disclosure could change th",
+    "primary_pattern": "SCARCITY",
+    "risk_level": "POTENTIAL",
+    "financial_exposure": null,
+    "grounding_score": 0.0,
+    "hallucination": false
+  },
+  {
+    "question": "How does the system justify the assessment for the risk rating? (unseen query #1",
+    "intent": "RISK",
+    "status": "NOT_SUPPORTED",
+    "generated": "in the disclosure appears clear and transparent in the basket flow after the recorded observation is : an optional extra is : the user opened the tria",
+    "primary_pattern": "SOCIAL_PROOF",
+    "risk_level": "POTENTIAL",
+    "financial_exposure": null,
+    "grounding_score": 0.0,
+    "hallucination": false
+  },
+  {
+    "question": "Can the current findings answer my question about the customer consequences? (un",
+    "intent": "CONSEQUENCE",
+    "status": "NOT_SUPPORTED",
+    "generated": "in the disclosure appears clear and transparent in the recorded observation is : an optional extra is : the basket flow during the basket effect : the",
+    "primary_pattern": "SOCIAL_PROOF",
+    "risk_level": "POTENTIAL",
+    "financial_exposure": null,
+    "grounding_score": 0.0,
+    "hallucination": false
+  }
+]

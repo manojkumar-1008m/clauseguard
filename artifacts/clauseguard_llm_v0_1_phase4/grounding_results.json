@@ -1,0 +1,293 @@
+{
+  "results": [
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "How much could I be charged?",
+      "intent": "FINANCIAL",
+      "status": "ACTIONABLE_RISK",
+      "generated_answer": "<QUESTION> is initial immediate cannot consumer clauseguard follow review high . review addresses confidence <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.125,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 16.0,
+        "unique_token_ratio": 0.875,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 0.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "checkout",
+        "decision_context": "checkout decision",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "DRIP_PRICING",
+        "detected_patterns": [
+          "DRIP_PRICING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-DRIP",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "DRIP_PRICING",
+            "description": "An additional \u20b979 fee appeared later in checkout",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "checkout",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The final cost may exceed the initial price"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9578"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [
+          "late disclosure"
+        ],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Could I end up paying more?",
+      "intent": "PRICE",
+      "status": "ACTIONABLE_RISK",
+      "generated_answer": "<QUESTION> is null action <QUESTION> supported </QUESTION> actionable feel . mixed of <ANSWER> <question>",
+      "eos_completed": true,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.1428571428571429,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 1.0,
+        "average_answer_length": 14.0,
+        "unique_token_ratio": 0.8571428571428571,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 0.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "basket",
+        "decision_context": "basket journey",
+        "risk_level": "HIGH",
+        "risk_score": 7.2,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "BASKET_SNAKING",
+        "detected_patterns": [
+          "BASKET_SNAKING"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-BASK",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "BASKET_SNAKING",
+            "description": "An optional extra is preselected in the basket",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "basket",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "The basket may include an unintended extra"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b949"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What is the financial impact?",
+      "intent": "FINANCIAL",
+      "status": "ACTIONABLE_RISK",
+      "generated_answer": "<QUESTION> clauseguard subs . false : subscription before legal cancellation <QUESTION> supported 3 null review . 4 could did proceed or <ANSWER> consumer fixture <QUESTION> comparison synthetic </analysis> . false is confidence <ANSWER> <QUESTION> me leaving conflict <QUESTION> null service",
+      "eos_completed": false,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.22499999999999998,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 40.0,
+        "unique_token_ratio": 0.775,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 0.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "LOW",
+        "risk_score": 0.0,
+        "gate_decision": "CLEAR",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": false,
+        "primary_pattern": null,
+        "detected_patterns": [],
+        "evidence": [
+          {
+            "evidence_id": "E-CLEA",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "CLEAR_RENEWAL",
+            "description": "The renewal amount and date are clearly disclosed",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Proceed only after confirming the clear terms.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Why did you warn me?",
+      "intent": "CLEAR_CASE",
+      "status": "CLEAR",
+      "generated_answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case steps full <QUESTION> case 2 to up <ANSWER> consumer evidence . risk context : in appeared subscription before true actionable medium <ANSWER> consumer fixture <QUESTION> charge synthetic </analysis> . false :",
+      "eos_completed": false,
+      "metrics": {
+        "empty_output_rate": 0.0,
+        "repetition_rate": 0.0,
+        "repeated_token_rate": 0.275,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": 0.0,
+        "average_answer_length": 40.0,
+        "unique_token_ratio": 0.725,
+        "meaningful_answer_rate": 1.0,
+        "semantic_acceptance_rate": 1.0,
+        "unsupported_claim_rate": 0.0,
+        "hallucination_rate": 0.0,
+        "legal_overclaim_rate": 0.0,
+        "context_grounding_rate": 1.0
+      }
+    }
+  ],
+  "metrics": {
+    "empty_output_rate": 0.0,
+    "repetition_rate": 0.0,
+    "repeated_token_rate": 0.19196428571428573,
+    "repeated_ngram_rate": 0.0,
+    "eos_completion_rate": 0.5,
+    "average_answer_length": 27.5,
+    "unique_token_ratio": 0.8080357142857143,
+    "meaningful_answer_rate": 1.0,
+    "semantic_acceptance_rate": 0.25,
+    "unsupported_claim_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "legal_overclaim_rate": 0.0,
+    "context_grounding_rate": 1.0
+  }
+}

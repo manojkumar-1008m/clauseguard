@@ -439,3 +439,76 @@ def test_fix3_ensure_final_score_boundary_invariants():
     assert res_stacked.risk_score == 3.5  # DOM modality cap
     assert res_stacked.risk_score <= 10.0
     assert res_stacked.risk_level == "MEDIUM"
+
+
+def test_score_breakdown_reconstructs_canonical_score():
+    text_pred = PredictResponse(
+        prediction=1,
+        label="potential_dark_pattern",
+        confidence=0.90,
+        model_version="ClauseGuard-Text-V3",
+        pattern_category="Subscription Trap",
+        evidence="free trial renews monthly",
+    )
+    dom_item = {
+        "type": "action_visual_deemphasis",
+        "detected": True,
+        "strength": "moderate",
+        "decision_context": "subscription",
+    }
+    response = fusion_engine.fuse(EvidenceFusionRequest(text_prediction=text_pred, dom_evidence=[dom_item]))
+    breakdown = response.score_breakdown
+    reconstructed = (
+        breakdown.weak_contribution
+        + breakdown.moderate_contribution
+        + breakdown.strong_contribution
+        + breakdown.dom_contribution
+        + breakdown.behavior_contribution
+        + breakdown.corroboration_bonus
+        + breakdown.multi_source_bonus
+        + breakdown.contradiction_escalation
+        - breakdown.conflict_penalty
+    )
+    assert breakdown.dom_contribution <= breakdown.dom_cap
+    assert breakdown.behavior_contribution <= breakdown.behavior_cap
+    assert breakdown.final_score == response.risk_score
+    assert breakdown.pre_ceiling_score == reconstructed
+    assert response.risk_score == min(10.0, max(0.0, reconstructed))
+
+
+def test_score_breakdown_preserves_existing_weight_semantics_and_ceiling():
+    dom_item = {"type": "cancel_action_disabled", "detected": True, "strength": "strong", "decision_context": "cancellation"}
+    response = fusion_engine.fuse(EvidenceFusionRequest(dom_evidence=[dom_item]))
+    assert response.risk_score == 3.0
+    assert response.score_breakdown.dom_contribution == 3.0
+    assert response.score_breakdown.strong_contribution == 0.0
+
+    stacked = [
+        {"type": "action_visual_deemphasis", "strength": "strong", "detected": True, "element_ref": f"E_{index}"}
+        for index in range(10)
+    ]
+    capped = fusion_engine.fuse(EvidenceFusionRequest(dom_evidence=stacked))
+    assert capped.risk_score == 3.5
+    assert capped.score_breakdown.dom_contribution == 3.5
+    assert capped.score_breakdown.ceiling_applied is False
+
+
+def test_score_breakdown_exposes_preserved_cross_source_bonuses():
+    text_pred = PredictResponse(
+        prediction=1,
+        label="potential_dark_pattern",
+        confidence=0.90,
+        model_version="ClauseGuard-Text-V3",
+        pattern_category="Subscription Trap",
+        evidence="automatically renews monthly until cancelled",
+    )
+    dom_item = {
+        "type": "action_visual_deemphasis",
+        "detected": True,
+        "strength": "strong",
+        "decision_context": "cancellation",
+    }
+    response = fusion_engine.fuse(EvidenceFusionRequest(text_prediction=text_pred, dom_evidence=[dom_item]))
+    assert response.is_corroborated is True
+    assert response.score_breakdown.corroboration_bonus == 2.0
+    assert response.score_breakdown.multi_source_bonus == 1.0

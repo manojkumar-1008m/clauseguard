@@ -1,0 +1,68 @@
+[
+  {
+    "question_snippet": "What should I verify before paying? from a consumer perspect",
+    "full_token_count": 253,
+    "input_length": 252,
+    "label_length": 252,
+    "active_label_count": 45,
+    "ans_end_in_labels": true,
+    "eos_in_labels": true,
+    "ans_end_label_pos": 250,
+    "eos_label_pos": 251,
+    "last_3_labels": [
+      14,
+      92,
+      3
+    ],
+    "last_3_decoded": [
+      ".",
+      "</answer>",
+      "<eos>"
+    ],
+    "assertion_passed": true
+  },
+  {
+    "question_snippet": "Does the evidence show an ordinary flow? before I decide (pr",
+    "full_token_count": 224,
+    "input_length": 223,
+    "label_length": 223,
+    "active_label_count": 44,
+    "ans_end_in_labels": true,
+    "eos_in_labels": true,
+    "ans_end_label_pos": 221,
+    "eos_label_pos": 222,
+    "last_3_labels": [
+      14,
+      92,
+      3
+    ],
+    "last_3_decoded": [
+      ".",
+      "</answer>",
+      "<eos>"
+    ],
+    "assertion_passed": true
+  },
+  {
+    "question_snippet": "What remains unknown? at this point in the flow (subscriptio",
+    "full_token_count": 246,
+    "input_length": 245,
+    "label_length": 245,
+    "active_label_count": 45,
+    "ans_end_in_labels": true,
+    "eos_in_labels": true,
+    "ans_end_label_pos": 243,
+    "eos_label_pos": 244,
+    "last_3_labels": [
+      14,
+      92,
+      3
+    ],
+    "last_3_decoded": [
+      ".",
+      "</answer>",
+      "<eos>"
+    ],
+    "assertion_passed": true
+  }
+]

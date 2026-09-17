@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field
 
 from .evidence import EvidenceFusionRequest, EvidenceFusionResponse
+from .explanation_context import ExplanationContext
 
 
 class ConsumerExplanationFinding(BaseModel):
@@ -32,6 +33,7 @@ class ExplanationRequest(BaseModel):
     fusion_response: Optional[EvidenceFusionResponse] = Field(None, description="Pre-computed EvidenceFusionResponse")
     text: Optional[str] = Field(None, description="Raw input text to analyze across full pipeline")
     fusion_request: Optional[EvidenceFusionRequest] = Field(None, description="Raw fusion request payload")
+    explanation_context: Optional[ExplanationContext] = Field(None, description="Verified context from canonical risk analysis")
 
 
 class ExplanationResponse(BaseModel):

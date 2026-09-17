@@ -23,6 +23,7 @@ Q. Adversarial Scenarios (all 30 required contract tests)
 from __future__ import annotations
 
 import json
+from pathlib import Path
 import subprocess
 import uuid
 import pytest
@@ -70,12 +71,19 @@ from backend.services.journey_engine import (
 )
 
 fusion_engine = EvidenceFusionEngine()
+JOURNEY_MANAGER_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "DarkShield"
+    / "extension"
+    / "analyzer"
+    / "journeyManager.js"
+).as_posix()
 
 
 def run_node_journey_manager_code(js_code: str) -> dict:
     """Helper to run code against DarkShield/extension/analyzer/journeyManager.js in Node."""
     wrapper = f"""
-    const {{ JourneyManager, extractSiteIdentity, makeJourneyId }} = require('./DarkShield/extension/analyzer/journeyManager.js');
+    const {{ JourneyManager, extractSiteIdentity, makeJourneyId }} = require({json.dumps(JOURNEY_MANAGER_PATH)});
     {js_code}
     """
     res = subprocess.run(["node", "-e", wrapper], capture_output=True, text=True, check=True)

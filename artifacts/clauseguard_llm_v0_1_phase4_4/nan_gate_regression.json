@@ -1,0 +1,39 @@
+{
+  "title": "NaN Gate Regression \u2014 Root Cause Analysis",
+  "summary": "task-373 reported 'READY FOR /ask INTEGRATION' despite all training losses being NaN. This was a critical gate defect.",
+  "root_causes": [
+    {
+      "id": "RC-1",
+      "location": "train_and_evaluate_phase4 \u2014 checkpoint save condition",
+      "code": "if v_loss < best_val_loss: best_val_loss = v_loss",
+      "problem": "In IEEE 754, NaN < math.inf evaluates to False. So best_val_loss stayed math.inf throughout all NaN epochs. The best.pt checkpoint was never updated \u2014 it was either empty or from a cold model with random weights."
+    },
+    {
+      "id": "RC-2",
+      "location": "train_and_evaluate_phase4 \u2014 gate evaluation",
+      "code": "gate = {'eos_completion_rate': unseen_metrics.eos_completion_rate >= 0.90, ...}",
+      "problem": "When a NaN-weight model generates garbage tokens (e.g., '828 828 828...'), the evaluation functions still compute metrics from those outputs. Short repetitive outputs can accidentally satisfy most thresholds (e.g., repetition_rate threshold is < 0.10 over 200 samples, but short garbage outputs may have low n-gram repetition at the corpus level). No check was made that epoch training losses were finite before running the gate."
+    },
+    {
+      "id": "RC-3",
+      "location": "train_and_evaluate_phase4 \u2014 no checkpoint finiteness check",
+      "code": "(missing)",
+      "problem": "The pipeline never called validate_checkpoint() or equivalent before running evaluation on the loaded model. A NaN-weight model is indistinguishable from a valid model at this step."
+    },
+    {
+      "id": "RC-4",
+      "location": "train_and_evaluate_phase4 \u2014 micro-overfit gate not enforced",
+      "code": "if not micro_res['passed']: print('... but continuing')",
+      "problem": "When micro-overfit fails (NaN initial loss), the pipeline prints a warning but continues. This allowed a fundamentally broken training run to proceed to full training and gate evaluation."
+    }
+  ],
+  "fixes_applied": [
+    "training loop aborts on NaN loss (math.isfinite check each step)",
+    "gate includes training_loss_finite, validation_loss_finite, checkpoint_finite",
+    "gate includes micro_overfit_passed \u2014 a failed micro-overfit blocks gate passage",
+    "validate_checkpoint() is called before any integration or evaluation use",
+    "NaN comparisons replaced with explicit math.isfinite() calls throughout"
+  ],
+  "task_322_verdict": "VALID \u2014 tensors finite, loss converged, all gates passed",
+  "task_373_verdict": "INVALID \u2014 NaN weights throughout, must never be used"
+}

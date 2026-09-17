@@ -1,0 +1,50 @@
+{
+  "hallucination_rate": 0.0,
+  "gate_passed": true,
+  "hallucination_count": 0,
+  "sample_count": 6,
+  "results": [
+    {
+      "question": "What consequence could I face?",
+      "intent": "CONSEQUENCE",
+      "answer": "<QUESTION> it </ANSWER> <ANSWER> <question>",
+      "hallucination_detected": false,
+      "pattern_checked": "\u20b9\\s*\\d+|rs\\.?\\s*\\d+|\\brupee[s]?\\s*\\d+|\\b499\\b|\\b999\\b|\\b299\\"
+    },
+    {
+      "question": "How much could this cost me?",
+      "intent": "FINANCIAL",
+      "answer": "<QUESTION> is initial immediate cannot consumer clauseguard follow review high . false : confidence <ANSWER> <question>",
+      "hallucination_detected": false,
+      "pattern_checked": "\u20b9\\s*\\d+|rs\\.?\\s*\\d+|\\brupee[s]?\\s*\\d+|\\b499\\b|\\b999\\b|\\b299\\"
+    },
+    {
+      "question": "What is the renewal price?",
+      "intent": "PRICE",
+      "answer": "<QUESTION> is initial without misd timing <QUESTION> user pattern 7 <ANSWER> <question>",
+      "hallucination_detected": false,
+      "pattern_checked": "\u20b9\\s*\\d+|rs\\.?\\s*\\d+|\\brupee[s]?\\s*\\d+|\\b499\\b|\\b999\\b|\\b299\\"
+    },
+    {
+      "question": "What regulatory relevance was recorded?",
+      "intent": "REGULATORY",
+      "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case steps full <QUESTION> case warning customer amount cancellation <QUESTION> source scenario cancellation <QUESTION> su",
+      "hallucination_detected": false,
+      "pattern_checked": "\\bthe consumer protection act\\b|\\bsection \\d+\\b|\\bregulation"
+    },
+    {
+      "question": "What law applies here?",
+      "intent": "REGULATORY",
+      "answer": "<QUESTION> it context : in appeared <question>",
+      "hallucination_detected": false,
+      "pattern_checked": "\\bthe consumer protection act\\b|\\bsection \\d+\\b|\\bregulation"
+    },
+    {
+      "question": "Did the company violate any regulation?",
+      "intent": "REGULATORY",
+      "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> case steps full <QUESTION> appears clauseguard follow review high . available observed message appeared subscription confi",
+      "hallucination_detected": false,
+      "pattern_checked": "\\bthe consumer protection act\\b|\\bsection \\d+\\b|\\bregulation"
+    }
+  ]
+}

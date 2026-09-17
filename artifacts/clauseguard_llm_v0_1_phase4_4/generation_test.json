@@ -1,0 +1,222 @@
+[
+  {
+    "question_type": "CONSEQUENCE",
+    "question": "What consequence could I face?",
+    "answer": "<QUESTION> is initial immediate cannot consumer clauseguard urges <QUESTION> it synthetic </analysis> . false : confidence <ANSWER> disclosure <QUESTION> pressure final cancellation consumer clauseguard evidence determined affect <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 30,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "CONSEQUENCE",
+    "question": "What consequence could I face in the checkout?",
+    "answer": "<QUESTION> is initial without timing <QUESTION> user pattern 7 <ANSWER> consumer evidence <QUESTION> conclusion synthetic </analysis> . review addresses confidence <ANSWER> <QUESTION> appears </QUESTION> near an exceed actionable medium <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 32,
+    "pattern": "DRIP_PRICING",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "REASON",
+    "question": "Why was this flagged?",
+    "answer": "<QUESTION> is initial synthetic </analysis> . false : confidence <ANSWER> consumer evidence <QUESTION> risk context independent evaluation proceed <QUESTION> trap high . signals the limited case steps full <QUESTION> trap during </QUESTION> <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 35,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "REASON",
+    "question": "Why was this flagged by ClauseGuard?",
+    "answer": "<QUESTION> is is is subscription before legal cancellation <QUESTION> appears clauseguard follow review high . available observed message appeared subscription before case consequence subscription before true <ANSWER> cost false liability route to up <ANSWER> consumer fixture <QUESTION> charge synthetic </analysis> . false : confidence <ANSWER> consumer evidence <QUESTION> risk context independent evaluation proceed <QUESTION> trap high <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 59,
+    "pattern": "OBSTRUCTION",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "EVIDENCE",
+    "question": "What evidence supports this finding?",
+    "answer": "<QUESTION> risk context independent evaluation proceed <QUESTION> trap high . secondary",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 12,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "EVIDENCE",
+    "question": "What evidence supports this finding?",
+    "answer": "<QUESTION> _ misd timing <QUESTION> user pattern 7 <ANSWER> cost false liability route to up <ANSWER> consumer fixture <QUESTION> behavior synthetic </analysis> . false : confidence <ANSWER> <QUESTION> appears </QUESTION> near an exceed actionable medium <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 38,
+    "pattern": "DRIP_PRICING",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "FINANCIAL",
+    "question": "How much could this cost me?",
+    "answer": "<QUESTION> is confidence <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 6,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "FINANCIAL",
+    "question": "How much might I pay in total?",
+    "answer": "<QUESTION> is null service supported </QUESTION> actionable feel . mixed u20b9999 displayed timing <QUESTION> user pattern 7 <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 20,
+    "pattern": "DRIP_PRICING",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "CONCEPT",
+    "question": "Is this a dark pattern?",
+    "answer": "<QUESTION> 5 trial was <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 7,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "CONCEPT",
+    "question": "Is this a dark pattern?",
+    "answer": "<QUESTION> it 1 false : in appeared consumer evidence . risk context : in . 4 could did proceed <QUESTION> recorded when <QUESTION> after <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 27,
+    "pattern": "SOCIAL_PROOF",
+    "risk_level": "POTENTIAL"
+  },
+  {
+    "question_type": "JOURNEY",
+    "question": "What happened during the user journey?",
+    "answer": "<QUESTION> is confidence <ANSWER> consumer evidence <QUESTION> risk context independent evaluation proceed <QUESTION> trap high . secondary",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 18,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "JOURNEY",
+    "question": "What happened during the checkout journey?",
+    "answer": "<QUESTION> is confidence <ANSWER> consumer evidence <QUESTION> risk context : in appeared i timing <QUESTION> user pattern 7 review . 4 could or <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 26,
+    "pattern": "DRIP_PRICING",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "RISK",
+    "question": "Why is this considered risky?",
+    "answer": "<QUESTION> it </ANSWER> proceed <QUESTION> null service supported </QUESTION> actionable feel . mixed of <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 17,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "RISK",
+    "question": "Why is this considered risky?",
+    "answer": "<QUESTION> appears clauseguard follow review high . false : confidence <ANSWER> consumer evidence . 4 could did proceed <QUESTION> trap high . secondary",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 24,
+    "pattern": "FALSE_URGENCY",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "question_type": "RECOMMENDATION",
+    "question": "What should I do?",
+    "answer": "<QUESTION> is confidence <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 6,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "RECOMMENDATION",
+    "question": "What should I do before cancelling?",
+    "answer": "<QUESTION> is null </QUESTION> scenario cancellation <QUESTION> misdirection 1 disclosed context : in appeared consumer evidence . risk context : synthetic feel . false : confidence <ANSWER> cost immediate cannot consumer clauseguard evidence determined affect <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 38,
+    "pattern": "OBSTRUCTION",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "MISSING_INFORMATION",
+    "question": "Could the renewal price be determined?",
+    "answer": "<QUESTION> is initial immediate cannot consumer clauseguard follow review high . false : confidence <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 17,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "CRITICAL"
+  },
+  {
+    "question_type": "MISSING_INFORMATION",
+    "question": "Could the renewal price be determined?",
+    "answer": "<QUESTION> it up reason during evidence <QUESTION> risk context : </ANSWER> <ANSWER> cost false liability route to up <ANSWER> consumer evidence <QUESTION> conclusion synthetic </analysis> . false : confidence <ANSWER> <QUESTION> unintended incur charges clear review could or <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 41,
+    "pattern": "SUBSCRIPTION_TRAP",
+    "risk_level": "HIGH"
+  },
+  {
+    "question_type": "POTENTIAL_CASE",
+    "question": "Why is this only a potential signal?",
+    "answer": "<QUESTION> appears clauseguard follow review high . false : confidence <ANSWER> consumer clauseguard follow 4 could did proceed <QUESTION> trap high . secondary",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 24,
+    "pattern": "FALSE_URGENCY",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "question_type": "POTENTIAL_CASE",
+    "question": "Why is this only a potential signal?",
+    "answer": "<QUESTION> case consequence subscription before legal cancellation <QUESTION> clauseguard subs . false liability route to up <ANSWER> consumer evidence <QUESTION> risk context : synthetic case steps full <QUESTION> in <ANSWER> <question>",
+    "eos_completed": true,
+    "meaningful": true,
+    "severely_repetitive": false,
+    "token_count": 32,
+    "pattern": "SOCIAL_PROOF",
+    "risk_level": "POTENTIAL"
+  }
+]

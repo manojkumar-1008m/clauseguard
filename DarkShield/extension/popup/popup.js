@@ -154,7 +154,7 @@ function ensureRiskEnginePanel() {
 		</div>
 		<div class="risk-summary">
 			<span>Overall risk</span>
-			<strong><span data-risk-engine-score>Unavailable</span> / 100</strong>
+			<strong><span data-risk-engine-score>Unavailable</span> / 10</strong>
 		</div>
 		<ul data-risk-engine-components class="dataset-match-list"></ul>
 	`;
@@ -175,8 +175,8 @@ function renderRiskEngineUnavailable() {
 function renderRiskEngine(fusionResponse, overallRisk) {
 	const panel = ensureRiskEnginePanel();
 	if (!panel) return;
-	const score = overallRisk?.overall_score;
-	const level = overallRisk?.risk_level;
+	const score = fusionResponse?.risk_score;
+	const level = fusionResponse?.risk_level;
 	panel.querySelector("[data-risk-engine-score]").textContent = typeof score === "number" && Number.isFinite(score) ? score : "Unavailable";
 	const levelElement = panel.querySelector("[data-risk-engine-level]");
 	levelElement.textContent = level || "Unavailable";
@@ -189,13 +189,7 @@ function renderRiskEngine(fusionResponse, overallRisk) {
 		regulatory_risk: "Regulatory Risk",
 		historical_risk: "Historical Risk"
 	};
-	const componentScores = {
-		dark_pattern_risk: fusionResponse?.risk_analysis?.dark_pattern_risk?.risk_score,
-		financial_risk: fusionResponse?.risk_analysis?.financial_risk?.risk_score,
-		transparency_risk: fusionResponse?.risk_analysis?.transparency_risk?.risk_score,
-		regulatory_risk: fusionResponse?.risk_analysis?.regulatory_risk?.risk_score,
-		historical_risk: fusionResponse?.risk_analysis?.historical_risk?.risk_score
-	};
+	const componentScores = {};
 	const list = panel.querySelector("[data-risk-engine-components]");
 	list.replaceChildren();
 	Object.entries(componentLabels).forEach(([key, label]) => {
@@ -221,13 +215,24 @@ function buildFusionRequest(events, analysis, sessions, pageText = "", imageEvid
 	)[0];
 	const domSignals = latestSession?.diff_signals || [];
 	const behaviors = analysis?.behaviors || latestSession?.analysis?.behaviors || [];
+	const context = {
+		journey_id: latestSession?.journey_id || latestSession?.journeyId,
+		tab_id: latestSession?.tab_id || latestSession?.tabId,
+		product_id: latestSession?.product_id || latestSession?.productId,
+		route: latestSession?.route,
+		route_sequence: latestSession?.route_sequence || latestSession?.routeSequence,
+		decision_context: latestSession?.decision_context || latestSession?.decisionContext
+	};
 	const behaviorSignals = behaviors.map(behavior => ({
 		type: behavior.type,
 		detected: true,
 		strength: behavior.severity === "HIGH" ? "strong" : (behavior.severity === "MEDIUM" ? "moderate" : "weak"),
 		description: behavior.explanation || behavior.evidence || behavior.title || "",
-		decision_context: "cancellation",
-		metadata: { severity: behavior.severity }
+		decision_context: behavior.decision_context || behavior.context || context.decision_context || "unknown",
+		journey_id: context.journey_id,
+		route: behavior.route || context.route,
+		route_sequence: behavior.route_sequence || context.route_sequence,
+		metadata: { severity: behavior.severity, tab_id: context.tab_id, product_id: context.product_id }
 	}));
 
 	const fusionRequest = { text };
@@ -290,7 +295,7 @@ async function loadRiskEngineScore(events, analysis, sessions) {
 	const fusionRequest = buildFusionRequest(events, analysis, sessions, pageText, imageEvidence);
 	console.log("[ClauseGuard] Fusion request:", fusionRequest);
 	try {
-		const response = await fetch(FUSION_ENDPOINT, {
+		const response = await fetch(FUSION_ENDPOINT.replace("/fuse-evidence", "/analyze"), {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(fusionRequest)
@@ -298,8 +303,8 @@ async function loadRiskEngineScore(events, analysis, sessions) {
 		if (!response.ok) throw new Error(`Fusion request failed with HTTP ${response.status}`);
 		const fusionResponse = await response.json();
 		console.log("[ClauseGuard] Fusion response:", fusionResponse);
-		const overallRisk = fusionResponse?.risk_analysis?.overall_risk;
-		const score = overallRisk?.overall_score;
+		const overallRisk = fusionResponse?.consumer_gate || {};
+		const score = fusionResponse?.risk_score;
 		console.log("[ClauseGuard] Risk Engine score:", score);
 		if (typeof score !== "number" || !Number.isFinite(score)) {
 			renderRiskEngineUnavailable();

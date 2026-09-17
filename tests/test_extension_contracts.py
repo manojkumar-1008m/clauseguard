@@ -22,13 +22,13 @@ def test_manifest_contract():
         data = json.load(f)
 
     assert data.get("manifest_version") == 3
-    assert set(data.get("permissions")) == {"activeTab", "scripting"}
+    assert set(data.get("permissions")) == {"activeTab", "scripting", "storage"}
     assert data.get("host_permissions") == ["http://127.0.0.1:8000/*"]
 
     cs = data.get("content_scripts", [])
     assert len(cs) > 0
     assert cs[0].get("matches") == ["http://*/*", "https://*/*"]
-    assert cs[0].get("js") == ["content.js"]
+    assert cs[0].get("js") == ["analyzer/domDiff.js", "content.js"]
 
     action = data.get("action", {})
     assert action.get("default_popup") == "popup.html"
@@ -55,6 +55,10 @@ def test_popup_html_elements():
     ]
     for element_id in required_ids:
         assert f'id="{element_id}"' in html_content, f"Missing id={element_id} in popup.html"
+
+    assert 'id="askSection"' in html_content
+    assert 'id="askForm"' in html_content
+    assert 'id="askQuestion"' in html_content
 
 
 def test_popup_js_contract_and_safety():
@@ -85,6 +89,13 @@ def test_popup_js_contract_and_safety():
     assert "Chrome does not allow ClauseGuard to analyze this page." in code
     assert "ClauseGuard backend is unavailable. Please start the local analysis service." in code
     assert "ClauseGuard could not reach the analysis service." in code
+    assert "ASK_ENDPOINT" in code
+    assert "askQuestionAndRender" in code
+    assert "gate.actionable === true" in code
+    assert "X-Request-ID" in code
+    assert "context_generated_at" in code
+    assert "ASK_INVALID_RESPONSE" in code
+    assert "ASK_BACKEND_UNAVAILABLE" in code
 
 
 def test_content_js_contract():

@@ -19,6 +19,7 @@ from ..schemas.evidence import (
     EvidenceFusionResponse,
     EvidenceGroup,
     EvidenceItem,
+    ScoreBreakdown,
     FinancialImpact,
     TemporalRelationshipItem,
 )
@@ -32,7 +33,6 @@ from .temporal_engine import TemporalEngine
 from .text_predictor import TextPredictor
 from .intelligence_engine import IntelligenceEngine
 from .regulatory_engine import RegulatoryEngine
-from .risk_orchestrator import calculate_complete_risk
 from .evidence_adapters import (
     adapt_behavior_evidence,
     adapt_dom_evidence,
@@ -741,6 +741,9 @@ class EvidenceFusionEngine:
         # 8. Deterministic Scoring
         # Distinguish financial facts from dark-pattern evidence
         score = 0.0
+        weak_contribution = 0.0
+        moderate_contribution = 0.0
+        strong_contribution = 0.0
 
         # Filter out auxiliary evidence from scoring (Part 12)
         scoring_evidence = [e for e in evidence_items if not getattr(e, "is_auxiliary", False)]
@@ -751,8 +754,10 @@ class EvidenceFusionEngine:
         if text_items:
             if text_requires_context:
                 score += WEAK_SIGNAL_SCORE  # 1.0 (context-required penalty)
+                weak_contribution += WEAK_SIGNAL_SCORE
             else:
                 score += MODERATE_SIGNAL_SCORE  # 2.0
+                moderate_contribution += MODERATE_SIGNAL_SCORE
 
         # Price contribution (evaluated per distinct financial reality)
         has_renewal = any(e.type == "renewal_price" for e in scoring_evidence)
@@ -764,24 +769,33 @@ class EvidenceFusionEngine:
         # Related price supporting text (Section 17: RELATED PRICE supporting TEXT: +2)
         if not text_requires_context and has_text_sub and (has_renewal or has_free_trial):
             score += MODERATE_SIGNAL_SCORE  # +2.0
+            moderate_contribution += MODERATE_SIGNAL_SCORE
             if has_renewal and has_free_trial:
                 score += WEAK_SIGNAL_SCORE  # +1.0 (additional supporting financial fact: trial + renewal)
+                weak_contribution += WEAK_SIGNAL_SCORE
         elif not text_requires_context and has_text_drip and has_late_disc and has_add_cost:
             score += MODERATE_SIGNAL_SCORE  # +2.0
+            moderate_contribution += MODERATE_SIGNAL_SCORE
         elif not text_items or text_requires_context:
             # Pure financial signals without dark pattern text (or when text requires context)
             if has_renewal and has_free_trial:
                 score += MODERATE_SIGNAL_SCORE  # 2.0 (financial notice: trial + renewal)
+                moderate_contribution += MODERATE_SIGNAL_SCORE
             elif has_renewal:
                 score += WEAK_SIGNAL_SCORE  # 1.0
+                weak_contribution += WEAK_SIGNAL_SCORE
             elif has_free_trial:
                 score += WEAK_SIGNAL_SCORE  # 1.0
+                weak_contribution += WEAK_SIGNAL_SCORE
             elif has_add_cost and has_late_disc:
                 score += MODERATE_SIGNAL_SCORE  # 2.0 (financial notice: late fee)
+                moderate_contribution += MODERATE_SIGNAL_SCORE
             elif has_add_cost:
                 score += WEAK_SIGNAL_SCORE  # 1.0
+                weak_contribution += WEAK_SIGNAL_SCORE
             elif has_p_change:
                 score += WEAK_SIGNAL_SCORE  # 1.0 (pure financial price change)
+                weak_contribution += WEAK_SIGNAL_SCORE
 
         # DOM contribution (Step 1, 4, 8: bounded, deterministic strength mapping)
         EVIDENCE_STRENGTH_WEIGHTS = {
@@ -809,9 +823,11 @@ class EvidenceFusionEngine:
 
         # Corroboration bonus: awarded ONLY when true semantic cross-source corroboration exists
         has_corroboration = any(g.corroborated for g in evidence_groups)
+        corroboration_bonus = CORROBORATION_BONUS if has_corroboration else 0.0
+        multi_source_bonus = MULTI_SOURCE_BONUS if has_corroboration else 0.0
         if has_corroboration:
-            score += CORROBORATION_BONUS  # +2.0
-            score += MULTI_SOURCE_BONUS   # +1.0
+            score += corroboration_bonus  # +2.0
+            score += multi_source_bonus   # +1.0
 
         # Contradiction escalation: bounded contribution representing consumer risk (Phase B5.3 Part H)
         contradiction_escalation = self.contradiction_engine.compute_contradiction_escalation(
@@ -822,11 +838,14 @@ class EvidenceFusionEngine:
 
         # Legacy conflict penalty for direct statement contradictions
         has_direct_statement_conflict = (has_text_free_claim and has_paid_trial) or (has_one_time_claim and has_recurring_price)
+        conflict_penalty = CONFLICT_PENALTY if has_direct_statement_conflict else 0.0
         if has_direct_statement_conflict:
-            score -= CONFLICT_PENALTY
+            score -= conflict_penalty
 
         # Global fusion score ceiling: enforce deterministic [0.0, 10.0] risk scale (Fix 3)
+        pre_ceiling_score = score
         score = min(10.0, max(0.0, score))
+        ceiling_applied = score != pre_ceiling_score
 
         # Evaluate strong non-text signals for source-scoped context (Step 7)
         has_strong_dom = any(e.source == "dom" and e.strength == "strong" and e.detected for e in scoring_evidence)
@@ -1039,6 +1058,17 @@ class EvidenceFusionEngine:
             primary_pattern = None
             score = 0.0
             risk_level = "LOW"
+            weak_contribution = 0.0
+            moderate_contribution = 0.0
+            strong_contribution = 0.0
+            dom_score = 0.0
+            beh_score = 0.0
+            corroboration_bonus = 0.0
+            multi_source_bonus = 0.0
+            contradiction_escalation = 0.0
+            conflict_penalty = 0.0
+            pre_ceiling_score = 0.0
+            ceiling_applied = False
         elif text_requires_context and not (has_strong_non_text or has_non_text_corrob or contradictions):
             risk_detected = False
         else:
@@ -1167,19 +1197,25 @@ class EvidenceFusionEngine:
             entity_type=request.entity_type,
             member_state=request.member_state,
         )
-        risk_analysis = calculate_complete_risk(
-            pattern_assessments=intelligence_analysis.pattern_assessments,
-            financial_impact=financial_impact,
-            consumer_consequences=intelligence_analysis.consumer_consequences,
-            price_analysis=price_analysis,
-            regulatory_response=regulatory_response,
-            historical_changes=intelligence_analysis.historical_changes,
-        )
-
         return EvidenceFusionResponse(
             source="evidence_fusion",
             risk_level=risk_level,
             risk_score=score,
+            score_breakdown=ScoreBreakdown(
+                weak_contribution=weak_contribution,
+                moderate_contribution=moderate_contribution,
+                strong_contribution=strong_contribution,
+                dom_contribution=dom_score,
+                behavior_contribution=beh_score,
+                corroboration_bonus=corroboration_bonus,
+                multi_source_bonus=multi_source_bonus,
+                contradiction_escalation=contradiction_escalation,
+                conflict_penalty=conflict_penalty,
+                pre_ceiling_score=pre_ceiling_score,
+                final_score=score,
+                ceiling_applied=ceiling_applied,
+                evidence_sources=sorted({e.source for e in scoring_evidence}),
+            ),
             confidence=confidence,
             potential_pattern=potential_pattern,
             dark_pattern=dark_pattern,
@@ -1216,5 +1252,4 @@ class EvidenceFusionEngine:
             } if any(getattr(e, "journey_stage", None) for e in all_input_observations) else None,
             # Phase B5.7 fields
             intelligence_analysis=intelligence_analysis,
-            risk_analysis=risk_analysis,
         )

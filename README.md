@@ -92,13 +92,13 @@ All tests should pass once the model file is present.
 
 ClauseGuard operates under a strict least-privilege, local-first security architecture:
 
-- **User-Initiated Only**: Text extraction and analysis occur strictly upon the user clicking "Analyze Page". No background tracking or continuous webpage scanning occurs.
-- **Local Transmission**: The extension communicates exclusively with the local backend at `http://127.0.0.1:8000/predict`. No remote servers, cloud infrastructure, or third-party analytics are contacted.
-- **Payload Restrictions**: Webpage text is normalized and capped at a maximum of 5,000 characters.
+- **Explicit Realtime Monitoring**: The extension records privacy-filtered page, route, interaction, and DOM-diff metadata for the active tab and may run debounced local `/analyze` requests after meaningful changes. The popup also supports user-triggered analysis.
+- **Local Transmission**: The extension communicates with the configured local backend at `http://127.0.0.1:8000/analyze` for the unified risk path. No remote servers, cloud infrastructure, or third-party analytics are contacted by the demo configuration.
+- **Payload Restrictions**: Page text is normalized and capped at a maximum of 20,000 characters; lifecycle events remain telemetry and are not scored evidence.
 - **Zero Sensitive Data Access**:
-  - No browsing history is collected or accessed (`tabs` permission is removed; only ephemeral `activeTab` is used).
+  - No browsing history is collected or accessed (`tabs` permission is absent; only active-tab access is used).
   - No cookies, sessions, or credentials are accessed or sent.
   - Form password values and payment-card details are never inspected.
-- **No Data Persistence**: The backend evaluates text in-memory and does not store or log webpage contents to disk or a database.
+- **Limited Local Persistence**: The extension stores bounded, sanitized journey/event metadata in browser storage for tab isolation and realtime continuity. The backend evaluates requests in-memory and does not store webpage contents to disk or a database.
 - **Safe DOM Rendering**: All extension UI rendering uses `textContent`. No dynamic evaluation (`eval`, `new Function`, `innerHTML`) is permitted.
 

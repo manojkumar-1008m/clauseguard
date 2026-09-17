@@ -1,0 +1,68 @@
+{
+  "special_token_ids": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<bos>": 2,
+    "<eos>": 3,
+    "<analysis>": 64,
+    "</analysis>": 85,
+    "<question>": 86,
+    "</question>": 87,
+    "<answer>": 88,
+    "</answer>": 92
+  },
+  "collision_free": true,
+  "roundtrip_ok": {
+    "<pad>": true,
+    "<unk>": true,
+    "<bos>": true,
+    "<eos>": true,
+    "<analysis>": true,
+    "</analysis>": true,
+    "<question>": true,
+    "</question>": true,
+    "<answer>": true,
+    "</answer>": true
+  },
+  "all_roundtrips_ok": true,
+  "per_record_traces": [
+    {
+      "full_token_count": 253,
+      "truncation_applied": false,
+      "boundary": 207,
+      "answer_loss_labels": 45,
+      "eos_in_ids": true,
+      "eos_in_labels": true,
+      "ans_end_in_ids": true,
+      "ans_end_in_labels": true,
+      "first_active_label_pos": 207,
+      "last_active_label_pos": 251
+    },
+    {
+      "full_token_count": 224,
+      "truncation_applied": false,
+      "boundary": 179,
+      "answer_loss_labels": 44,
+      "eos_in_ids": true,
+      "eos_in_labels": true,
+      "ans_end_in_ids": true,
+      "ans_end_in_labels": true,
+      "first_active_label_pos": 179,
+      "last_active_label_pos": 222
+    },
+    {
+      "full_token_count": 246,
+      "truncation_applied": false,
+      "boundary": 200,
+      "answer_loss_labels": 45,
+      "eos_in_ids": true,
+      "eos_in_labels": true,
+      "ans_end_in_ids": true,
+      "ans_end_in_labels": true,
+      "first_active_label_pos": 200,
+      "last_active_label_pos": 244
+    }
+  ],
+  "eos_always_in_labels": true,
+  "ans_end_always_in_labels": true
+}

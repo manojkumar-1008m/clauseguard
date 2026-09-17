@@ -1,0 +1,1639 @@
+{
+  "metrics": {
+    "empty_output_rate": 0.0,
+    "repetition_rate": 0.05,
+    "repeated_token_rate": 0.6553438362815843,
+    "repeated_ngram_rate": 0.003125,
+    "eos_completion_rate": 0.0,
+    "average_answer_length": 30.15,
+    "unique_token_ratio": 0.3446561637184157,
+    "meaningful_answer_rate": 0.95,
+    "semantic_acceptance_rate": 1.0,
+    "unsupported_claim_rate": 0.05,
+    "hallucination_rate": 0.05,
+    "legal_overclaim_rate": 0.0,
+    "context_grounding_rate": 0.65
+  },
+  "results": [
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What should I check next? (follow-up subscription_trap not_supported case 1)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:POTENTIAL_CASE:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer incur incur incur critical critical critical 27 27 27 design design design 14 14 14 exposed exposed exposed",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.65,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 20,
+        "unique_token_ratio": 0.35,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what could I pay? (follow-up subscription_trap not_supported case 2)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:RISK:1:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer unknown unknown unknown more more more incur incur incur relevant relevant relevant than than than recorded recorded recorded classification classification classification keep keep keep / / /",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6551724137931034,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 29,
+        "unique_token_ratio": 0.3448275862068966,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up subscription_trap not_supported case 3)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:JOURNEY:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer than than than incur incur incur could could could recorded recorded recorded system system system label label label visually",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6190476190476191,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 21,
+        "unique_token_ratio": 0.38095238095238093,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 4)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CONCEPT:1:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage result result result am am am 7 7 7 am am its its its than than than label label label classification classification classification keep keep keep fact fact fact keep keep need need need",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6904761904761905,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 42,
+        "unique_token_ratio": 0.30952380952380953,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 5)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CONCEPT:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage result result result fact fact fact establish establish establish how concept concept concept that that that variant variant variant visually visually visually",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6333333333333333,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 30,
+        "unique_token_ratio": 0.36666666666666664,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 6)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:REGULATORY:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage / / / configured configured configured observe observe observe field field field 17 17 17 exactly exactly exactly 17 17 happened happened happened 20 20 20 keep keep keep fact fact fact keep keep keeps keeps keeps",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6888888888888889,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 45,
+        "unique_token_ratio": 0.3111111111111111,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "What should I check next? (follow-up subscription_trap not_supported case 7)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CLEAR_CASE:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer incur incur incur critical critical critical training training training concept concept concept that that that variant variant variant visually",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6190476190476191,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 21,
+        "unique_token_ratio": 0.38095238095238093,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 8)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:COMPARISON:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage result result result am am am 7 7 7 am am its its its than than than label label label 28 28 28 keep keep keep fact fact fact keep keep need need need",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6904761904761905,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 42,
+        "unique_token_ratio": 0.30952380952380953,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what could I pay? (follow-up subscription_trap not_supported case 9)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:JOURNEY:1:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer 28 28 28 28 28 more more more of of of clear clear clear kind kind kind 16 16 16 classification classification classification keep keep keep fact fact fact keep keep keeps",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": true,
+        "repeated_token_rate": 0.6764705882352942,
+        "repeated_ngram_rate": 0.0625,
+        "eos_completion_rate": false,
+        "average_answer_length": 34,
+        "unique_token_ratio": 0.3235294117647059,
+        "meaningful_answer_rate": false,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 10)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CONCEPT:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage result result result clauseguard clauseguard clauseguard depends depends depends analytical analytical analytical behavior behavior behavior model model model yet yet yet problem problem problem incur",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6363636363636364,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 33,
+        "unique_token_ratio": 0.36363636363636365,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 11)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CONCEPT:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage result result result am am am 7 7 7 am am its its its than than than name name name",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6785714285714286,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 28,
+        "unique_token_ratio": 0.32142857142857145,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up subscription_trap not_supported case 12)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:RECOMMENDATION:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer concept concept concept incur incur incur exposed exposed exposed actually actually actually fact fact fact keep keep keep prove",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6190476190476191,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 21,
+        "unique_token_ratio": 0.38095238095238093,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up subscription_trap not_supported case 13)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:RECOMMENDATION:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer than than than incur incur incur critical critical critical training training training concept concept concept that that that variant variant variant visually",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.625,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 24,
+        "unique_token_ratio": 0.375,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 14)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CONCEPT:1:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage result result result clauseguard clauseguard clauseguard depends depends depends 12 12 12 9 9 9 17 17 17 exactly exactly exactly 17 17 happened happened happened 20 20 20 keep keep keep fact fact fact keep keep keeps keeps keeps",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6875,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 48,
+        "unique_token_ratio": 0.3125,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what could I pay? (follow-up subscription_trap not_supported case 15)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:DOM:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer might might might incur incur incur relevant relevant relevant training training training concept concept concept user user user cannot cannot cannot",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6521739130434783,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 23,
+        "unique_token_ratio": 0.34782608695652173,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 16)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:CONSEQUENCE:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage primary primary primary configured configured configured paying paying paying true true true term term term 8 8 8",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6538461538461539,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 26,
+        "unique_token_ratio": 0.34615384615384615,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "Does that make it illegal? (follow-up subscription_trap not_supported case 17)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:DOM:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer incur incur incur critical critical critical observe observe observe exposed exposed exposed",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6428571428571428,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 14,
+        "unique_token_ratio": 0.35714285714285715,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 18)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:PATTERN:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination stage stage stage / / / depends depends depends 12 12 12 20 20 20 suggestive suggestive suggestive presentation presentation presentation . . . definitely definitely definitely . . read read",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6666666666666667,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 36,
+        "unique_token_ratio": 0.3333333333333333,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": true,
+        "hallucination_rate": true,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": false
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "And what does that mean for me? (follow-up subscription_trap not_supported case 19)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:PRICE:0:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer determination determination determination check check check name name name configured configured configured screenshot screenshot screenshot 17 17 17 exactly exactly exactly 17 17 classification classification classification keep keep keep fact fact fact keep keep keeps keeps keeps",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6923076923076923,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 39,
+        "unique_token_ratio": 0.3076923076923077,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "NOT_SUPPORTED",
+        "actionable": false,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "So what could I pay? (follow-up subscription_trap not_supported case 20)",
+      "answer": "The follow-up remains grounded in the same analysis: Consumer may incur recurring charges.",
+      "intent": "FOLLOW_UP",
+      "status": "NOT_SUPPORTED",
+      "provenance": "synthetic_phase4",
+      "family": "SUBSCRIPTION_TRAP:NOT_SUPPORTED:FINANCIAL:1:follow_up",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Why was this flagged?"
+        },
+        {
+          "role": "assistant",
+          "content": "ClauseGuard recorded a not supported assessment for SUBSCRIPTION_TRAP based on the available context."
+        }
+      ],
+      "generated_answer": "answer answer journey journey journey simply simply simply user user user assigned assigned assigned it it it concept concept concept that that that variant variant variant visually",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6296296296296297,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 27,
+        "unique_token_ratio": 0.37037037037037035,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": true,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    }
+  ]
+}

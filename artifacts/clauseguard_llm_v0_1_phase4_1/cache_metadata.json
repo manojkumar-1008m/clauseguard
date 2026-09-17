@@ -1,0 +1,29 @@
+{
+  "train": {
+    "corpus_sha256": "3a4392c67857d6a90b3bfdd31a62c8a81777023973fa1a8493cd9acb443e475f",
+    "tokenizer_sha256": "f6b0153069da349cf9587890f6d74a4b415f2af070d600d10cdb861410d5e893",
+    "tokenizer_vocab_size": 512,
+    "context_length": 256,
+    "split": "train",
+    "examples": 8030,
+    "format_version": 1
+  },
+  "validation": {
+    "corpus_sha256": "3a4392c67857d6a90b3bfdd31a62c8a81777023973fa1a8493cd9acb443e475f",
+    "tokenizer_sha256": "f6b0153069da349cf9587890f6d74a4b415f2af070d600d10cdb861410d5e893",
+    "tokenizer_vocab_size": 512,
+    "context_length": 256,
+    "split": "validation",
+    "examples": 985,
+    "format_version": 1
+  },
+  "test": {
+    "corpus_sha256": "3a4392c67857d6a90b3bfdd31a62c8a81777023973fa1a8493cd9acb443e475f",
+    "tokenizer_sha256": "f6b0153069da349cf9587890f6d74a4b415f2af070d600d10cdb861410d5e893",
+    "tokenizer_vocab_size": 512,
+    "context_length": 256,
+    "split": "test",
+    "examples": 985,
+    "format_version": 1
+  }
+}

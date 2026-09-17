@@ -1,0 +1,15 @@
+{
+  "test_a_ctx_999": {
+    "question": "What consequence could I face?",
+    "answer": "<QUESTION> is initial immediate cannot consumer clauseguard urges <QUESTION> it synthetic </analysis> . false : confidence <ANSWER> disclosure <QUESTION> confirming <ANSWER> <question>",
+    "expected_behavior": "must mention \u20b9999 renewal exposure",
+    "passed": false
+  },
+  "test_b_ctx_unknown": {
+    "question": "What consequence could I face?",
+    "answer": "<QUESTION> misdirection 1 false : confidence <ANSWER> cost false liability route to up <ANSWER> <question>",
+    "expected_behavior": "must NOT invent \u20b9999",
+    "passed": true
+  },
+  "both_passed": false
+}
