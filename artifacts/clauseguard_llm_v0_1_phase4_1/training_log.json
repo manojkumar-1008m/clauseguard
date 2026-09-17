@@ -1,0 +1,26 @@
+{
+  "stage": "B",
+  "dataset_preparation_seconds": 172.50537850000546,
+  "tokenization_cache_seconds": 0.7561973999982001,
+  "model_initialization_seconds": 1.9462660000062897,
+  "epoch_records": [
+    {
+      "epoch": 2,
+      "train_loss": 36.258992195129395,
+      "validation_loss": 36.661638259887695,
+      "epoch_seconds": 142.58576010000252,
+      "validation_seconds": 3.262874300002295,
+      "examples_per_second": 56.316858135251614,
+      "tokens_per_second": 1182.3383938157085,
+      "global_step": 32
+    }
+  ],
+  "test_loss": 36.64919090270996,
+  "total_seconds": 173.26157770000282,
+  "parameter_count": 99264,
+  "train_size": 8030,
+  "validation_size": 985,
+  "test_size": 985,
+  "corpus_size": 10000,
+  "tokens": 2150746
+}

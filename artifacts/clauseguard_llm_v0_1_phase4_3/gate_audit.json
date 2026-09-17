@@ -1,0 +1,24 @@
+{
+  "aggregate_metrics": {
+    "empty_output_rate": 0.0,
+    "severe_repetition_rate": 0.0,
+    "meaningful_answer_rate": 0.995,
+    "semantic_acceptance_rate": 0.875,
+    "eos_completion_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "legal_overclaim_rate": 0.0,
+    "context_grounding_rate": 0.975
+  },
+  "gate_results": {
+    "empty_output_rate": true,
+    "severe_repetition_rate": true,
+    "meaningful_answer_rate": true,
+    "semantic_acceptance_rate": true,
+    "eos_completion_rate": false,
+    "hallucination_rate": true,
+    "legal_overclaim_rate": true,
+    "context_grounding_rate": true
+  },
+  "gate_passed": false,
+  "sample_count": 200
+}

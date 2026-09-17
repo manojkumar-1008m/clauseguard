@@ -65,7 +65,7 @@ PATTERN_RULES = [
             re.compile(r"(?:to\s+cancel[^\.\?!;]*contact\s+(?:customer\s+)?support\s+by\s+phone)", re.IGNORECASE),
             re.compile(r"(?:to\s+cancel[^\.\?!;]*contact\s+(?:customer\s+)?support)", re.IGNORECASE),
             re.compile(r"(?:contact\s+customer\s+support\s+to\s+cancel)", re.IGNORECASE),
-            re.compile(r"(?:cancel(?:ing|lation)?\s+requires\s+contacting\s+customer\s+support)", re.IGNORECASE),
+            re.compile(r"(?:cancel(?:ing|lation)?\s+(?:\w+\s+)*requires\s+contacting\s+customer\s+support)", re.IGNORECASE),
             re.compile(r"(?:cancellation\s+requires\s+(?:calling|contacting|phone))", re.IGNORECASE),
             re.compile(r"(?:canceling\s+requires\s+calling)", re.IGNORECASE),
             re.compile(r"(?:cancellation\s+unavailable\s+in\s+account\s+settings)", re.IGNORECASE),

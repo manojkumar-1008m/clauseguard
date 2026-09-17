@@ -6,8 +6,8 @@ import pathlib
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import model_loader, preprocessing
-from backend.main import app
+from clauseguard.backend import model_loader, preprocessing
+from clauseguard.backend.main import app
 
 client = TestClient(app)
 ROOT_DIR = pathlib.Path(__file__).resolve().parents[1]

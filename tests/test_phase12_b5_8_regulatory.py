@@ -2117,7 +2117,9 @@ class TestPhaseB58SemanticAuditCorrections:
 
     def test_11_b5_1_to_b5_7_remain_frozen(self):
         """B5.1-B5.7 core files remain strictly intact and frozen."""
-        import os
+        from pathlib import Path
+
+        repository_root = Path(__file__).resolve().parents[1]
         frozen_files = [
             "backend/schemas/evidence.py",
             "backend/services/evidence_adapters.py",
@@ -2130,8 +2132,9 @@ class TestPhaseB58SemanticAuditCorrections:
             "backend/services/intelligence_engine.py",
         ]
         for fpath in frozen_files:
-            assert os.path.isfile(fpath), f"Frozen file {fpath} does not exist!"
-            assert os.path.getsize(fpath) > 0, f"Frozen file {fpath} is empty!"
+            frozen_path = repository_root / fpath
+            assert frozen_path.is_file(), f"Frozen file {fpath} does not exist!"
+            assert frozen_path.stat().st_size > 0, f"Frozen file {fpath} is empty!"
 
     def test_12_deterministic_output_byte_identical_across_runs(self):
         """Deterministic output remains byte-identical across repeated evaluations."""

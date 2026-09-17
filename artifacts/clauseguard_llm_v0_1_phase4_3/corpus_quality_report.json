@@ -1,0 +1,14 @@
+{
+  "total": 12000,
+  "unique_questions": 12000,
+  "unique_question_rate": 1.0,
+  "unique_answers": 12000,
+  "unique_answer_rate": 1.0,
+  "repeated_answer_rate": 0.0,
+  "template_only_rate": 0.0,
+  "malformed": 0,
+  "missing_context": 0,
+  "missing_questions": 0,
+  "missing_answers": 0,
+  "forbidden_legal_claims": 0
+}

@@ -1,0 +1,1147 @@
+{
+  "unseen_samples": [
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "you will pay \u20b9 1999 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How does the recorded observation justify the warning?",
+      "answer": "the warning is \u20b9 1499 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why is this finding marked under the current status?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What evidence supports this consumer assessment?",
+      "answer": "the warning is followed by recorded evidence .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How serious is the risk level assigned to this case?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "the analysis flagged this because the analysis flagged this because the decline option uses derogatory language was identified on the subscription screen .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Can you explain the dark pattern detected in simple language?",
+      "answer": "the analysis indicates a future charge of \u20b9 1999 upon renewal .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What interaction was observed in this journey?",
+      "answer": "the warning is \u20b9 349 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What consequence could I face here?",
+      "answer": "as a consumer you may experience the alternative choice is visually obscured amounting to \u20b9 1499 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What should I review before proceeding with checkout?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What should I review before proceeding with checkout?",
+      "answer": "you face an upcoming renewal charge once renewal charge once renewal charge once renewal takes place .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What interaction was observed in this journey?",
+      "answer": "the warning is justified because observation confirmed an additional fee appeared later in checkout in checkout flow .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Can you explain the dark pattern detected in simple language?",
+      "answer": "the analysis indicates a future charge of \u20b9 199 upon renewal .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What practical takeaway applies to this page?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What evidence supports this consumer assessment?",
+      "answer": "the warning is \u20b9 499 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How serious is the risk level assigned to this case?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "the analysis flagged this because an unverified message states many people bought this was identified on the product screen .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How does the recorded observation justify the warning?",
+      "answer": "the warning is justified because observation confirmed an optional extra was flagged due to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How serious is the risk level assigned to this case?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why is this finding marked under the current status?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What consequence could I face here?",
+      "answer": "as a consumer may incur recurring charges amounting to \u20b9 1199 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Can you explain the dark pattern detected in simple language?",
+      "answer": "the initial price was \u20b9 199 but an unexpected \u20b9 99 charge raises the final total to \u20b9 298 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Can you explain the dark pattern detected in simple language?",
+      "answer": "the analysis indicates a future charge of \u20b9 299 upon renewal .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What interaction was observed in this journey?",
+      "answer": "the warning is justified because observation confirmed an unintended extra was automatically preselected in the product flow .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How serious is the risk level assigned to this case?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What evidence supports this consumer assessment?",
+      "answer": "the warning is justified because observation confirmed recurring renewal follows a free trial on the subscription screen .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "the analysis flagged this because an unverified message states many people bought this was identified on the product screen .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How does the recorded observation justify the warning?",
+      "answer": "the warning is justified because observation confirmed recurring renewal charge amounts to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What evidence supports this consumer assessment?",
+      "answer": "the warning is justified because observation confirmed an optional extra was flagged due to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Can you explain the dark pattern detected in simple language?",
+      "answer": "the analysis indicates a future charge of \u20b9 499 upon renewal .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What consequence could I face here?",
+      "answer": "as a consumer may incur recurring charges amounting to \u20b9 299 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What consequence could I face here?",
+      "answer": "the final cost may face an added fee of \u20b9 99 the total payment increases from \u20b9 499 to \u20b9 499 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What interaction was observed in this journey?",
+      "answer": "the warning is justified because observation confirmed an optional extra was automatically preselected in the basket flow .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Can you explain the dark pattern detected in simple language?",
+      "answer": "the warning is justified because observation confirmed an unverified message states many people bought this flow .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How does the recorded observation justify the warning?",
+      "answer": "the warning is justified because observation confirmed an unverified message states many people bought this recently on the product screen .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why is this finding marked under the current status?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What consequence could I face here?",
+      "answer": "you could face refusing the offer is \u20b9 299 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What practical takeaway applies to this page?",
+      "answer": "you will pay a known total of \u20b9 999 after an additional \u20b9 99 in added fees .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What should I review before proceeding with checkout?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "the analysis flagged this because an unverified message states many people bought this recently was identified on current evidence demonstrates that social proof .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What interaction was observed in this journey?",
+      "answer": "the warning is \u20b9 199 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What practical takeaway applies to this page?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why is this finding marked under the current status?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How does the recorded observation justify the warning?",
+      "answer": "the warning is justified because observation confirmed an optional extra was automatically preselected in the product flow .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What consequence could I face here?",
+      "answer": "you could face the notification may pressure a faster transaction including a renewal fee of \u20b9 1199 .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why is this finding marked under the current status?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "the analysis flagged this because an unverified message states many people bought this recently was identified in checkout flow .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "Why did ClauseGuard flag this finding?",
+      "answer": "you will pay a specific renewal cost cannot be determined from the analysis indicates a future charge of \u20b9 599 upon renewal .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": true,
+        "grounding": true,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "What practical takeaway applies to this page?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    },
+    {
+      "category": "normal_arbitrary",
+      "question": "How serious is the risk level assigned to this case?",
+      "answer": "the practical takeaway is to check the disclosures before completing the transaction .",
+      "eos_completed": true,
+      "metrics": {
+        "empty": false,
+        "repeated": false,
+        "meaningful": true,
+        "semantic": false,
+        "grounding": false,
+        "eos_completed": true,
+        "hallucination": false,
+        "legal_overclaim": false,
+        "leakage": false,
+        "known_val_acc": 1.0,
+        "unknown_preservation": 1.0,
+        "category": "normal_arbitrary"
+      }
+    }
+  ],
+  "golden_samples": [
+    {
+      "id": "golden_01",
+      "question": "What consequence could I face regarding subscription trap?",
+      "answer": "you will pay a faster transaction including a renewal takes place .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_02",
+      "question": "What consequence could I face regarding drip pricing?",
+      "answer": "the initial price including a renewal fee of \u20b9 299 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_03",
+      "question": "What consequence could I face regarding basket snaking?",
+      "answer": "you will pay a \u20b9 349 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_04",
+      "question": "What consequence could I face regarding false urgency?",
+      "answer": "you will pay \u20b9 499 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_05",
+      "question": "What consequence could I face regarding scarcity?",
+      "answer": "you will pay \u20b9 599 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_06",
+      "question": "What consequence could I face regarding forced action?",
+      "answer": "the analysis indicates a future charge of \u20b9 799 upon renewal .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_07",
+      "question": "What consequence could I face regarding confirm shaming?",
+      "answer": "the offer is \u20b9 999 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_08",
+      "question": "What consequence could I face regarding obstruction?",
+      "answer": "you will renew at \u20b9 1199 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_09",
+      "question": "What consequence could I face regarding misdirection?",
+      "answer": "the alternative choice is visually obscured including a renewal fee of \u20b9 1299 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_10",
+      "question": "What consequence could I face regarding social proof?",
+      "answer": "you will pay a \u20b9 1499 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_11",
+      "question": "What consequence could I face regarding subscription trap?",
+      "answer": "you will pay a renewal takes place .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_12",
+      "question": "What consequence could I face regarding drip pricing?",
+      "answer": "the initial price including a renewal fee of \u20b9 199 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_13",
+      "question": "What consequence could I face regarding basket snaking?",
+      "answer": "you will pay a \u20b9 299 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_14",
+      "question": "What consequence could I face regarding false urgency?",
+      "answer": "you will pay \u20b9 349 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_15",
+      "question": "What consequence could I face regarding scarcity?",
+      "answer": "you will pay \u20b9 499 after the trial concludes .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_16",
+      "question": "What consequence could I face regarding forced action?",
+      "answer": "the analysis indicates a future charge of \u20b9 599 upon renewal .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_17",
+      "question": "What consequence could I face regarding confirm shaming?",
+      "answer": "the offer is \u20b9 799 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_18",
+      "question": "What consequence could I face regarding obstruction?",
+      "answer": "you will renew at \u20b9 999 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_19",
+      "question": "What consequence could I face regarding misdirection?",
+      "answer": "the alternative choice is visually obscured including a renewal fee of \u20b9 1199 .",
+      "eos_completed": true
+    },
+    {
+      "id": "golden_20",
+      "question": "What consequence could I face regarding social proof?",
+      "answer": "you will pay a \u20b9 1299 after the trial concludes .",
+      "eos_completed": true
+    }
+  ],
+  "adversarial": {
+    "test_a_different_prices": {
+      "passed": false,
+      "outputs": {
+        "\u20b9499": "you will pay a known total of \u20b9 49 in added fees including the trial concludes .",
+        "\u20b9999": "you will pay a future charge once the trial concludes applies monthly unknown as it was not disclosed in the supplied analysis .",
+        "\u20b91499": "you will pay a future charge once the trial concludes applies monthly unknown as it was not disclosed in the supplied analysis ."
+      }
+    },
+    "test_d_known_vs_unknown": {
+      "passed": false,
+      "known_out": "you will pay a future charge once the trial concludes applies monthly unknown as it was not disclosed in the supplied analysis .",
+      "unk_out": "the supplied analysis does not contain a specific renewal amount could not be determined from the supplied analysis ."
+    },
+    "op27_context_switch_leakage": {
+      "passed": false,
+      "a_out": "you will pay a future charge once the trial concludes applies monthly unknown as it was not disclosed in the supplied analysis .",
+      "b_out": "you will pay a known total of \u20b9 49 in added fees including the trial concludes .",
+      "c_out": "the supplied analysis does not contain a specific renewal amount could not be determined from the supplied analysis ."
+    }
+  }
+}

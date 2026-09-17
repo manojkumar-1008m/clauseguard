@@ -1,0 +1,12 @@
+{
+  "unseen": {
+    "repetition_rate": 1.0,
+    "repeated_token_rate": 0.6279017857142857,
+    "repeated_ngram_rate": 0.0
+  },
+  "golden": {
+    "repetition_rate": 1.0,
+    "repeated_token_rate": 0.6264772727272727,
+    "repeated_ngram_rate": 0.0
+  }
+}

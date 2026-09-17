@@ -1,0 +1,36 @@
+{
+  "vocabulary_size": 484,
+  "special_tokens": [
+    "<pad>",
+    "<unk>",
+    "<bos>",
+    "<eos>"
+  ],
+  "structural_tokens": {
+    "<ANALYSIS>": [
+      68
+    ],
+    "</ANALYSIS>": [
+      90
+    ],
+    "<QUESTION>": [
+      91
+    ],
+    "</QUESTION>": [
+      93
+    ],
+    "<ANSWER>": [
+      94
+    ],
+    "</ANSWER>": [
+      98
+    ],
+    "<eos>": [
+      3
+    ],
+    "<pad>": [
+      0
+    ]
+  },
+  "unknown_token_rate": 0.0
+}

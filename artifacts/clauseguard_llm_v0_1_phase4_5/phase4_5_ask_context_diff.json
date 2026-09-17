@@ -1,0 +1,104 @@
+{
+  "question": "How much could I be charged after the trial?",
+  "standalone_prompt": "<ANALYSIS>\npattern: SUBSCRIPTION_TRAP\nrisk_level: CRITICAL\ngate_decision: ACTIONABLE_RISK\nstatus: ACTIONABLE_RISK\nrenewal_cost: ₹999\nrenewal_period: monthly\ntrial_period: 7 days\nevidence: Recurring renewal follows a free trial\nconsequence: Consumer may incur recurring charges\nregulatory_assessment: potential consumer risk\n</ANALYSIS>\n\n<QUESTION>\nHow much could I be charged after the trial?\n</QUESTION>",
+  "ask_prompt": "<analysis>\nroute: \"subscription\"\ndecision_context: \"ACTIONABLE\"\nrisk_level: \"CRITICAL\"\nrisk_score: 9.0\ngate_decision: \"ACTIONABLE_RISK\"\nactionable: true\nrequires_context: false\nrisk_detected: true\nprimary_pattern: \"SUBSCRIPTION_TRAP\"\ndetected_patterns: [\"SUBSCRIPTION_TRAP\"]\nevidence: [{\"decision_context\": null, \"description\": \"Recurring renewal cost of Rs 999 observed after 7-day trial period\", \"evidence_id\": \"ev-001\", \"model_confidence\": null, \"pattern\": \"SUBSCRIPTION_TRAP\", \"route\": null, \"source\": \"subscription\", \"strength\": \"HIGH\", \"type\": \"SUBSCRIPTION_RENEWAL\"}]\nconsequences: [\"Consumer may incur recurring charges\"]\nfinancial_exposure: 999.0\nconsumer_effort: null\nrecommended_action: null\nregulatory_context: null\ntemporal_context: []\ncontradiction_context: []\nprovenance: []\n</analysis>\n<question>\nHow much could I be charged after the trial?\n</question>\n<answer>",
+  "differences": {
+    "tag_case": {
+      "standalone": "UPPERCASE: <ANALYSIS>, </ANALYSIS>, <QUESTION>, </QUESTION>",
+      "ask": "lowercase: <analysis>, </analysis>, <question>, </question>",
+      "impact": "Model trained only on uppercase tags; lowercase tags are out-of-distribution"
+    },
+    "answer_tag": {
+      "standalone": "NONE - model generates freely after </QUESTION>",
+      "ask": "Explicit <answer> tag appended to prompt",
+      "impact": "Model has never seen <answer> in training; causes format confusion"
+    },
+    "value_encoding": {
+      "standalone": "Bare strings: renewal_cost: ₹999",
+      "ask": "JSON-encoded: risk_level: \"CRITICAL\", evidence: [{...}]",
+      "impact": "Model trained on bare values; JSON quotes/brackets are unseen"
+    },
+    "missing_fields": {
+      "standalone_has": [
+        "renewal_cost",
+        "renewal_period",
+        "trial_period",
+        "pattern",
+        "status",
+        "evidence (string)",
+        "consequence",
+        "regulatory_assessment"
+      ],
+      "ask_has": [
+        "route",
+        "decision_context",
+        "risk_level",
+        "risk_score",
+        "gate_decision",
+        "actionable",
+        "requires_context",
+        "risk_detected",
+        "primary_pattern",
+        "detected_patterns",
+        "evidence (JSON array)",
+        "consequences",
+        "financial_exposure",
+        "consumer_effort",
+        "recommended_action",
+        "regulatory_context",
+        "temporal_context",
+        "contradiction_context",
+        "provenance"
+      ],
+      "fields_present_in_standalone_but_absent_from_ask": [
+        "renewal_cost",
+        "renewal_period",
+        "trial_period",
+        "status",
+        "evidence (plain string)",
+        "consequence",
+        "regulatory_assessment"
+      ],
+      "impact": "Model cannot reference renewal_cost because the field is missing; it must infer from embedded description string"
+    },
+    "prompt_token_count": {
+      "standalone_tokens": 63,
+      "ask_tokens": 160,
+      "impact": "160 tokens for /ask vs 63 for training -- context window is consumed by irrelevant metadata"
+    },
+    "tokenizer": {
+      "standalone_tokenizer": "clauseguard_llm_v0_1_phase4_5/tokenizer/tokenizer.json",
+      "ask_tokenizer": "clauseguard_llm_v0_1_phase4/tokenizer/tokenizer.json",
+      "renewal_cost_ids_phase45": [
+        28,
+        238
+      ],
+      "renewal_cost_ids_phase4": [
+        333,
+        367
+      ],
+      "impact": "Different tokenizers produce different token IDs for the same text"
+    },
+    "checkpoint": {
+      "standalone_checkpoint": "clauseguard_llm_v0_1_phase4_5/checkpoints/best.pt",
+      "standalone_sha256": "2f8b756bcf4438c2add273a9e4db5f50...",
+      "ask_checkpoint": "clauseguard_llm_v0_1_phase4/checkpoints/best.pt",
+      "ask_sha256": "79d7f1974fc12f92...",
+      "same_file": false,
+      "impact": "CRITICAL: /ask loads Phase 4.0 checkpoint, not the validated Phase 4.5 checkpoint"
+    }
+  },
+  "generation_comparison": {
+    "A_phase45_standalone_prompt": "the 7 days trial is followed by a recurring annual fee of ₹ 999 .",
+    "A_grounded": true,
+    "A_structural_leakage": false,
+    "B_phase45_ask_prompt": "the 7 days trial is ₹ 999 applies annual .",
+    "B_grounded": true,
+    "B_structural_leakage": false,
+    "B_note": "Phase 4.5 model is robust; still references 999 via evidence description string. Sentence degraded but passes GroundingValidator.",
+    "C_phase40_ask_prompt": "<QUESTION> clauseguard subs . false : </ANSWER> review addresses is before legal cancellation...",
+    "C_grounded": true,
+    "C_structural_leakage": true,
+    "C_note": "Phase 4.0 model produces heavy structural token leakage. Fails test assertions for specific values like Rs999/month."
+  }
+}

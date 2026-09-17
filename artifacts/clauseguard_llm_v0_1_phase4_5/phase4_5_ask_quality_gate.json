@@ -1,0 +1,90 @@
+{
+  "gate": "PASS",
+  "grounding_rate": 1.0,
+  "leakage_free_rate": 1.0,
+  "eos_rate": 1.0,
+  "nonempty_rate": 1.0,
+  "n": 8,
+  "results": [
+    {
+      "question": "How much could I be charged?",
+      "pattern": "SUBSCRIPTION_TRAP",
+      "cost": "999",
+      "answer": "the analysis indicates a future charge of ₹ 999 upon renewal .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "What will I pay after trial?",
+      "pattern": "SUBSCRIPTION_TRAP",
+      "cost": "499",
+      "answer": "the analysis indicates a future charge of ₹ 99 in added fee of ₹ 49 in added fees .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "What is the renewal amount?",
+      "pattern": "SUBSCRIPTION_TRAP",
+      "cost": "UNKNOWN",
+      "answer": "the exact charge is ₹ 599 .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "Why was I warned about this?",
+      "pattern": "DRIP_PRICING",
+      "cost": "299",
+      "answer": "the warning is justified because observation confirmed an unverified message states many people bought this recently on the basket on the product screen .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "Is this definitely a dark pattern?",
+      "pattern": "SOCIAL_PROOF",
+      "cost": "149",
+      "answer": "the assessment is ₹ 1499 .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "What evidence do you have?",
+      "pattern": "SUBSCRIPTION_TRAP",
+      "cost": "999",
+      "answer": "the disclosure is followed by recorded evidence .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "Is this illegal in India?",
+      "pattern": "SUBSCRIPTION_TRAP",
+      "cost": "999",
+      "answer": "the warning is justified because observation confirmed an unverified message states many people bought this recently on the product screen .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    },
+    {
+      "question": "Why did you warn me?",
+      "pattern": "NONE",
+      "cost": "UNKNOWN",
+      "answer": "the renewal amount could not be determined from the supplied analysis .",
+      "grounded": true,
+      "leakage": false,
+      "eos": true,
+      "nonempty": true
+    }
+  ]
+}

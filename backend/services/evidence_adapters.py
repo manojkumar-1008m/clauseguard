@@ -245,7 +245,7 @@ def adapt_price_analysis(
 
     # D. Additional costs / fees
     add_amt = analysis.additional_cost if analysis.additional_cost is not None else analysis.additional_costs
-    if analysis.additional_cost_detected and add_amt is not None and add_amt > 0:
+    if (analysis.additional_cost_detected or add_amt is not None) and add_amt is not None and add_amt > 0:
         curr = analysis.currency or (analysis.displayed_price.currency if analysis.displayed_price else None)
         pct_str = f" (+{analysis.additional_cost_percentage}%)" if analysis.additional_cost_percentage else ""
         items.append(
@@ -397,6 +397,10 @@ BEHAVIOR_ANALYZER_OBSTRUCTION_TYPES = {
     "REPEATED_PROMPTS",
 }
 
+TELEMETRY_EVENT_TYPES = {
+    "PAGE_INIT", "NAVIGATION", "INPUT_CHANGE", "CLICK", "SCROLL", "HOVER", "TAB_ACTIVE"
+}
+
 DOM_SIGNAL_PATTERN_MAP: Dict[str, str] = {
     # Obstruction / cancellation friction
     "cancel_action_visually_deemphasized": "obstruction",
@@ -418,6 +422,7 @@ DOM_SIGNAL_PATTERN_MAP: Dict[str, str] = {
     "contrast_asymmetry": "misdirection",
     "typography_asymmetry": "misdirection",
     "visibility_mismatch": "misdirection",
+    "hidden_terms_container": "action_visual_deemphasis",
     "semantic_competing_actions": "misdirection",
     # Sneaking / commercial preselection
     "preselected_option": "sneaking",
@@ -509,6 +514,10 @@ def adapt_behavior_evidence(
             continue
 
         sig_type = entry.get("signal_type") or entry.get("type") or entry.get("behavior") or "behavior_signal"
+        if str(sig_type).strip().upper() in TELEMETRY_EVENT_TYPES:
+            # Lifecycle and raw interaction events establish context only. They
+            # are not analyzer findings and must never enter scoring evidence.
+            continue
         strength = entry.get("strength") or "moderate"
         reason = entry.get("reason") or entry.get("description") or entry.get("explanation") or f"Observed {sig_type}"
         event_indices = entry.get("event_indices") or []
@@ -658,8 +667,11 @@ def adapt_dom_evidence(
             else:
                 decision_context = None
 
-        # Canonical pattern mapping
+        # Canonical pattern mapping. Cancellation visual suppression is obstruction;
+        # the same visual fact in another decision context remains misdirection.
         pat = entry.get("pattern") or DOM_SIGNAL_PATTERN_MAP.get(sig_type) or sig_type
+        if sig_type in ("action_visual_deemphasis", "hidden_terms_container") and decision_context == "cancellation":
+            pat = "obstruction"
 
         # Temporal position
         temporal_pos = entry.get("temporal_position")
@@ -694,6 +706,7 @@ def adapt_dom_evidence(
                 provenance=entry.get("provenance") or "dom_analyzer_b4",
                 metadata={
                     "dom_properties": dom_props,
+                    "original_signal_type": entry.get("type") or entry.get("signal_type") or "dom_signal",
                     **{
                         k: v for k, v in entry.items()
                         if k not in {

@@ -1,0 +1,39 @@
+{
+  "test_scenario": "Canonical Context (SUBSCRIPTION_TRAP, ₹999/month, 7-day trial)",
+  "question": "How much could I be charged after the trial?",
+  "standalone_generation": {
+    "prompt": "<ANALYSIS>\npattern: SUBSCRIPTION_TRAP\nrisk_level: CRITICAL\ngate_decision: ACTIONABLE_RISK\nstatus: ACTIONABLE_RISK\nrenewal_cost: ₹999\nrenewal_period: monthly\ntrial_period: 7 days\nevidence: Recurring renewal follows a free trial\nconsequence: Consumer may incur recurring charges\nregulatory_assessment: potential consumer risk\n</ANALYSIS>\n\n<QUESTION>\nHow much could I be charged after the trial?\n</QUESTION>",
+    "raw_decoded_output": "the 7 days trial is followed by a recurring annual fee of ₹ 999 .",
+    "grounded": true,
+    "contains_target_value": true,
+    "target_value": "₹999",
+    "eos_completed": true
+  },
+  "pre_fix_ask_generation": {
+    "prompt": "<analysis>\nroute: \"subscription\"\nrisk_level: \"CRITICAL\"\nevidence: [{...}]\n</analysis>\n<question>\nHow much could I be charged after the trial?\n</question>\n<answer>",
+    "raw_decoded_output": "<QUESTION> clauseguard subs . false : </ANSWER> review addresses is before legal cancellation...",
+    "grounded": false,
+    "contains_target_value": false,
+    "target_value": "₹999",
+    "eos_completed": true,
+    "failure_reason": "Structural prompt leakage; model loaded Phase 4.0 checkpoint and saw lowercase JSON-encoded tags"
+  },
+  "post_fix_ask_generation": {
+    "prompt": "<ANALYSIS>\npattern: SUBSCRIPTION_TRAP\nrisk_level: CRITICAL\ngate_decision: ACTIONABLE_RISK\nstatus: ACTIONABLE_RISK\nrenewal_cost: ₹999\ntrial_period: 7-day\nevidence: Recurring renewal cost ₹999/month observed after 7-day trial period\nconsequence: Consumer may incur recurring charges\nroute: subscription\nregulatory_assessment: potential consumer risk\n</ANALYSIS>\n\n<QUESTION>\nHow much could I be charged after the trial?\n</QUESTION>",
+    "raw_decoded_output": "you will be billed ₹ 999 quarterly .",
+    "grounded": true,
+    "contains_target_value": true,
+    "target_value": "₹999",
+    "eos_completed": true,
+    "structural_leakage": false
+  },
+  "context_switch_validation": {
+    "context_a_cost": "₹999",
+    "context_a_output": "you will be billed ₹ 999 quarterly .",
+    "context_b_cost": "₹499",
+    "context_b_output": "you will be billed ₹ 499 quarterly .",
+    "context_c_cost": "UNKNOWN",
+    "context_c_output": "the exact charge is unknown as it was not disclosed in the supplied analysis .",
+    "context_switch_passed": true
+  }
+}

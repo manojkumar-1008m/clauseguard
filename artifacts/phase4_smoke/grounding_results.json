@@ -1,0 +1,141 @@
+{
+  "results": [
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b9999/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "How much could I be charged?",
+      "intent": "FINANCIAL",
+      "status": "ACTIONABLE_RISK",
+      "generated_answer": "answer answer model model model incur incur incur alone alone alone or or or happens happens happens problem problem problem incur incur serious serious serious name name name",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6785714285714286,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 28,
+        "unique_token_ratio": 0.32142857142857145,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": false,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": false,
+        "context_grounding_rate": true
+      }
+    },
+    {
+      "analysis_context": {
+        "route": "subscription",
+        "decision_context": "subscription journey",
+        "risk_level": "CRITICAL",
+        "risk_score": 9.1,
+        "gate_decision": "ACTIONABLE_RISK",
+        "actionable": true,
+        "requires_context": false,
+        "risk_detected": true,
+        "primary_pattern": "SUBSCRIPTION_TRAP",
+        "detected_patterns": [
+          "SUBSCRIPTION_TRAP"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "E-SUBS",
+            "source": "DOM",
+            "type": "observed_text",
+            "pattern": "SUBSCRIPTION_TRAP",
+            "description": "Recurring renewal follows a free trial",
+            "strength": "medium",
+            "model_confidence": 0.86,
+            "route": "subscription",
+            "decision_context": "checkout decision"
+          }
+        ],
+        "consequences": [
+          "Consumer may incur recurring charges"
+        ],
+        "financial_exposure": {
+          "renewal_cost": "\u20b91499/month"
+        },
+        "consumer_effort": null,
+        "recommended_action": "Review the evidence, total, terms, and cancellation route before continuing.",
+        "regulatory_context": {
+          "assessment": "potential consumer-risk concern",
+          "jurisdiction": "UNKNOWN"
+        },
+        "temporal_context": [],
+        "contradiction_context": [],
+        "provenance": [
+          {
+            "source": "synthetic",
+            "kind": "training_fixture"
+          }
+        ]
+      },
+      "question": "How much could I be charged?",
+      "intent": "FINANCIAL",
+      "status": "ACTIONABLE_RISK",
+      "generated_answer": "answer answer model model model incur incur incur alone alone alone or or or happens happens happens problem problem problem incur incur model model illegal illegal illegal records",
+      "metrics": {
+        "empty_output_rate": false,
+        "repetition_rate": false,
+        "repeated_token_rate": 0.6785714285714286,
+        "repeated_ngram_rate": 0.0,
+        "eos_completion_rate": false,
+        "average_answer_length": 28,
+        "unique_token_ratio": 0.32142857142857145,
+        "meaningful_answer_rate": true,
+        "semantic_acceptance_rate": false,
+        "unsupported_claim_rate": false,
+        "hallucination_rate": false,
+        "legal_overclaim_rate": true,
+        "context_grounding_rate": true
+      }
+    }
+  ],
+  "context_grounding_rate": 1.0
+}

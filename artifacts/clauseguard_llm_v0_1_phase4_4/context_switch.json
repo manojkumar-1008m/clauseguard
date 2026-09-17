@@ -1,0 +1,17 @@
+{
+  "context_a": {
+    "pattern": "SUBSCRIPTION_TRAP",
+    "cost": "\u20b9999/month",
+    "question": "What consequence could I face?",
+    "answer": "<QUESTION> is initial immediate cannot consumer clauseguard urges <QUESTION> it synthetic </analysis> . false : confidence <ANSWER> disclosure <QUESTION> pressure final cancellation consumer clausegua"
+  },
+  "context_b": {
+    "pattern": "CLEAR_RENEWAL",
+    "cost": "none",
+    "question": "What consequence could I face?",
+    "answer": "<QUESTION> risk context : before legal cancellation <QUESTION> case consequence subscription before legal appeared consumer evidence . false : before true actionable medium <ANSWER> consumer evidence "
+  },
+  "no_context_leakage": true,
+  "clear_context_reflected": false,
+  "test_passed": true
+}

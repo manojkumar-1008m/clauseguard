@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "initial_loss": 8.346206665039062,
+  "final_loss": 0.0004854465078096837,
+  "ans_end_in_labels": true,
+  "eos_in_labels": true,
+  "eos_generated": true,
+  "completion": "clauseguard identified a financial exposure of \u20b9 999 / month after the user opened the basket . verify this charge before continuing . this addresses the price question under a unknown finding . the answer depends on the journey details recorded here .",
+  "label_diagnostics": {
+    "boundary": 207,
+    "answer_loss_labels": 45,
+    "eos_in_ids": true,
+    "eos_in_labels": true,
+    "ans_end_in_labels": true,
+    "truncation_applied": false
+  }
+}

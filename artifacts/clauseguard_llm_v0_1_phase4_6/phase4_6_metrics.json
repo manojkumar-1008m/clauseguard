@@ -1,0 +1,21 @@
+{
+  "grounding_rate": 1.0,
+  "known_value_reference_accuracy": 0.967,
+  "unknown_value_preservation_rate": 1.0,
+  "context_switch_accuracy": 1.0,
+  "eos_completion_rate": 1.0,
+  "structural_token_leakage_rate": 0.0,
+  "legal_overclaim_rate": 0.0,
+  "hallucination_rate": 0.0,
+  "severe_repetition_rate": 0.0,
+  "multi_turn_accuracy": 1.0,
+  "golden_suite_pass_rate": 1.0,
+  "concurrency_isolation_rate": 1.0,
+  "mean_latency_ms": 152.55057600094005,
+  "p50_latency_ms": 145.99670001189224,
+  "p95_latency_ms": 223.9597000007052,
+  "max_latency_ms": 299.58569999143947,
+  "regression_tests_passed": "17/17",
+  "active_checkpoint": "C:\\Users\\rog\\Downloads\\clauseguard_zipped\\clauseguard\\artifacts\\clauseguard_llm_v0_1_phase4_5\\checkpoints\\best.pt",
+  "parameter_count": 5885952
+}

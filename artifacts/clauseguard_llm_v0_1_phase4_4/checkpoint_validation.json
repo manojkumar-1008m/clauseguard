@@ -1,0 +1,15 @@
+{
+  "checkpoint_path": "C:\\Users\\rog\\Downloads\\clauseguard_zipped\\clauseguard\\artifacts\\clauseguard_llm_v0_1_phase4\\checkpoints\\best.pt",
+  "file_size_bytes": 23572217,
+  "sha256": "79d7f1974fc12f92f18cca01e9eebb8afd2ac3fe7d8a2a33ccb261f17014706f",
+  "param_count": 6934528,
+  "param_count_in_range": true,
+  "nan_parameter_count": 0,
+  "inf_parameter_count": 0,
+  "all_tensors_finite": true,
+  "tokenizer_ok": true,
+  "tokenizer_vocab_size": 3317,
+  "valid": true,
+  "failure_reason": null,
+  "notes": []
+}

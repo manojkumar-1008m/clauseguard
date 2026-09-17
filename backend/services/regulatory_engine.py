@@ -20,14 +20,14 @@ import re
 from datetime import date, datetime
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-from backend.schemas.evidence import (
+from ..schemas.evidence import (
     ContradictionItem,
     EvidenceItem,
     IntelligenceAnalysisResponse,
     PatternAssessment,
     TemporalRelationshipItem,
 )
-from backend.schemas.regulatory import (
+from ..schemas.regulatory import (
     ApplicabilityType,
     RegulatoryCheckRequest,
     RegulatoryCheckResponse,

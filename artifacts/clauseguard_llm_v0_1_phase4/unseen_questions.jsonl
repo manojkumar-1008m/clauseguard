@@ -1,0 +1,200 @@
+{"question": "Looking only at this analysis, what should I understand about concept?", "intent": "CONCEPT"}
+{"question": "What does the supplied ClauseGuard record tell me about concept?", "intent": "CONCEPT"}
+{"question": "Can the current findings answer my question about concept?", "intent": "CONCEPT"}
+{"question": "Which part of the report addresses concept?", "intent": "CONCEPT"}
+{"question": "Before I proceed, how should I interpret concept?", "intent": "CONCEPT"}
+{"question": "What is the consumer-facing explanation for concept?", "intent": "CONCEPT"}
+{"question": "What would a careful review say about concept?", "intent": "CONCEPT"}
+{"question": "Is there enough recorded information to explain concept?", "intent": "CONCEPT"}
+{"question": "How should I read the available facts about concept?", "intent": "CONCEPT"}
+{"question": "What should remain qualified when discussing concept?", "intent": "CONCEPT"}
+{"question": "Looking only at this analysis, what should I understand about reason?", "intent": "REASON"}
+{"question": "What does the supplied ClauseGuard record tell me about reason?", "intent": "REASON"}
+{"question": "Can the current findings answer my question about reason?", "intent": "REASON"}
+{"question": "Which part of the report addresses reason?", "intent": "REASON"}
+{"question": "Before I proceed, how should I interpret reason?", "intent": "REASON"}
+{"question": "What is the consumer-facing explanation for reason?", "intent": "REASON"}
+{"question": "What would a careful review say about reason?", "intent": "REASON"}
+{"question": "Is there enough recorded information to explain reason?", "intent": "REASON"}
+{"question": "How should I read the available facts about reason?", "intent": "REASON"}
+{"question": "What should remain qualified when discussing reason?", "intent": "REASON"}
+{"question": "Looking only at this analysis, what should I understand about evidence?", "intent": "EVIDENCE"}
+{"question": "What does the supplied ClauseGuard record tell me about evidence?", "intent": "EVIDENCE"}
+{"question": "Can the current findings answer my question about evidence?", "intent": "EVIDENCE"}
+{"question": "Which part of the report addresses evidence?", "intent": "EVIDENCE"}
+{"question": "Before I proceed, how should I interpret evidence?", "intent": "EVIDENCE"}
+{"question": "What is the consumer-facing explanation for evidence?", "intent": "EVIDENCE"}
+{"question": "What would a careful review say about evidence?", "intent": "EVIDENCE"}
+{"question": "Is there enough recorded information to explain evidence?", "intent": "EVIDENCE"}
+{"question": "How should I read the available facts about evidence?", "intent": "EVIDENCE"}
+{"question": "What should remain qualified when discussing evidence?", "intent": "EVIDENCE"}
+{"question": "Looking only at this analysis, what should I understand about pattern?", "intent": "PATTERN"}
+{"question": "What does the supplied ClauseGuard record tell me about pattern?", "intent": "PATTERN"}
+{"question": "Can the current findings answer my question about pattern?", "intent": "PATTERN"}
+{"question": "Which part of the report addresses pattern?", "intent": "PATTERN"}
+{"question": "Before I proceed, how should I interpret pattern?", "intent": "PATTERN"}
+{"question": "What is the consumer-facing explanation for pattern?", "intent": "PATTERN"}
+{"question": "What would a careful review say about pattern?", "intent": "PATTERN"}
+{"question": "Is there enough recorded information to explain pattern?", "intent": "PATTERN"}
+{"question": "How should I read the available facts about pattern?", "intent": "PATTERN"}
+{"question": "What should remain qualified when discussing pattern?", "intent": "PATTERN"}
+{"question": "Looking only at this analysis, what should I understand about consequence?", "intent": "CONSEQUENCE"}
+{"question": "What does the supplied ClauseGuard record tell me about consequence?", "intent": "CONSEQUENCE"}
+{"question": "Can the current findings answer my question about consequence?", "intent": "CONSEQUENCE"}
+{"question": "Which part of the report addresses consequence?", "intent": "CONSEQUENCE"}
+{"question": "Before I proceed, how should I interpret consequence?", "intent": "CONSEQUENCE"}
+{"question": "What is the consumer-facing explanation for consequence?", "intent": "CONSEQUENCE"}
+{"question": "What would a careful review say about consequence?", "intent": "CONSEQUENCE"}
+{"question": "Is there enough recorded information to explain consequence?", "intent": "CONSEQUENCE"}
+{"question": "How should I read the available facts about consequence?", "intent": "CONSEQUENCE"}
+{"question": "What should remain qualified when discussing consequence?", "intent": "CONSEQUENCE"}
+{"question": "Looking only at this analysis, what should I understand about financial?", "intent": "FINANCIAL"}
+{"question": "What does the supplied ClauseGuard record tell me about financial?", "intent": "FINANCIAL"}
+{"question": "Can the current findings answer my question about financial?", "intent": "FINANCIAL"}
+{"question": "Which part of the report addresses financial?", "intent": "FINANCIAL"}
+{"question": "Before I proceed, how should I interpret financial?", "intent": "FINANCIAL"}
+{"question": "What is the consumer-facing explanation for financial?", "intent": "FINANCIAL"}
+{"question": "What would a careful review say about financial?", "intent": "FINANCIAL"}
+{"question": "Is there enough recorded information to explain financial?", "intent": "FINANCIAL"}
+{"question": "How should I read the available facts about financial?", "intent": "FINANCIAL"}
+{"question": "What should remain qualified when discussing financial?", "intent": "FINANCIAL"}
+{"question": "Looking only at this analysis, what should I understand about price?", "intent": "PRICE"}
+{"question": "What does the supplied ClauseGuard record tell me about price?", "intent": "PRICE"}
+{"question": "Can the current findings answer my question about price?", "intent": "PRICE"}
+{"question": "Which part of the report addresses price?", "intent": "PRICE"}
+{"question": "Before I proceed, how should I interpret price?", "intent": "PRICE"}
+{"question": "What is the consumer-facing explanation for price?", "intent": "PRICE"}
+{"question": "What would a careful review say about price?", "intent": "PRICE"}
+{"question": "Is there enough recorded information to explain price?", "intent": "PRICE"}
+{"question": "How should I read the available facts about price?", "intent": "PRICE"}
+{"question": "What should remain qualified when discussing price?", "intent": "PRICE"}
+{"question": "Looking only at this analysis, what should I understand about risk?", "intent": "RISK"}
+{"question": "What does the supplied ClauseGuard record tell me about risk?", "intent": "RISK"}
+{"question": "Can the current findings answer my question about risk?", "intent": "RISK"}
+{"question": "Which part of the report addresses risk?", "intent": "RISK"}
+{"question": "Before I proceed, how should I interpret risk?", "intent": "RISK"}
+{"question": "What is the consumer-facing explanation for risk?", "intent": "RISK"}
+{"question": "What would a careful review say about risk?", "intent": "RISK"}
+{"question": "Is there enough recorded information to explain risk?", "intent": "RISK"}
+{"question": "How should I read the available facts about risk?", "intent": "RISK"}
+{"question": "What should remain qualified when discussing risk?", "intent": "RISK"}
+{"question": "Looking only at this analysis, what should I understand about journey?", "intent": "JOURNEY"}
+{"question": "What does the supplied ClauseGuard record tell me about journey?", "intent": "JOURNEY"}
+{"question": "Can the current findings answer my question about journey?", "intent": "JOURNEY"}
+{"question": "Which part of the report addresses journey?", "intent": "JOURNEY"}
+{"question": "Before I proceed, how should I interpret journey?", "intent": "JOURNEY"}
+{"question": "What is the consumer-facing explanation for journey?", "intent": "JOURNEY"}
+{"question": "What would a careful review say about journey?", "intent": "JOURNEY"}
+{"question": "Is there enough recorded information to explain journey?", "intent": "JOURNEY"}
+{"question": "How should I read the available facts about journey?", "intent": "JOURNEY"}
+{"question": "What should remain qualified when discussing journey?", "intent": "JOURNEY"}
+{"question": "Looking only at this analysis, what should I understand about behavior?", "intent": "BEHAVIOR"}
+{"question": "What does the supplied ClauseGuard record tell me about behavior?", "intent": "BEHAVIOR"}
+{"question": "Can the current findings answer my question about behavior?", "intent": "BEHAVIOR"}
+{"question": "Which part of the report addresses behavior?", "intent": "BEHAVIOR"}
+{"question": "Before I proceed, how should I interpret behavior?", "intent": "BEHAVIOR"}
+{"question": "What is the consumer-facing explanation for behavior?", "intent": "BEHAVIOR"}
+{"question": "What would a careful review say about behavior?", "intent": "BEHAVIOR"}
+{"question": "Is there enough recorded information to explain behavior?", "intent": "BEHAVIOR"}
+{"question": "How should I read the available facts about behavior?", "intent": "BEHAVIOR"}
+{"question": "What should remain qualified when discussing behavior?", "intent": "BEHAVIOR"}
+{"question": "Looking only at this analysis, what should I understand about dom?", "intent": "DOM"}
+{"question": "What does the supplied ClauseGuard record tell me about dom?", "intent": "DOM"}
+{"question": "Can the current findings answer my question about dom?", "intent": "DOM"}
+{"question": "Which part of the report addresses dom?", "intent": "DOM"}
+{"question": "Before I proceed, how should I interpret dom?", "intent": "DOM"}
+{"question": "What is the consumer-facing explanation for dom?", "intent": "DOM"}
+{"question": "What would a careful review say about dom?", "intent": "DOM"}
+{"question": "Is there enough recorded information to explain dom?", "intent": "DOM"}
+{"question": "How should I read the available facts about dom?", "intent": "DOM"}
+{"question": "What should remain qualified when discussing dom?", "intent": "DOM"}
+{"question": "Looking only at this analysis, what should I understand about vision?", "intent": "VISION"}
+{"question": "What does the supplied ClauseGuard record tell me about vision?", "intent": "VISION"}
+{"question": "Can the current findings answer my question about vision?", "intent": "VISION"}
+{"question": "Which part of the report addresses vision?", "intent": "VISION"}
+{"question": "Before I proceed, how should I interpret vision?", "intent": "VISION"}
+{"question": "What is the consumer-facing explanation for vision?", "intent": "VISION"}
+{"question": "What would a careful review say about vision?", "intent": "VISION"}
+{"question": "Is there enough recorded information to explain vision?", "intent": "VISION"}
+{"question": "How should I read the available facts about vision?", "intent": "VISION"}
+{"question": "What should remain qualified when discussing vision?", "intent": "VISION"}
+{"question": "Looking only at this analysis, what should I understand about regulatory?", "intent": "REGULATORY"}
+{"question": "What does the supplied ClauseGuard record tell me about regulatory?", "intent": "REGULATORY"}
+{"question": "Can the current findings answer my question about regulatory?", "intent": "REGULATORY"}
+{"question": "Which part of the report addresses regulatory?", "intent": "REGULATORY"}
+{"question": "Before I proceed, how should I interpret regulatory?", "intent": "REGULATORY"}
+{"question": "What is the consumer-facing explanation for regulatory?", "intent": "REGULATORY"}
+{"question": "What would a careful review say about regulatory?", "intent": "REGULATORY"}
+{"question": "Is there enough recorded information to explain regulatory?", "intent": "REGULATORY"}
+{"question": "How should I read the available facts about regulatory?", "intent": "REGULATORY"}
+{"question": "What should remain qualified when discussing regulatory?", "intent": "REGULATORY"}
+{"question": "Looking only at this analysis, what should I understand about uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "What does the supplied ClauseGuard record tell me about uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "Can the current findings answer my question about uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "Which part of the report addresses uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "Before I proceed, how should I interpret uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "What is the consumer-facing explanation for uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "What would a careful review say about uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "Is there enough recorded information to explain uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "How should I read the available facts about uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "What should remain qualified when discussing uncertainty?", "intent": "UNCERTAINTY"}
+{"question": "Looking only at this analysis, what should I understand about recommendation?", "intent": "RECOMMENDATION"}
+{"question": "What does the supplied ClauseGuard record tell me about recommendation?", "intent": "RECOMMENDATION"}
+{"question": "Can the current findings answer my question about recommendation?", "intent": "RECOMMENDATION"}
+{"question": "Which part of the report addresses recommendation?", "intent": "RECOMMENDATION"}
+{"question": "Before I proceed, how should I interpret recommendation?", "intent": "RECOMMENDATION"}
+{"question": "What is the consumer-facing explanation for recommendation?", "intent": "RECOMMENDATION"}
+{"question": "What would a careful review say about recommendation?", "intent": "RECOMMENDATION"}
+{"question": "Is there enough recorded information to explain recommendation?", "intent": "RECOMMENDATION"}
+{"question": "How should I read the available facts about recommendation?", "intent": "RECOMMENDATION"}
+{"question": "What should remain qualified when discussing recommendation?", "intent": "RECOMMENDATION"}
+{"question": "Looking only at this analysis, what should I understand about clear case?", "intent": "CLEAR_CASE"}
+{"question": "What does the supplied ClauseGuard record tell me about clear case?", "intent": "CLEAR_CASE"}
+{"question": "Can the current findings answer my question about clear case?", "intent": "CLEAR_CASE"}
+{"question": "Which part of the report addresses clear case?", "intent": "CLEAR_CASE"}
+{"question": "Before I proceed, how should I interpret clear case?", "intent": "CLEAR_CASE"}
+{"question": "What is the consumer-facing explanation for clear case?", "intent": "CLEAR_CASE"}
+{"question": "What would a careful review say about clear case?", "intent": "CLEAR_CASE"}
+{"question": "Is there enough recorded information to explain clear case?", "intent": "CLEAR_CASE"}
+{"question": "How should I read the available facts about clear case?", "intent": "CLEAR_CASE"}
+{"question": "What should remain qualified when discussing clear case?", "intent": "CLEAR_CASE"}
+{"question": "Looking only at this analysis, what should I understand about potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "What does the supplied ClauseGuard record tell me about potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "Can the current findings answer my question about potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "Which part of the report addresses potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "Before I proceed, how should I interpret potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "What is the consumer-facing explanation for potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "What would a careful review say about potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "Is there enough recorded information to explain potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "How should I read the available facts about potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "What should remain qualified when discussing potential case?", "intent": "POTENTIAL_CASE"}
+{"question": "Looking only at this analysis, what should I understand about missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "What does the supplied ClauseGuard record tell me about missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "Can the current findings answer my question about missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "Which part of the report addresses missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "Before I proceed, how should I interpret missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "What is the consumer-facing explanation for missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "What would a careful review say about missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "Is there enough recorded information to explain missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "How should I read the available facts about missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "What should remain qualified when discussing missing information?", "intent": "MISSING_INFORMATION"}
+{"question": "Looking only at this analysis, what should I understand about comparison?", "intent": "COMPARISON"}
+{"question": "What does the supplied ClauseGuard record tell me about comparison?", "intent": "COMPARISON"}
+{"question": "Can the current findings answer my question about comparison?", "intent": "COMPARISON"}
+{"question": "Which part of the report addresses comparison?", "intent": "COMPARISON"}
+{"question": "Before I proceed, how should I interpret comparison?", "intent": "COMPARISON"}
+{"question": "What is the consumer-facing explanation for comparison?", "intent": "COMPARISON"}
+{"question": "What would a careful review say about comparison?", "intent": "COMPARISON"}
+{"question": "Is there enough recorded information to explain comparison?", "intent": "COMPARISON"}
+{"question": "How should I read the available facts about comparison?", "intent": "COMPARISON"}
+{"question": "What should remain qualified when discussing comparison?", "intent": "COMPARISON"}
+{"question": "Looking only at this analysis, what should I understand about simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "What does the supplied ClauseGuard record tell me about simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "Can the current findings answer my question about simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "Which part of the report addresses simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "Before I proceed, how should I interpret simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "What is the consumer-facing explanation for simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "What would a careful review say about simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "Is there enough recorded information to explain simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "How should I read the available facts about simple explanation?", "intent": "SIMPLE_EXPLANATION"}
+{"question": "What should remain qualified when discussing simple explanation?", "intent": "SIMPLE_EXPLANATION"}

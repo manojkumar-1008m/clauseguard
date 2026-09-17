@@ -1,0 +1,18 @@
+{
+  "total": 12000,
+  "unique_questions": 12000,
+  "unique_question_rate": 1.0,
+  "unique_answers": 11752,
+  "unique_answer_rate": 0.9793333333333333,
+  "repeated_answer_rate": 0.020666666666666722,
+  "template_only_rate": 0.019583333333333335,
+  "malformed": 0,
+  "missing_context": 0,
+  "missing_questions": 0,
+  "missing_answers": 0,
+  "forbidden_legal_claims": 0,
+  "follow_up_fraction": 0.24,
+  "gate_passed": true,
+  "parameter_count": 5885952,
+  "unknown_token_rate": 0.0
+}

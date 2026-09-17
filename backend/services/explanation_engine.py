@@ -79,9 +79,9 @@ class ConsumerExplanationEngine:
         else:
             fusion_resp = self.fusion_engine.fuse(EvidenceFusionRequest())
 
-        return self.explain_fusion_response(fusion_resp)
+        return self.explain_fusion_response(fusion_resp, request.explanation_context)
 
-    def explain_fusion_response(self, resp: EvidenceFusionResponse) -> ExplanationResponse:
+    def explain_fusion_response(self, resp: EvidenceFusionResponse, context: Any = None) -> ExplanationResponse:
         """Transform an EvidenceFusionResponse into an ExplanationResponse."""
         evidence_items = resp.evidence or []
         groups = resp.evidence_groups or []
@@ -136,7 +136,7 @@ class ConsumerExplanationEngine:
         if not findings:
             if is_context_req:
                 findings.append(self._build_context_required_finding(resp, f"F{finding_counter:03d}"))
-            elif evidence_items:
+            elif evidence_items and (resp.risk_detected or resp.financial_signal or resp.dark_pattern):
                 if has_only_benign_price and not resp.dark_pattern:
                     return self._build_benign_response(resp)
                 findings.append(self._build_general_finding(resp, f"F{finding_counter:03d}"))
@@ -192,6 +192,8 @@ class ConsumerExplanationEngine:
             "is_corroborated": resp.is_corroborated,
             "conflicts_count": len(conflicts),
         }
+        if context is not None:
+            metadata["explanation_context"] = context.model_dump() if hasattr(context, "model_dump") else context
 
 
         return ExplanationResponse(
