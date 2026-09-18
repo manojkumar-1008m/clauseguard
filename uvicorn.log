@@ -1,0 +1,1508 @@
+INFO:     Will watch for changes in these directories: ['c:\\Users\\kavin\\Downloads\\clauseguard']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [13500] using StatReload
+INFO:     Started server process [26244]
+INFO:     Waiting for application startup.
+2026-09-17 23:16:09,999 INFO clauseguard_backend [ClauseGuard] Backend starting...
+2026-09-17 23:16:09,999 INFO clauseguard_backend [ClauseGuard] Listening on http://127.0.0.1:8000
+2026-09-17 23:16:09,999 INFO clauseguard_backend Initializing ClauseGuard API...
+c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfTransformer from version 1.7.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.7.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator LinearSVC from version 1.7.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator _SigmoidCalibration from version 1.7.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator CalibratedClassifierCV from version 1.7.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.7.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+2026-09-17 23:16:11,080 INFO backend.model_loader ClauseGuard model loaded successfully from C:\Users\kavin\Downloads\clauseguard\model\clauseguard_model_v3.joblib
+2026-09-17 23:16:11,080 INFO clauseguard_backend Model loaded successfully.
+2026-09-17 23:16:11,080 INFO clauseguard_backend [ClauseGuard] Backend started successfully. Ready to receive requests.
+INFO:     Application startup complete.
+2026-09-17 23:18:24,471 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:18:24,472 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1506 chars
+2026-09-17 23:18:24,473 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:18:24,473 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:18:24,473 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:18:24,473 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:18:24,533 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.83, pattern=Social Proof, requires_context=False
+2026-09-17 23:18:24,545 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-17 23:18:24,556 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:18:24,561 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=2
+2026-09-17 23:18:24,572 INFO clauseguard_backend Request complete request_id=9f224b5979d045dea7d6937c5e477936 method=POST path=/analyze status=200 duration_ms=105.95
+2026-09-17 23:18:29,768 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:18:29,769 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1506 chars
+2026-09-17 23:18:29,769 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:18:29,769 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:18:29,769 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:18:29,769 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:18:29,794 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.83, pattern=Social Proof, requires_context=False
+2026-09-17 23:18:29,798 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-17 23:18:29,806 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:18:29,808 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=2
+2026-09-17 23:18:29,809 INFO clauseguard_backend Request complete request_id=f7a5b61b87ff4f33a5c023b0e7b11162 method=POST path=/analyze status=200 duration_ms=42.83
+INFO:     127.0.0.1:64735 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:19:26,458 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:19:26,459 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1479 chars
+2026-09-17 23:19:26,459 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:19:26,459 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:19:26,459 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:19:26,459 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:19:26,482 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.86, pattern=Social Proof, requires_context=False
+2026-09-17 23:19:26,486 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-17 23:19:26,493 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:19:26,495 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=2
+2026-09-17 23:19:26,497 INFO clauseguard_backend Request complete request_id=0ddd6d29fc59431a96f4f49e8f4c6f4d method=POST path=/analyze status=200 duration_ms=39.73
+INFO:     127.0.0.1:50903 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:19:29,702 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:19:29,702 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1479 chars
+2026-09-17 23:19:29,702 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:19:29,702 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:19:29,703 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:19:29,703 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:19:29,729 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.86, pattern=Social Proof, requires_context=False
+2026-09-17 23:19:29,734 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-17 23:19:29,742 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:19:29,744 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=2
+2026-09-17 23:19:29,746 INFO clauseguard_backend Request complete request_id=152b8ab3030444cd875a14b453142efd method=POST path=/analyze status=200 duration_ms=46.06
+INFO:     127.0.0.1:50903 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:19:38,909 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:19:38,909 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1479 chars
+2026-09-17 23:19:38,910 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:19:38,910 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:19:38,910 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:19:38,910 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:19:38,943 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.86, pattern=Social Proof, requires_context=False
+2026-09-17 23:19:38,949 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-17 23:19:38,958 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:19:38,961 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=2
+2026-09-17 23:19:38,963 INFO clauseguard_backend Request complete request_id=d6aa797284214c4fba199da781261f0d method=POST path=/analyze status=200 duration_ms=57.29
+INFO:     127.0.0.1:57018 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:19:49,954 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:19:49,954 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 5153 chars
+2026-09-17 23:19:49,955 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:19:49,955 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:19:49,955 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:19:49,955 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:19:49,991 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.58, pattern=None, requires_context=False
+2026-09-17 23:19:50,048 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 42 monetary entities
+2026-09-17 23:19:50,079 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:19:50,081 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=19
+2026-09-17 23:19:50,083 INFO clauseguard_backend Request complete request_id=7283f14cf9c14de1a39f46dbe72b140a method=POST path=/analyze status=200 duration_ms=130.19
+INFO:     127.0.0.1:57521 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:19:54,563 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:19:54,563 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 5154 chars
+2026-09-17 23:19:54,564 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:19:54,564 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:19:54,565 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:19:54,565 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:19:54,610 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.58, pattern=None, requires_context=False
+2026-09-17 23:19:54,667 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 42 monetary entities
+2026-09-17 23:19:54,698 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:19:54,700 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=19
+2026-09-17 23:19:54,702 INFO clauseguard_backend Request complete request_id=1b6dc2507e674478a1019adb49bbe88a method=POST path=/analyze status=200 duration_ms=142.56
+INFO:     127.0.0.1:57521 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:20:12,151 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:20:12,151 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 20000 chars
+2026-09-17 23:20:12,151 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:20:12,151 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:20:12,151 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:20:12,151 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:20:12,297 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Scarcity, requires_context=False
+2026-09-17 23:20:13,056 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 239 monetary entities
+2026-09-17 23:20:13,290 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:20:13,292 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=51
+2026-09-17 23:20:13,337 INFO clauseguard_backend Request complete request_id=197680a06b4342d891091c3bcb5d6cc5 method=POST path=/analyze status=200 duration_ms=1190.31
+INFO:     127.0.0.1:60910 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:20:38,351 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:20:38,351 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 20000 chars
+2026-09-17 23:20:38,352 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:20:38,352 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:20:38,352 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:20:38,352 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:20:38,443 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Scarcity, requires_context=False
+2026-09-17 23:20:39,096 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 239 monetary entities
+2026-09-17 23:20:39,314 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:20:39,316 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=51
+2026-09-17 23:20:39,320 INFO clauseguard_backend Request complete request_id=8f3530d802d9418eb09b4a1f5a3f223e method=POST path=/analyze status=200 duration_ms=970.18
+INFO:     127.0.0.1:49693 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:20:41,145 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:20:41,145 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 17561 chars
+2026-09-17 23:20:41,145 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:20:41,145 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:20:41,145 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:20:41,146 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:20:41,207 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Urgency, requires_context=False
+2026-09-17 23:20:41,712 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 229 monetary entities
+2026-09-17 23:20:41,965 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:20:41,967 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=55
+2026-09-17 23:20:41,970 INFO clauseguard_backend Request complete request_id=3a151998ce644fbbbd5fdd12b3009977 method=POST path=/analyze status=200 duration_ms=828.65
+INFO:     127.0.0.1:49693 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:20:43,960 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:20:43,960 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 17561 chars
+2026-09-17 23:20:43,960 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:20:43,960 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:20:43,960 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:20:43,961 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:20:44,042 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Urgency, requires_context=False
+2026-09-17 23:20:44,466 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 229 monetary entities
+2026-09-17 23:20:44,687 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:20:44,689 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=55
+2026-09-17 23:20:44,692 INFO clauseguard_backend Request complete request_id=f5c250878c3a4ca7b4e154cf74e6bf02 method=POST path=/analyze status=200 duration_ms=734.19
+INFO:     127.0.0.1:49693 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:21:38,384 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:21:38,385 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 17757 chars
+2026-09-17 23:21:38,385 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:21:38,385 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:21:38,385 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:21:38,386 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:21:38,466 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.94, pattern=Urgency, requires_context=False
+2026-09-17 23:21:38,924 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 238 monetary entities
+2026-09-17 23:21:39,281 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:21:39,283 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=61
+2026-09-17 23:21:39,286 INFO clauseguard_backend Request complete request_id=bb6d6f1070c6492bb74baf9295f94e15 method=POST path=/analyze status=200 duration_ms=904.21
+INFO:     127.0.0.1:50620 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:21:41,552 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:21:41,552 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 17757 chars
+2026-09-17 23:21:41,552 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:21:41,552 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:21:41,553 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:21:41,553 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:21:41,627 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.94, pattern=Urgency, requires_context=False
+2026-09-17 23:21:42,201 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 238 monetary entities
+2026-09-17 23:21:42,433 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:21:42,434 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=61
+2026-09-17 23:21:42,438 INFO clauseguard_backend Request complete request_id=01f675001c94427b87093be31fe0d43a method=POST path=/analyze status=200 duration_ms=887.11
+INFO:     127.0.0.1:50620 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:21:55,189 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:21:55,190 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 17561 chars
+2026-09-17 23:21:55,190 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:21:55,190 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:21:55,190 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:21:55,190 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:21:55,267 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Urgency, requires_context=False
+2026-09-17 23:21:55,697 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 229 monetary entities
+2026-09-17 23:21:55,910 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:21:55,912 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=55
+2026-09-17 23:21:55,916 INFO clauseguard_backend Request complete request_id=1df795e7c046435c9da1599da3471e2c method=POST path=/analyze status=200 duration_ms=727.92
+INFO:     127.0.0.1:59490 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:22:17,283 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:22:17,283 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 17561 chars
+2026-09-17 23:22:17,284 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:22:17,284 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:22:17,284 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:22:17,284 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:22:17,359 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Urgency, requires_context=False
+2026-09-17 23:22:17,817 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 229 monetary entities
+2026-09-17 23:22:18,032 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:22:18,034 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=55
+2026-09-17 23:22:18,037 INFO clauseguard_backend Request complete request_id=749232cbd2fc495f9810bca5767d04b2 method=POST path=/analyze status=200 duration_ms=755.77
+INFO:     127.0.0.1:51283 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:23:06,919 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:23:06,919 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2641 chars
+2026-09-17 23:23:06,920 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:23:06,920 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:23:06,920 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:23:06,920 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:23:06,930 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.99, pattern=Scarcity, requires_context=False
+2026-09-17 23:23:06,942 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 30 monetary entities
+2026-09-17 23:23:06,953 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:23:06,953 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=17
+2026-09-17 23:23:06,954 INFO clauseguard_backend Request complete request_id=6beb33f65d6c482390b192dcdc61cef7 method=POST path=/analyze status=200 duration_ms=35.66
+INFO:     127.0.0.1:62257 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:23:14,711 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:23:14,711 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 772 chars
+2026-09-17 23:23:14,712 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:23:14,712 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:23:14,712 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:23:14,712 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:23:14,729 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.99, pattern=Scarcity, requires_context=False
+2026-09-17 23:23:14,733 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 2 monetary entities
+2026-09-17 23:23:14,736 ERROR clauseguard_backend [ClauseGuard] Analysis error: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T17:53:13.178Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\main.py", line 316, in analyze
+    fusion_response = evidence_fusion_engine.fuse(fusion_request)
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_fusion.py", line 347, in fuse
+    evidence_items.extend(adapt_dom_evidence(request.dom_evidence, next_id_fn=next_id))
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_adapters.py", line 742, in adapt_dom_evidence
+    EvidenceItem(
+    ~~~~~~~~~~~~^
+        evidence_id=eid,
+        ^^^^^^^^^^^^^^^^
+    ...<28 lines>...
+        },
+        ^^
+    )
+    ^
+  File "c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T17:53:13.178Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+2026-09-17 23:23:14,867 INFO clauseguard_backend Request complete request_id=d2b2a523b5b74bd38a29d032add96ee1 method=POST path=/analyze status=500 duration_ms=158.09
+INFO:     127.0.0.1:63529 - "POST /analyze HTTP/1.1" 500 Internal Server Error
+2026-09-17 23:23:19,616 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:23:19,617 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 772 chars
+2026-09-17 23:23:19,618 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:23:19,619 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:23:19,619 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:23:19,620 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:23:19,653 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.99, pattern=Scarcity, requires_context=False
+2026-09-17 23:23:19,660 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 2 monetary entities
+2026-09-17 23:23:19,668 ERROR clauseguard_backend [ClauseGuard] Analysis error: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T17:53:13.178Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\main.py", line 316, in analyze
+    fusion_response = evidence_fusion_engine.fuse(fusion_request)
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_fusion.py", line 347, in fuse
+    evidence_items.extend(adapt_dom_evidence(request.dom_evidence, next_id_fn=next_id))
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_adapters.py", line 742, in adapt_dom_evidence
+    EvidenceItem(
+    ~~~~~~~~~~~~^
+        evidence_id=eid,
+        ^^^^^^^^^^^^^^^^
+    ...<28 lines>...
+        },
+        ^^
+    )
+    ^
+  File "c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T17:53:13.178Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+2026-09-17 23:23:19,678 INFO clauseguard_backend Request complete request_id=6dd74da9d9fb481da788c13567437788 method=POST path=/analyze status=500 duration_ms=70.25
+INFO:     127.0.0.1:63529 - "POST /analyze HTTP/1.1" 500 Internal Server Error
+2026-09-17 23:24:21,947 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:24:21,947 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2889 chars
+2026-09-17 23:24:21,947 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:24:21,947 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:24:21,948 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:24:21,948 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:24:21,978 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.58, pattern=None, requires_context=False
+2026-09-17 23:24:21,988 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-17 23:24:22,001 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:24:22,003 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=1
+2026-09-17 23:24:22,004 INFO clauseguard_backend Request complete request_id=96de14a129a54946a2b098c5fc2c2f41 method=POST path=/analyze status=200 duration_ms=60.55
+INFO:     127.0.0.1:49674 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:24:32,349 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:24:32,349 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1164 chars
+2026-09-17 23:24:32,349 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:24:32,349 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:24:32,349 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:24:32,350 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:24:32,366 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.18, pattern=None, requires_context=False
+2026-09-17 23:24:32,368 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:24:32,372 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:24:32,373 INFO clauseguard_backend Request complete request_id=33a6726b667d4d9f9257399bc5af2225 method=POST path=/analyze status=200 duration_ms=25.70
+INFO:     127.0.0.1:53195 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:24:33,908 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:24:33,908 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1273 chars
+2026-09-17 23:24:33,908 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:24:33,909 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:24:33,909 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:24:33,909 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:24:33,931 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.18, pattern=None, requires_context=False
+2026-09-17 23:24:33,934 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:24:33,939 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:24:33,940 INFO clauseguard_backend Request complete request_id=dc913ce12962400dbe6e01e71fd2c1f8 method=POST path=/analyze status=200 duration_ms=33.82
+INFO:     127.0.0.1:53195 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:24:36,976 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:24:36,976 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1070 chars
+2026-09-17 23:24:36,976 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:24:36,976 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:24:36,976 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:24:36,977 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:24:36,999 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.82, pattern=Other, requires_context=False
+2026-09-17 23:24:37,003 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-17 23:24:37,011 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:24:37,013 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=5
+2026-09-17 23:24:37,015 INFO clauseguard_backend Request complete request_id=aa6c43a6dfb14ef2b2c58355733d6452 method=POST path=/analyze status=200 duration_ms=41.16
+INFO:     127.0.0.1:53195 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:24:47,387 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:24:47,387 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1070 chars
+2026-09-17 23:24:47,387 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:24:47,387 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:24:47,387 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:24:47,387 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:24:47,411 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.82, pattern=Other, requires_context=False
+2026-09-17 23:24:47,415 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-17 23:24:47,423 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:24:47,425 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=5
+2026-09-17 23:24:47,427 INFO clauseguard_backend Request complete request_id=14e1ed21d1c245d08ed1a8dbcf0bbf8c method=POST path=/analyze status=200 duration_ms=42.10
+INFO:     127.0.0.1:60087 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:25:14,446 WARNING backend.services.ask_clauseguard [ClauseGuard /ask] Decoder LLM returned empty output. Using fallback.
+2026-09-17 23:25:14,447 INFO clauseguard_backend Ask trace request_id=1f1538ee-ccf1-488f-8b4a-e1f7b7ee1c7e question='what was the dark pattern in this page' intent=EXPLAIN_PATTERN response_mode=DETERMINISTIC_FALLBACK evidence_ids=['E001', 'E002', 'E003', 'E004', 'E005'] pattern=other consequence=True recommendation=False llm_called=False fallback=True
+2026-09-17 23:25:14,448 INFO clauseguard_backend Request complete request_id=1f1538ee-ccf1-488f-8b4a-e1f7b7ee1c7e method=POST path=/ask status=200 duration_ms=1385.11
+INFO:     127.0.0.1:50987 - "POST /ask HTTP/1.1" 200 OK
+2026-09-17 23:26:54,537 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:26:54,537 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19959 chars
+2026-09-17 23:26:54,538 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:26:54,538 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:26:54,538 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:26:54,538 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:26:54,636 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.95, pattern=Other, requires_context=False
+2026-09-17 23:26:54,757 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 30 monetary entities
+2026-09-17 23:26:54,823 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:26:54,824 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-17 23:26:54,826 INFO clauseguard_backend Request complete request_id=3b60f49a7daf44d2bc41387b34f8e45b method=POST path=/analyze status=200 duration_ms=290.42
+INFO:     127.0.0.1:64929 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:27:05,936 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:27:05,936 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 772 chars
+2026-09-17 23:27:05,937 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:27:05,937 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:27:05,937 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:27:05,937 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:27:05,956 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.99, pattern=Scarcity, requires_context=False
+2026-09-17 23:27:05,960 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 2 monetary entities
+2026-09-17 23:27:05,963 ERROR clauseguard_backend [ClauseGuard] Analysis error: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T17:53:13.178Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\main.py", line 316, in analyze
+    fusion_response = evidence_fusion_engine.fuse(fusion_request)
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_fusion.py", line 347, in fuse
+    evidence_items.extend(adapt_dom_evidence(request.dom_evidence, next_id_fn=next_id))
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_adapters.py", line 742, in adapt_dom_evidence
+    EvidenceItem(
+    ~~~~~~~~~~~~^
+        evidence_id=eid,
+        ^^^^^^^^^^^^^^^^
+    ...<28 lines>...
+        },
+        ^^
+    )
+    ^
+  File "c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T17:53:13.178Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T17:53:13.178Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+2026-09-17 23:27:05,967 INFO clauseguard_backend Request complete request_id=4858a276a4e548dcbc630abc9d8fdcfb method=POST path=/analyze status=500 duration_ms=32.85
+INFO:     127.0.0.1:53977 - "POST /analyze HTTP/1.1" 500 Internal Server Error
+2026-09-17 23:27:20,142 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:27:20,142 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1070 chars
+2026-09-17 23:27:20,142 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:27:20,142 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:27:20,142 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:27:20,142 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:27:20,162 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.82, pattern=Other, requires_context=False
+2026-09-17 23:27:20,166 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-17 23:27:20,175 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:27:20,177 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=5
+2026-09-17 23:27:20,178 INFO clauseguard_backend Request complete request_id=752cef42a6af4317815d9cf21c3fe65e method=POST path=/analyze status=200 duration_ms=37.86
+INFO:     127.0.0.1:61630 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:35:54,589 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:35:54,590 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1070 chars
+2026-09-17 23:35:54,590 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:35:54,590 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:35:54,590 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:35:54,590 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:35:54,623 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.82, pattern=Other, requires_context=False
+2026-09-17 23:35:54,629 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-17 23:35:54,642 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:35:54,645 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=5
+2026-09-17 23:35:54,650 INFO clauseguard_backend Request complete request_id=d3517a3abd834960b56c45eae1f13292 method=POST path=/analyze status=200 duration_ms=62.89
+INFO:     127.0.0.1:63678 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:41:47,891 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:41:47,891 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1924 chars
+2026-09-17 23:41:47,891 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:41:47,891 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:41:47,892 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:41:47,892 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:41:47,919 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.81, pattern=Other, requires_context=False
+2026-09-17 23:41:47,926 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 2 monetary entities
+2026-09-17 23:41:47,933 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:41:47,934 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=3
+2026-09-17 23:41:47,935 INFO clauseguard_backend Request complete request_id=571c68b9002141efb8d90a983f6e7b08 method=POST path=/analyze status=200 duration_ms=46.46
+INFO:     127.0.0.1:65347 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:41:58,448 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:41:58,448 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 16395 chars
+2026-09-17 23:41:58,448 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:41:58,448 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:41:58,449 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:41:58,449 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:41:58,541 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.97, pattern=Other, requires_context=False
+2026-09-17 23:41:58,632 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 5 monetary entities
+2026-09-17 23:41:58,682 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:41:58,683 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=6
+2026-09-17 23:41:58,688 INFO clauseguard_backend Request complete request_id=c43bbf691a05479f86e1ce086c65ebe6 method=POST path=/analyze status=200 duration_ms=241.43
+INFO:     127.0.0.1:61806 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:42:03,816 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:42:03,816 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 424 chars
+2026-09-17 23:42:03,816 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:42:03,816 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:42:03,816 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:42:03,816 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:42:03,841 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.50, pattern=None, requires_context=False
+2026-09-17 23:42:03,842 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:42:03,843 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:42:03,844 INFO clauseguard_backend Request complete request_id=147d8f22b17d4098a7659ac2e01346d1 method=POST path=/analyze status=200 duration_ms=29.97
+INFO:     127.0.0.1:65457 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:42:05,426 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:42:05,426 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4326 chars
+2026-09-17 23:42:05,426 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:42:05,427 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:42:05,427 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:42:05,427 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:42:05,467 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-17 23:42:05,477 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:42:05,494 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:42:05,498 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-17 23:42:05,501 INFO clauseguard_backend Request complete request_id=a69ecf6c419e498699b7365391af0f13 method=POST path=/analyze status=200 duration_ms=81.13
+INFO:     127.0.0.1:65457 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:42:08,322 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:42:08,322 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4472 chars
+2026-09-17 23:42:08,323 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:42:08,323 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:42:08,323 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:42:08,323 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:42:08,355 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.89, pattern=Other, requires_context=False
+2026-09-17 23:42:08,365 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:42:08,378 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:42:08,380 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-17 23:42:08,380 INFO clauseguard_backend Request complete request_id=0c590d29ca7847ef9f67c685f0e6b6b7 method=POST path=/analyze status=200 duration_ms=59.45
+INFO:     127.0.0.1:65457 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:42:15,618 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:42:15,618 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4845 chars
+2026-09-17 23:42:15,618 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:42:15,618 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:42:15,618 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:42:15,618 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:42:15,661 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.86, pattern=Other, requires_context=False
+2026-09-17 23:42:15,672 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:42:15,685 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:42:15,687 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-17 23:42:15,689 INFO clauseguard_backend Request complete request_id=e661bc79710748279efafe2f0648d147 method=POST path=/analyze status=200 duration_ms=73.92
+INFO:     127.0.0.1:51905 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:42:17,956 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:42:17,956 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 445 chars
+2026-09-17 23:42:17,956 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:42:17,956 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:42:17,956 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:42:17,956 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:42:17,977 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.66, pattern=None, requires_context=False
+2026-09-17 23:42:17,977 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:42:17,978 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:42:17,979 INFO clauseguard_backend Request complete request_id=05bb0ea722ae43d896559b9a1e0022a1 method=POST path=/analyze status=200 duration_ms=24.22
+INFO:     127.0.0.1:51905 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:42:22,787 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:42:22,788 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2185 chars
+2026-09-17 23:42:22,788 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:42:22,788 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:42:22,788 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:42:22,788 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:42:22,835 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.82, pattern=Other, requires_context=False
+2026-09-17 23:42:22,848 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:42:22,864 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-17 23:42:22,868 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-17 23:42:22,870 INFO clauseguard_backend Request complete request_id=e0c6d0e80fd341ebb732f4da072456b9 method=POST path=/analyze status=200 duration_ms=84.28
+INFO:     127.0.0.1:51905 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:54:21,224 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:54:21,224 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 596 chars
+2026-09-17 23:54:21,225 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:54:21,225 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:54:21,225 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:54:21,225 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:54:21,243 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.10, pattern=None, requires_context=False
+2026-09-17 23:54:21,244 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:54:21,246 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:54:21,247 INFO clauseguard_backend Request complete request_id=843fd64b987d4927ab882a498113aae3 method=POST path=/analyze status=200 duration_ms=23.74
+INFO:     127.0.0.1:65307 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:54:34,227 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:54:34,227 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2946 chars
+2026-09-17 23:54:34,227 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:54:34,227 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:54:34,228 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:54:34,228 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:54:34,253 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.56, pattern=None, requires_context=False
+2026-09-17 23:54:34,260 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:54:34,271 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:54:34,272 INFO clauseguard_backend Request complete request_id=27eb42c05a9743a788f8e82f1dc1642c method=POST path=/analyze status=200 duration_ms=46.09
+INFO:     127.0.0.1:57126 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-17 23:54:37,870 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-17 23:54:37,870 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2817 chars
+2026-09-17 23:54:37,871 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-17 23:54:37,871 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-17 23:54:37,871 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-17 23:54:37,871 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-17 23:54:37,904 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.50, pattern=None, requires_context=False
+2026-09-17 23:54:37,907 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-17 23:54:37,913 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-17 23:54:37,914 INFO clauseguard_backend Request complete request_id=d13c7347abcf4f2b9cb43b1aae81ce44 method=POST path=/analyze status=200 duration_ms=45.70
+INFO:     127.0.0.1:57126 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:12:57,953 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:12:57,954 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2443 chars
+2026-09-18 00:12:57,954 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:12:57,954 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:12:57,954 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:12:57,954 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:12:57,982 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.75, pattern=None, requires_context=False
+2026-09-18 00:12:58,003 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:12:58,009 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:12:58,010 INFO clauseguard_backend Request complete request_id=2ba83fa3913641e292dc33f57aa5e2e0 method=POST path=/analyze status=200 duration_ms=59.06
+INFO:     127.0.0.1:55904 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:15:25,588 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:15:25,588 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1378 chars
+2026-09-18 00:15:25,589 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:15:25,589 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:15:25,589 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:15:25,589 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:15:25,603 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.85, pattern=Other, requires_context=False
+2026-09-18 00:15:25,605 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:15:25,609 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:15:25,610 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-18 00:15:25,611 INFO clauseguard_backend Request complete request_id=99f9aec281e24c4786f9534470fca25c method=POST path=/analyze status=200 duration_ms=23.53
+INFO:     127.0.0.1:63599 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:15:26,688 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:15:26,688 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1888 chars
+2026-09-18 00:15:26,688 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:15:26,688 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:15:26,688 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:15:26,688 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:15:26,705 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.82, pattern=Other, requires_context=False
+2026-09-18 00:15:26,709 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:15:26,715 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:15:26,716 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-18 00:15:26,717 INFO clauseguard_backend Request complete request_id=533163dcae3d4823870dbac44b970125 method=POST path=/analyze status=200 duration_ms=30.04
+INFO:     127.0.0.1:63599 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:16:54,313 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:16:54,313 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 3603 chars
+2026-09-18 00:16:54,313 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:16:54,314 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:16:54,314 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:16:54,314 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:16:54,339 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.54, pattern=None, requires_context=False
+2026-09-18 00:16:54,343 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:16:54,348 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:16:54,349 INFO clauseguard_backend Request complete request_id=4461581fa5794b52af30e3967922be5c method=POST path=/analyze status=200 duration_ms=37.74
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:16:56,511 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:16:56,511 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2769 chars
+2026-09-18 00:16:56,511 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:16:56,512 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:16:56,512 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:16:56,512 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:16:56,535 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.83, pattern=Other, requires_context=False
+2026-09-18 00:16:56,542 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:16:56,551 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:16:56,553 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-18 00:16:56,553 INFO clauseguard_backend Request complete request_id=f71e501607b64ea9a1c09b39802d440f method=POST path=/analyze status=200 duration_ms=42.79
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:00,670 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:00,670 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2079 chars
+2026-09-18 00:17:00,671 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:00,671 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:00,671 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:00,671 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:00,722 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.74, pattern=None, requires_context=False
+2026-09-18 00:17:00,731 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:00,738 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:17:00,740 INFO clauseguard_backend Request complete request_id=410b49b30f4c41098edc1ea0110efd35 method=POST path=/analyze status=200 duration_ms=71.22
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:02,748 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:02,748 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 516 chars
+2026-09-18 00:17:02,748 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:02,748 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:02,749 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:02,749 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:02,768 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.64, pattern=None, requires_context=False
+2026-09-18 00:17:02,770 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:02,772 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:17:02,774 INFO clauseguard_backend Request complete request_id=f60a42aeaf5d427d80d1739d82454259 method=POST path=/analyze status=200 duration_ms=27.83
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:04,665 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:04,665 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4408 chars
+2026-09-18 00:17:04,666 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:04,666 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:04,666 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:04,666 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:04,681 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.92, pattern=Other, requires_context=False
+2026-09-18 00:17:04,686 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:04,693 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:17:04,694 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-18 00:17:04,695 INFO clauseguard_backend Request complete request_id=2554133ed2fc4b07bb5bc060e86cae4e method=POST path=/analyze status=200 duration_ms=30.15
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:06,476 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:06,477 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 3667 chars
+2026-09-18 00:17:06,477 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:06,477 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:06,477 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:06,477 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:06,490 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.78, pattern=None, requires_context=False
+2026-09-18 00:17:06,494 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:06,500 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:17:06,500 INFO clauseguard_backend Request complete request_id=7d2d3807eee64147906ceb0f013bacf2 method=POST path=/analyze status=200 duration_ms=24.54
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:08,391 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:08,391 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2119 chars
+2026-09-18 00:17:08,391 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:08,391 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:08,391 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:08,391 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:08,407 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.86, pattern=Other, requires_context=False
+2026-09-18 00:17:08,410 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:08,420 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:17:08,421 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-18 00:17:08,422 INFO clauseguard_backend Request complete request_id=94b477e655c844f0b0bfbd294d7981c7 method=POST path=/analyze status=200 duration_ms=32.35
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:10,056 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:10,056 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 2752 chars
+2026-09-18 00:17:10,057 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:10,057 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:10,057 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:10,057 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:10,074 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.97, pattern=Other, requires_context=False
+2026-09-18 00:17:10,077 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:10,082 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:17:10,083 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=1
+2026-09-18 00:17:10,084 INFO clauseguard_backend Request complete request_id=1fd9bda2188641508a6182abadb7a8a2 method=POST path=/analyze status=200 duration_ms=29.30
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:12,083 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:12,083 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 3076 chars
+2026-09-18 00:17:12,083 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:12,083 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:12,083 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:12,083 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:12,095 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.71, pattern=None, requires_context=False
+2026-09-18 00:17:12,099 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:17:12,104 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:17:12,104 INFO clauseguard_backend Request complete request_id=e1eb02d61952414c89a8667d16625f96 method=POST path=/analyze status=200 duration_ms=22.85
+INFO:     127.0.0.1:63073 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:23,066 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:23,066 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1931 chars
+2026-09-18 00:17:23,066 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:23,066 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:23,066 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:23,066 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:23,089 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.89, pattern=Other, requires_context=False
+2026-09-18 00:17:23,095 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:17:23,104 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:17:23,106 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:17:23,107 INFO clauseguard_backend Request complete request_id=69da0fc4ca2b47a1859bd1ea1912ff7a method=POST path=/analyze status=200 duration_ms=42.88
+INFO:     127.0.0.1:61372 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:17:30,507 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:17:30,508 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1922 chars
+2026-09-18 00:17:30,508 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:17:30,508 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:17:30,508 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:17:30,508 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:17:30,525 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:17:30,531 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:17:30,535 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:17:30,536 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:17:30,537 INFO clauseguard_backend Request complete request_id=d7acc0e4c96d40fe97285822e8e55d9b method=POST path=/analyze status=200 duration_ms=30.41
+INFO:     127.0.0.1:56170 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:19:02,022 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:19:02,022 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1922 chars
+2026-09-18 00:19:02,022 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:19:02,022 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:19:02,023 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:19:02,023 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:19:02,046 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:19:02,052 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:19:02,062 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:19:02,065 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:19:02,066 INFO clauseguard_backend Request complete request_id=31ee0b61ea5849fc8bdd4413db277bda method=POST path=/analyze status=200 duration_ms=46.05
+INFO:     127.0.0.1:56943 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:19:02,496 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:19:02,496 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 877 chars
+2026-09-18 00:19:02,496 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:19:02,496 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:19:02,496 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:19:02,497 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:19:02,518 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.68, pattern=None, requires_context=False
+2026-09-18 00:19:02,520 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:19:02,524 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:19:02,524 INFO clauseguard_backend Request complete request_id=adffb97cfae747edb14a76c1d3b8378b method=POST path=/analyze status=200 duration_ms=30.81
+INFO:     127.0.0.1:56943 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:22:42,342 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:22:42,343 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 654 chars
+2026-09-18 00:22:42,343 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:22:42,343 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:22:42,343 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:22:42,343 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:22:42,362 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.11, pattern=None, requires_context=False
+2026-09-18 00:22:42,364 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:22:42,366 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:22:42,367 INFO clauseguard_backend Request complete request_id=1171f906c699414c9e0c2242a1aec627 method=POST path=/analyze status=200 duration_ms=26.92
+INFO:     127.0.0.1:64317 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:23:46,036 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:23:46,037 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19992 chars
+2026-09-18 00:23:46,037 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:23:46,037 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:23:46,037 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:23:46,037 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:23:46,138 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.93, pattern=Social Proof, requires_context=False
+2026-09-18 00:23:46,247 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 13 monetary entities
+2026-09-18 00:23:46,313 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:23:46,316 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:23:46,317 INFO clauseguard_backend Request complete request_id=0b552072b1b045b7ad510d888f25d1de method=POST path=/analyze status=200 duration_ms=283.11
+INFO:     127.0.0.1:64151 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:23:55,479 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:23:55,479 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19992 chars
+2026-09-18 00:23:55,479 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:23:55,479 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:23:55,479 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:23:55,479 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:23:55,571 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.93, pattern=Social Proof, requires_context=False
+2026-09-18 00:23:55,651 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 13 monetary entities
+2026-09-18 00:23:55,723 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:23:55,724 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:23:55,725 INFO clauseguard_backend Request complete request_id=837e468ad29845cf9ba759f612074126 method=POST path=/analyze status=200 duration_ms=248.45
+INFO:     127.0.0.1:57542 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:24:11,595 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:24:11,596 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19992 chars
+2026-09-18 00:24:11,596 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:24:11,596 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:24:11,596 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:24:11,596 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:24:11,696 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.93, pattern=Social Proof, requires_context=False
+2026-09-18 00:24:11,775 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 13 monetary entities
+2026-09-18 00:24:11,845 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:24:11,847 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:24:11,849 INFO clauseguard_backend Request complete request_id=a1a6060fb9ee48f3b5c6fd3e762ad2d6 method=POST path=/analyze status=200 duration_ms=255.07
+INFO:     127.0.0.1:51746 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:24:19,182 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:24:19,182 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4 chars
+2026-09-18 00:24:19,183 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:24:19,183 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:24:19,183 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:24:19,183 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:24:19,211 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.19, pattern=None, requires_context=False
+2026-09-18 00:24:19,211 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:24:19,212 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:24:19,213 INFO clauseguard_backend Request complete request_id=91b263e9dfc048678339eb6b67feb405 method=POST path=/analyze status=200 duration_ms=36.90
+INFO:     127.0.0.1:60162 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:24:20,828 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:24:20,828 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4 chars
+2026-09-18 00:24:20,828 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:24:20,828 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:24:20,828 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:24:20,829 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:24:20,843 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.19, pattern=None, requires_context=False
+2026-09-18 00:24:20,844 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:24:20,844 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:24:20,845 INFO clauseguard_backend Request complete request_id=e0610dc2cbbc4e848b953128bbbdc257 method=POST path=/analyze status=200 duration_ms=18.83
+INFO:     127.0.0.1:60162 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:24:29,284 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:24:29,284 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4 chars
+2026-09-18 00:24:29,284 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:24:29,285 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:24:29,285 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:24:29,285 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:24:29,316 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.19, pattern=None, requires_context=False
+2026-09-18 00:24:29,316 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:24:29,318 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:24:29,320 INFO clauseguard_backend Request complete request_id=e36b5ffa769940e995b003fcdf8d8a54 method=POST path=/analyze status=200 duration_ms=39.33
+INFO:     127.0.0.1:62610 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:26:17,275 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:26:17,276 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19975 chars
+2026-09-18 00:26:17,276 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:26:17,276 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:26:17,276 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:26:17,276 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:26:17,378 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:26:17,467 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 11 monetary entities
+2026-09-18 00:26:17,534 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:26:17,536 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:26:17,538 INFO clauseguard_backend Request complete request_id=0ee1726ab20d49089852bc09996ee4a2 method=POST path=/analyze status=200 duration_ms=264.74
+INFO:     127.0.0.1:58964 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:26:20,813 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:26:20,813 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19975 chars
+2026-09-18 00:26:20,814 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:26:20,814 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:26:20,814 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:26:20,814 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:26:20,914 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:26:21,040 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 11 monetary entities
+2026-09-18 00:26:21,110 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:26:21,111 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:26:21,113 INFO clauseguard_backend Request complete request_id=95ebcab3c8fe480f82e47e264b5f573d method=POST path=/analyze status=200 duration_ms=301.35
+INFO:     127.0.0.1:58964 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:26:22,675 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:26:22,675 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19975 chars
+2026-09-18 00:26:22,676 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:26:22,676 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:26:22,676 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:26:22,676 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:26:22,773 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:26:22,861 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 11 monetary entities
+2026-09-18 00:26:22,924 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:26:22,925 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:26:22,927 INFO clauseguard_backend Request complete request_id=0bfeb01a899a4b80b6ce05ab06eb12e6 method=POST path=/analyze status=200 duration_ms=253.60
+INFO:     127.0.0.1:58964 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:26:35,018 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:26:35,019 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 19975 chars
+2026-09-18 00:26:35,019 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:26:35,020 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:26:35,020 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:26:35,020 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:26:35,143 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:26:35,222 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 11 monetary entities
+2026-09-18 00:26:35,282 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:26:35,284 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=MEDIUM risk_score=3.0 evidence_count=4
+2026-09-18 00:26:35,285 INFO clauseguard_backend Request complete request_id=74d66c78fe9948149f9bdab110c4d52a method=POST path=/analyze status=200 duration_ms=272.00
+INFO:     127.0.0.1:52618 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:29:42,119 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:29:42,119 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1922 chars
+2026-09-18 00:29:42,119 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:29:42,119 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:29:42,119 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:29:42,119 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:29:42,144 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:29:42,151 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:29:42,160 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:29:42,162 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:29:42,163 INFO clauseguard_backend Request complete request_id=f22688ade2794d5f92b96073a79f41ba method=POST path=/analyze status=200 duration_ms=46.73
+INFO:     127.0.0.1:59097 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:30:55,413 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:30:55,413 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1950 chars
+2026-09-18 00:30:55,414 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:30:55,414 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:30:55,414 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:30:55,414 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:30:55,466 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.89, pattern=Other, requires_context=False
+2026-09-18 00:30:55,480 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:30:55,500 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:30:55,505 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:30:55,509 INFO clauseguard_backend Request complete request_id=00abdd54e82d468f91b4cf9c800f79e7 method=POST path=/analyze status=200 duration_ms=98.28
+INFO:     127.0.0.1:60159 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:31:00,241 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:31:00,241 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1950 chars
+2026-09-18 00:31:00,241 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:31:00,241 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:31:00,241 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:31:00,241 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:31:00,264 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.89, pattern=Other, requires_context=False
+2026-09-18 00:31:00,271 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:31:00,280 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:31:00,282 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:31:00,283 INFO clauseguard_backend Request complete request_id=083d139db6ab46f39cac84fbf73dd778 method=POST path=/analyze status=200 duration_ms=43.98
+INFO:     127.0.0.1:60159 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:31:01,883 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:31:01,883 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1950 chars
+2026-09-18 00:31:01,884 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:31:01,884 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:31:01,884 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:31:01,884 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:31:01,909 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.89, pattern=Other, requires_context=False
+2026-09-18 00:31:01,917 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:31:01,926 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:31:01,928 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:31:01,930 INFO clauseguard_backend Request complete request_id=f460ea81e71f4084bfb9ea14c133c419 method=POST path=/analyze status=200 duration_ms=48.32
+INFO:     127.0.0.1:60159 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:31:03,091 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:31:03,091 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 246 chars
+2026-09-18 00:31:03,091 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:31:03,091 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:31:03,091 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:31:03,091 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:31:03,109 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.40, pattern=None, requires_context=False
+2026-09-18 00:31:03,110 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:31:03,111 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:31:03,112 INFO clauseguard_backend Request complete request_id=a8ed8d511ba8445aa9964427a034f0f3 method=POST path=/analyze status=200 duration_ms=23.25
+INFO:     127.0.0.1:60159 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:31:20,703 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:31:20,703 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1922 chars
+2026-09-18 00:31:20,703 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:31:20,703 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:31:20,703 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:31:20,703 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:31:20,724 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.90, pattern=Other, requires_context=False
+2026-09-18 00:31:20,733 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 3 monetary entities
+2026-09-18 00:31:20,743 WARNING clauseguard_backend.minilm_explanation MiniLM unavailable; using deterministic explanation fallback
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 61, in enhance
+    backend = self._get_backend()
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\minilm_explanation.py", line 98, in _get_backend
+    from transformers import AutoModel, AutoTokenizer
+ModuleNotFoundError: No module named 'transformers'
+2026-09-18 00:31:20,745 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=2.0 evidence_count=4
+2026-09-18 00:31:20,746 INFO clauseguard_backend Request complete request_id=a6608fbd4bea4440a6064760cdc6d511 method=POST path=/analyze status=200 duration_ms=45.34
+INFO:     127.0.0.1:60673 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:31:49,154 INFO clauseguard_backend Ask trace request_id=442e1f39-7212-4d75-91bd-0b72f4e0aaaf question='where is that rupees 5 mentioned' intent=UNKNOWN response_mode=GROUNDED_LLM evidence_ids=[] pattern=other consequence=False recommendation=False llm_called=True fallback=False
+2026-09-18 00:31:49,155 INFO clauseguard_backend Request complete request_id=442e1f39-7212-4d75-91bd-0b72f4e0aaaf method=POST path=/ask status=200 duration_ms=507.72
+INFO:     127.0.0.1:58326 - "POST /ask HTTP/1.1" 200 OK
+2026-09-18 00:31:57,536 INFO backend.services.ask_clauseguard Ask trace request_id=a7b25637-8872-49c9-8b33-97d0b428f225 question='What should I check before continuing?' intent=WHAT_SHOULD_I_DO response_mode=DETERMINISTIC_FACT evidence_ids=['E001'] pattern=other consequence=True recommendation=True llm_called=false fallback=false
+2026-09-18 00:31:57,537 INFO clauseguard_backend Ask trace request_id=a7b25637-8872-49c9-8b33-97d0b428f225 question='What should I check before continuing?' intent=WHAT_SHOULD_I_DO response_mode=DETERMINISTIC_FACT evidence_ids=['E001'] pattern=other consequence=False recommendation=True llm_called=False fallback=False
+2026-09-18 00:31:57,538 INFO clauseguard_backend Request complete request_id=a7b25637-8872-49c9-8b33-97d0b428f225 method=POST path=/ask status=200 duration_ms=4.87
+INFO:     127.0.0.1:63255 - "POST /ask HTTP/1.1" 200 OK
+2026-09-18 00:33:28,468 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:33:28,469 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 1102 chars
+2026-09-18 00:33:28,469 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:33:28,469 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:33:28,469 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:33:28,470 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:33:28,502 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.49, pattern=None, requires_context=False
+2026-09-18 00:33:28,506 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:33:28,514 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:33:28,517 INFO clauseguard_backend Request complete request_id=a7785c983c17482894a81c0392f5b016 method=POST path=/analyze status=200 duration_ms=53.86
+INFO:     127.0.0.1:59632 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:33:36,025 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:33:36,025 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 3285 chars
+2026-09-18 00:33:36,026 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:33:36,026 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:33:36,026 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:33:36,026 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:33:36,064 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.96, pattern=Other, requires_context=False
+2026-09-18 00:33:36,074 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:33:36,085 ERROR clauseguard_backend [ClauseGuard] Analysis error: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T19:03:34.038Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\main.py", line 316, in analyze
+    fusion_response = evidence_fusion_engine.fuse(fusion_request)
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_fusion.py", line 347, in fuse
+    evidence_items.extend(adapt_dom_evidence(request.dom_evidence, next_id_fn=next_id))
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_adapters.py", line 742, in adapt_dom_evidence
+    EvidenceItem(
+    ~~~~~~~~~~~~^
+        evidence_id=eid,
+        ^^^^^^^^^^^^^^^^
+    ...<28 lines>...
+        },
+        ^^
+    )
+    ^
+  File "c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T19:03:34.038Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+2026-09-18 00:33:36,093 INFO clauseguard_backend Request complete request_id=a165b32f639049088dcd451dde2010ca method=POST path=/analyze status=500 duration_ms=69.99
+INFO:     127.0.0.1:50951 - "POST /analyze HTTP/1.1" 500 Internal Server Error
+2026-09-18 00:33:57,172 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:33:57,173 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 15379 chars
+2026-09-18 00:33:57,173 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:33:57,173 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:33:57,173 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:33:57,173 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:33:57,256 INFO clauseguard_backend.text_predictor Prediction result: pred=1, conf=0.99, pattern=Other, requires_context=False
+2026-09-18 00:33:57,304 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 2 monetary entities
+2026-09-18 00:33:57,349 ERROR clauseguard_backend [ClauseGuard] Analysis error: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T19:03:34.038Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\main.py", line 316, in analyze
+    fusion_response = evidence_fusion_engine.fuse(fusion_request)
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_fusion.py", line 347, in fuse
+    evidence_items.extend(adapt_dom_evidence(request.dom_evidence, next_id_fn=next_id))
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_adapters.py", line 742, in adapt_dom_evidence
+    EvidenceItem(
+    ~~~~~~~~~~~~^
+        evidence_id=eid,
+        ^^^^^^^^^^^^^^^^
+    ...<28 lines>...
+        },
+        ^^
+    )
+    ^
+  File "c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T19:03:34.038Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+2026-09-18 00:33:57,353 INFO clauseguard_backend Request complete request_id=e9a9a678f0094982a17bc17689c42fca method=POST path=/analyze status=500 duration_ms=183.11
+INFO:     127.0.0.1:65238 - "POST /analyze HTTP/1.1" 500 Internal Server Error
+2026-09-18 00:34:04,957 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:34:04,958 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 790 chars
+2026-09-18 00:34:04,958 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:34:04,958 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:34:04,958 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:34:04,958 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:34:04,979 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.23, pattern=None, requires_context=False
+2026-09-18 00:34:04,982 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 1 monetary entities
+2026-09-18 00:34:04,985 ERROR clauseguard_backend [ClauseGuard] Analysis error: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T19:03:34.038Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+Traceback (most recent call last):
+  File "c:\Users\kavin\Downloads\clauseguard\backend\main.py", line 316, in analyze
+    fusion_response = evidence_fusion_engine.fuse(fusion_request)
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_fusion.py", line 347, in fuse
+    evidence_items.extend(adapt_dom_evidence(request.dom_evidence, next_id_fn=next_id))
+                          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kavin\Downloads\clauseguard\backend\services\evidence_adapters.py", line 742, in adapt_dom_evidence
+    EvidenceItem(
+    ~~~~~~~~~~~~^
+        evidence_id=eid,
+        ^^^^^^^^^^^^^^^^
+    ...<28 lines>...
+        },
+        ^^
+    )
+    ^
+  File "c:\Users\kavin\Downloads\clauseguard\.venv\Lib\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for EvidenceItem
+provenance.str
+  Input should be a valid string [type=string_type, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+provenance.StructuredProvenance.source
+  Field required [type=missing, input_value={'page_load_id': None, 's...26-09-17T19:03:34.038Z'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+provenance.StructuredProvenance.timestamp
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='2026-09-17T19:03:34.038Z', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_parsing
+2026-09-18 00:34:04,989 INFO clauseguard_backend Request complete request_id=acb2eec2a8db45aab07bc40846debb6e method=POST path=/analyze status=500 duration_ms=34.13
+INFO:     127.0.0.1:61972 - "POST /analyze HTTP/1.1" 500 Internal Server Error
+2026-09-18 00:38:43,388 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:38:43,388 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 4 chars
+2026-09-18 00:38:43,388 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:38:43,388 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:38:43,388 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:38:43,389 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:38:43,407 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.19, pattern=None, requires_context=False
+2026-09-18 00:38:43,408 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:38:43,409 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:38:43,410 INFO clauseguard_backend Request complete request_id=2b3d89911995461b9bc25b0b42377547 method=POST path=/analyze status=200 duration_ms=23.88
+INFO:     127.0.0.1:50643 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:41:37,635 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:41:37,635 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 353 chars
+2026-09-18 00:41:37,635 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:41:37,635 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:41:37,635 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:41:37,635 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:41:37,643 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.27, pattern=None, requires_context=False
+2026-09-18 00:41:37,644 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:41:37,645 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:41:37,646 INFO clauseguard_backend Request complete request_id=365da9f17aef45fdbb1704f7b226aa3c method=POST path=/analyze status=200 duration_ms=11.80
+INFO:     127.0.0.1:61930 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:41:41,510 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:41:41,510 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 495 chars
+2026-09-18 00:41:41,510 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:41:41,510 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:41:41,510 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:41:41,510 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:41:41,540 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.55, pattern=None, requires_context=False
+2026-09-18 00:41:41,542 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:41:41,545 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:41:41,547 INFO clauseguard_backend Request complete request_id=fbf79b02958d4c6d986c60e4e133f8d7 method=POST path=/analyze status=200 duration_ms=39.14
+INFO:     127.0.0.1:61930 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:41:43,475 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:41:43,475 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 121 chars
+2026-09-18 00:41:43,475 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:41:43,475 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:41:43,475 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:41:43,475 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:41:43,490 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.38, pattern=None, requires_context=False
+2026-09-18 00:41:43,490 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:41:43,491 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:41:43,492 INFO clauseguard_backend Request complete request_id=862c8cbc73cb43889500d2fa6ca34b7e method=POST path=/analyze status=200 duration_ms=18.63
+INFO:     127.0.0.1:61930 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:41:44,976 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:41:44,976 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 121 chars
+2026-09-18 00:41:44,976 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:41:44,976 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:41:44,976 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:41:44,976 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:41:44,993 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.38, pattern=None, requires_context=False
+2026-09-18 00:41:44,993 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:41:44,994 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:41:44,995 INFO clauseguard_backend Request complete request_id=edf30493d07a457dab31266bb4a12b84 method=POST path=/analyze status=200 duration_ms=20.60
+INFO:     127.0.0.1:61930 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:42:26,776 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:42:26,776 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 353 chars
+2026-09-18 00:42:26,776 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:42:26,776 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:42:26,776 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:42:26,776 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:42:26,784 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.27, pattern=None, requires_context=False
+2026-09-18 00:42:26,785 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:42:26,786 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:42:26,786 INFO clauseguard_backend Request complete request_id=2720e691500b44e78ab92c0171fc2846 method=POST path=/analyze status=200 duration_ms=11.57
+INFO:     127.0.0.1:58963 - "POST /analyze HTTP/1.1" 200 OK
+2026-09-18 00:42:32,989 INFO clauseguard_backend [ClauseGuard] Analysis request received
+2026-09-18 00:42:32,990 INFO clauseguard_backend [ClauseGuard] Request parsed — text length: 121 chars
+2026-09-18 00:42:32,990 INFO clauseguard_backend [ClauseGuard] Behavior analysis started
+2026-09-18 00:42:32,990 INFO clauseguard_backend [ClauseGuard] Terms analysis started
+2026-09-18 00:42:32,990 INFO clauseguard_backend [ClauseGuard] Privacy analysis started
+2026-09-18 00:42:32,990 INFO clauseguard_backend [ClauseGuard] Risk calculation started
+2026-09-18 00:42:33,003 INFO clauseguard_backend.text_predictor Prediction result: pred=0, conf=0.38, pattern=None, requires_context=False
+2026-09-18 00:42:33,004 INFO clauseguard_backend.price_analyzer Price analysis complete: extracted 0 monetary entities
+2026-09-18 00:42:33,005 INFO clauseguard_backend [ClauseGuard] Analysis completed — risk_level=LOW risk_score=0.0 evidence_count=0
+2026-09-18 00:42:33,006 INFO clauseguard_backend Request complete request_id=2d1bec45456949d795f6cedf8b36b379 method=POST path=/analyze status=200 duration_ms=17.98
+INFO:     127.0.0.1:62893 - "POST /analyze HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'backend\schemas\evidence.py'. Reloading...

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClauseGuard helps you understand digital agreements before you continue.">
+  <title>ClauseGuard — Know what you're agreeing to</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Login Gate / Screen (shown if not logged in) -->
+  <div id="login-gate" class="login-gate-overlay" style="display:none;">
+    <div class="login-card">
+      <div class="brand"><span class="brand-mark">C</span>ClauseGuard</div>
+      <p class="login-subtitle">Protect your digital decisions.</p>
+      <div id="login-error" class="login-error" role="alert">Invalid email or password. Please try again.</div>
+      <form id="login-form" class="login-form" novalidate>
+        <div class="form-group">
+          <label for="login-email">Email or Username</label>
+          <input type="email" id="login-email" class="form-input" placeholder="Enter your email" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="Enter your password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="button login-btn">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Landing Content (shown after login) -->
+  <div id="landing-content" style="display:none;">
+    <header class="site-header"><nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="ClauseGuard home"><span class="brand-mark">C</span>ClauseGuard</a>
+      <div class="nav-links"><a href="#how-it-works">How It Works</a><a href="#features">Features</a></div>
+      <div class="nav-auth">
+        <a class="button button-small download-link" href="#download">Download Extension</a>
+        <button id="settings-btn" class="settings-btn" type="button" title="Account Settings & Preferences">
+          <span class="settings-icon">⚙</span>
+          <span id="nav-user-label">Settings</span>
+        </button>
+        <button id="logout-btn" class="logout-btn" type="button" title="Sign out of ClauseGuard">Logout</button>
+      </div>
+    </nav></header>
+    <main id="top">
+      <section class="hero container"><div class="hero-copy reveal">
+        <p class="eyebrow"><span></span>Your agreement, made clearer</p>
+        <h1>Know what you’re <em>agreeing to.</em></h1>
+        <p class="hero-text">ClauseGuard helps you understand risky terms, privacy disclosures, and deceptive interaction signals before you continue.</p>
+        <div class="hero-actions"><a class="button download-link" href="#download">Download Extension <span>→</span></a><a class="text-link" href="#how-it-works">See how it works ↓</a></div>
+      </div><div class="mockup-wrap reveal" aria-label="ClauseGuard extension preview">
+        <div class="browser-bar"><i></i><i></i><i></i><span>example.com/terms</span></div>
+        <article class="extension-card"><div class="extension-head"><div class="brand"><span class="brand-mark">C</span>ClauseGuard</div><span class="status-dot"></span></div>
+          <p class="page-label">PAGE REVIEW</p><div class="score-row"><div><span>Risk score</span><strong>68<small>/100</small></strong></div><b>Review carefully</b></div>
+          <div class="findings-title"><span>Key findings</span><span>3 signals</span></div><ul class="findings">
+            <li><span class="finding-icon amber">!</span><div><b>Broad data sharing</b><small>Privacy disclosure</small></div></li>
+            <li><span class="finding-icon blue">↗</span><div><b>Auto-renewal terms</b><small>Terms & conditions</small></div></li>
+            <li><span class="finding-icon violet">◌</span><div><b>Cancellation friction</b><small>Interaction pattern</small></div></li>
+          </ul><button class="preview-button" type="button">View decision snapshot <span>→</span></button>
+        </article>
+      </div></section>
+      <section class="value-strip"><div class="container value-grid"><div><span>⌕</span><p>Detect</p></div><div><span>✦</span><p>Explain</p></div><div><span>⌁</span><p>Calculate</p></div><div><span>◫</span><p>Remember</p></div></div></section>
+      <section id="how-it-works" class="section container"><div class="section-heading reveal"><p class="eyebrow"><span></span>How it works</p><h2>Clarity in three steps.</h2></div><div class="steps">
+        <article class="step reveal"><span>01</span><h3>Scan</h3><p>ClauseGuard analyzes the page.</p></article>
+        <article class="step reveal"><span>02</span><h3>Understand</h3><p>It highlights important signals and explains why they matter.</p></article>
+        <article class="step reveal"><span>03</span><h3>Decide</h3><p>You get the information before continuing.</p></article>
+      </div></section>
+      <section id="features" class="section features-section"><div class="container"><div class="section-heading centered reveal"><p class="eyebrow"><span></span>Built for better choices</p><h2>What ClauseGuard sees.</h2></div><div class="features">
+        <article class="feature reveal"><div class="feature-icon">§</div><h3>Terms Analysis</h3><p>Surfaces clauses that deserve a closer look.</p></article>
+        <article class="feature reveal"><div class="feature-icon">◈</div><h3>Privacy Analysis</h3><p>Makes data practices easier to understand.</p></article>
+        <article class="feature reveal"><div class="feature-icon">⌁</div><h3>Behavior Monitoring</h3><p>Flags interaction signals that can shape choices.</p></article>
+        <article class="feature reveal"><div class="feature-icon">▣</div><h3>Decision Snapshot</h3><p>Keeps the important context together, at a glance.</p></article>
+      </div></div></section>
+      <section id="download" class="final-cta">
+        <div class="container reveal">
+          <p class="eyebrow"><span></span>Start with clarity</p>
+          <h2>Make clearer digital decisions.</h2>
+          <p>Install ClauseGuard and understand what you’re agreeing to.</p>
+          <a class="button download-link" href="#download">Download Extension <span>→</span></a>
+          
+          <div class="install-guide">
+            <p class="install-guide-title"><span>⚙</span> How to install</p>
+            <ol class="install-steps">
+              <li class="install-step-item">
+                <span class="install-step-num">1</span>
+                <p class="install-step-text"><strong>Download ClauseGuard</strong>Click the button to download the extension ZIP.</p>
+              </li>
+              <li class="install-step-item">
+                <span class="install-step-num">2</span>
+                <p class="install-step-text"><strong>Extract the ZIP file</strong>Extract the downloaded ZIP to a folder on your computer.</p>
+              </li>
+              <li class="install-step-item">
+                <span class="install-step-num">3</span>
+                <p class="install-step-text"><strong>Open Chrome Extensions</strong>Navigate to <code>chrome://extensions</code> in your Chrome browser.</p>
+              </li>
+              <li class="install-step-item">
+                <span class="install-step-num">4</span>
+                <p class="install-step-text"><strong>Enable Developer Mode</strong>Turn on the "Developer mode" toggle in the top-right corner.</p>
+              </li>
+              <li class="install-step-item">
+                <span class="install-step-num">5</span>
+                <p class="install-step-text"><strong>Click "Load unpacked"</strong>Click the "Load unpacked" button at the top-left.</p>
+              </li>
+              <li class="install-step-item">
+                <span class="install-step-num">6</span>
+                <p class="install-step-text"><strong>Select Folder</strong>Select the extracted ClauseGuard extension folder.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><div class="container footer-inner"><div><a class="brand" href="#top"><span class="brand-mark">C</span>ClauseGuard</a><p>Protect your digital decisions.</p></div><small>© 2026 ClauseGuard · Project build</small></div></footer>
+
+    <!-- Settings Modal Backdrop & Dialog -->
+    <div id="settings-modal-backdrop" class="settings-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <div class="settings-modal">
+        <div class="settings-header">
+          <div class="settings-header-left">
+            <h3 id="settings-title">Settings & Preferences</h3>
+            <span id="settings-user-badge" class="user-badge">demo@clauseguard.com</span>
+          </div>
+          <button id="settings-close-btn" class="modal-close-btn" type="button" title="Close Settings">&times;</button>
+        </div>
+
+        <div class="settings-tabs">
+          <button class="settings-tab-btn active" data-tab="tab-account" type="button">Account & Credentials</button>
+          <button class="settings-tab-btn" data-tab="tab-features" type="button">Protection Features</button>
+          <button class="settings-tab-btn" data-tab="tab-engine" type="button">Engine & System</button>
+        </div>
+
+        <!-- Tab 1: Account & Credentials -->
+        <div id="tab-account" class="settings-tab-content active">
+          <div id="settings-profile-feedback" class="settings-feedback"></div>
+
+          <!-- Edit Username Section -->
+          <div class="settings-section">
+            <h4 class="settings-section-title"><span>👤</span> Account Profile</h4>
+            <form id="form-update-username" class="login-form">
+              <div class="form-group">
+                <label for="settings-username-input">Username / Email</label>
+                <input type="email" id="settings-username-input" class="form-input" required autocomplete="username">
+              </div>
+              <button type="submit" class="btn-primary-sm" style="align-self: flex-start;">Save Username</button>
+            </form>
+          </div>
+
+          <!-- Edit Password Section -->
+          <div class="settings-section">
+            <h4 class="settings-section-title"><span>🔒</span> Security & Password</h4>
+            <form id="form-update-password" class="login-form">
+              <div class="form-group">
+                <label for="settings-curr-password">Current Password</label>
+                <input type="password" id="settings-curr-password" class="form-input" placeholder="Enter current password" required autocomplete="current-password">
+              </div>
+              <div class="form-group">
+                <label for="settings-new-password">New Password</label>
+                <input type="password" id="settings-new-password" class="form-input" placeholder="Enter new password (min. 6 characters)" required autocomplete="new-password">
+              </div>
+              <div class="form-group">
+                <label for="settings-confirm-password">Confirm New Password</label>
+                <input type="password" id="settings-confirm-password" class="form-input" placeholder="Confirm new password" required autocomplete="new-password">
+              </div>
+              <button type="submit" class="btn-primary-sm" style="align-self: flex-start;">Update Password</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Tab 2: Protection Features -->
+        <div id="tab-features" class="settings-tab-content">
+          <div id="settings-features-feedback" class="settings-feedback"></div>
+          <div class="settings-section">
+            <h4 class="settings-section-title"><span>🛡</span> Detection Sensitivity</h4>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Analysis Strictness</h4>
+                <p>Adjust how aggressively potential dark patterns and traps are flagged.</p>
+              </div>
+              <select id="setting-sensitivity" class="select-input">
+                <option value="balanced">Balanced (Recommended)</option>
+                <option value="strict">High Strictness</option>
+                <option value="permissive">Essential Only</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h4 class="settings-section-title"><span>⚡</span> Active Guardians</h4>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Real-Time Journey Monitor</h4>
+                <p>Track multi-step checkout traps and deceptive navigation sequences.</p>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="toggle-journey" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Subscription Trap Guardian</h4>
+                <p>Flag buried auto-renewals, free-trial conversions, and recurring billing.</p>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="toggle-subscription" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Cancellation Friction Detector</h4>
+                <p>Detect obstruction patterns making cancellation or unsubscription arduous.</p>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="toggle-cancellation" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Monetary & Drip Fee Tracker</h4>
+                <p>Extract currency amounts and highlight unexpected fees added at checkout.</p>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="toggle-pricing" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <button id="btn-save-features" class="btn-primary-sm" type="button" style="margin-top: 14px;">Save Protection Preferences</button>
+          </div>
+        </div>
+
+        <!-- Tab 3: Engine & System -->
+        <div id="tab-engine" class="settings-tab-content">
+          <div class="settings-section">
+            <h4 class="settings-section-title"><span>📡</span> Local AI Engine</h4>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>API Service Status</h4>
+                <p>Endpoint: <code>http://127.0.0.1:8000</code></p>
+              </div>
+              <span id="engine-status-badge" class="status-pill-green"><i></i> Online</span>
+            </div>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Inference Model</h4>
+                <p>ClauseGuard Text Model V3 (TF-IDF + CalibratedClassifierCV)</p>
+              </div>
+              <span class="user-badge">Active</span>
+            </div>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Zero-Data Leakage Mode</h4>
+                <p>Ensure all text, DOM, and behavioral tokens remain on your local machine.</p>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="toggle-zerodata" checked disabled>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h4 class="settings-section-title"><span>🔄</span> Maintenance</h4>
+            <div class="setting-row">
+              <div class="setting-row-info">
+                <h4>Reset Demo Data</h4>
+                <p>Restore default demo credentials and reset all custom preferences.</p>
+              </div>
+              <button id="btn-reset-defaults" class="btn-secondary" type="button">Reset Defaults</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/extension_data.js"></script>
+  <script src="js/script.js"></script>
+</body></html>

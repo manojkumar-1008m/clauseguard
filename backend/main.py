@@ -12,8 +12,10 @@ import time
 import uuid
 from collections import defaultdict, deque
 from datetime import datetime, timezone
-from fastapi.responses import JSONResponse
+from pathlib import Path
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from . import schemas, model_loader
 from .services import (
@@ -122,12 +124,17 @@ async def request_observability(request: Request, call_next):
 
 @app.on_event("startup")
 async def startup_event():
+    _logger.info("[ClauseGuard] Backend starting...")
+    _logger.info("[ClauseGuard] Listening on http://127.0.0.1:8000")
     _logger.info("Initializing ClauseGuard API...")
     try:
         model_loader.load_model()
         _logger.info("Model loaded successfully.")
+        _logger.info("[ClauseGuard] Backend started successfully. Ready to receive requests.")
     except Exception as exc:
         _logger.error("Failed to load model on startup: %s", str(exc))
+        _logger.warning("[ClauseGuard] Backend started but model failed to load. Analysis will use fallback logic.")
+
 
 # CORS – strictly scoped to configured frontend origins and Chrome extensions
 _configured_origins = [
@@ -141,15 +148,20 @@ _configured_origins = [
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_configured_origins,
-    allow_origin_regex=r"^chrome-extension://[a-p]{32}$",
+    allow_origin_regex=r"^chrome-extension://[a-z]{32}$",
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type", "X-Request-ID"],
 )
 
+_WEBSITE_DIR = Path(__file__).resolve().parent.parent / "website"
+
 @app.get("/")
 async def root():
-    """Root status endpoint."""
+    """Serve the ClauseGuard landing page."""
+    index = _WEBSITE_DIR / "index.html"
+    if index.is_file():
+        return FileResponse(index, media_type="text/html")
     return {"message": "ClauseGuard API", "status": "running"}
 
 @app.get("/health", response_model=schemas.HealthResponse)
@@ -289,7 +301,9 @@ async def explain(request: schemas.ExplanationRequest):
 @app.post("/analyze", response_model=schemas.AnalyzeResponse)
 async def analyze(request: schemas.AnalyzeRequest):
     """Unified analysis endpoint that fuses text, pricing, and UI evidence into one canonical risk outcome."""
+    _logger.info("[ClauseGuard] Analysis request received")
     try:
+        _logger.info("[ClauseGuard] Request parsed — text length: %d chars", len(request.text or ""))
         fusion_request = schemas.EvidenceFusionRequest(
             text=request.text,
             price_analysis=request.price_analysis,
@@ -302,6 +316,10 @@ async def analyze(request: schemas.AnalyzeRequest):
             entity_type=request.entity_type,
             member_state=request.member_state,
         )
+        _logger.info("[ClauseGuard] Behavior analysis started")
+        _logger.info("[ClauseGuard] Terms analysis started")
+        _logger.info("[ClauseGuard] Privacy analysis started")
+        _logger.info("[ClauseGuard] Risk calculation started")
         fusion_response = evidence_fusion_engine.fuse(fusion_request)
         gate = consumer_risk_gate.evaluate(fusion_response)
         evidence_context = schemas.ExplanationContext(
@@ -343,6 +361,12 @@ async def analyze(request: schemas.AnalyzeRequest):
             )
         )
         explanation_response = minilm_explanation_layer.enhance(explanation_response, evidence_context)
+        _logger.info(
+            "[ClauseGuard] Analysis completed — risk_level=%s risk_score=%s evidence_count=%d",
+            fusion_response.risk_level,
+            fusion_response.risk_score,
+            len(fusion_response.evidence or []),
+        )
         return schemas.AnalyzeResponse(
             status="ok",
             risk_score=float(fusion_response.risk_score),
@@ -363,11 +387,12 @@ async def analyze(request: schemas.AnalyzeRequest):
             generated_at=datetime.now(timezone.utc).isoformat(),
         )
     except Exception as exc:
-        _logger.exception("Unexpected error in /analyze: %s", exc)
+        _logger.exception("[ClauseGuard] Analysis error: %s", exc)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Unified analysis execution failed",
         )
+
 
 
 @app.post("/ask", response_model=schemas.AskResponse)
@@ -460,3 +485,10 @@ async def model_info():
         artifact=metadata.get("artifact"),
         artifact_sha256=model_loader.get_model_sha256(),
     )
+
+# --- Serve website static assets (css, js) ---
+# Mounted AFTER all API routes so they take priority over static file lookups.
+if (_WEBSITE_DIR / "css").is_dir():
+    app.mount("/css", StaticFiles(directory=str(_WEBSITE_DIR / "css")), name="website_css")
+if (_WEBSITE_DIR / "js").is_dir():
+    app.mount("/js", StaticFiles(directory=str(_WEBSITE_DIR / "js")), name="website_js")

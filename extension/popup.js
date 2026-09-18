@@ -63,9 +63,40 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerRiskBadge = document.getElementById("headerRiskBadge");
   const headerRiskScore = document.getElementById("headerRiskScore");
   const headerRiskLevel = document.getElementById("headerRiskLevel");
+
+  // Feature 3: Decision Snapshot elements
+  const decisionSnapshotSection = document.getElementById("decisionSnapshotSection");
+  const snapshotCost = document.getElementById("snapshotCost");
+  const snapshotRenewal = document.getElementById("snapshotRenewal");
+  const snapshotPrivacy = document.getElementById("snapshotPrivacy");
+  const snapshotInterface = document.getElementById("snapshotInterface");
+  const snapshotChecklist = document.getElementById("snapshotChecklist");
+
+  // Feature 2: What Happens If I Continue? elements
+  const consequenceSection = document.getElementById("consequenceSection");
+  const consequenceToggle = document.getElementById("consequenceToggle");
+  const consequenceContent = document.getElementById("consequenceContent");
+  const consequenceFlowBlock = document.getElementById("consequenceFlowBlock");
+  const consequenceSteps = document.getElementById("consequenceSteps");
+  const consequenceAdvisories = document.getElementById("consequenceAdvisories");
+  const consequenceAdviceText = document.getElementById("consequenceAdviceText");
+  const consequenceViewEvidenceBtn = document.getElementById("consequenceViewEvidenceBtn");
+  const consequenceFallback = document.getElementById("consequenceFallback");
+  const consequenceFallbackText = document.getElementById("consequenceFallbackText");
+
+  // Feature 1: Agreement Memory elements
+  const agreementMemorySection = document.getElementById("agreementMemorySection");
+  const memoryLastAnalyzed = document.getElementById("memoryLastAnalyzed");
+  const memoryStatusBadge = document.getElementById("memoryStatusBadge");
+  const memoryToggleBtn = document.getElementById("memoryToggleBtn");
+  const memoryToggleLabel = document.getElementById("memoryToggleLabel");
+  const memoryContent = document.getElementById("memoryContent");
+  const memoryDetailsList = document.getElementById("memoryDetailsList");
+
   let latestAnalysis = null;
   let latestSession = null;
   let latestTab = null;
+  let latestPageText = "";
   let latestAnalysisGeneratedAt = null;
   let askHistory = [];
   let askContextKey = null;
@@ -82,6 +113,18 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleSection(evidenceToggle, evidenceContent);
   toggleSection(additionalFindingsToggle, additionalFindingsContent);
   toggleSection(scoreBreakdownToggle, scoreBreakdownContent);
+  toggleSection(consequenceToggle, consequenceContent);
+  toggleSection(memoryToggleBtn, memoryContent);
+
+  consequenceViewEvidenceBtn?.addEventListener("click", () => {
+    if (evidenceSection && evidenceContent) {
+      evidenceSection.classList.remove("hidden");
+      evidenceContent.classList.remove("hidden");
+      evidenceToggle?.classList.add("active");
+      evidenceToggle?.setAttribute("aria-expanded", "true");
+      evidenceSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 
   function resetState() {
     statusDiv.classList.add("hidden");
@@ -102,6 +145,21 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreBreakdownContent?.classList.add("hidden");
     scoreBreakdownToggle?.classList.remove("active");
     scoreBreakdownToggle?.setAttribute("aria-expanded", "false");
+
+    // Clear and hide new feature sections
+    decisionSnapshotSection?.classList.add("hidden");
+    snapshotChecklist?.replaceChildren();
+    consequenceSection?.classList.add("hidden");
+    consequenceContent?.classList.add("hidden");
+    consequenceToggle?.classList.remove("active");
+    consequenceToggle?.setAttribute("aria-expanded", "false");
+    consequenceSteps?.replaceChildren();
+    consequenceAdvisories?.replaceChildren();
+    agreementMemorySection?.classList.add("hidden");
+    memoryContent?.classList.add("hidden");
+    memoryToggleBtn?.classList.remove("active");
+    memoryToggleBtn?.setAttribute("aria-expanded", "false");
+    memoryDetailsList?.replaceChildren();
   }
 
   function renderHeaderRiskScore(data) {
@@ -633,7 +691,167 @@ document.addEventListener("DOMContentLoaded", () => {
     disclaimer.textContent = "ClauseGuard provides consumer information, not legal advice.";
     disclaimer.classList.remove("hidden");
     renderQuickQuestions(data);
+    renderDecisionFeatures(data);
     return actionable;
+  }
+
+  async function renderDecisionFeatures(data) {
+    if (!data) return;
+    const domain = latestTab?.url ? (new URL(latestTab.url).hostname || "Current page") : "Current page";
+    const pageText = latestPageText || "";
+
+    // 1. Decision Snapshot
+    const snapshot = globalThis.DecisionSnapshot
+      ? globalThis.DecisionSnapshot.extractDecisionSnapshot(data, pageText, latestSession)
+      : null;
+
+    if (snapshot && decisionSnapshotSection) {
+      if (snapshotCost) snapshotCost.textContent = snapshot.cost.detected ? snapshot.cost.text : "Not detected";
+      if (snapshotRenewal) snapshotRenewal.textContent = snapshot.renewal.detected ? snapshot.renewal.text : "Not detected";
+      if (snapshotPrivacy) snapshotPrivacy.textContent = snapshot.privacy.detected ? snapshot.privacy.text : "No relevant signal";
+      if (snapshotInterface) snapshotInterface.textContent = snapshot.interface.detected ? snapshot.interface.text : "Standard interface";
+
+      snapshotChecklist?.replaceChildren();
+      (snapshot.checklist || []).forEach(itemText => {
+        const li = document.createElement("li");
+        li.textContent = itemText;
+        snapshotChecklist.appendChild(li);
+      });
+      decisionSnapshotSection.classList.remove("hidden");
+    }
+
+    // 2. What Happens If I Continue?
+    const consequence = globalThis.ConsequenceEngine
+      ? globalThis.ConsequenceEngine.buildConsequenceFlow(data, snapshot, pageText, latestSession)
+      : null;
+
+    if (consequence && consequenceSection) {
+      if (consequence.hasFlow) {
+        consequenceSteps?.replaceChildren();
+        (consequence.steps || []).forEach((stepText, idx, arr) => {
+          const stepItem = document.createElement("div");
+          stepItem.className = "step-item";
+
+          const stepBadge = document.createElement("span");
+          stepBadge.className = "step-badge";
+          stepBadge.textContent = String(idx + 1);
+
+          const stepLabel = document.createElement("span");
+          stepLabel.className = "step-label";
+          stepLabel.textContent = stepText;
+
+          stepItem.appendChild(stepBadge);
+          stepItem.appendChild(stepLabel);
+          consequenceSteps.appendChild(stepItem);
+
+          if (idx < arr.length - 1) {
+            const arrow = document.createElement("div");
+            arrow.className = "step-arrow";
+            arrow.textContent = "↓";
+            consequenceSteps.appendChild(arrow);
+          }
+        });
+
+        consequenceAdvisories?.replaceChildren();
+        (consequence.advisories || []).forEach(advText => {
+          const adv = document.createElement("p");
+          adv.className = "consequence-advisory-item";
+          adv.textContent = advText;
+          consequenceAdvisories.appendChild(adv);
+        });
+
+        if (consequenceAdviceText) {
+          consequenceAdviceText.textContent = consequence.actionAdvice || "Check the renewal price and cancellation terms.";
+        }
+        consequenceFlowBlock?.classList.remove("hidden");
+        consequenceFallback?.classList.add("hidden");
+      } else {
+        consequenceFlowBlock?.classList.add("hidden");
+        if (consequenceFallbackText) {
+          consequenceFallbackText.textContent = consequence.fallbackMessage || "ClauseGuard does not have enough information to determine the next steps.";
+        }
+        consequenceFallback?.classList.remove("hidden");
+      }
+      consequenceSection.classList.remove("hidden");
+    }
+
+    // 3. Agreement Memory
+    if (globalThis.AgreementMemory && agreementMemorySection) {
+      try {
+        const currentRecord = globalThis.AgreementMemory.buildMemoryRecord(domain, latestTab?.url, data, snapshot, consequence);
+        const previousMemory = await globalThis.AgreementMemory.getDomainMemory(domain);
+        const diff = globalThis.AgreementMemory.compareWithPrevious(currentRecord, previousMemory?.latest);
+
+        memoryDetailsList?.replaceChildren();
+
+        if (diff.isFirstAnalysis) {
+          if (memoryLastAnalyzed) memoryLastAnalyzed.textContent = "First analysis";
+          if (memoryStatusBadge) {
+            memoryStatusBadge.textContent = "First analysis for this website";
+            memoryStatusBadge.className = "memory-badge badge-neutral";
+          }
+          if (memoryToggleLabel) memoryToggleLabel.textContent = "View current record";
+
+          const item = document.createElement("div");
+          item.className = "memory-detail-item";
+          const desc = document.createElement("p");
+          desc.textContent = "Baseline recorded. Future changes to price, renewal terms, or cancellation policies will be flagged here.";
+          item.appendChild(desc);
+          memoryDetailsList.appendChild(item);
+        } else if (diff.hasChanged) {
+          if (memoryLastAnalyzed) memoryLastAnalyzed.textContent = `Last analyzed: ${globalThis.AgreementMemory.formatChangeDate(diff.previousRecord?.analyzedAt)}`;
+          if (memoryStatusBadge) {
+            memoryStatusBadge.textContent = "⚠ Something changed";
+            memoryStatusBadge.className = "memory-badge badge-warning";
+          }
+          if (memoryToggleLabel) memoryToggleLabel.textContent = "View changes";
+
+          diff.changes.forEach(chg => {
+            const item = document.createElement("div");
+            item.className = "memory-change-item";
+
+            const title = document.createElement("strong");
+            title.className = "change-title";
+            title.textContent = chg.title;
+
+            const detail = document.createElement("span");
+            detail.className = "change-detail";
+            detail.textContent = chg.detail;
+
+            item.appendChild(title);
+            item.appendChild(detail);
+
+            if (chg.extra) {
+              const extra = document.createElement("span");
+              extra.className = "change-extra";
+              extra.textContent = chg.extra;
+              item.appendChild(extra);
+            }
+
+            memoryDetailsList.appendChild(item);
+          });
+        } else {
+          if (memoryLastAnalyzed) memoryLastAnalyzed.textContent = `Last analyzed: ${globalThis.AgreementMemory.formatChangeDate(diff.previousRecord?.analyzedAt)}`;
+          if (memoryStatusBadge) {
+            memoryStatusBadge.textContent = "✓ No major changes detected";
+            memoryStatusBadge.className = "memory-badge badge-success";
+          }
+          if (memoryToggleLabel) memoryToggleLabel.textContent = "View history";
+
+          const item = document.createElement("div");
+          item.className = "memory-detail-item";
+          const p1 = document.createElement("p");
+          p1.textContent = `Previous assessment was identical. Price (${diff.previousRecord?.price || "none recorded"}), renewal terms, and risk levels remain consistent.`;
+          item.appendChild(p1);
+          memoryDetailsList.appendChild(item);
+        }
+
+        await globalThis.AgreementMemory.saveDomainMemory(domain, currentRecord);
+        agreementMemorySection.classList.remove("hidden");
+      } catch (err) {
+        console.warn("[ClauseGuard] Memory error:", err);
+      }
+    }
   }
 
   async function showPageAlert(data) {
@@ -660,6 +878,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const session = currentSession(stored, tab);
       latestTab = tab;
       latestSession = session;
+      latestPageText = page.text;
       currentPage.textContent = new URL(tab.url).hostname || "Current page";
       eventCount.textContent = String(session?.events?.length || 0);
       journeyStage.textContent = session?.journey_stage || "Page";
@@ -683,6 +902,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function analyzeText(input) {
   const text = typeof input === "string" ? input : input?.text;
   if (!text) return;
+  latestPageText = text;
   const result = await callAnalyze({ text: text.slice(0, MAX_PAGE_TEXT_LENGTH) });
   renderResult(result);
   }

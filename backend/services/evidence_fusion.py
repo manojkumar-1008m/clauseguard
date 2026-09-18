@@ -28,6 +28,7 @@ from ..schemas import PredictResponse
 from .contradiction_engine import ContradictionEngine
 from .evidence_deduplicator import EvidenceDeduplicator
 from .evidence_graph import EvidenceGraph
+from .pattern_mapper import map_all_patterns
 from .price_analyzer import PriceAnalyzer
 from .temporal_engine import TemporalEngine
 from .text_predictor import TextPredictor
@@ -283,6 +284,49 @@ class EvidenceFusionEngine:
                     next_id_fn=next_id,
                 )
             )
+
+        # 2b. Extract multi-pattern text, terms, and privacy findings from raw text
+        if raw_text and raw_text.strip():
+            try:
+                multi_findings = map_all_patterns(raw_text)
+                existing_patterns = {e.pattern for e in evidence_items if e.pattern}
+                for f in multi_findings:
+                    f_pat = f["pattern"]
+                    f_source = f["source"]
+                    # If this exact pattern was already adapted from text_prediction, don't duplicate
+                    if f_source == "text" and f_pat in existing_patterns:
+                        continue
+
+                    # Update pattern presence flags
+                    if "subscription" in f_pat or f_pat == "subscription_trap":
+                        has_text_sub = True
+                    elif "drip" in f_pat or f_pat == "drip_pricing":
+                        has_text_drip = True
+                    elif "urgency" in f_pat:
+                        has_text_urgency = True
+                    elif "scarcity" in f_pat:
+                        has_text_scarcity = True
+                    elif "social_proof" in f_pat:
+                        has_text_social_proof = True
+
+                    evidence_items.append(
+                        EvidenceItem(
+                            evidence_id=next_id(),
+                            source=f_source,
+                            type=f["type"],
+                            pattern=f_pat,
+                            description=f"{f['category']}: \"{f['evidence']}\"",
+                            detected=True,
+                            strength=f.get("strength", "moderate"),
+                            model_confidence=text_prediction.confidence if (text_prediction and f_source == "text") else None,
+                            temporal_position="static",
+                            severity=f.get("severity", "medium"),
+                            provenance=f"{f_source}_analyzer",
+                        )
+                    )
+                    existing_patterns.add(f_pat)
+            except Exception as exc:
+                _logger.warning("Multi-pattern extraction failed during fusion: %s", exc)
 
         # 3. Extract Price Evidence
         if price_analysis:
@@ -758,6 +802,24 @@ class EvidenceFusionEngine:
             else:
                 score += MODERATE_SIGNAL_SCORE  # 2.0
                 moderate_contribution += MODERATE_SIGNAL_SCORE
+            # Distinct additional patterns beyond the primary pattern
+            distinct_text_patterns = len(set(e.pattern for e in text_items if e.pattern))
+            if distinct_text_patterns > 1:
+                extra_text_score = min(2.0, float(distinct_text_patterns - 1) * 1.0)
+                score += extra_text_score
+                moderate_contribution += extra_text_score
+
+        # Terms contribution
+        terms_items = [e for e in scoring_evidence if e.source == "terms" and e.detected]
+        terms_score = min(3.0, float(len(terms_items)) * 1.0) if terms_items else 0.0
+        score += terms_score
+        moderate_contribution += terms_score
+
+        # Privacy contribution
+        privacy_items = [e for e in scoring_evidence if e.source == "privacy" and e.detected]
+        privacy_score = min(2.5, float(len(privacy_items)) * 1.0) if privacy_items else 0.0
+        score += privacy_score
+        weak_contribution += privacy_score
 
         # Price contribution (evaluated per distinct financial reality)
         has_renewal = any(e.type == "renewal_price" for e in scoring_evidence)
@@ -765,37 +827,58 @@ class EvidenceFusionEngine:
         has_add_cost = any(e.type == "additional_cost" for e in scoring_evidence)
         has_late_disc = any(e.type == "late_disclosure" for e in scoring_evidence)
         has_p_change = any(e.type == "price_change" for e in scoring_evidence)
+        price_items = [e for e in scoring_evidence if e.source == "price" and e.detected]
+        price_score = 0.0
 
         # Related price supporting text (Section 17: RELATED PRICE supporting TEXT: +2)
         if not text_requires_context and has_text_sub and (has_renewal or has_free_trial):
             score += MODERATE_SIGNAL_SCORE  # +2.0
             moderate_contribution += MODERATE_SIGNAL_SCORE
+            price_score += MODERATE_SIGNAL_SCORE
             if has_renewal and has_free_trial:
                 score += WEAK_SIGNAL_SCORE  # +1.0 (additional supporting financial fact: trial + renewal)
                 weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
         elif not text_requires_context and has_text_drip and has_late_disc and has_add_cost:
             score += MODERATE_SIGNAL_SCORE  # +2.0
             moderate_contribution += MODERATE_SIGNAL_SCORE
+            price_score += MODERATE_SIGNAL_SCORE
         elif not text_items or text_requires_context:
             # Pure financial signals without dark pattern text (or when text requires context)
             if has_renewal and has_free_trial:
                 score += MODERATE_SIGNAL_SCORE  # 2.0 (financial notice: trial + renewal)
                 moderate_contribution += MODERATE_SIGNAL_SCORE
+                price_score += MODERATE_SIGNAL_SCORE
             elif has_renewal:
                 score += WEAK_SIGNAL_SCORE  # 1.0
                 weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
             elif has_free_trial:
                 score += WEAK_SIGNAL_SCORE  # 1.0
                 weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
             elif has_add_cost and has_late_disc:
                 score += MODERATE_SIGNAL_SCORE  # 2.0 (financial notice: late fee)
                 moderate_contribution += MODERATE_SIGNAL_SCORE
+                price_score += MODERATE_SIGNAL_SCORE
             elif has_add_cost:
                 score += WEAK_SIGNAL_SCORE  # 1.0
                 weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
             elif has_p_change:
                 score += WEAK_SIGNAL_SCORE  # 1.0 (pure financial price change)
                 weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
+        elif price_items and not (has_text_sub or has_text_drip):
+            # Price signal present alongside independent non-pricing dark pattern text
+            if has_renewal or has_free_trial:
+                score += WEAK_SIGNAL_SCORE
+                weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
+            if has_add_cost or has_late_disc:
+                score += WEAK_SIGNAL_SCORE
+                weak_contribution += WEAK_SIGNAL_SCORE
+                price_score += WEAK_SIGNAL_SCORE
 
         # DOM contribution (Step 1, 4, 8: bounded, deterministic strength mapping)
         EVIDENCE_STRENGTH_WEIGHTS = {

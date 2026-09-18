@@ -7,7 +7,7 @@ using multi-signal rule combinations and contextual contradiction guards.
 from __future__ import annotations
 
 import re
-from typing import Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from . import evidence_extractor
 
@@ -202,3 +202,164 @@ def map_pattern(
 
     # Otherwise benign / context required
     return None, None, False
+
+
+# Terms & Conditions specific pattern rules
+TERMS_RULES = [
+    (
+        "Unilateral Terms Modification",
+        [
+            re.compile(r"(?:(?:modify|change|update)\s+these\s+terms\s+(?:at\s+any\s+time\s+)?without\s+(?:prior\s+)?notice)", re.IGNORECASE),
+            re.compile(r"(?:right\s+to\s+modify|sole\s+discretion\s+to\s+(?:change|modify))\s+these\s+terms", re.IGNORECASE),
+            re.compile(r"(?:continued\s+use\s+(?:of\s+[^\.,;]+\s+)?constitutes\s+acceptance\s+of\s+(?:any\s+)?modified\s+terms)", re.IGNORECASE),
+        ]
+    ),
+    (
+        "Arbitration & Class Action Waiver",
+        [
+            re.compile(r"(?:binding\s+(?:individual\s+)?arbitration|waive\s+any\s+right\s+to\s+(?:a\s+)?jury\s+trial)", re.IGNORECASE),
+            re.compile(r"(?:class\s+action\s+waiver|waive\s+(?:the\s+)?right\s+to\s+participate\s+in\s+a\s+class\s+action)", re.IGNORECASE),
+            re.compile(r"(?:disputes?\s+must\s+be\s+resolved\s+on\s+an\s+individual\s+basis)", re.IGNORECASE),
+        ]
+    ),
+    (
+        "Auto-Renewal Terms Clause",
+        [
+            re.compile(r"(?:subscription\s+will\s+automatically\s+renew\s+unless\s+cancelled)", re.IGNORECASE),
+            re.compile(r"(?:recurring\s+subscription\s+fee\s+will\s+be\s+(?:automatically\s+)?billed)", re.IGNORECASE),
+            re.compile(r"(?:billed\s+on\s+a\s+recurring\s+basis\s+until\s+you\s+cancel)", re.IGNORECASE),
+        ]
+    ),
+    (
+        "Cancellation Penalty or Non-Refundable Fee",
+        [
+            re.compile(r"(?:early\s+termination\s+fee|cancellation\s+penalty)", re.IGNORECASE),
+            re.compile(r"(?:fees?\s+(?:are|is)\s+strictly\s+non-refundable)", re.IGNORECASE),
+            re.compile(r"(?:no\s+refunds?\s+(?:or\s+credits?\s+)?for\s+partial\s+(?:months?|billing\s+periods?))", re.IGNORECASE),
+        ]
+    ),
+]
+
+# Privacy specific pattern rules
+PRIVACY_RULES = [
+    (
+        "Third-Party Data Sharing",
+        [
+            re.compile(r"(?:share\s+(?:your\s+)?(?:personal\s+)?(?:data|information)\s+with\s+third\s+parties)", re.IGNORECASE),
+            re.compile(r"(?:share\s+(?:your\s+)?data\s+with\s+(?:advertising|marketing)\s+partners)", re.IGNORECASE),
+            re.compile(r"(?:disclose\s+(?:your\s+)?information\s+to\s+(?:affiliates|partners|sponsors))", re.IGNORECASE),
+            re.compile(r"(?:third-party\s+partners\s+may\s+collect\s+information)", re.IGNORECASE),
+        ]
+    ),
+    (
+        "Personal Data Sale Disclosure",
+        [
+            re.compile(r"(?:sell\s+(?:or\s+share\s+)?your\s+personal\s+information)", re.IGNORECASE),
+            re.compile(r"(?:sale\s+of\s+personal\s+data)", re.IGNORECASE),
+            re.compile(r"(?:disclose\s+personal\s+information\s+for\s+commercial\s+purposes)", re.IGNORECASE),
+        ]
+    ),
+    (
+        "Extensive Tracking Disclosure",
+        [
+            re.compile(r"(?:track\s+your\s+activity\s+across\s+(?:other\s+)?(?:websites|apps|services))", re.IGNORECASE),
+            re.compile(r"(?:collect\s+precise\s+geolocation\s+(?:data|information))", re.IGNORECASE),
+            re.compile(r"(?:cross-device\s+tracking)", re.IGNORECASE),
+        ]
+    ),
+]
+
+
+def map_all_patterns(text: str) -> List[Dict[str, Any]]:
+    """Deterministically scan text and extract ALL matching pattern findings across categories.
+
+    Returns a list of finding dictionaries:
+    [
+        {
+            "category": "Subscription Trap",
+            "pattern": "subscription_trap",
+            "type": "subscription_trap",
+            "evidence": "... matched excerpt ...",
+            "strength": "strong" | "moderate",
+            "source": "text" | "terms" | "privacy",
+            "severity": "high" | "medium" | "low",
+        },
+        ...
+    ]
+    """
+    if not text or not text.strip():
+        return []
+
+    findings: List[Dict[str, Any]] = []
+    seen_categories: set = set()
+
+    # 1. Dark pattern interface rules (source="text")
+    for cat_name, patterns in PATTERN_RULES:
+        if cat_name in seen_categories:
+            continue
+        for pat in patterns:
+            match = pat.search(text)
+            if match:
+                snippet = text[max(0, match.start() - 20):min(len(text), match.end() + 20)].strip()
+                # Check benign contradiction guards against the local excerpt
+                if check_contradiction_guards(snippet):
+                    continue
+
+                evidence = evidence_extractor.extract_evidence_span(text, cat_name) or match.group(0)
+                pat_key = cat_name.lower().replace(" ", "_")
+                severity = "high" if cat_name in ("Subscription Trap", "Drip Pricing", "Obstruction") else "medium"
+                findings.append({
+                    "category": cat_name,
+                    "pattern": pat_key,
+                    "type": pat_key,
+                    "evidence": evidence,
+                    "strength": "strong" if severity == "high" else "moderate",
+                    "source": "text",
+                    "severity": severity,
+                })
+                seen_categories.add(cat_name)
+                break
+
+    # 2. Terms rules (source="terms")
+    for cat_name, patterns in TERMS_RULES:
+        if cat_name in seen_categories:
+            continue
+        for pat in patterns:
+            match = pat.search(text)
+            if match:
+                evidence = match.group(0)
+                pat_key = cat_name.lower().replace(" ", "_").replace("&", "and")
+                findings.append({
+                    "category": cat_name,
+                    "pattern": pat_key,
+                    "type": pat_key,
+                    "evidence": evidence,
+                    "strength": "moderate",
+                    "source": "terms",
+                    "severity": "medium",
+                })
+                seen_categories.add(cat_name)
+                break
+
+    # 3. Privacy rules (source="privacy")
+    for cat_name, patterns in PRIVACY_RULES:
+        if cat_name in seen_categories:
+            continue
+        for pat in patterns:
+            match = pat.search(text)
+            if match:
+                evidence = match.group(0)
+                pat_key = cat_name.lower().replace(" ", "_")
+                findings.append({
+                    "category": cat_name,
+                    "pattern": pat_key,
+                    "type": pat_key,
+                    "evidence": evidence,
+                    "strength": "moderate",
+                    "source": "privacy",
+                    "severity": "medium",
+                })
+                seen_categories.add(cat_name)
+                break
+
+    return findings

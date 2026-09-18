@@ -12,7 +12,10 @@ from .price import PriceAnalysisResponse
 from . import PredictResponse
 
 # Controlled vocabularies for Phase B5.1
-ALLOWED_SOURCES = {"text", "price", "behavior", "dom", "image", "system", "ui", "rules", "history"}
+ALLOWED_SOURCES = {
+    "text", "price", "behavior", "dom", "image", "system", "ui", "rules", "history",
+    "terms", "privacy", "pricing", "content", "metadata",
+}
 ALLOWED_STRENGTHS = {"weak", "moderate", "strong", "insufficient"}
 ALLOWED_TEMPORAL_POSITIONS = {"before_action", "during_action", "after_action", "static", "unknown"}
 ALLOWED_DECISION_CONTEXTS = {
@@ -277,6 +280,11 @@ class ScoreBreakdown(BaseModel):
     global_score_ceiling: float = 10.0
     ceiling_applied: bool = False
     evidence_sources: List[str] = Field(default_factory=list)
+    behavior_summary: Optional[Dict[str, Any]] = None
+    terms_summary: Optional[Dict[str, Any]] = None
+    privacy_summary: Optional[Dict[str, Any]] = None
+    pricing_summary: Optional[Dict[str, Any]] = None
+    cross_signal_fusion: Optional[Dict[str, Any]] = None
 
 
 class EvidenceFusionResponse(BaseModel):

@@ -716,6 +716,320 @@ body::-webkit-scrollbar-thumb {
   color: var(--danger);
 }
 
+/* Feature Cards Common */
+.section-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-header-compact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title-compact {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+/* Feature 3: Decision Snapshot */
+.snapshot-tag {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 1rem;
+  background: var(--bg-surface);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.snapshot-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.45rem;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.snapshot-icon {
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.snapshot-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.snapshot-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.snapshot-value {
+  font-size: 0.78rem;
+  color: var(--text-main);
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.snapshot-checklist-block {
+  margin-top: 0.3rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.checklist-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--warning);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.35rem;
+}
+
+.snapshot-checklist {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.75rem;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.snapshot-checklist li {
+  line-height: 1.35;
+}
+
+/* Feature 2: What Happens If I Continue? */
+.card-accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.consequence-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+}
+
+.step-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.4rem;
+  padding: 0.45rem 0.65rem;
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-label {
+  font-size: 0.78rem;
+  color: var(--text-main);
+}
+
+.step-arrow {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.consequence-advisories {
+  margin-top: 0.4rem;
+}
+
+.consequence-advisory-item {
+  margin: 0.3rem 0;
+  background: var(--warning-bg);
+  border-left: 3px solid var(--warning);
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--text-main);
+  line-height: 1.35;
+}
+
+.consequence-advice-box {
+  margin-top: 0.45rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.4rem;
+}
+
+.advice-heading {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.advice-text {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.btn-link-action {
+  margin-top: 0.45rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn-link-action:hover {
+  color: var(--primary-hover);
+}
+
+.consequence-fallback {
+  padding: 0.5rem;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.consequence-fallback p {
+  margin: 0;
+}
+
+/* Feature 1: Agreement Memory */
+.memory-meta {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.memory-badge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+}
+
+.badge-neutral {
+  background: hsla(215, 15%, 72%, 0.12);
+  color: var(--text-muted);
+  border-left: 3px solid var(--text-muted);
+}
+
+.badge-success {
+  background: var(--success-bg);
+  color: var(--success);
+  border-left: 3px solid var(--success);
+}
+
+.badge-warning {
+  background: var(--warning-bg);
+  color: var(--warning);
+  border-left: 3px solid var(--warning);
+}
+
+.memory-toggle {
+  padding: 0.2rem 0;
+  font-size: 0.75rem;
+  color: var(--primary);
+}
+
+.memory-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.memory-change-item {
+  background: var(--bg-surface);
+  border-left: 3px solid var(--warning);
+  border-radius: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.change-title {
+  font-size: 0.72rem;
+  color: var(--warning);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.change-detail {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.change-extra {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.memory-detail-item {
+  background: var(--bg-surface);
+  border-radius: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.memory-detail-item p {
+  margin: 0;
+}
+
 /* Accessibility & Utilities */
 .sr-only {
   position: absolute;

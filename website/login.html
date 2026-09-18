@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to ClauseGuard — Protect your digital decisions.">
+  <title>Login — ClauseGuard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="min-height: 100vh; display: grid; place-items: center; padding: 24px;">
+  <div class="login-card">
+    <div class="brand"><span class="brand-mark">C</span>ClauseGuard</div>
+    <p class="login-subtitle">Protect your digital decisions.</p>
+    <div id="login-error" class="login-error" role="alert">Invalid email or password. Please try again.</div>
+    <form id="standalone-login-form" class="login-form" novalidate>
+      <div class="form-group">
+        <label for="login-email">Email or Username</label>
+        <input type="email" id="login-email" class="form-input" placeholder="Enter your email" required autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" class="form-input" placeholder="Enter your password" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="button login-btn">Log In</button>
+    </form>
+  </div>
+
+  <script>
+    const DEFAULT_USER = "demo@clauseguard.com";
+    const DEFAULT_PASS = "ClauseGuard@123";
+    const AUTH_KEY = "cg_authenticated";
+
+    function getActiveUser() {
+      return localStorage.getItem("cg_user_email") || DEFAULT_USER;
+    }
+    function getActivePass() {
+      return localStorage.getItem("cg_user_password") || DEFAULT_PASS;
+    }
+
+    // If already logged in, redirect to index
+    if (sessionStorage.getItem(AUTH_KEY) === "true") {
+      window.location.replace("index.html");
+    }
+
+    const form = document.getElementById("standalone-login-form");
+    const errorBox = document.getElementById("login-error");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("login-email").value.trim();
+      const pass = document.getElementById("login-password").value;
+
+      const activeUser = getActiveUser();
+      const activePass = getActivePass();
+
+      if (email.toLowerCase() === activeUser.toLowerCase() && pass === activePass) {
+        sessionStorage.setItem(AUTH_KEY, "true");
+        window.location.href = "index.html";
+      } else {
+        errorBox.textContent = "Invalid email or password. Please try again.";
+        errorBox.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -9,6 +9,7 @@ evidence strength, and risk scores.
 from __future__ import annotations
 
 import logging
+from datetime import datetime
 from typing import Any, Callable, Dict, List, Optional, Union
 
 from ..schemas import PredictResponse
@@ -16,6 +17,39 @@ from ..schemas.evidence import EvidenceItem, StructuredProvenance
 from ..schemas.price import PriceAnalysisResponse
 
 _logger = logging.getLogger("clauseguard_backend.evidence_adapters")
+
+
+def normalize_dom_provenance(raw_provenance: Any) -> Union[str, StructuredProvenance]:
+    """Convert browser DOM provenance to the API's canonical provenance shape.
+
+    The extension records timestamps as ISO-8601 strings and does not add the
+    schema-required ``source`` field. Normalize that browser payload before
+    constructing the evidence item.
+    """
+    if not isinstance(raw_provenance, dict):
+        return raw_provenance or "dom_analyzer_b4"
+
+    source = str(raw_provenance.get("source") or "dom").lower()
+    if source not in {"dom", "ui"}:
+        source = "dom"
+
+    timestamp = raw_provenance.get("timestamp")
+    if isinstance(timestamp, str):
+        try:
+            timestamp = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).timestamp()
+        except ValueError:
+            timestamp = None
+    elif not isinstance(timestamp, (int, float)):
+        timestamp = None
+
+    return StructuredProvenance(
+        source=source,
+        timestamp=float(timestamp) if timestamp is not None else None,
+        page_load_id=raw_provenance.get("page_load_id"),
+        session_id=raw_provenance.get("session_id"),
+        tab_id=raw_provenance.get("tab_id"),
+        frame_id=raw_provenance.get("frame_id"),
+    )
 
 
 def adapt_text_prediction(
@@ -444,6 +478,49 @@ CANONICAL_DECISION_CONTEXTS: Set[str] = {
     "purchase", "account_deletion", "membership", "renewal", "dialog", "unknown",
 }
 
+STRENGTH_NORMALIZATION_MAP: Dict[str, str] = {
+    "strong": "strong",
+    "high": "strong",
+    "critical": "strong",
+    "severe": "strong",
+    "moderate": "moderate",
+    "medium": "moderate",
+    "mod": "moderate",
+    "weak": "weak",
+    "low": "weak",
+    "minor": "weak",
+    "insufficient": "insufficient",
+    "none": "insufficient",
+}
+
+
+def normalize_strength(raw_val: Optional[Any]) -> str:
+    """Deterministically normalize strength to canonical vocabulary ('weak', 'moderate', 'strong', 'insufficient')."""
+    if not raw_val:
+        return "moderate"
+    s = str(raw_val).strip().lower()
+    return STRENGTH_NORMALIZATION_MAP.get(s, "moderate")
+
+
+TEMPORAL_POSITION_NORMALIZATION_MAP: Dict[str, str] = {
+    "before_action": "before_action",
+    "during_action": "during_action",
+    "after_action": "after_action",
+    "static": "static",
+    "unknown": "unknown",
+    "pre": "before_action",
+    "post": "after_action",
+    "during": "during_action",
+}
+
+
+def normalize_temporal_position(raw_val: Optional[Any]) -> str:
+    """Deterministically normalize temporal_position to canonical vocabulary."""
+    if not raw_val:
+        return "static"
+    s = str(raw_val).strip().lower()
+    return TEMPORAL_POSITION_NORMALIZATION_MAP.get(s, "unknown")
+
 
 def normalize_decision_context(raw_val: Optional[Any]) -> Optional[str]:
     """Deterministically normalize raw decision context to canonical vocabulary before EvidenceItem creation.
@@ -505,6 +582,10 @@ def adapt_behavior_evidence(
             item = entry.model_copy() if hasattr(entry, "model_copy") else entry.copy()
             if item.decision_context is not None:
                 item.decision_context = normalize_decision_context(item.decision_context)
+            if item.strength is not None:
+                item.strength = normalize_strength(item.strength)
+            if item.temporal_position is not None:
+                item.temporal_position = normalize_temporal_position(item.temporal_position)
             if not item.evidence_id and next_id_fn:
                 item.evidence_id = next_id_fn()
             items.append(item)
@@ -518,7 +599,7 @@ def adapt_behavior_evidence(
             # Lifecycle and raw interaction events establish context only. They
             # are not analyzer findings and must never enter scoring evidence.
             continue
-        strength = entry.get("strength") or "moderate"
+        strength = normalize_strength(entry.get("strength") or entry.get("severity") or "moderate")
         reason = entry.get("reason") or entry.get("description") or entry.get("explanation") or f"Observed {sig_type}"
         event_indices = entry.get("event_indices") or []
         route_sequence = entry.get("route_sequence") or []
@@ -559,9 +640,10 @@ def adapt_behavior_evidence(
         )
 
         # Temporal position
-        temporal_pos = entry.get("temporal_position")
-        if not temporal_pos:
-            temporal_pos = "during_action" if ("friction" in sig_type or "obstruction" in sig_type or "loop" in sig_type) else "static"
+        temporal_pos = normalize_temporal_position(
+            entry.get("temporal_position")
+            or ("during_action" if ("friction" in sig_type or "obstruction" in sig_type or "loop" in sig_type) else "static")
+        )
 
         eid = next_id_fn() if next_id_fn else f"E{len(items) + 1:03d}"
 
@@ -635,6 +717,10 @@ def adapt_dom_evidence(
             item = entry.model_copy() if hasattr(entry, "model_copy") else entry.copy()
             if item.decision_context is not None:
                 item.decision_context = normalize_decision_context(item.decision_context)
+            if item.strength is not None:
+                item.strength = normalize_strength(item.strength)
+            if item.temporal_position is not None:
+                item.temporal_position = normalize_temporal_position(item.temporal_position)
             if not item.evidence_id and next_id_fn:
                 item.evidence_id = next_id_fn()
             items.append(item)
@@ -644,7 +730,7 @@ def adapt_dom_evidence(
             continue
 
         sig_type = entry.get("signal_type") or entry.get("type") or "dom_signal"
-        strength = entry.get("strength") or "moderate"
+        strength = normalize_strength(entry.get("strength") or entry.get("severity") or "moderate")
         reason = entry.get("reason") or entry.get("description") or f"Observed {sig_type}"
         element_ref = entry.get("element_ref")
         event_indices = entry.get("event_indices") or []
@@ -674,9 +760,10 @@ def adapt_dom_evidence(
             pat = "obstruction"
 
         # Temporal position
-        temporal_pos = entry.get("temporal_position")
-        if not temporal_pos:
-            temporal_pos = "after_action" if sig_type.startswith("post_action_") else "static"
+        temporal_pos = normalize_temporal_position(
+            entry.get("temporal_position")
+            or ("after_action" if sig_type.startswith("post_action_") else "static")
+        )
 
         eid = next_id_fn() if next_id_fn else f"E{len(items) + 1:03d}"
 
@@ -703,7 +790,7 @@ def adapt_dom_evidence(
                 decision_context=decision_context,
                 temporal_position=temporal_pos,
                 severity=entry.get("severity") or ("high" if strength == "strong" else "medium"),
-                provenance=entry.get("provenance") or "dom_analyzer_b4",
+                provenance=normalize_dom_provenance(entry.get("provenance")),
                 metadata={
                     "dom_properties": dom_props,
                     "original_signal_type": entry.get("type") or entry.get("signal_type") or "dom_signal",
@@ -753,6 +840,10 @@ def adapt_image_evidence(
             item = entry.model_copy() if hasattr(entry, "model_copy") else entry.copy()
             if item.decision_context is not None:
                 item.decision_context = normalize_decision_context(item.decision_context)
+            if item.strength is not None:
+                item.strength = normalize_strength(item.strength)
+            if item.temporal_position is not None:
+                item.temporal_position = normalize_temporal_position(item.temporal_position)
             if not item.evidence_id and next_id_fn:
                 item.evidence_id = next_id_fn()
             items.append(item)
@@ -776,14 +867,12 @@ def adapt_image_evidence(
         if m_conf is None and "confidence" in entry and isinstance(entry["confidence"], (int, float)):
             m_conf = float(entry["confidence"])
 
-        strength = entry.get("strength")
-        if not strength:
-            strength = "strong" if (m_conf or 0.0) > 0.85 else "moderate"
+        strength = normalize_strength(entry.get("strength") or ("strong" if (m_conf or 0.0) > 0.85 else "moderate"))
 
         desc = entry.get("description") or f"Visual detection of {original_label}"
         bbox = entry.get("bounding_box") or entry.get("bbox")
         frame_id = entry.get("frame_id")
-        temporal_pos = entry.get("temporal_position") or "static"
+        temporal_pos = normalize_temporal_position(entry.get("temporal_position") or "static")
 
         eid = next_id_fn() if next_id_fn else f"E{len(items) + 1:03d}"
         original_metadata = entry.get("metadata") if isinstance(entry.get("metadata"), dict) else {}

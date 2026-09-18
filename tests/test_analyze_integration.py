@@ -78,6 +78,34 @@ def test_analyze_score_breakdown_is_canonical_and_sources_are_backend_supplied()
     assert breakdown["evidence_sources"] == sorted(breakdown["evidence_sources"])
 
 
+def test_analyze_accepts_extension_dom_provenance():
+    """Browser diff signals use ISO timestamps and omit structured source."""
+    response = client.post(
+        "/analyze",
+        json={
+            "text": "Checkout details.",
+            "dom_evidence": {
+                "dom_signals": [{
+                    "type": "late_fee_added",
+                    "detected": True,
+                    "description": "A processing fee appeared after the selected price.",
+                    "provenance": {
+                        "timestamp": "2026-09-17T19:03:34.038Z",
+                        "page_load_id": "page-1",
+                        "session_id": "session-1",
+                        "tab_id": 7,
+                    },
+                }],
+            },
+        },
+    )
+
+    assert response.status_code == 200, response.text
+    evidence = next(item for item in response.json()["evidence"] if item["source"] == "dom")
+    assert evidence["provenance"]["source"] == "dom"
+    assert evidence["provenance"]["timestamp"] == 1789671814.038
+
+
 def test_popup_score_breakdown_contract_is_display_only_and_optional():
     from pathlib import Path
 

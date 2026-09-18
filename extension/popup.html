@@ -47,6 +47,70 @@
       <button id="retryBtn" class="btn-secondary">Retry</button>
     </div>
 
+    <!-- FEATURE 3: DECISION SNAPSHOT -->
+    <section id="decisionSnapshotSection" class="section-card snapshot-card hidden" aria-label="Decision snapshot">
+      <div class="card-header-compact">
+        <h3 class="card-title-compact">DECISION SNAPSHOT</h3>
+        <span class="snapshot-tag">Key Factors</span>
+      </div>
+      <div class="snapshot-grid">
+        <div class="snapshot-item" id="snapshotCostItem">
+          <span class="snapshot-icon">💰</span>
+          <div class="snapshot-meta">
+            <span class="snapshot-label">Cost</span>
+            <strong id="snapshotCost" class="snapshot-value">Not detected</strong>
+          </div>
+        </div>
+        <div class="snapshot-item" id="snapshotRenewalItem">
+          <span class="snapshot-icon">🔄</span>
+          <div class="snapshot-meta">
+            <span class="snapshot-label">Renewal</span>
+            <strong id="snapshotRenewal" class="snapshot-value">Not detected</strong>
+          </div>
+        </div>
+        <div class="snapshot-item" id="snapshotPrivacyItem">
+          <span class="snapshot-icon">🔐</span>
+          <div class="snapshot-meta">
+            <span class="snapshot-label">Privacy</span>
+            <strong id="snapshotPrivacy" class="snapshot-value">No relevant signal</strong>
+          </div>
+        </div>
+        <div class="snapshot-item" id="snapshotInterfaceItem">
+          <span class="snapshot-icon">🎯</span>
+          <div class="snapshot-meta">
+            <span class="snapshot-label">Interface</span>
+            <strong id="snapshotInterface" class="snapshot-value">Standard interface</strong>
+          </div>
+        </div>
+      </div>
+      <div id="snapshotChecklistBlock" class="snapshot-checklist-block">
+        <div class="checklist-title">⚠ CHECK THESE BEFORE CONTINUING</div>
+        <ul id="snapshotChecklist" class="snapshot-checklist"></ul>
+      </div>
+    </section>
+
+    <!-- FEATURE 2: WHAT HAPPENS IF I CONTINUE? -->
+    <section id="consequenceSection" class="section-card consequence-card hidden" aria-label="What happens if I continue">
+      <button id="consequenceToggle" class="accordion-toggle card-accordion-header" type="button" aria-expanded="false">
+        <span class="consequence-heading-text">What happens if I continue?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div id="consequenceContent" class="accordion-content hidden">
+        <div id="consequenceFlowBlock" class="consequence-flow-block">
+          <div id="consequenceSteps" class="consequence-steps"></div>
+          <div id="consequenceAdvisories" class="consequence-advisories"></div>
+          <div id="consequenceAdviceBox" class="consequence-advice-box">
+            <strong class="advice-heading">Before continuing:</strong>
+            <p id="consequenceAdviceText" class="advice-text">Check the renewal price and cancellation terms.</p>
+          </div>
+          <button id="consequenceViewEvidenceBtn" class="btn-link-action" type="button">View evidence</button>
+        </div>
+        <div id="consequenceFallback" class="consequence-fallback hidden">
+          <p id="consequenceFallbackText" class="fallback-text">ClauseGuard does not have enough information to determine the next steps.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- State 3-6: UNIFIED RESULT -->
     <div id="result" class="result-card hidden">
       <!-- Status Badge / Icon -->
@@ -124,6 +188,22 @@
       <p id="disclaimer" class="result-disclaimer">Prediction confidence is not legal certainty.</p>
     </div>
 
+    <!-- FEATURE 1: AGREEMENT MEMORY -->
+    <section id="agreementMemorySection" class="section-card memory-card hidden" aria-label="Agreement memory">
+      <div class="card-header-compact">
+        <h3 class="card-title-compact">AGREEMENT MEMORY</h3>
+        <span id="memoryLastAnalyzed" class="memory-meta">Last analyzed: ...</span>
+      </div>
+      <div id="memoryStatusBadge" class="memory-badge badge-neutral">✓ No major changes detected</div>
+      <button id="memoryToggleBtn" class="accordion-toggle memory-toggle" type="button" aria-expanded="false">
+        <span id="memoryToggleLabel">View history</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div id="memoryContent" class="accordion-content hidden">
+        <div id="memoryDetailsList" class="memory-details-list"></div>
+      </div>
+    </section>
+
     <section id="askSection" class="ask-section" aria-labelledby="askTitle">
       <div class="ask-heading">
         <div>
@@ -142,6 +222,9 @@
       <p id="askError" class="ask-error hidden"></p>
     </section>
   </div>
+  <script src="decision/decisionSnapshot.js"></script>
+  <script src="decision/consequenceEngine.js"></script>
+  <script src="decision/agreementMemory.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>
